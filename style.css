@@ -1,0 +1,35 @@
+i {
+  font-size: 2.5rem;
+}
+
+.navbar-brand {
+  height: 4.5rem;
+}
+
+.custom-logo-font {
+  font-size: 0.6rem;
+}
+
+.custom-hamburger-one {
+  width: 3rem;
+  height: 6px;
+  background-color: rgb(33, 37, 41);
+  margin: 3px 0;
+  border-radius: 6cqmax;
+}
+
+.custom-hamburger-two {
+  width: 2.2rem;
+  height: 6px;
+  background-color: rgb(33, 37, 41);
+  margin: 3px 0px 3px auto;
+  border-radius: 6px;
+}
+
+.custom-hamburger-three {
+  width: 1.4rem;
+  height: 6px;
+  background-color: rgb(33, 37, 41);
+  margin: 3px 0px 3px auto;
+  border-radius: 6px;
+}
