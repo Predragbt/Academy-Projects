@@ -33,3 +33,15 @@ i {
   margin: 3px 0px 3px auto;
   border-radius: 6px;
 }
+
+.custom-bg-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/StockSnap_DWLWL9USBG.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
