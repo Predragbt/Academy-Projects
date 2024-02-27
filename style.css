@@ -3,7 +3,7 @@ i {
 }
 
 .custom-logo-size {
-  height: 4.5rem;
+  height: 3rem;
 }
 
 .custom-hamburger-one {
@@ -32,12 +32,70 @@ i {
 
 .custom-bg-overlay {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/StockSnap_DWLWL9USBG.jpg");
+    url("images/card1.jpg");
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.icon {
+  display: none;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+
+button:focus {
+  background-color: red;
+  color: black;
+
+  .icon {
+    display: inline-block;
+  }
+}
+
+.card:hover {
+  scale: 1.04;
+}
+
+.card {
+  transition: 0.5s;
+}
+
+.custom-btn-pagination {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .custom-btn-pagination {
+    display: block;
+  }
+
+  .card-col {
+    display: none;
+  }
+
+  .show-cards {
+    display: block;
+  }
+}
+
+.custom-btn-pagination-design {
+  background-color: #dc3545;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.custom-btn-pagination-design:hover {
+  background-color: #bb2d3b;
+  color: white;
 }
