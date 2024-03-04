@@ -31,10 +31,10 @@ i {
 }
 
 .custom-bg-overlay {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/card1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("images/card6.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -42,12 +42,36 @@ i {
   flex-direction: column;
 }
 
+.custom-letter-space {
+  margin-right: 5px;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.display-1 span {
+  display: inline-block;
+  animation: wave 3s infinite;
+  animation-delay: calc(0.1s * var(--index));
+}
+
 .icon {
   display: none;
 }
 
 button {
-  background-color: black;
+  background-color: rgb(33, 37, 41);
   color: white;
 }
 
