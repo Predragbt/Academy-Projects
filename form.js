@@ -44,8 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const companyError = document.getElementById("company-error");
     const emailError = document.getElementById("email-error");
     const phoneError = document.getElementById("phone-error");
-    const customError = document.getElementById("custom-select-color")
-  
+    const customError = document.getElementById("custom-select-color");
 
     // Field validations
     let isValid = true;
@@ -71,7 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Email validation
-    if (email.value === "") {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email.value)) {
       emailError.style.display = "block";
       email.style.outline = "2px solid red";
       isValid = false;
