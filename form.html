@@ -24,7 +24,9 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-warning py-1 py-lg-4 px-2 px-lg-5">
+      <nav
+        class="navbar navbar-expand-lg bg-warning py-1 py-lg-4 px-2 px-lg-5 custom-header-shadow"
+      >
         <div class="container-fluid d-flex justify-content-between">
           <a class="custom-logo-size" href="/index.html">
             <img
@@ -153,6 +155,154 @@
       </nav>
     </header>
 
+    <main class="bg-warning">
+      <div class="container pt-5 pb-1">
+        <h1 class="fw-bold text-center py-5">Вработи студенти</h1>
+
+        <form id="myForm" class="pt-5">
+          <div class="row">
+            <div class="mb-4 col-12 col-md-6">
+              <label for="username" class="d-block fw-bold pb-2 fs-5"
+                ><p class="custom-form-p">Име и презиме</p></label
+              >
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Вашето име и презиме"
+                class="w-100 p-3 custom-form-radius"
+              />
+
+              <span
+                id="username-error"
+                class="custom-error-message custom-form-p text-danger"
+                >Ве молиме внесете го вашето име и презиме</span
+              >
+            </div>
+
+            <div class="mb-4 col-12 col-md-6">
+              <label for="company" class="d-block fw-bold pb-2 fs-5"
+                ><p class="custom-form-p">Име на компанија</p></label
+              >
+              <input
+                type="text"
+                name="company"
+                id="company"
+                placeholder="Име на вашата компанија"
+                class="w-100 p-3 custom-form-radius"
+              />
+
+              <span
+                id="company-error"
+                class="custom-error-message custom-form-p text-danger"
+                >Ве молиме внесете го името на вашата компанија</span
+              >
+            </div>
+
+            <div class="mb-4 col-12 col-md-6">
+              <label for="email" class="d-block fw-bold pb-2 fs-5"
+                ><p class="custom-form-p">Контакт имејл</p></label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Контакт имејл од вашата компанија"
+                class="w-100 p-3 custom-form-radius"
+              />
+
+              <span
+                id="email-error"
+                class="custom-error-message custom-form-p text-danger"
+                >Ве молиме внесете валидна имејл адреса (user@mydomain.com)
+              </span>
+            </div>
+
+            <div class="mb-4 col-12 col-md-6">
+              <label for="phone" class="d-block fw-bold pb-2 fs-5"
+                ><p class="custom-form-p">Контакт Телефон</p></label
+              >
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="Контакт телефон од вашата компанија"
+                class="w-100 p-3 custom-form-radius"
+              />
+
+              <span
+                id="phone-error"
+                class="custom-error-message custom-form-p text-danger"
+                >Ве молиме внесете телефонски број</span
+              >
+            </div>
+
+            <div class="mb-4 col-12 col-md-6">
+              <div class="custom-select">
+                <p class="custom-form-p d-block pb-2 fs-5 fw-bold">
+                  Тип на студент
+                </p>
+                <div
+                  id="custom-select-color"
+                  class="custom-select-head fw-bold fs-6 bg-white p-3 rounded overflow-hidden"
+                  value="0"
+                >
+                  Изберете тип на студент
+                </div>
+
+                <span
+                  id="type-error"
+                  class="custom-error-message custom-form-p text-danger mb-4"
+                  >Ве молиме изберете тип на студент</span
+                >
+
+                <div
+                  class="custom-select-body custom-select-body-hidden rounded overflow-hidden mt-4"
+                >
+                  <div
+                    class="fw-bold fs-6 bg-white p-2 border-bottom"
+                    value="1"
+                  >
+                    Студент од маркетинг
+                  </div>
+                  <div
+                    class="fw-bold fs-6 bg-white p-2 border-bottom"
+                    value="2"
+                  >
+                    Студент од програмирање
+                  </div>
+                  <div
+                    class="fw-bold fs-6 bg-white p-2 border-bottom"
+                    value="3"
+                  >
+                    Студент од data science
+                  </div>
+                  <div class="fw-bold fs-6 bg-white p-2" value="4">
+                    Студент од дизајн
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pb-3 col-12 col-md-6">
+              <p
+                class="custom-form-p d-block pb-2 fs-5 custom-button-top-hidden"
+              >
+                Скриено
+              </p>
+              <button
+                id="submit-btn"
+                type="submit"
+                class="btn btn-danger w-100 p-3 fw-bold border-0"
+              >
+                Испрати
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
     <footer>
       <div class="container-fluid bg-dark link-light text-center py-3">
         <span class="">Изработено со ❤️ од студентите на Brainster</span>
@@ -164,6 +314,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="script.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>

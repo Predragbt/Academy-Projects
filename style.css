@@ -99,3 +99,48 @@ button:focus {
   background-color: #bb2d3b;
   color: white;
 }
+
+.custom-header-shadow {
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.3);
+}
+
+/* Form */
+
+.custom-form-p {
+  margin: 0;
+}
+
+.custom-form-radius {
+  border-radius: 5px;
+  border: none;
+}
+
+::placeholder,
+.custom-error-message {
+  font-style: italic;
+}
+
+.custom-error-message {
+  display: none;
+}
+
+.custom-button-top-hidden {
+  opacity: 0;
+}
+
+.custom-select-head:hover {
+  cursor: pointer;
+}
+
+.custom-select-none {
+  display: none;
+}
+
+.custom-select-body-hidden {
+  opacity: 0;
+}
+
+.custom-select-body div:hover {
+  background-color: rgb(211, 208, 208) !important;
+  cursor: pointer;
+}
