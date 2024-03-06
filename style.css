@@ -2,8 +2,12 @@ i {
   font-size: 2.5rem;
 }
 
+i:hover {
+  cursor: pointer;
+}
+
 .custom-logo-size {
-  height: 3rem;
+  height: 4rem;
 }
 
 .custom-hamburger-one {
@@ -31,7 +35,7 @@ i {
 }
 
 .custom-bg-overlay {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
     url("images/card6.jpg");
   background-size: cover;
   background-position: bottom;
@@ -53,6 +57,7 @@ i {
 
   50% {
     transform: translateY(10px);
+    scale: 1.15;
   }
 
   100% {
@@ -62,20 +67,24 @@ i {
 
 .display-1 span {
   display: inline-block;
-  animation: wave 3s infinite;
-  animation-delay: calc(0.1s * var(--index));
+  animation: wave 3.5s infinite;
+  animation-delay: calc(0.15s * var(--index));
 }
 
 .icon {
   display: none;
 }
 
-button {
+.custom-filter-button button {
   background-color: rgb(33, 37, 41);
   color: white;
 }
 
-button:focus {
+.custom-filter-button button:hover {
+  background-color: rgb(28, 31, 34);
+}
+
+.custom-filter-button button:focus {
   background-color: red;
   color: black;
 
@@ -128,7 +137,7 @@ button:focus {
   box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.3);
 }
 
-/* Form */
+/* FORM */
 
 .custom-form-p {
   margin: 0;
