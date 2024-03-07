@@ -52,52 +52,52 @@ document.addEventListener("DOMContentLoaded", function () {
     // Username validation
     if (username.value === "") {
       usernameError.style.display = "block";
-      username.style.outline = "2px solid red";
+      username.style.border = "2px solid red";
       isValid = false;
     } else {
       usernameError.style.display = "none";
-      username.style.outline = "2px solid green";
+      username.style.border = "2px solid green";
     }
 
     // Company validation
     if (company.value === "") {
       companyError.style.display = "block";
-      company.style.outline = "2px solid red";
+      company.style.border = "2px solid red";
       isValid = false;
     } else {
       companyError.style.display = "none";
-      company.style.outline = "2px solid green";
+      company.style.border = "2px solid green";
     }
 
     // Email validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email.value)) {
       emailError.style.display = "block";
-      email.style.outline = "2px solid red";
+      email.style.border = "2px solid red";
       isValid = false;
     } else {
       emailError.style.display = "none";
-      email.style.outline = "2px solid green";
+      email.style.border = "2px solid green";
     }
 
     // Phone validation
     if (phone.value === "") {
       phoneError.style.display = "block";
-      phone.style.outline = "2px solid red";
+      phone.style.border = "2px solid red";
       isValid = false;
     } else {
       phoneError.style.display = "none";
-      phone.style.outline = "2px solid green";
+      phone.style.border = "2px solid green";
     }
 
     // Type validation
     if (!selectedValue) {
       typeError.style.display = "block";
-      customError.style.outline = "2px solid red";
+      customError.style.border = "2px solid red";
       isValid = false;
     } else {
       typeError.style.display = "none";
-      customError.style.outline = "2px solid green";
+      customError.style.border = "2px solid green";
     }
 
     // If all validations pass, submit the form

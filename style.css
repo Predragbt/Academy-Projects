@@ -55,9 +55,17 @@ i:hover {
     transform: translateY(0);
   }
 
-  50% {
+  25% {
     transform: translateY(10px);
-    scale: 1.15;
+    scale: -1.15;
+  }
+
+  55% {
+    scale: 1.2;
+  }
+
+  60% {
+    transform: translateY(0);
   }
 
   100% {
@@ -67,8 +75,8 @@ i:hover {
 
 .display-1 span {
   display: inline-block;
-  animation: wave 3.5s infinite;
-  animation-delay: calc(0.15s * var(--index));
+  animation: wave 13s infinite;
+  animation-delay: calc(0.1s * var(--index));
 }
 
 .icon {
