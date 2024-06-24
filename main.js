@@ -50,10 +50,46 @@ if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
+const users = [
+  {
+    username: "User123",
+    email: "user@example.com",
+    gender: "Машки",
+    year: "1999",
+  },
+  {
+    username: "User456",
+    email: "user2@example.com",
+    gender: "Женски",
+    year: "1996",
+  },
+  {
+    username: "User789",
+    email: "user3@example.com",
+    gender: "Машки",
+    year: "2002",
+  },
+];
+
+const profileName = document.getElementById("profile-username");
+const profileEmail = document.getElementById("profile-email");
+const profileGender = document.getElementById("profile-gender");
+const profileYear = document.getElementById("profile-year");
+
 const logedInDiv = document.getElementById("loged-in-div");
 const logedOutDiv = document.getElementById("loged-out-div");
 const logOutBtn = document.getElementById("log-out-btn");
 let logedIn = localStorage.setItem("logedIn", false);
+
+function updateProfileInputs(username) {
+  const user = users.find((user) => user.username === username);
+  if (user) {
+    profileName.placeholder = user.username;
+    profileEmail.placeholder = user.email;
+    profileGender.placeholder = user.gender;
+    profileYear.placeholder = user.year;
+  }
+}
 
 // Handle form submission
 document.getElementById("log-in-button").addEventListener("click", (event) => {
@@ -82,6 +118,9 @@ document.getElementById("log-in-button").addEventListener("click", (event) => {
         logOutBtn.classList.remove("d-none");
         logedOutDiv.classList.add("d-none");
         localStorage.setItem("logedIn", true);
+        localStorage.setItem("username", username);
+
+        updateProfileInputs(username);
         clearForm();
         // Display a success message or redirect the user
       })
@@ -100,4 +139,10 @@ logOutBtn.addEventListener("click", () => {
   logOutBtn.classList.add("d-none");
   logedOutDiv.classList.remove("d-none");
   localStorage.setItem("logedIn", false);
+
+  profileName.placeholder = "Username";
+  profileEmail.placeholder = "Email address";
+  profileGender.placeholder = "/";
+  profileYear.placeholder = "/";
+  localStorage.removeItem("username");
 });

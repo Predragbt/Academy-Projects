@@ -185,5 +185,80 @@ p {
 }
 
 .text-shadow-example {
-  text-shadow: 2px 2px 4px #764ff080; /* Horizontal offset, Vertical offset, Blur radius, Shadow color */
+  text-shadow: 2px 2px 4px #764ff080;
+}
+
+.profile-input-field {
+  width: 25em;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-poge-text-size {
+    font-size: 18px !important;
+  }
+
+  .profile-input-field {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1500px) {
+  .profile-input-field {
+    width: 20em;
+  }
+}
+
+@media (max-width: 1350px) {
+  .profile-input-field {
+    width: 15em;
+  }
+}
+
+.profile-input-field::placeholder {
+  color: white !important;
+}
+
+.profile-progress-bar-color {
+  background-color: #83eab1;
+}
+
+.badge-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #cfe6f7, #b5d2ef);
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(to bottom, #cfe6f7, #b5d2ef),
+    linear-gradient(to bottom, white, grey);
+}
+
+.badge-icon {
+  width: 60px;
+  height: 60px;
+  background: url("/images/profile-card-fist.png") no-repeat center center;
+  background-size: contain;
+  margin-bottom: 10px;
+}
+
+.badge-text {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .badge-container {
+    width: calc(50% - 20px); /* Two badges per row on smaller screens */
+  }
 }
