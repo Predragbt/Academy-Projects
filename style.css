@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+footer {
+  background: linear-gradient(to bottom, #8f39ec, #c796ff);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid grey;
+}
+
+.bg-image {
+  background-image: url("/images/Group14064.png"); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  height: 80vh;
+}
+
+.combined-images {
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+
+.combined-images img {
+  position: absolute;
+}
+
+header {
+  border-bottom: 1px solid #c0fcdc;
+}
+
+header nav {
+  background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(to bottom, #4b7cf3, #83eab1);
+  color: #42356b;
+  position: relative;
+  overflow: hidden;
+}
+
+header li a {
+  color: #42356b !important;
+}
+
+.log-in-div .border {
+  border-width: 2px !important;
+  border-color: #42356b !important;
+}
+
+.log-in-btn {
+  border: 1px solid #42356b;
+  cursor: pointer;
+}
+
+.page-section {
+  background: linear-gradient(to bottom, #83eab1, #4b7cf3);
+}
+
+.contact-boxes-border {
+  border: 2px solid white;
+  border-style: outset;
+}
+
+.contact-boxes-border .box-content {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.contact-link-button {
+  background-color: #9946f3;
+  border: 2px solid #9946f3;
+  border-style: outset;
+}
+
+.contact-link-button:hover {
+  background-color: #902ff8;
+  border: 2px solid #9946f3;
+  border-style: outset;
+}
+
+h3 {
+  color: #42356b;
+}
+
+h4 {
+  color: #764ff0;
+  font-weight: 600;
+}
+
+h5 {
+  margin-bottom: 0 !important;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.home-card {
+  width: 28rem;
+  border-radius: 15px;
+  color: #152347;
+}
+
+@media (max-width: 768px) {
+  .home-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.home-card-one {
+  background-color: #9946f366;
+}
+
+.home-card-two {
+  background-color: #4b7cf3;
+}
+
+.home-card-three {
+  background-color: #83eab166;
+}
+
+.home-card-btn {
+  position: relative;
+  display: inline-block;
+  border: 2px solid white;
+  border-style: outset;
+  padding: 10px 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #463a6d;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.home-card-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.55;
+  transition: opacity 0.3s;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.home-card-btn .btn-text {
+  position: relative;
+  z-index: 2;
+  color: #463a6d;
+}
+
+.home-card-btn:hover::before {
+  opacity: 1;
+}
+
+.home-card-btn:hover {
+  border: 2px solid white;
+}
+
+.home-card-btn:hover .btn-text {
+  color: #463a6d;
+}
+
+.log-in-input {
+  border: 2px solid #8e38eb;
+  border-radius: 4px !important;
+}

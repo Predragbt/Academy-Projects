@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page Application</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary px-0 px-md-5">
+        <div class="container-fluid">
+          <a class="navbar-brand me-5" href="#home" data-section="home">
+            <img class="nav-logo-image" src="images/Logo.png" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse fw-bold ms-5 ps-5"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item me-4">
+                <a
+                  href="#information"
+                  data-section="information"
+                  class="nav-link text-end text-reset text-decoration-none"
+                >
+                  <p class="nav-links-text">Информирај се</p>
+                </a>
+              </li>
+              <li class="nav-item me-4">
+                <a
+                  href="#discussions"
+                  data-section="discussions"
+                  class="nav-link text-end text-reset text-decoration-none"
+                >
+                  <p class="nav-links-text">Дискусии</p>
+                </a>
+              </li>
+              <li class="nav-item me-4">
+                <a
+                  href="#contact"
+                  data-section="contact"
+                  class="nav-link text-end text-reset text-decoration-none"
+                >
+                  <p class="nav-links-text">Контакт</p>
+                </a>
+              </li>
+              <li class="nav-item me-4">
+                <a
+                  href="#profile"
+                  data-section="profile"
+                  class="nav-link text-end text-reset text-decoration-none"
+                >
+                  <p class="nav-links-text">Профил</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="d-none d-md-flex flex-row justify-content-center align-items-center gap-4"
+          >
+            <div class="log-in-div">
+              <a
+                href="#log-in"
+                data-section="log-in"
+                class="btn border px-3 py-1 m-0 text-reset text-decoration-none"
+              >
+                <img src="images/Vector (4).png" class="h-75" alt="Login" />
+                Најави се
+              </a>
+            </div>
+            <div>
+              <p class="fw-bold m-0 p-0 nav-links-text">MK | AL</p>
+            </div>
+            <div>
+              <img src="images/Vector (5).png" class="w-75" alt="Language" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div
+        class="container-fluid page-section m-0 px-0 pb-5"
+        data-section="home"
+      >
+        <div class="bg-image"></div>
+        <h1 class="py-5 px-5 text-white text-center display-2 fw-bold">
+          Информирај се и заштити се
+        </h1>
+
+        <div class="d-flex flex-column flex-md-row justify-content-center pb-5">
+          <div
+            class="card home-card home-card-one text-center mb-3 me-md-4 border-0 p-3"
+          >
+            <div class="card-body">
+              <div
+                class="d-flex flex-row mb-4 home-card-title align-items-center"
+              >
+                <h5 class="card-title fw-bold text-start pe-3">
+                  Научи сè што треба да знаеш
+                </h5>
+                <img src="images/Vector (7).png" class="w-25 h-25" alt="" />
+              </div>
+              <p class="card-text text-start mb-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <a
+                href="#information"
+                class="btn btn-primary w-100 home-card-btn"
+                data-section="information"
+              >
+                <span class="btn-text fw-bold">Дознај повеќе</span>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="card home-card home-card-two text-center mb-3 me-md-4 border-0 p-3"
+          >
+            <div class="card-body">
+              <div
+                class="d-flex flex-row mb-4 home-card-title align-items-center"
+              >
+                <h5 class="card-title fw-bold text-start pe-3">
+                  Вклучи се во дискусија
+                </h5>
+                <img src="images/Vector (7).png" class="w-25 h-25" alt="" />
+              </div>
+              <p class="card-text text-start mb-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <a
+                href="#discussions"
+                class="btn btn-primary w-100 home-card-btn"
+                data-section="discussions"
+              >
+                <span class="btn-text fw-bold">Дознај повеќе</span>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="card home-card home-card-three text-center mb-3 border-0 p-3"
+          >
+            <div class="card-body">
+              <div
+                class="d-flex flex-row mb-4 home-card-title align-items-center"
+              >
+                <h5 class="card-title fw-bold text-start pe-3">
+                  Следи го својот напредок
+                </h5>
+                <img src="images/Vector (8).png" class="w-25 h-25" alt="" />
+              </div>
+              <p class="card-text text-start mb-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <a
+                href="#profile"
+                class="btn btn-primary w-100 home-card-btn"
+                data-section="profile"
+              >
+                <span class="btn-text fw-bold">Дознај повеќе</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid page-section"
+        id="information"
+        data-section="information"
+      >
+        <h1 class="text-center my-4">Information</h1>
+      </div>
+
+      <div
+        class="container-fluid page-section"
+        id="discussions"
+        data-section="discussions"
+      >
+        <h1 class="text-center my-4">Discussions</h1>
+      </div>
+
+      <div
+        class="container-fluid page-section p-5"
+        id="contact-section"
+        data-section="contact"
+      >
+        <h1 class="mb-5 px-5 text-white">Контакт</h1>
+
+        <div class="mx-5 mb-5">
+          <h3 class="mb-5 fw-bold">Побарај стручна помош</h3>
+          <div class="rounded-4 overflow-hidden contact-boxes-border">
+            <div class="box-content d-flex flex-row bg-white px-5 py-4">
+              <div class="pe-5 me-5">
+                <h4 class="mb-4">Агенција за заштита на личните податоци</h4>
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+              </div>
+              <div class="align-self-center mx-5 ps-5">
+                <button
+                  type="button"
+                  class="btn btn-primary contact-link-button px-5"
+                >
+                  Линк
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-5 mb-5">
+          <h3 class="mb-5 fw-bold">Невладини организации</h3>
+          <div class="rounded-4 overflow-hidden contact-boxes-border mb-4">
+            <div class="box-content d-flex flex-row bg-white px-5 py-4">
+              <div class="pe-5 me-5">
+                <h4 class="mb-4">NGO 1</h4>
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+              </div>
+              <div class="align-self-center mx-5 ps-5">
+                <button
+                  type="button"
+                  class="btn btn-primary contact-link-button px-5"
+                >
+                  Линк
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-4 overflow-hidden contact-boxes-border mb-4">
+            <div class="box-content d-flex flex-row bg-white px-5 py-4">
+              <div class="pe-5 me-5">
+                <h4 class="mb-4">NGO 2</h4>
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+              </div>
+              <div class="align-self-center mx-5 ps-5">
+                <button
+                  type="button"
+                  class="btn btn-primary contact-link-button px-5"
+                >
+                  Линк
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-4 overflow-hidden contact-boxes-border">
+            <div class="box-content d-flex flex-row bg-white px-5 py-4">
+              <div class="pe-5 me-5">
+                <h4 class="mb-4">NGO 3</h4>
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+              </div>
+              <div class="align-self-center mx-5 ps-5">
+                <button
+                  type="button"
+                  class="btn btn-primary contact-link-button px-5"
+                >
+                  Линк
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid page-section"
+        id="profile"
+        data-section="profile"
+      >
+        <h1 class="text-center my-4">Profile</h1>
+      </div>
+
+      <div
+        class="container-fluid page-section"
+        id="log-in"
+        data-section="log-in"
+      >
+        <h1
+          class="py-5 px-5 text-white text-start display-2 fw-bold opacity-75"
+        >
+          Придружи ни се
+        </h1>
+
+        <div class="d-flex flex-row justify-content-around">
+          <div class="d-flex flex-column">
+            <img src="images/Group 14071.png" alt="" class="mb-4" />
+            <img src="images/Group 14072.png" alt="" class="mb-4" />
+            <img src="images/Group 14073.png" alt="" class="mb-4" />
+            <img src="images/Group 14038.png" alt="" class="mb-4 mt-5" />
+
+            <form id="login-form" class="d-flex flex-column">
+              <label for="username" class="text-white fw-bold pb-2"
+                >Korisnicko ime*</label
+              >
+              <input
+                type="text"
+                placeholder="Username"
+                class="p-3 log-in-input mb-4"
+                id="log-in-username"
+                required
+              />
+
+              <label for="password" class="text-white fw-bold pb-2"
+                >Лозинка*</label
+              >
+              <input
+                type="password"
+                placeholder="Password"
+                class="p-3 log-in-input mb-5"
+                id="log-in-password"
+                required
+                autocomplete="current-password"
+              />
+
+              <div
+                class="d-flex flex-row text-white justify-content-between mb-5"
+              >
+                <div>
+                  <img src="images/Vector (9).png" class="pe-1" alt="" />
+                  <p class="d-inline">Запомни ме</p>
+                </div>
+
+                <div>Ја заборави лозинката?</div>
+              </div>
+
+              <div class="d-flex justify-content-center mb-5 pb-5">
+                <button
+                  type="submit"
+                  class="btn btn-primary w-75 home-card-btn"
+                  id="log-in-button"
+                >
+                  <span class="btn-text fw-bold">Најави се</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <img
+              src="images/Screenshot2023-05-27 at 19.45 1.png"
+              class="bg-white"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container-fluid d-flex flex-column flex-md-row p-0 p-md-5">
+      <div
+        class="container-fluid link-light text-start py-3 d-flex flex-column justify-content-between align-content-between ms-0 ms-md-5"
+      >
+        <div
+          class="d-flex flex-row justify-content-between justify-content-md-start"
+        >
+          <img src="images/Vector.png" alt="Footer Logo" class="mb-4" />
+          <p class="fw-bold fs-3 d-block d-md-none">MK | AL</p>
+        </div>
+
+        <div class="mb-2 mb-md-0">
+          <p class="fs-6">
+            International Foundation for Electoral Systems (IFES)
+          </p>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row">
+          <div class="me-0 me-md-5 mb-2 mb-md-0">
+            <p class="font-size-16">
+              <img src="images/Vector (1).png" alt="Phone Icon" />
+              +389-2-312-2288
+            </p>
+          </div>
+          <div class="d-flex flex-row">
+            <div class="combined-images">
+              <img src="images/Vector22.png" alt="Image 1" class="image1" />
+              <img src="images/Vector (2).png" alt="Image 2" class="image2" />
+            </div>
+            <p class="ms-3 font-size-16">ifes.nmk@ifes.org</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid link-light text-start py-3 d-flex flex-column justify-content-between align-content-between ms-0 ms-md-5"
+      >
+        <a
+          href="#information"
+          data-section="information"
+          class="text-reset text-decoration-none mb-2 mb-md-0"
+        >
+          <p>Информирај се</p>
+        </a>
+        <a
+          href="#discussions"
+          data-section="discussions"
+          class="text-reset text-decoration-none mb-2 mb-md-0"
+        >
+          <p>Дискусии</p>
+        </a>
+        <a
+          href="#contact"
+          data-section="contact"
+          class="text-reset text-decoration-none mb-2 mb-md-0"
+        >
+          <p>Контакт - корисни линкови</p>
+        </a>
+        <a
+          href="#home"
+          data-section="home"
+          class="text-reset text-decoration-none mb-2 mb-md-0"
+        >
+          <p>Закон за заштита на личните податоци</p>
+        </a>
+      </div>
+      <div
+        class="container-fluid link-light text-start text-md-end py-3 d-flex flex-column justify-content-between align-content-between me-0 me-md-5"
+      >
+        <p class="fw-bold fs-3 d-none d-md-block">MK | AL</p>
+        <div
+          class="d-flex justify-content-around justify-content-md-end gap-4 mb-4 mb-md-0"
+        >
+          <img
+            src="images/la_facebook-square.png"
+            alt="Facebook Icon"
+            class="h-75"
+          />
+          <img
+            src="images/bi_instagram.png"
+            alt="Instagram Icon"
+            class="h-75"
+          />
+          <img
+            src="images/ri_youtube-line.png"
+            alt="YouTube Icon"
+            class="h-75"
+          />
+          <img
+            src="images/ic_baseline-tiktok.png"
+            alt="TikTok Icon"
+            class="h-75"
+          />
+        </div>
+        <p>© All Rights Reserved. | safeblink.mk</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
