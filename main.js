@@ -19,7 +19,14 @@ const showSection = (sectionClass) => {
 };
 
 // Initially show the home section
-showSection("log-in");
+showSection("home");
+
+function clearForm() {
+  const form = document.getElementById("login-form");
+  if (form) {
+    form.reset(); // This will reset the form to its initial state
+  }
+}
 
 // Handle link clicks to navigate between sections
 document.querySelectorAll("[data-section]").forEach((link) => {
@@ -43,6 +50,12 @@ if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
+const logedInDiv = document.getElementById("loged-in-div");
+const logedOutDiv = document.getElementById("loged-out-div");
+const logOutBtn = document.getElementById("log-out-btn");
+let logedIn = localStorage.setItem("logedIn", false);
+
+// Handle form submission
 document.getElementById("log-in-button").addEventListener("click", (event) => {
   event.preventDefault(); // Prevent the default form submission behavior
   const username = document.getElementById("log-in-username").value;
@@ -64,6 +77,12 @@ document.getElementById("log-in-button").addEventListener("click", (event) => {
       })
       .then((data) => {
         console.log("Success:", data);
+        logedIn = true;
+        logedInDiv.classList.remove("d-none");
+        logOutBtn.classList.remove("d-none");
+        logedOutDiv.classList.add("d-none");
+        localStorage.setItem("logedIn", true);
+        clearForm();
         // Display a success message or redirect the user
       })
       .catch((error) => {
@@ -73,4 +92,12 @@ document.getElementById("log-in-button").addEventListener("click", (event) => {
   } else {
     alert("Please fill in both username and password fields.");
   }
+});
+
+logOutBtn.addEventListener("click", () => {
+  logedIn = false;
+  logedInDiv.classList.add("d-none");
+  logOutBtn.classList.add("d-none");
+  logedOutDiv.classList.remove("d-none");
+  localStorage.setItem("logedIn", false);
 });
