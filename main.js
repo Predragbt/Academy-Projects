@@ -19,7 +19,7 @@ const showSection = (sectionClass) => {
 };
 
 // Initially show the home section
-showSection("home");
+showSection("profile");
 
 function clearForm() {
   const form = document.getElementById("login-form");
@@ -50,27 +50,6 @@ if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
-const users = [
-  {
-    username: "User123",
-    email: "user@example.com",
-    gender: "Машки",
-    year: "1999",
-  },
-  {
-    username: "User456",
-    email: "user2@example.com",
-    gender: "Женски",
-    year: "1996",
-  },
-  {
-    username: "User789",
-    email: "user3@example.com",
-    gender: "Машки",
-    year: "2002",
-  },
-];
-
 const profileName = document.getElementById("profile-username");
 const profileEmail = document.getElementById("profile-email");
 const profileGender = document.getElementById("profile-gender");
@@ -79,21 +58,63 @@ const profileYear = document.getElementById("profile-year");
 const logedInDiv = document.getElementById("loged-in-div");
 const logedOutDiv = document.getElementById("loged-out-div");
 const logOutBtn = document.getElementById("log-out-btn");
-let logedIn = localStorage.setItem("logedIn", false);
+const logedIn = localStorage.getItem("logedIn");
 
+// Function to update profile inputs based on username
 function updateProfileInputs(username) {
+  const users = JSON.parse(localStorage.getItem("users")) || [];
   const user = users.find((user) => user.username === username);
+
   if (user) {
-    profileName.placeholder = user.username;
-    profileEmail.placeholder = user.email;
-    profileGender.placeholder = user.gender;
-    profileYear.placeholder = user.year;
+    profileName.value = user.username;
+    profileEmail.value = user.email;
+    profileGender.value = user.gender;
+    profileYear.value = user.year;
+  } else {
+    console.error("User data not found in localStorage");
+    // Optionally clear inputs or set placeholders
+    profileName.value = "";
+    profileEmail.value = "";
+    profileGender.value = "";
+    profileYear.value = "";
   }
 }
 
-// Handle form submission
+// Function to initialize UI based on login state
+function initializeUI() {
+  const logedIn = localStorage.getItem("logedIn");
+
+  if (logedIn === "true") {
+    // User is logged in
+    logedInDiv.classList.remove("d-none");
+    logOutBtn.classList.remove("d-none");
+    logedOutDiv.classList.add("d-none");
+
+    const username = localStorage.getItem("username");
+    if (username) {
+      updateProfileInputs(username);
+    }
+  } else {
+    // User is logged out
+    logedInDiv.classList.add("d-none");
+    logOutBtn.classList.add("d-none");
+    logedOutDiv.classList.remove("d-none");
+
+    // Clear profile inputs or set placeholders
+    profileName.value = "";
+    profileEmail.value = "";
+    profileGender.value = "";
+    profileYear.value = "";
+  }
+}
+
+// Initialize UI on page load
+initializeUI();
+
+// Handle form submission (login)
 document.getElementById("log-in-button").addEventListener("click", (event) => {
-  event.preventDefault(); // Prevent the default form submission behavior
+  event.preventDefault();
+
   const username = document.getElementById("log-in-username").value;
   const password = document.getElementById("log-in-password").value;
 
@@ -113,36 +134,26 @@ document.getElementById("log-in-button").addEventListener("click", (event) => {
       })
       .then((data) => {
         console.log("Success:", data);
-        logedIn = true;
-        logedInDiv.classList.remove("d-none");
-        logOutBtn.classList.remove("d-none");
-        logedOutDiv.classList.add("d-none");
         localStorage.setItem("logedIn", true);
         localStorage.setItem("username", username);
 
-        updateProfileInputs(username);
+        initializeUI(); // Update UI after login
         clearForm();
-        // Display a success message or redirect the user
+        // Display success message or redirect user
       })
       .catch((error) => {
         console.error("Error:", error);
-        // Display an error message to the user
+        // Display error message to user
       });
   } else {
     alert("Please fill in both username and password fields.");
   }
 });
 
+// Handle logout
 logOutBtn.addEventListener("click", () => {
-  logedIn = false;
-  logedInDiv.classList.add("d-none");
-  logOutBtn.classList.add("d-none");
-  logedOutDiv.classList.remove("d-none");
   localStorage.setItem("logedIn", false);
-
-  profileName.placeholder = "Username";
-  profileEmail.placeholder = "Email address";
-  profileGender.placeholder = "/";
-  profileYear.placeholder = "/";
   localStorage.removeItem("username");
+
+  initializeUI(); // Update UI after logout
 });
