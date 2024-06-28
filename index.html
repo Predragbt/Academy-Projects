@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary px-0 px-md-5">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary px-0 ps-md-5">
         <div class="container-fluid">
           <a class="navbar-brand me-5" href="#home" data-section="home">
             <img class="nav-logo-image" src="images/Logo.png" alt="Logo" />
@@ -37,7 +37,7 @@
             class="collapse navbar-collapse fw-bold ms-5 ps-5"
             id="navbarNav"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item me-4">
                 <a
                   href="#information"
@@ -65,7 +65,7 @@
                   <p class="nav-links-text">Контакт</p>
                 </a>
               </li>
-              <li class="nav-item me-4">
+              <li class="nav-item me-4 d-none" id="navbar-profile-link">
                 <a
                   href="#profile"
                   data-section="profile"
@@ -75,37 +75,41 @@
                 </a>
               </li>
             </ul>
+
+            <ul class="navbar-nav d-flex">
+              <li class="nav-item me-4 align-self-end">
+                <div class="log-in-div" id="loged-out-div">
+                  <a
+                    href="#log-in"
+                    data-section="log-in"
+                    class="btn border px-3 py-1 m-0 text-reset text-decoration-none"
+                  >
+                    <img src="images/Vector (4).png" class="h-75" alt="Login" />
+                    Најави се
+                  </a>
+                </div>
+
+                <div class="log-in-div d-none" id="log-out-btn">
+                  <a
+                    class="btn border px-3 py-1 m-0 text-reset text-decoration-none"
+                    >Log out</a
+                  >
+                </div>
+              </li>
+            </ul>
           </div>
 
           <div
             class="d-none d-md-flex flex-row justify-content-center align-items-center gap-4"
           >
-            <div class="log-in-div" id="loged-out-div">
-              <a
-                href="#log-in"
-                data-section="log-in"
-                class="btn border px-3 py-1 m-0 text-reset text-decoration-none"
-              >
-                <img src="images/Vector (4).png" class="h-75" alt="Login" />
-                Најави се
-              </a>
-            </div>
-
             <div class="d-none" id="loged-in-div">
               <img src="images/Ellipse 31.png" class="w-75" alt="Language" />
-            </div>
-
-            <div class="log-in-div d-none" id="log-out-btn">
-              <a
-                class="btn border px-3 py-1 m-0 text-reset text-decoration-none"
-                >Log out</a
-              >
             </div>
 
             <div>
               <p class="fw-bold m-0 p-0 nav-links-text">MK | AL</p>
             </div>
-            <div>
+            <div class="me-5">
               <img src="images/Vector (5).png" class="w-75" alt="Language" />
             </div>
           </div>
@@ -118,7 +122,16 @@
         class="container-fluid page-section m-0 px-0 pb-5"
         data-section="home"
       >
-        <div class="bg-image"></div>
+        <div class="bg-image">
+          <button class="btn-video">
+            <img src="images/Mask group.png" alt="Play Video" />
+          </button>
+          <video class="bg-video" controls>
+            <source src="video/Safe web browsing.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
         <h1
           class="py-5 px-5 text-white text-center display-2 fw-bold opacity-75 text-shadow-example"
         >
@@ -147,7 +160,6 @@
               <a
                 href="#information"
                 class="btn btn-primary w-100 home-card-btn"
-                data-section="information"
               >
                 <span class="btn-text fw-bold">Дознај повеќе</span>
               </a>
@@ -175,7 +187,6 @@
               <a
                 href="#discussions"
                 class="btn btn-primary w-100 home-card-btn"
-                data-section="discussions"
               >
                 <span class="btn-text fw-bold">Дознај повеќе</span>
               </a>
@@ -200,11 +211,7 @@
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </p>
-              <a
-                href="#profile"
-                class="btn btn-primary w-100 home-card-btn"
-                data-section="profile"
-              >
+              <a href="#profile" class="btn btn-primary w-100 home-card-btn">
                 <span class="btn-text fw-bold">Дознај повеќе</span>
               </a>
             </div>
@@ -212,12 +219,132 @@
         </div>
       </div>
 
-      <div
-        class="container-fluid page-section"
-        id="information"
-        data-section="information"
-      >
-        <h1 class="text-center my-4">Information</h1>
+      <div class="container-fluid page-section p-5" data-section="information">
+        <h1
+          class="mb-5 px-5 text-white display-2 fw-bold text-center text-md-start opacity-75 text-shadow-example"
+        >
+          Сè што треба да знаеш
+        </h1>
+        <div class="px-5">
+          <div class="d-flex justify-content-around">
+            <button
+              type="button"
+              class="btn btn-link text-decoration-none information-buttons fs-1"
+            >
+              Видеа
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-link text-decoration-none information-buttons fs-1"
+              disabled
+            >
+              Статии
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-link text-decoration-none information-buttons fs-1"
+              disabled
+            >
+              Упатства
+            </button>
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-center mt-5">
+            <button
+              data-category="false"
+              id="most-popular"
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Најпопуларни</span>
+            </button>
+
+            <button
+              data-category="false"
+              id="most-relevant"
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Актуелно</span>
+            </button>
+
+            <button
+              data-category="false"
+              id="most-recent"
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Најнови</span>
+            </button>
+
+            <button
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Азбучен редослед</span>
+            </button>
+
+            <button
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Интернет видеа</span>
+            </button>
+
+            <button
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Приватност</span>
+            </button>
+
+            <button
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Опасност</span>
+            </button>
+
+            <button
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Лорем ипсум</span>
+            </button>
+
+            <button
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Лорем ипсум</span>
+            </button>
+
+            <button
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Лорем</span>
+            </button>
+
+            <button
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Лорем лорем ипсум</span>
+            </button>
+
+            <button
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Тема 1</span>
+            </button>
+
+            <button
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Тема 2</span>
+            </button>
+
+            <button
+              class="btn btn-primary home-card-btn rounded-5 information-filter-buttons me-4 mb-4"
+            >
+              <span class="btn-text fw-bold">Тема 3</span>
+            </button>
+          </div>
+
+          <div id="information-cards-container" class="d-flex flex-lg-row flex-wrap justify-content-between pt-5 px-5"></div>
+        </div>
       </div>
 
       <div
@@ -226,6 +353,21 @@
         data-section="discussions"
       >
         <h1 class="text-center my-4">Discussions</h1>
+        <div class="custom-card text-bg-dark">
+          <img
+            src="images/Rectangle 540.png"
+            class="custom-card-img"
+            alt="Card image"
+          />
+          <div class="custom-card-img-overlay custom-overlay-content">
+            <h5 class="custom-card-title">Наслов на видео</h5>
+            <p class="custom-card-text">
+              Лорем ипсум е едноставен модел на текст кој се користел во
+              печатарската индустрија. Лорем ипсум бил индустриски стандард...
+            </p>
+            <p class="custom-card-text"><small>Објавено на 28/05/23</small></p>
+          </div>
+        </div>
       </div>
 
       <div
@@ -352,7 +494,7 @@
 
       <div
         class="container-fluid page-section p-md-5"
-        id="profile"
+        id="profile-page-section"
         data-section="profile"
       >
         <h1
@@ -445,10 +587,19 @@
             <div class="col-6 col-md-2 mb-3">
               <div class="badge-container text-center w-100 py-4">
                 <div class="badge-icon">
-                  <img
-                  src="images/Vector.png"
-                    class="opacity-100 badge-icon-color mb-3 profile-card-icon-size"
-                  />
+                  <svg
+                    class="badge-icon-color mb-3 profile-card-icon-size"
+                    width="80"
+                    height="95"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M54.4687 37.7719C53.5899 37.1035 53.419 35.8494 54.0869 34.9702L62.3041 24.1531C62.9722 23.2735 64.2269 23.1021 65.1065 23.7703L69.1772 26.8627C70.0566 27.5308 70.2281 28.7852 69.5603 29.6647L61.3438 40.4863C60.6754 41.3665 59.4198 41.5378 58.5401 40.8687L54.4687 37.7719ZM49.108 33.7398C49.9877 34.4074 51.2421 34.2356 51.91 33.356L60.8011 21.6449C61.4691 20.765 61.2972 19.5102 60.4172 18.8423L55.9858 15.4794C55.106 14.8118 53.8516 14.9836 53.1838 15.8632L44.2927 27.5743C43.6247 28.4542 43.7966 29.709 44.6766 30.3768L49.108 33.7398ZM45.9183 18.2628C46.7695 18.6693 47.7891 18.4257 48.3646 17.6783L51.2026 13.9932C51.8797 13.1141 51.7116 11.8518 50.8281 11.1804L46.8274 8.14063C45.9478 7.47231 44.6929 7.64366 44.0247 8.52334L40.5857 13.0509C39.8189 14.0603 40.1726 15.5192 41.3165 16.0654L45.9183 18.2628ZM41.3286 7.59025C41.9966 6.71067 41.8251 5.45618 40.9456 4.7881L36.2355 1.21003C35.3558 0.541787 34.1009 0.713309 33.4329 1.59311L29.0056 7.42335C28.2432 8.42744 28.5887 9.87797 29.7219 10.4305L35.142 13.0734C36 13.4918 37.0341 13.2455 37.6113 12.4853L41.3286 7.59025ZM61.5698 47.7807C61.7436 47.0034 61.4395 46.197 60.7957 45.728L37.322 28.6268C37.193 28.5327 37.0326 28.4921 36.8743 28.5134C36.4633 28.5687 36.2213 29.0039 36.3912 29.3822L45.9943 50.7555C46.3648 51.5801 45.8382 52.5291 44.9425 52.6511C44.3479 52.7321 43.7709 52.4118 43.5252 51.8643L34.4894 31.7344C34.2872 31.2839 33.9256 30.9242 33.4741 30.7244L28.4333 28.4939C27.7943 28.2111 27.3492 27.6152 27.2593 26.9222L27.2069 26.5185C27.0016 24.9354 28.6424 23.7616 30.0743 24.4672L32.9662 25.8923C33.2503 26.0322 33.5635 26.1027 33.88 26.098L39.3927 26.016C39.9898 26.0071 40.5517 25.7319 40.9247 25.2656L43.0987 22.5481C43.9022 21.5437 43.5624 20.053 42.4032 19.496L25.171 11.2159C24.2959 10.7954 23.2452 11.0641 22.6795 11.8531L10.8038 28.414C10.3199 29.0888 10.3033 29.9924 10.7621 30.6845L26.6842 54.7023C26.96 55.1183 27.0702 55.6223 26.9934 56.1155L23.6299 77.692C23.4409 78.9047 24.3787 80 25.6061 80H52.7738C53.8784 80 54.7738 79.1046 54.7738 78V60.3878C54.7738 59.9679 54.906 59.5585 55.1517 59.2179L60.5076 51.7918C60.6661 51.5721 60.7783 51.3225 60.8374 51.0581L61.5698 47.7807Z"
+                      class="profile-card-icon-size"
+                    />
+                  </svg>
                 </div>
                 <div class="badge-text">Се придружи!</div>
               </div>
@@ -456,10 +607,20 @@
             <div class="col-6 col-md-2 mb-3">
               <div class="badge-container text-center w-100 py-4">
                 <div class="badge-icon">
-                  <img
-                  src="images/Vector.png"
-                    class="opacity-100 badge-icon-color mb-3 profile-card-icon-size"
-                  />
+                  <svg
+                    class="badge-icon-color mb-3 profile-card-icon-size"
+                    width="80"
+                    height="95"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.7759 40.3113C15.5872 40.1926 16.3889 40.5811 16.7984 41.2915L23.4405 52.8156C23.8505 53.527 23.784 54.4169 23.2728 55.0595L15.8283 64.4165C14.9503 65.5201 13.2366 65.3928 12.5313 64.1716L1.47406 45.0268C0.767313 43.8031 1.51803 42.2523 2.91624 42.0476L14.7759 40.3113ZM62 63.9946C60.8954 63.9946 60 63.0991 60 61.9946V54.4558C60 53.6647 60.4763 52.9629 61.153 52.553C64.0496 50.7987 66 47.6483 66 43.9946C66 42.5646 65.6853 41.1976 65.1251 39.9824C64.6089 38.8628 64.8465 37.4304 65.9112 36.8088L71.76 33.3946C75.8 31.0346 77.2 25.8746 74.84 21.8346L69.32 12.2346C68.1945 10.2946 66.3479 8.87807 64.1826 8.29366C62.0173 7.70925 59.7087 8.00431 57.76 9.11456L25.24 27.9946C21.44 30.1146 20.12 34.9946 22.32 38.8346L28.32 49.2346C30.52 53.0346 35.44 54.3546 39.24 52.1546L44.8029 48.9589C45.8434 48.3611 47.1637 48.8236 47.8648 49.7975C48.6598 50.9018 49.6734 51.8426 50.844 52.5525C51.5218 52.9635 52 53.6661 52 54.4588V63.9946C52 68.3946 55.6 71.9946 60 71.9946H78C79.1046 71.9946 80 71.0991 80 69.9946V65.9946C80 64.89 79.1046 63.9946 78 63.9946H62Z"
+                      fill="#42356B"
+                      class="profile-card-icon-size"
+                    />
+                  </svg>
                 </div>
                 <div class="badge-text">Изгледани 5 видеа</div>
               </div>
@@ -467,10 +628,22 @@
             <div class="col-6 col-md-2 mb-3">
               <div class="badge-container text-center w-100 py-4">
                 <div class="badge-icon">
-                  <img
-                  src="images/Vector.png"
-                    class="opacity-100 badge-icon-color mb-3 profile-card-icon-size"
-                  />
+                  <svg
+                    class="badge-icon-color mb-3 profile-card-icon-size"
+                    width="80"
+                    height="95"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="profile-card-icon-size"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.461247 40.8697C0.159046 40.3175 0.159046 39.6825 0.461247 39.1303C3.15826 34.2018 17.5455 10 40 10C62.4545 10 76.8417 34.2018 79.5387 39.1303C79.841 39.6825 79.841 40.3175 79.5387 40.8697C76.8417 45.7982 62.4545 70 40 70C17.5455 70 3.15826 45.7982 0.461247 40.8697ZM9.05 40.65C8.80269 40.2531 8.81052 39.7455 9.06 39.35C10.69 36.8 13.09 33.415 16.16 30.07C22.47 23.175 30.6 17.5 40 17.5C49.39 17.5 57.53 23.175 63.85 30.07C66.3665 32.8382 68.6516 35.8073 70.6827 38.9474C71.097 39.588 71.0958 40.4113 70.6801 41.051C68.641 44.1879 66.3538 47.1571 63.84 49.93C57.53 56.825 49.4 62.5 40 62.5C30.61 62.5 22.47 56.825 16.15 49.93C13.5234 47.0445 11.1481 43.9399 9.05 40.65ZM55 40C54.9991 43.1576 54.0017 46.2344 52.1499 48.7921C50.2982 51.3498 47.6865 53.2578 44.687 54.2445C41.6874 55.2311 38.4531 55.246 35.4446 54.2871C32.4361 53.3281 29.8069 51.4442 27.9317 48.9037C26.0564 46.3632 25.0307 43.2957 25.0007 40.1383C24.9706 36.9808 25.9378 33.8943 27.7644 31.3186C29.5909 28.7429 32.1837 26.8093 35.1735 25.7933C37.0122 25.1684 38.9433 24.9102 40.8598 25.0202C42.12 25.0925 42.3731 26.8817 41.5961 27.8766C40.8495 28.8325 40.3459 29.9553 40.1285 31.1486C39.9111 32.3419 39.9863 33.5701 40.3478 34.7279C40.7092 35.8857 41.3461 36.9386 42.2037 37.7963C43.0614 38.6539 44.1143 39.2908 45.2721 39.6522C46.4299 40.0137 47.6582 40.0889 48.8514 39.8715C50.0447 39.6541 51.1675 39.1505 52.1234 38.4039C53.1173 37.6277 54.9052 37.8818 54.9762 39.1408C54.9923 39.4267 55.0003 39.7132 55 40Z"
+                      fill="#42356B"
+                    />
+                  </svg>
                 </div>
                 <div class="badge-text">Изгледани 20 видеа</div>
               </div>
@@ -478,10 +651,20 @@
             <div class="col-6 col-md-2 mb-3">
               <div class="badge-container text-center w-100 py-4">
                 <div class="badge-icon">
-                  <img
-                  src="images/Vector.png"
-                    class="opacity-100 badge-icon-color mb-3 profile-card-icon-size"
-                  />
+                  <svg
+                    class="badge-icon-color mb-3 profile-card-icon-size"
+                    width="80"
+                    height="95"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="profile-card-icon-size"
+                      d="M76 44C75.7368 48.7914 74.328 53.4497 71.892 57.584C69.456 61.7183 66.0637 65.208 62 67.76L40.9724 79.459C40.3678 79.7954 39.6322 79.7954 39.0276 79.459L18 67.76C13.9363 65.208 10.544 61.7183 8.108 57.584C5.67196 53.4497 4.26322 48.7914 4 44V14C4 12.8954 4.89639 12.0034 6.00037 11.9672C18.2112 11.5666 29.501 7.51241 38.7835 0.891027C39.5103 0.372637 40.4888 0.373942 41.2143 0.893954C50.4973 7.54698 61.7879 11.5702 73.9996 11.9675C75.1036 12.0034 76 12.8954 76 14V44ZM40 48.3514C40 48.3382 40.0149 48.3304 40.0257 48.338L46.9525 53.1772C48.5081 54.264 50.5612 52.776 50.0125 50.9594L47.9625 44.1726C47.7206 43.3717 48.0028 42.5048 48.6699 41.9997L54.3428 37.7051C55.8536 36.5614 55.075 34.1536 53.1806 34.111L46.0675 33.9512C45.2331 33.9324 44.4981 33.3975 44.2236 32.6094L41.8888 25.9042C41.2656 24.1144 38.7344 24.1144 38.1112 25.9041L35.7764 32.6094C35.5019 33.3975 34.7669 33.9324 33.9325 33.9512L26.8245 34.1109C24.9295 34.1535 24.1513 36.5625 25.6631 37.7057L31.288 41.9591C31.9562 42.4644 32.2387 43.3325 31.9958 44.1342L29.9314 50.9488C29.3834 52.7576 31.4184 54.247 32.9769 53.1779L39.9929 48.3649C39.9973 48.3618 40 48.3568 40 48.3514Z"
+                      fill="#42356B"
+                    />
+                  </svg>
                 </div>
                 <div class="badge-text">Изгледани 50 видеа</div>
               </div>
@@ -489,10 +672,20 @@
             <div class="col-6 col-md-2 mb-3">
               <div class="badge-container text-center w-100 py-4">
                 <div class="badge-icon">
-                  <img
-                  src="images/Vector.png"
-                    class="opacity-100 badge-icon-color mb-3 profile-card-icon-size"
-                  />
+                  <svg
+                    class="badge-icon-color mb-3 profile-card-icon-size"
+                    width="80"
+                    height="95"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="profile-card-icon-size"
+                      d="M63.5001 72.0002L55.1643 63.7356C54.3823 62.9603 53.1206 62.963 52.3419 63.7417L47.831 68.2526C47.0499 69.0337 45.7836 69.0337 45.0025 68.2526L44.0834 67.3335C42.8056 66.0557 42.1667 64.4724 42.1667 62.5835C42.1667 60.6946 42.8056 59.1113 44.0834 57.8335L58.1667 43.7502C59.4445 42.4724 61.0279 41.8335 62.9167 41.8335C64.8056 41.8335 66.389 42.4724 67.6667 43.7502L68.5859 44.6693C69.3669 45.4503 69.3669 46.7167 68.5859 47.4977L64.0749 52.0087C63.2962 52.7874 63.2935 54.049 64.0688 54.831L72.3334 63.1668C73.0001 63.8335 73.3334 64.6113 73.3334 65.5002C73.3334 66.389 73.0001 67.1668 72.3334 67.8335L68.1667 72.0002C67.5001 72.6668 66.7223 73.0002 65.8334 73.0002C64.9445 73.0002 64.1667 72.6668 63.5001 72.0002ZM73.3334 18.8384C73.3334 19.3688 73.1227 19.8775 72.7476 20.2526L35.8774 57.1229C35.6761 57.3241 35.6945 57.6557 35.9167 57.8335C37.1945 59.1113 37.8334 60.6946 37.8334 62.5835C37.8334 64.4724 37.1945 66.0557 35.9167 67.3335L34.9976 68.2526C34.2166 69.0337 32.9502 69.0337 32.1692 68.2526L27.6582 63.7417C26.8796 62.963 25.6179 62.9603 24.8359 63.7356L16.5001 72.0002C15.8334 72.6668 15.0556 73.0002 14.1667 73.0002C13.2779 73.0002 12.5001 72.6668 11.8334 72.0002L7.66675 67.8335C7.00008 67.1668 6.66675 66.389 6.66675 65.5002C6.66675 64.6113 7.00008 63.8335 7.66675 63.1668L15.9313 54.831C16.7066 54.049 16.7039 52.7873 15.9253 52.0087L11.4143 47.4977C10.6332 46.7167 10.6332 45.4503 11.4143 44.6693L12.3334 43.7502C13.6112 42.4724 15.1945 41.8335 17.0834 41.8335C18.9723 41.8335 20.5556 42.4724 21.8334 43.7502C22.0112 43.9724 22.3428 43.9908 22.5441 43.7895L59.4143 6.91928C59.7894 6.54421 60.2981 6.3335 60.8285 6.3335H71.3334C72.438 6.3335 73.3334 7.22893 73.3334 8.3335V18.8384ZM24.581 34.7526C23.7999 35.5337 22.5336 35.5337 21.7525 34.7526L7.25253 20.2526C6.87746 19.8775 6.66675 19.3688 6.66675 18.8384V8.33349C6.66675 7.22892 7.56218 6.3335 8.66675 6.3335H19.1717C19.7021 6.3335 20.2108 6.54421 20.5859 6.91928L35.0859 21.4193C35.8669 22.2003 35.8669 23.4667 35.0859 24.2477L24.581 34.7526Z"
+                      fill="#42356B"
+                    />
+                  </svg>
                 </div>
                 <div class="badge-text">Активност во дискусија</div>
               </div>
@@ -500,10 +693,20 @@
             <div class="col-6 col-md-2 mb-3">
               <div class="badge-container text-center w-100 py-4">
                 <div class="badge-icon">
-                  <img
-                    src="images/Vector.png"
-                    class="opacity-100 badge-icon-color mb-3 profile-card-icon-size"
-                  />
+                  <svg
+                    class="badge-icon-color mb-3 profile-card-icon-size"
+                    width="80"
+                    height="95"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="profile-card-icon-size"
+                      d="M66 10.248C64.8954 10.248 64 9.35257 64 8.248V4C64 2.89543 63.1046 2 62 2H18C16.8954 2 16 2.89543 16 4V8.248C16 9.35257 15.1046 10.248 14 10.248H2C0.895431 10.248 0 11.1434 0 12.248V22C0 31.675 6.93341 39.6909 16.0783 41.5228C16.8202 41.6714 17.4435 42.1829 17.7242 42.8855C19.1704 46.5053 21.4795 49.7245 24.4579 52.2584C27.3202 54.6934 30.7083 56.4169 34.345 57.2995C35.2933 57.5297 36 58.3542 36 59.3299V62C36 64.1217 35.1571 66.1566 33.6569 67.6569C32.1566 69.1571 30.1217 70 28 70H26C24.8954 70 24 70.8954 24 72V76C24 77.1046 24.8954 78 26 78H54C55.1046 78 56 77.1046 56 76V72C56 70.8954 55.1046 70 54 70H52C49.8783 70 47.8434 69.1571 46.3431 67.6569C44.8429 66.1566 44 64.1217 44 62V59.3299C44 58.3542 44.7067 57.5297 45.655 57.2995C49.2917 56.4169 52.6798 54.6934 55.5421 52.2584C58.5205 49.7245 60.8296 46.5053 62.2758 42.8855C62.5565 42.1829 63.1798 41.6714 63.9217 41.5228C73.0666 39.6909 80 31.675 80 22V12.248C80 11.1434 79.1046 10.248 78 10.248H66ZM8 22V20.248C8 19.1434 8.89543 18.248 10 18.248H14C15.1046 18.248 16 19.1434 16 20.248V30.4807C16 31.8619 14.6251 32.8143 13.4671 32.0615C12.1981 31.2366 11.0892 30.1747 10.2055 28.9251C8.77309 26.8997 8.00269 24.4807 8 22ZM72 22C71.997 24.4811 71.2265 26.9005 69.7942 28.9265C68.9108 30.1761 67.8022 31.2383 66.5336 32.0638C65.3756 32.8172 64 31.8649 64 30.4833V20.248C64 19.1434 64.8954 18.248 66 18.248H70C71.1046 18.248 72 19.1434 72 20.248V22Z"
+                      fill="#42356B"
+                    />
+                  </svg>
                 </div>
                 <div class="badge-text">Прочитани 20 статии</div>
               </div>
@@ -512,11 +715,7 @@
         </div>
       </div>
 
-      <div
-        class="container-fluid page-section m-0 p-0"
-        id="log-in"
-        data-section="log-in"
-      >
+      <div class="container-fluid page-section m-0 p-0" data-section="log-in">
         <div class="container px-3 px-md-0 align-items-center p-0">
           <h1
             class="py-5 text-white display-2 fw-bold opacity-75 d-none d-md-block text-shadow-example"
@@ -539,28 +738,29 @@
               <img src="images/Group 14073.png" alt="" class="mb-4" />
               <img src="images/Group 14038.png" alt="" class="mb-4 mt-5" />
 
-              <form id="login-form" class="d-flex flex-column">
-                <label for="username" class="text-white fw-bold pb-2"
+              <form id="form-login" class="d-flex flex-column">
+                <label for="form-login-username" class="text-white fw-bold pb-2"
                   >Korisnicko ime*</label
                 >
+
                 <input
                   type="text"
                   placeholder="Username"
                   class="p-2 px-3 p-md-3 log-in-input mb-4"
-                  id="log-in-username"
+                  id="form-login-username"
                   required
+                  autocomplete="off"
                 />
 
-                <label for="password" class="text-white fw-bold pb-2"
+                <label for="form-login-password" class="text-white fw-bold pb-2"
                   >Лозинка*</label
                 >
                 <input
                   type="password"
                   placeholder="Password"
                   class="p-2 px-3 p-md-3 log-in-input mb-5"
-                  id="log-in-password"
+                  id="form-login-password"
                   required
-                  autocomplete="current-password"
                 />
 
                 <div
@@ -578,7 +778,7 @@
                   <button
                     type="submit"
                     class="btn btn-primary w-75 home-card-btn"
-                    id="log-in-button"
+                    id="form-login-button"
                   >
                     <span class="btn-text fw-bold">Најави се</span>
                   </button>
@@ -704,7 +904,7 @@
     ></script>
 
     <!-- Custom JS -->
-     <script src="storage.js"></script>
-    <script src="main.js"></script>
+
+    <script src="main.js" type="module"></script>
   </body>
 </html>

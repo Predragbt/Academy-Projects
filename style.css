@@ -1,9 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+/* global styles for all pages */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h3 {
+  color: #42356b;
+}
+
+h4 {
+  color: #764ff0;
+  font-weight: 600;
+}
+
+h5 {
+  margin-bottom: 0 !important;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
 }
 
 body {
@@ -16,24 +35,6 @@ footer {
   padding: 20px;
   text-align: center;
   border-top: 1px solid grey;
-}
-
-.bg-image {
-  background-image: url("/images/Group14064.png"); /* Path to your image */
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents repeating the image */
-  height: 80vh;
-}
-
-.combined-images {
-  position: relative;
-  width: 15px;
-  height: 15px;
-}
-
-.combined-images img {
-  position: absolute;
 }
 
 header {
@@ -54,6 +55,51 @@ header nav {
 
 header li a {
   color: #42356b !important;
+}
+
+.bg-image {
+  background-image: url("/images/maximalfocus-VT4rx775FT4-unsplash\ 1.jpg"); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  height: 80vh;
+  position: relative;
+}
+
+.btn-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-video img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire div */
+  display: none; /* Hide the video by default */
+  z-index: 0; /* Ensure the video is behind the button */
+}
+
+.combined-images {
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+
+.combined-images img {
+  position: absolute;
 }
 
 .log-in-div .border {
@@ -91,35 +137,19 @@ header li a {
   border-style: outset;
 }
 
-h3 {
+.information-buttons {
+  font-weight: 900;
   color: #42356b;
 }
-
-h4 {
-  color: #764ff0;
-  font-weight: 600;
+.information-buttons:hover {
+  color: #332a52;
 }
 
-h5 {
-  margin-bottom: 0 !important;
-}
-
-p {
-  margin: 0;
-  font-size: 16px;
-}
-
+/* home cards */
 .home-card {
   width: 28rem;
   border-radius: 15px;
   color: #152347;
-}
-
-@media (max-width: 768px) {
-  .home-card {
-    width: 90%;
-    margin: 0 auto;
-  }
 }
 
 .home-card-one {
@@ -179,39 +209,20 @@ p {
   color: #463a6d;
 }
 
+/* log-in-input */
 .log-in-input {
   border: 2px solid #8e38eb;
   border-radius: 4px !important;
 }
 
+/* text-shadow-example */
 .text-shadow-example {
   text-shadow: 2px 2px 4px #764ff080;
 }
 
+/* profile-input-field */
 .profile-input-field {
   width: 25em;
-}
-
-@media screen and (max-width: 768px) {
-  .profile-poge-text-size {
-    font-size: 18px !important;
-  }
-
-  .profile-input-field {
-    width: 100% !important;
-  }
-}
-
-@media (max-width: 1500px) {
-  .profile-input-field {
-    width: 20em;
-  }
-}
-
-@media (max-width: 1350px) {
-  .profile-input-field {
-    width: 15em;
-  }
 }
 
 .profile-input-field::placeholder {
@@ -222,6 +233,7 @@ p {
   background-color: #83eab1;
 }
 
+/* badge-container */
 .badge-container {
   border-radius: 20px;
   text-align: center;
@@ -240,7 +252,114 @@ p {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
+/* information-filter-buttons */
+.information-filter-buttons {
+  box-shadow: 0px 4px 20px 0px #6b7983;
+  position: relative;
+  border-radius: 30px;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px 20px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(to bottom, #cfe6f7, #b5d2ef),
+    linear-gradient(to bottom, white, transparent);
+  border: 2px solid transparent;
+  z-index: 0; /* Ensure it is below the pseudo-element content */
+  opacity: 0.5; /* Set opacity for pseudo-element content */
+}
+
+.information-filter-buttons::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background: inherit;
+  opacity: 1; /* Set opacity for inner content */
+  z-index: 1; /* Ensure it is above the background */
+  transition: opacity 0.3s; /* Smooth transition */
+}
+
+.information-filter-buttons a {
+  position: relative;
+  z-index: 2; /* Ensure it is above the pseudo-element */
+  color: #463a6d;
+  text-decoration: none;
+}
+
+.information-filter-buttons:hover::after {
+  opacity: 0; /* Change opacity on hover */
+}
+
+.profile-card-icon-size {
+  fill: #6baffd;
+}
+
+/* custom card */
+.custom-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Adjust based on your design */
+  height: 100%; /* Ensures the card takes up the available space */
+}
+
+.custom-card-img {
+  object-fit: cover; /* Ensures the image covers the card */
+}
+
+.custom-overlay-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 35%; /* Ensures the content takes up 35% of the card height */
+  background: rgba(255, 255, 255, 0.7); /* White background with opacity */
+  border-radius: 0 0 15px 15px; /* Match the card border radius */
+  overflow: hidden;
+}
+
+.custom-card-title {
+  color: #463a6d; /* Adjust color based on your design */
+}
+
+.custom-card-text {
+  color: #463a6d; /* Adjust color based on your design */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  flex: 1;
+  max-height: 70%; /* Ensures the text container uses the available space */
+}
+
+.custom-card-text small {
+  color: #463a6d; /* Adjust color based on your design */
+}
+
+.custom-card-text-date {
+  position: absolute;
+  bottom: 10px; /* Adjust based on your padding */
+  width: 100%;
+  text-align: left; /* Aligns text to the right */
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .home-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .profile-poge-text-size {
+    font-size: 18px !important;
+  }
+
+  .profile-input-field {
+    width: 100% !important;
+  }
+
   .badge-container {
     width: calc(50% - 20px); /* Two badges per row on smaller screens */
   }
@@ -252,5 +371,17 @@ p {
   .profile-card-icon-size {
     width: 105px;
     height: 85px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .profile-input-field {
+    width: 20em;
+  }
+}
+
+@media (max-width: 1350px) {
+  .profile-input-field {
+    width: 15em;
   }
 }
