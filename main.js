@@ -2,7 +2,6 @@ import { initializeUserSession } from "./storage.js";
 import { setupVideoHandler } from "./videoHandler.js";
 import { renderInformationCards } from "./informationCards.js";
 
-
 const showSection = (sectionClass) => {
   // Store the current section in sessionStorage
   sessionStorage.setItem("currentSection", sectionClass);
@@ -78,7 +77,6 @@ const profileYear = document.getElementById("profile-year");
 const logedInDiv = document.getElementById("loged-in-div");
 const logedOutDiv = document.getElementById("loged-out-div");
 const logOutBtn = document.getElementById("log-out-btn");
-const logedIn = sessionStorage.getItem("logedIn");
 
 // Function to update profile inputs based on username
 function updateProfileInputs(username) {

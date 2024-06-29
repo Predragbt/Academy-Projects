@@ -1,5 +1,13 @@
 import { informationCardsInfo } from "./storage.js";
 
+const logOutBtn = document.getElementById("log-out-btn");
+const logedIn = sessionStorage.getItem("logedIn");
+
+const username = sessionStorage.getItem("username");
+
+const users = JSON.parse(sessionStorage.getItem("users")) || [];
+const currentUser = users.find((user) => user.username === username);
+
 export function renderInformationCards() {
   const informationCardsContainer = document.querySelector(
     "#information-cards-container"
@@ -9,6 +17,9 @@ export function renderInformationCards() {
     console.error("Container not found");
     return;
   }
+
+  // Clear existing content to prevent duplication
+  informationCardsContainer.innerHTML = "";
 
   informationCardsInfo.forEach((card) => {
     const modalId = `exampleModal${card.id}`; // Unique modal ID for each card
@@ -34,44 +45,44 @@ export function renderInformationCards() {
             <p class="mb-4">Лорем ипсум е едноставен модел на текст кој се користел во печатарската индустрија. Лорем ипсум бил индустриски стандард кој се користел како модел уште пред 1500 години, кога непознат печатар зел кутија со букви и ги сложил на таков начин за да направи примерок на книга. И не само што овој модел опстанал пет векови туку почнал да се користи и во електронските медиуми, кој се уште не е променет.</p>
             <p class="opacity-50 mb-4">Објавено на 05/28/23</p>
 
-            <div class="d-flex flex-column p-3 border rounded-4 mb-3">
+            <div class="d-flex flex-column p-3 border rounded-4 mb-3 d-none modal-input-container"">
               <input type="text" class="form-control border-0" placeholder="Внеси коментар" id="modal-comment-input-${card.id}">
               <label for="modal-comment-input-${card.id}" class="form-label pt-3 ps-2 border-top"><img src="images/Ellipse 25.png" alt="image" 
-              class="img-fluid me-3" />Име и презиме</label>
+              class="img-fluid me-3" /><span>${currentUser ? currentUser.username : ""}</span></label>
             </div>
 
-           <div id="modal-comments-container-${card.id}">
-            <div class="d-flex flex-column p-3 border rounded-4 mb-3">
-              <div class="mb-3">
-                <p>
-                  Лорем ипсум е едноставен модел на текст кој се користел во печатарската индустрија. Лорем ипсум бил индустриски стандард кој се користел како модел уште пред 1500 години, кога непознат печатар зел кутија со букви и ги сложил на таков начин за да направи примерок на книга.
-                </p>
-              </div>
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex flex-row align-items-center">
-                  <img src="images/Ellipse 25.png" alt="image" class="img-fluid me-3" />
-                  <p class="fw-bold m-0 p-0">Име Презиме</p>
-                </div>
-                <p class="opacity-50">00/00/00, 00:00</p>
-              </div>
-            </div>
-
-            <div class="d-flex flex-column p-3 border rounded-4 mb-3">
-              <div class="mb-3">
-                <p>
-                  Лорем ипсум е едноставен модел на текст кој се користел во печатарската индустрија. Лорем ипсум бил индустриски стандард кој се користел како модел уште пред 1500 години, кога непознат печатар зел кутија со букви и ги сложил на таков начин за да направи примерок на книга.
-                </p>
-              </div>
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex flex-row align-items-center">
-                  <img src="images/Ellipse 25.png" alt="image" class="img-fluid me-3" />
-                  <p class="fw-bold m-0 p-0">Име Презиме</p>
-                </div>
-                <p class="opacity-50">00/00/00, 00:00</p>
-              </div>
-            </div>
-
+           <div class="d-flex flex-column-reverse" id="modal-comments-container-${card.id}">
             <div class="d-flex flex-column p-3 border rounded-4">
+              <div class="mb-3">
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во печатарската индустрија. Лорем ипсум бил индустриски стандард кој се користел како модел уште пред 1500 години, кога непознат печатар зел кутија со букви и ги сложил на таков начин за да направи примерок на книга.
+                </p>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <img src="images/Ellipse 25.png" alt="image" class="img-fluid me-3" />
+                  <p class="fw-bold m-0 p-0">Име Презиме</p>
+                </div>
+                <p class="opacity-50">00/00/00, 00:00</p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column p-3 border rounded-4 mb-3">
+              <div class="mb-3">
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во печатарската индустрија. Лорем ипсум бил индустриски стандард кој се користел како модел уште пред 1500 години, кога непознат печатар зел кутија со букви и ги сложил на таков начин за да направи примерок на книга.
+                </p>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <img src="images/Ellipse 25.png" alt="image" class="img-fluid me-3" />
+                  <p class="fw-bold m-0 p-0">Име Презиме</p>
+                </div>
+                <p class="opacity-50">00/00/00, 00:00</p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column p-3 border rounded-4 mb-3">
               <div class="mb-3">
                 <p>
                   Лорем ипсум е едноставен модел на текст кој се користел во печатарската индустрија. Лорем ипсум бил индустриски стандард кој се користел како модел уште пред 1500 години, кога непознат печатар зел кутија со букви и ги сложил на таков начин за да направи примерок на книга.
@@ -117,6 +128,7 @@ export function renderInformationCards() {
       const cardId = card.getAttribute("data-card-id");
       const modal = document.getElementById(`exampleModal${cardId}`);
       modal.style.display = "block";
+      updateCommentInputVisibility(); // Ensure visibility is updated on modal open
     });
   });
 
@@ -182,24 +194,44 @@ function addCommentsOnModal(idForComments) {
     `#modal-comment-input-${idForComments}`
   );
 
-  inputForComments.addEventListener("keypress", (e) => {
-    if (e.key === "Enter") {
+  // Remove any existing event listeners to prevent duplication
+  const newInputForComments = inputForComments.cloneNode(true);
+  inputForComments.parentNode.replaceChild(newInputForComments, inputForComments);
+
+  newInputForComments.addEventListener("keypress", (e) => {
+    if (e.key === "Enter" && newInputForComments.value.trim() !== "") {
       commentsContainer.innerHTML += `
         <div class="d-flex flex-column p-3 border rounded-4 mb-3">
           <div class="mb-3">
-            <p>
-              Лорем ипсум е едноставен модел на текст кој се користел во печатарската индустрија. Лорем ипсум бил индустриски стандард кој се користел како модел уште пред 1500 години, кога непознат печатар зел кутија со букви и ги сложил на таков начин за да направи примерок на книга.
-            </p>
+            <p>${newInputForComments.value}</p>
           </div>
           <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex flex-row align-items-center">
               <img src="images/Ellipse 25.png" alt="image" class="img-fluid me-3" />
-              <p class="fw-bold m-0 p-0">Име Презиме</p>
+              <p class="fw-bold m-0 p-0">${sessionStorage.getItem("username")}</p>
             </div>
-            <p class="opacity-50">00/00/00, 00:00</p>
+            <p class="opacity-50">${new Date().toLocaleString()}</p>
           </div>
         </div> `;
-      inputForComments.value = ""; // Clear the input after adding the comment
+      newInputForComments.value = ""; // Clear the input after adding the comment
+    }
+  });
+}
+
+// Function to update comment input visibility based on login status
+function updateCommentInputVisibility() {
+  const logedIn = sessionStorage.getItem("logedIn");
+  const currentUsername = sessionStorage.getItem("username");
+
+  document.querySelectorAll(".modal-input-container").forEach((container) => {
+    if (logedIn === "true") {
+      container.classList.remove("d-none");
+      const label = container.querySelector(".form-label span");
+      if (label) {
+        label.textContent = currentUsername;
+      }
+    } else {
+      container.classList.add("d-none");
     }
   });
 }
