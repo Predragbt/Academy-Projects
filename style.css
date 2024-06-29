@@ -345,8 +345,93 @@ header li a {
   text-align: left; /* Aligns text to the right */
 }
 
+/* carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+}
+
+.carousel-control-prev-icon {
+  background-image: url("images/ArrowLeft.png"); /* Path to your previous arrow image */
+}
+
+.carousel-control-next-icon {
+  background-image: url("images/ArrowRight.png"); /* Path to your next arrow image */
+}
+
+.carousel-inner {
+  height: 100%; /* Ensure the carousel inner takes the full height of the container */
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item .d-flex {
+  width: 100%;
+}
+
+.information-buttons {
+  margin: auto;
+}
+
+/* modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 75%;
+  height: 80%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.d-none {
+  display: none;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ 
 /* media queries */
 @media screen and (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    height: 90%;
+  }
+
   .home-card {
     width: 90%;
     margin: 0 auto;
@@ -371,6 +456,16 @@ header li a {
   .profile-card-icon-size {
     width: 105px;
     height: 85px;
+  }
+
+  .information-button-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .information-button-container button {
+    flex: 0 0 auto;
   }
 }
 

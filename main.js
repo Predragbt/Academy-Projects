@@ -2,6 +2,7 @@ import { initializeUserSession } from "./storage.js";
 import { setupVideoHandler } from "./videoHandler.js";
 import { renderInformationCards } from "./informationCards.js";
 
+
 const showSection = (sectionClass) => {
   // Store the current section in sessionStorage
   sessionStorage.setItem("currentSection", sectionClass);

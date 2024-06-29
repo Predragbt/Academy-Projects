@@ -219,14 +219,17 @@
         </div>
       </div>
 
-      <div class="container-fluid page-section p-5" data-section="information">
+      <div
+        class="container-fluid page-section p-md-5"
+        data-section="information"
+      >
         <h1
-          class="mb-5 px-5 text-white display-2 fw-bold text-center text-md-start opacity-75 text-shadow-example"
+          class="pt-4 pt-md-0 px-md-5 text-white display-2 fw-bold text-center text-md-start opacity-75 text-shadow-example"
         >
           Сè што треба да знаеш
         </h1>
-        <div class="px-5">
-          <div class="d-flex justify-content-around">
+        <div class="px-md-5 pls-help">
+          <div class="justify-content-around d-none d-sm-flex">
             <button
               type="button"
               class="btn btn-link text-decoration-none information-buttons fs-1"
@@ -251,7 +254,76 @@
             </button>
           </div>
 
-          <div class="d-flex flex-wrap justify-content-center mt-5">
+          <div id="carouselExample" class="carousel slide d-md-none mt-4">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="d-flex justify-content-center align-items-center w-100 h-100"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-link text-decoration-none information-buttons fs-1"
+                  >
+                    Видеа
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="d-flex justify-content-center align-items-center w-100 h-100"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-link text-decoration-none information-buttons fs-1"
+                    disabled
+                  >
+                    Статии
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="d-flex justify-content-center align-items-center w-100 h-100"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-link text-decoration-none information-buttons fs-1"
+                    disabled
+                  >
+                    Упатства
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div
+            class="information-button-container d-md-flex flex-md-wrap justify-content-md-center mt-5"
+          >
             <button
               data-category="false"
               id="most-popular"
@@ -343,7 +415,10 @@
             </button>
           </div>
 
-          <div id="information-cards-container" class="d-flex flex-lg-row flex-wrap justify-content-between pt-5 px-5"></div>
+          <div
+            id="information-cards-container"
+            class="d-flex flex-md-row flex-wrap justify-content-center justify-content-md-between pt-5"
+          ></div>
         </div>
       </div>
 
@@ -353,21 +428,6 @@
         data-section="discussions"
       >
         <h1 class="text-center my-4">Discussions</h1>
-        <div class="custom-card text-bg-dark">
-          <img
-            src="images/Rectangle 540.png"
-            class="custom-card-img"
-            alt="Card image"
-          />
-          <div class="custom-card-img-overlay custom-overlay-content">
-            <h5 class="custom-card-title">Наслов на видео</h5>
-            <p class="custom-card-text">
-              Лорем ипсум е едноставен модел на текст кој се користел во
-              печатарската индустрија. Лорем ипсум бил индустриски стандард...
-            </p>
-            <p class="custom-card-text"><small>Објавено на 28/05/23</small></p>
-          </div>
-        </div>
       </div>
 
       <div

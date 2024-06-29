@@ -97,7 +97,7 @@ export const informationCardsInfo = [
       "Лорем ипсум е едноставен модел на текст кој се користел во печатарската индустрија. Лорем ипсум бил индустриски стандард",
     date: "Објавено на 28/05/23",
     image: "images/Rectangle 540.png",
-    category: "newestNews",
+    category: "mostWatched",
   },
   {
     id: 9,
@@ -106,7 +106,7 @@ export const informationCardsInfo = [
       "Лорем ипсум е едноставен модел на текст кој се користел во печатарската индустрија. Лорем ипсум бил индустриски стандард",
     date: "Објавено на 28/05/23",
     image: "images/Rectangle 540.png",
-    category: "newestNews",
+    category: "mostWatched",
   },
   {
     id: 10,
