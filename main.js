@@ -1,6 +1,10 @@
 import { initializeUserSession } from "./storage.js";
 import { setupVideoHandler } from "./videoHandler.js";
-import { renderInformationCards } from "./informationCards.js";
+import {
+  renderInformationCards,
+  loadUserFilters,
+  clearFilters,
+} from "./informationCards.js";
 
 const showSection = (sectionClass) => {
   // Store the current section in sessionStorage
@@ -139,6 +143,10 @@ function initializeUI() {
     profileEmail.value = "";
     profileGender.value = "";
     profileYear.value = "";
+
+    // Clear filters and show all cards
+    clearFilters();
+    renderInformationCards(); // Render all cards in default view
   }
 
   // Retrieve and show the last viewed section
@@ -179,7 +187,8 @@ document
           showSection("home");
           initializeUI(); // Update UI after login
           clearForm();
-          // Display success message or redirect user
+          // Load user filters
+          loadUserFilters(username);
         })
         .catch((error) => {
           console.error("Error:", error);
@@ -198,6 +207,16 @@ logOutBtn.addEventListener("click", () => {
   initializeUI(); // Update UI after logout
 });
 
-initializeUserSession();
-setupVideoHandler();
-renderInformationCards();
+document.addEventListener("DOMContentLoaded", () => {
+  initializeUserSession();
+  setupVideoHandler();
+
+  const logedIn = sessionStorage.getItem("logedIn");
+  const username = sessionStorage.getItem("username");
+
+  if (logedIn === "true" && username) {
+    loadUserFilters(username);
+  } else {
+    renderInformationCards(); // Render without filters for not logged in user
+  }
+});

@@ -266,7 +266,7 @@ header li a {
     linear-gradient(to bottom, white, transparent);
   border: 2px solid transparent;
   z-index: 0; /* Ensure it is below the pseudo-element content */
-  opacity: 0.5; /* Set opacity for pseudo-element content */
+  transition: opacity 0.3s ease;
 }
 
 .information-filter-buttons::after {
@@ -424,7 +424,6 @@ header li a {
   object-fit: cover;
 }
 
- 
 /* media queries */
 @media screen and (max-width: 768px) {
   .modal-content {
