@@ -104,6 +104,12 @@ export function renderInformationCards(cards = informationCardsInfo) {
   cards.forEach((card) => {
     const modalId = `exampleModal${card.id}`;
 
+    // Check if the modal already exists
+    let modal = document.getElementById(modalId);
+    if (modal) {
+      modal.remove(); // Remove existing modal to prevent duplication
+    }
+
     informationCardsContainer.innerHTML += `
       <div class="custom-card text-bg-dark mb-5" data-card-id="${card.id}">
         <img src="${card.image}" class="custom-card-img h-100 w-100" alt="Card image" />
@@ -277,6 +283,9 @@ function loadComments(idForComments) {
   const commentsContainer = document.querySelector(
     `#modal-comments-container-${idForComments}`
   );
+
+  // Clear existing comments to prevent duplication
+  commentsContainer.innerHTML = "";
 
   const dynamicComments =
     JSON.parse(sessionStorage.getItem(`comments-${idForComments}`)) || [];
