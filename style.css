@@ -424,8 +424,25 @@ header li a {
   object-fit: cover;
 }
 
+.discussions-card-container {
+  column-count: 3;
+  gap: 10px;
+  padding: 30px;
+}
+
+.discussions-card-shadow {
+  box-shadow: 0px 4px 20px 0px #6b7983;
+}
+#discussions-add-btn {
+  cursor: pointer;
+}
+
 /* media queries */
 @media screen and (max-width: 768px) {
+  .discussions-card-container {
+    column-count: 1;
+  }
+
   .modal-content {
     width: 90%;
     height: 90%;

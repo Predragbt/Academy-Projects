@@ -1,4 +1,5 @@
 import { initializeUserSession } from "./storage.js";
+import { renderDiscussionCards } from "./discussionsCards.js";
 import { setupVideoHandler } from "./videoHandler.js";
 import {
   renderInformationCards,
@@ -72,6 +73,7 @@ if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
+const discussionsAddCard = document.getElementById("discussions-add-card");
 const navbarProfileLink = document.getElementById("navbar-profile-link");
 const profileName = document.getElementById("profile-username");
 const profileEmail = document.getElementById("profile-email");
@@ -124,6 +126,7 @@ function initializeUI() {
     logOutBtn.classList.remove("d-none");
     logedOutDiv.classList.add("d-none");
     navbarProfileLink.classList.remove("d-none");
+    discussionsAddCard.classList.remove("d-none");
 
     const username = sessionStorage.getItem("username");
     if (username) {
@@ -138,6 +141,7 @@ function initializeUI() {
     logOutBtn.classList.add("d-none");
     logedOutDiv.classList.remove("d-none");
     navbarProfileLink.classList.add("d-none");
+    discussionsAddCard.classList.add("d-none");
 
     profileName.value = "";
     profileEmail.value = "";
@@ -147,6 +151,7 @@ function initializeUI() {
     // Clear filters and show all cards
     clearFilters();
     renderInformationCards(); // Render all cards in default view
+    renderDiscussionCards();
   }
 
   // Retrieve and show the last viewed section
