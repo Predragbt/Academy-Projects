@@ -421,16 +421,19 @@
 
       <!-- Discussions -->
       <div class="container-fluid page-section p-0" data-section="discussions">
-        <div class="p-0 pt-md-5 pe-md-5 ps-md-5">
+        <div class="p-0 pt-md-5 pe-md-5 ps-md-5 pb-4">
           <h1
             class="mb-5 px-5 pt-4 pt-md-3 text-white display-2 fw-bold text-center text-md-start opacity-75 text-shadow-example"
           >
             Табла за дискусии
           </h1>
-      
+
           <div class="discussions-card-container overflow-hidden p-0 pt-5">
             <form id="discussions-add-card">
-              <div class="overflow-hidden p-3 mx-1 mx-3 px-4 mb-3">
+              <div
+                class="overflow-hidden p-3 mx-1 mx-3 px-4 mb-3 d-none"
+                id="discussions-add-card-input-container"
+              >
                 <input
                   id="discussions-add-card-input"
                   type="text"
@@ -444,7 +447,7 @@
                   <img
                     src="images/Ellipse 31.png"
                     alt="image"
-                    class="img-fluid me-3 h-100"
+                    class="img-fluid me-3 discussions-card-profile-img"
                   />
                   <p id="discussions-add-card-input-user"></p>
                 </label>

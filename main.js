@@ -1,5 +1,9 @@
 import { initializeUserSession } from "./storage.js";
-import { renderDiscussionCards } from "./discussionsCards.js";
+import {
+  renderDiscussionCards,
+  initializeDiscussions,
+  resetDisplayedCards
+} from "./discussionsCards.js";
 import { setupVideoHandler } from "./videoHandler.js";
 import {
   renderInformationCards,
@@ -73,6 +77,9 @@ if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
+const discussionCardsAddContainer = document.getElementById(
+  "discussions-add-card-input-container"
+);
 const discussionsUsername = document.getElementById(
   "discussions-add-card-input-user"
 );
@@ -130,6 +137,7 @@ function initializeUI() {
     logedOutDiv.classList.add("d-none");
     navbarProfileLink.classList.remove("d-none");
     discussionsAddCard.classList.remove("d-none");
+    discussionCardsAddContainer.classList.remove("d-none");
 
     const username = sessionStorage.getItem("username");
     discussionsUsername.innerText = username;
@@ -147,6 +155,7 @@ function initializeUI() {
     logedOutDiv.classList.remove("d-none");
     navbarProfileLink.classList.add("d-none");
     discussionsAddCard.classList.add("d-none");
+    discussionCardsAddContainer.classList.add("d-none");
 
     profileName.value = "";
     profileEmail.value = "";
@@ -156,8 +165,11 @@ function initializeUI() {
     // Clear filters and show all cards
     clearFilters();
     renderInformationCards(); // Render all cards in default view
-    renderDiscussionCards();
   }
+
+  // Reset displayed cards and re-render them
+  resetDisplayedCards();
+  renderDiscussionCards();
 
   // Retrieve and show the last viewed section
   const currentSection = sessionStorage.getItem("currentSection") || "home";
@@ -226,8 +238,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (logedIn === "true" && username) {
     loadUserFilters(username);
-    renderDiscussionCards();
   } else {
     renderInformationCards(); // Render without filters for not logged in user
   }
+
+  initializeDiscussions(); // Initialize the discussions functionality
 });
