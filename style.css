@@ -433,6 +433,7 @@ header li a {
 .discussions-card-shadow {
   box-shadow: 0px 4px 20px 0px #6b7983;
 }
+
 #discussions-add-btn {
   cursor: pointer;
 }

@@ -73,6 +73,9 @@ if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
+const discussionsUsername = document.getElementById(
+  "discussions-add-card-input-user"
+);
 const discussionsAddCard = document.getElementById("discussions-add-card");
 const navbarProfileLink = document.getElementById("navbar-profile-link");
 const profileName = document.getElementById("profile-username");
@@ -129,6 +132,8 @@ function initializeUI() {
     discussionsAddCard.classList.remove("d-none");
 
     const username = sessionStorage.getItem("username");
+    discussionsUsername.innerText = username;
+
     if (username) {
       updateProfileInputs(username);
       // Add event listeners to profile inputs to save changes
