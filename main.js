@@ -221,6 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (logedIn === "true" && username) {
     loadUserFilters(username);
+    renderDiscussionCards();
   } else {
     renderInformationCards(); // Render without filters for not logged in user
   }

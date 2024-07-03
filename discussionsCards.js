@@ -1,12 +1,10 @@
 import { discussionCardsInfo } from "./storage.js";
 
-const discussionCardsContainer = document.querySelector(
-  ".discussions-card-container "
-);
+const discussionCardsContainerCards = document.getElementById("discussions-card-container-cards");
 
 export function renderDiscussionCards() {
   discussionCardsInfo.forEach((card) => {
-    discussionCardsContainer.innerHTML += `<div>
+    discussionCardsContainerCards.innerHTML += `
         <div
           class="card p-3 h-100 overflow-hidden mb-4 mx-3 px-4 mb-3 rounded-4 border-0 discussions-card-shadow" 
           style="background-color: ${card.color};"
@@ -33,7 +31,6 @@ export function renderDiscussionCards() {
             <span class="me-5"><img src="images/+.png" /></span><span class="me-5">5 Коментари</span
             ><span>84 Реакции</span>
           </div>
-        </div>
         </div>`;
   });
 }
