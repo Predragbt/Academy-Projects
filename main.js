@@ -9,6 +9,7 @@ import {
   renderInformationCards,
   loadUserFilters,
   clearFilters,
+  updateBadgeVisibility // Import the function
 } from "./informationCards.js";
 
 const showSection = (sectionClass) => {
@@ -148,6 +149,9 @@ function initializeUI() {
       profileEmail.addEventListener("input", () => saveProfileInputs(username));
       profileYear.addEventListener("input", () => saveProfileInputs(username));
     }
+
+    // Update badge visibility based on video click count
+    updateBadgeVisibility();
   } else {
     // User is logged out
     logedInDiv.classList.add("d-none");

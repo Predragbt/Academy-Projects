@@ -1,19 +1,24 @@
 import { discussionCardsInfo } from "./storage.js";
 
 const discussionsAddCardForm = document.getElementById("discussions-add-card");
-const discussionsAddCardInput = document.getElementById("discussions-add-card-input");
-const discussionCardsContainerCards = document.getElementById("discussions-card-container-cards");
+const discussionsAddCardInput = document.getElementById(
+  "discussions-add-card-input"
+);
+const discussionCardsContainerCards = document.getElementById(
+  "discussions-card-container-cards"
+);
 const discussionsAddBtn = document.getElementById("discussions-add-btn");
 
-const staticCards = discussionCardsInfo.map(card => ({
+const staticCards = discussionCardsInfo.map((card) => ({
   ...card,
-  username: 'Име Презиме',
-  date: '00/00/00, 00:00',
+  username: "Име Презиме",
+  date: "00/00/00, 00:00",
   comments: 5,
   reactions: 84,
 }));
 
-let discussionCards = JSON.parse(sessionStorage.getItem("discussionCards")) || [];
+let discussionCards =
+  JSON.parse(sessionStorage.getItem("discussionCards")) || [];
 
 const colors = ["#764FF0", "#4B7CF3", "#8F39EC", "#83EAB1"];
 let colorIndex = discussionCards.length % colors.length;
@@ -24,8 +29,11 @@ let cardsDisplayed = 0;
 const cardsPerLoad = 8;
 
 export function renderDiscussionCards() {
-  const cardsToShow = mergedCards.slice(cardsDisplayed, cardsDisplayed + cardsPerLoad);
-  cardsToShow.forEach(card => {
+  const cardsToShow = mergedCards.slice(
+    cardsDisplayed,
+    cardsDisplayed + cardsPerLoad
+  );
+  cardsToShow.forEach((card) => {
     discussionCardsContainerCards.innerHTML += `
       <div
         class="card p-3 h-100 overflow-hidden mb-4 mx-3 px-4 mb-3 rounded-4 border-0 discussions-card-shadow" 

@@ -2,7 +2,6 @@ import { informationCardsInfo } from "./storage.js";
 
 const logOutBtn = document.getElementById("log-out-btn");
 const logedIn = sessionStorage.getItem("logedIn");
-
 const username = sessionStorage.getItem("username");
 
 const users = JSON.parse(sessionStorage.getItem("users")) || [];
@@ -193,6 +192,7 @@ export function renderInformationCards(cards = informationCardsInfo) {
   document.querySelectorAll(".btn-video").forEach((button) => {
     button.addEventListener("click", (event) => {
       event.stopPropagation();
+      incrementVideoClickCount(); // Increment the count when video is clicked
       const container = event.target.closest(".video-container");
       playVideo(container);
     });
@@ -312,3 +312,40 @@ function updateCommentInputVisibility() {
     }
   });
 }
+
+function incrementVideoClickCount() {
+  const username = sessionStorage.getItem("username");
+  const videoCountKey = `videosClicked-${username}`;
+  let videosClicked = JSON.parse(sessionStorage.getItem(videoCountKey)) || 0;
+  videosClicked++;
+  sessionStorage.setItem(videoCountKey, JSON.stringify(videosClicked));
+  console.log(`Videos clicked for ${username}: ${videosClicked}`);
+  updateBadgeVisibility(); // Update badge visibility after incrementing count
+}
+
+function getVideoClickCount(username) {
+  const videoCountKey = `videosClicked-${username}`;
+  return JSON.parse(sessionStorage.getItem(videoCountKey)) || 0;
+}
+
+function updateBadgeVisibility() {
+  const username = sessionStorage.getItem("username");
+  const videosClicked = getVideoClickCount(username);
+
+  const fiveVideosBadge = document.getElementById("five-videos-clicked");
+  const tenVideosBadge = document.getElementById("10-videos-clicked");
+
+  if (videosClicked >= 5) {
+    fiveVideosBadge.classList.remove("d-none");
+  } else {
+    fiveVideosBadge.classList.add("d-none");
+  }
+
+  if (videosClicked >= 10) {
+    tenVideosBadge.classList.remove("d-none");
+  } else {
+    tenVideosBadge.classList.add("d-none");
+  }
+}
+
+export { getVideoClickCount, updateBadgeVisibility };
