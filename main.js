@@ -2,7 +2,8 @@ import { initializeUserSession } from "./storage.js";
 import {
   renderDiscussionCards,
   initializeDiscussions,
-  resetDisplayedCards
+  resetDisplayedCards,
+  updateCommentBadgeVisibility
 } from "./discussionsCards.js";
 import { setupVideoHandler } from "./videoHandler.js";
 import {
@@ -94,6 +95,7 @@ const profileYear = document.getElementById("profile-year");
 const logedInDiv = document.getElementById("loged-in-div");
 const logedOutDiv = document.getElementById("loged-out-div");
 const logOutBtn = document.getElementById("log-out-btn");
+const commentAddedBadge = document.getElementById("comment-added");
 
 // Function to update profile inputs based on username
 function updateProfileInputs(username) {
@@ -152,6 +154,10 @@ function initializeUI() {
 
     // Update badge visibility based on video click count
     updateBadgeVisibility();
+
+    // Update comment badge visibility
+    updateCommentBadgeVisibility();
+
   } else {
     // User is logged out
     logedInDiv.classList.add("d-none");

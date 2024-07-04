@@ -319,7 +319,6 @@ function incrementVideoClickCount() {
   let videosClicked = JSON.parse(sessionStorage.getItem(videoCountKey)) || 0;
   videosClicked++;
   sessionStorage.setItem(videoCountKey, JSON.stringify(videosClicked));
-  console.log(`Videos clicked for ${username}: ${videosClicked}`);
   updateBadgeVisibility(); // Update badge visibility after incrementing count
 }
 

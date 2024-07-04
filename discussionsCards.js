@@ -8,6 +8,7 @@ const discussionCardsContainerCards = document.getElementById(
   "discussions-card-container-cards"
 );
 const discussionsAddBtn = document.getElementById("discussions-add-btn");
+const commentAddedBadge = document.getElementById("comment-added");
 
 const staticCards = discussionCardsInfo.map((card) => ({
   ...card,
@@ -29,6 +30,8 @@ let cardsDisplayed = 0;
 const cardsPerLoad = 8;
 
 export function renderDiscussionCards() {
+  const username = sessionStorage.getItem("username");
+
   const cardsToShow = mergedCards.slice(
     cardsDisplayed,
     cardsDisplayed + cardsPerLoad
@@ -99,6 +102,9 @@ export function initializeDiscussions() {
     renderDiscussionCards();
 
     discussionsAddCardInput.value = ""; // Clear the input
+
+    // Update the badge visibility
+    updateCommentBadgeVisibility();
   });
 
   // Add click event listener to the "load more" button
@@ -108,6 +114,7 @@ export function initializeDiscussions() {
 
   document.addEventListener("DOMContentLoaded", () => {
     renderDiscussionCards();
+    updateCommentBadgeVisibility();
   });
 }
 
@@ -115,4 +122,17 @@ export function resetDisplayedCards() {
   cardsDisplayed = 0; // Reset the displayed count
   discussionCardsContainerCards.innerHTML = ""; // Clear the existing cards
   mergedCards = [...discussionCards, ...staticCards]; // Reset merged cards
+}
+
+export function updateCommentBadgeVisibility() {
+  const username = sessionStorage.getItem("username");
+  const userDiscussionCards = discussionCards.filter(card => card.username === username);
+  const hasUserCards = userDiscussionCards.length > 0;
+  const commentAddedBadge = document.getElementById("comment-added");
+
+  if (hasUserCards) {
+    commentAddedBadge.classList.remove("d-none");
+  } else {
+    commentAddedBadge.classList.add("d-none");
+  }
 }
