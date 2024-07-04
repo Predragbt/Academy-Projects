@@ -3,14 +3,14 @@ import {
   renderDiscussionCards,
   initializeDiscussions,
   resetDisplayedCards,
-  updateCommentBadgeVisibility
+  updateCommentBadgeVisibility,
 } from "./discussionsCards.js";
 import { setupVideoHandler } from "./videoHandler.js";
 import {
   renderInformationCards,
   loadUserFilters,
   clearFilters,
-  updateBadgeVisibility // Import the function
+  updateBadgeVisibility, // Import the function
 } from "./informationCards.js";
 
 const showSection = (sectionClass) => {
@@ -130,6 +130,19 @@ function saveProfileInputs(username) {
   }
 }
 
+const formProfileNavigationBtn = document.getElementById(
+  "form-profile-navigation-btn"
+);
+
+function updateProfileNavigationLink() {
+  const loggedIn = sessionStorage.getItem("logedIn") === "true";
+  if (loggedIn) {
+    formProfileNavigationBtn.href = "#profile";
+  } else {
+    formProfileNavigationBtn.href = "#log-in";
+  }
+}
+
 function initializeUI() {
   const logedIn = sessionStorage.getItem("logedIn");
 
@@ -157,7 +170,6 @@ function initializeUI() {
 
     // Update comment badge visibility
     updateCommentBadgeVisibility();
-
   } else {
     // User is logged out
     logedInDiv.classList.add("d-none");
@@ -184,6 +196,8 @@ function initializeUI() {
   // Retrieve and show the last viewed section
   const currentSection = sessionStorage.getItem("currentSection") || "home";
   showSection(currentSection);
+
+  updateProfileNavigationLink();
 }
 
 // Initialize UI on page load
