@@ -136,11 +136,9 @@ const formProfileNavigationBtn = document.getElementById(
 
 function updateProfileNavigationLink() {
   const loggedIn = sessionStorage.getItem("logedIn") === "true";
-  if (loggedIn) {
-    formProfileNavigationBtn.href = "#profile";
-  } else {
-    formProfileNavigationBtn.href = "#log-in";
-  }
+  loggedIn
+    ? (formProfileNavigationBtn.href = "#profile")
+    : (formProfileNavigationBtn.href = "#log-in");
 }
 
 function initializeUI() {
