@@ -37,8 +37,13 @@ footer {
   border-top: 1px solid grey;
 }
 
+/* Your existing CSS */
 header {
-  border-bottom: 1px solid #c0fcdc;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  border-bottom: 1px solid #dcffed;
 }
 
 header nav {
@@ -49,8 +54,13 @@ header nav {
     ),
     linear-gradient(to bottom, #4b7cf3, #83eab1);
   color: #42356b;
-  position: relative;
   overflow: hidden;
+}
+
+header nav.transparent {
+  background: rgba(255, 255, 255, 0) !important;
+  backdrop-filter: blur(30px);
+  lighting-color: white;
 }
 
 .nav-links-text {

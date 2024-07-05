@@ -266,3 +266,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initializeDiscussions(); // Initialize the discussions functionality
 });
+
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('header nav');
+  if (window.scrollY > 0) {
+    header.classList.add('transparent');
+  } else {
+    header.classList.remove('transparent');
+  }
+});
