@@ -73,6 +73,14 @@ header nav {
   color: #8e38eb;
 }
 
+.log-out-hover-effect:hover {
+  color: white;
+}
+
+.log-out-hover-effect:active {
+  color: #8e38eb;
+}
+
 .bg-image {
   background-image: url("/images/maximalfocus-VT4rx775FT4-unsplash\ 1.jpg"); /* Path to your image */
   background-size: cover; /* Ensures the image covers the entire background */
@@ -140,14 +148,24 @@ header nav {
   border: 3px solid transparent;
   opacity: 85% !important;
   z-index: 0;
-  box-shadow: 0 10px 20px -10px gray
+  box-shadow: 0 10px 20px -10px gray;
 }
 
 .contact-boxes-border .box-content {
   background-color: transparent !important;
 }
 
-.contact-boxes-border .box-content {
+#discussions-add-card-input::placeholder {
+  font-size: 20px;
+}
+
+#discussions-add-card-input-container {
+  border-radius: 20px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(to bottom, #c9f5dd, #c9f5dd),
+    linear-gradient(to bottom, white, #c9f5dd 50%);
+  border: 3px solid transparent;
 }
 
 .contact-link-button {
@@ -253,7 +271,7 @@ header nav {
   background-origin: border-box !important;
   background-clip: padding-box, border-box !important;
   background-image: linear-gradient(to bottom, #cfe6f7, #b5d2ef),
-    linear-gradient(to bottom, white 40%, #b5d2ef) !important;
+    linear-gradient(to bottom, white, #9aa7b4 50%) !important;
   border: 3px solid transparent !important;
 }
 
@@ -490,8 +508,8 @@ header nav {
 
 /* discussions */
 .discussions-card-profile-img {
-  height: 55px;
-  width: 55px; /* Ensure consistent width */
+  height: 50px;
+  width: 50px; /* Ensure consistent width */
 }
 .discussions-card-container {
   column-count: 3;
