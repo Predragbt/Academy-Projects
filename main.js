@@ -156,12 +156,8 @@ function initializeUI() {
     const username = sessionStorage.getItem("username");
     discussionsUsername.innerText = username;
 
-    if (username) {
-      updateProfileInputs(username);
-      // Add event listeners to profile inputs to save changes
-      profileEmail.addEventListener("input", () => saveProfileInputs(username));
-      profileYear.addEventListener("input", () => saveProfileInputs(username));
-    }
+    // Update profile inputs based on stored session data
+    updateProfileInputs(username);
 
     // Update badge visibility based on video click count
     updateBadgeVisibility();
@@ -198,60 +194,69 @@ function initializeUI() {
   updateProfileNavigationLink();
 }
 
+// Function to show button when input is focused and handle hiding it after interaction
+function showButtonOnFocus(inputId, buttonId) {
+  const input = document.getElementById(inputId);
+  const button = document.getElementById(buttonId);
+
+  if (input && button) {
+    input.addEventListener("focus", () => {
+      button.classList.remove("d-none");
+    });
+
+    // Instead of blur, use a click event on the button to hide it
+    button.addEventListener("click", () => {
+      // Perform your save action here
+      const username = sessionStorage.getItem("username");
+      if (username) {
+        saveProfileInputs(username);
+        alert("Profile updated successfully!");
+      } else {
+        console.error("User data not found in sessionStorage");
+      }
+
+      // Hide the button after a short delay to allow the click action
+      setTimeout(() => {
+        button.classList.add("d-none");
+      }, 100);
+    });
+
+    // Optionally, you can hide the button when the user presses Enter in the input field
+    input.addEventListener("keypress", (event) => {
+      if (event.key === "Enter") {
+        button.click();
+      }
+    });
+  }
+}
+
 // Initialize UI on page load
 initializeUI();
 
-// Handle form submission (login)
-document
-  .getElementById("form-login-button")
-  .addEventListener("click", (event) => {
-    event.preventDefault();
+// Call the function for each input and button pair
+document.addEventListener("DOMContentLoaded", () => {
+  showButtonOnFocus("profile-username", "change-username-btn");
+  showButtonOnFocus("profile-email", "change-email-btn");
+  showButtonOnFocus("profile-password", "change-password-btn");
+  showButtonOnFocus("profile-year", "change-year-btn");
+  showButtonOnFocus("profile-gender", "change-gender-btn");
 
-    const username = document.getElementById("form-login-username").value;
-    const password = document.getElementById("form-login-password").value;
+  // Add event listener for change-all button
+  document.getElementById("change-all-btn-small").addEventListener("click", () => {
+    const username = sessionStorage.getItem("username");
+    if (username) {
+      saveProfileInputs(username);
+      alert("All profile details updated successfully!");
 
-    if (username && password) {
-      fetch("http://127.0.0.1:5000/api/authentication", {
-        method: "POST",
-        body: JSON.stringify({ username, password }),
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-        },
-      })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-          return response.json();
-        })
-        .then((data) => {
-          sessionStorage.setItem("logedIn", "true");
-          sessionStorage.setItem("username", username);
-
-          showSection("home");
-          initializeUI(); // Update UI after login
-          clearForm();
-          // Load user filters
-          loadUserFilters(username);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          alert("Login failed. Please check your credentials.");
-        });
+      // Hide all individual buttons
+      document.querySelectorAll(".input-button-text").forEach(button => {
+        button.classList.add("d-none");
+      });
     } else {
-      alert("Please fill in both username and password fields.");
+      console.error("User data not found in sessionStorage");
     }
   });
 
-// Handle logout
-logOutBtn.addEventListener("click", () => {
-  sessionStorage.setItem("logedIn", "false");
-  sessionStorage.removeItem("username");
-  showSection("home");
-  initializeUI(); // Update UI after logout
-});
-
-document.addEventListener("DOMContentLoaded", () => {
   initializeUserSession();
   setupVideoHandler();
 
@@ -267,11 +272,59 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeDiscussions(); // Initialize the discussions functionality
 });
 
-window.addEventListener('scroll', function() {
-  const header = document.querySelector('header nav');
-  if (window.scrollY > 0) {
-    header.classList.add('transparent');
+// Handle form submission (login)
+document.getElementById("form-login-button").addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const username = document.getElementById("form-login-username").value;
+  const password = document.getElementById("form-login-password").value;
+
+  if (username && password) {
+    fetch("http://127.0.0.1:5000/api/authentication", {
+      method: "POST",
+      body: JSON.stringify({ username, password }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        sessionStorage.setItem("logedIn", "true");
+        sessionStorage.setItem("username", username);
+
+        showSection("home");
+        initializeUI(); // Update UI after login
+        clearForm();
+        // Load user filters
+        loadUserFilters(username);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Login failed. Please check your credentials.");
+      });
   } else {
-    header.classList.remove('transparent');
+    alert("Please fill in both username and password fields.");
+  }
+});
+
+// Handle logout
+logOutBtn.addEventListener("click", () => {
+  sessionStorage.setItem("logedIn", "false");
+  sessionStorage.removeItem("username");
+  showSection("home");
+  initializeUI(); // Update UI after logout
+});
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header nav");
+  if (window.scrollY > 0) {
+    header.classList.add("transparent");
+  } else {
+    header.classList.remove("transparent");
   }
 });

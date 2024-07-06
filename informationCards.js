@@ -121,7 +121,7 @@ export function renderInformationCards(cards = informationCardsInfo) {
     `;
 
     const modalHTML = `
-      <div id="${modalId}" class="modal">
+      <div id="${modalId}" class="modal" style="z-index: 11;">
         <div class="modal-content d-flex flex-column-reverse flex-md-row">
           <div class="overflow-y-scroll overflow-visible me-md-5 mt-4 mt-md-0">
             <div><h1 class="fw-bold mb-4">${card.title}</h1></div>  

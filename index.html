@@ -93,7 +93,10 @@
                   </a>
                 </div>
 
-                <div class="log-in-div d-none log-out-hover-effect" id="log-out-btn">
+                <div
+                  class="log-in-div d-none log-out-hover-effect"
+                  id="log-out-btn"
+                >
                   <a
                     class="btn border px-3 py-1 m-0 me--md-3 text-reset text-decoration-none"
                     >Log out</a
@@ -605,51 +608,119 @@
 
           <div class="d-flex flex-column flex-md-row text-white">
             <div class="d-flex flex-column me-md-5">
-              <p class="fw-bold mb-2">Име и презиме / Корисничко име</p>
-              <input
-                id="profile-username"
-                type="text"
-                class="form-control bg-transparent border-0 border-bottom text-white rounded-0 mb-4 profile-input-field"
-                placeholder="Username"
-                disabled
-              />
+              <p class="fw-bold mb-3">Име и презиме / Корисничко име</p>
 
-              <p class="fw-bold mb-2">Емаил адреса</p>
-              <input
-                id="profile-email"
-                type="text"
-                class="form-control bg-transparent border-0 border-bottom text-white rounded-0 mb-4 profile-input-field"
-                placeholder="Email address"
-              />
+              <div class="input-group mb-5">
+                <input
+                  id="profile-username"
+                  type="text"
+                  class="form-control bg-transparent text-white border-0 input-group-text"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="change-username-btn"
+                  disabled
+                  autocomplete="off"
+                />
+                <button
+                  class="btn input-button-text text-white d-none"
+                  id="change-username-btn"
+                >
+                  Промени
+                </button>
+              </div>
 
-              <p class="fw-bold mb-2">Лозинка</p>
-              <input
-                type="text"
-                class="form-control bg-transparent border-0 border-bottom text-white rounded-0 mb-4 profile-input-field"
-                placeholder="* * * * * * *"
-                disabled
-              />
+              <p class="fw-bold mb-3">Емаил адреса</p>
+
+              <div class="input-group mb-5">
+                <input
+                  id="profile-email"
+                  type="text"
+                  class="form-control bg-transparent text-white border-0 input-group-text"
+                  placeholder="Email address"
+                  aria-label="Email address"
+                  aria-describedby="change-email-btn"
+                  autocomplete="off"
+                />
+                <button
+                  class="btn input-button-text text-white d-none"
+                  id="change-email-btn"
+                >
+                  Промени
+                </button>
+              </div>
+
+              <p class="fw-bold mb-3">Лозинка</p>
+
+              <div class="input-group mb-5">
+                <input
+                  id="profile-password"
+                  type="text"
+                  class="form-control bg-transparent text-white border-0 input-group-text"
+                  placeholder="* * * * * * *"
+                  aria-label="* * * * * * *"
+                  aria-describedby="change-password-btn"
+                  disabled
+                  autocomplete="off"
+                />
+                <button
+                  class="btn input-button-text text-white d-none"
+                  id="change-password-btn"
+                >
+                  Промени
+                </button>
+              </div>
             </div>
 
             <div class="d-flex flex-column me-md-5">
-              <p class="fw-bold mb-2">Година на раѓање</p>
-              <input
-                id="profile-year"
-                type="text"
-                class="form-control bg-transparent border-0 border-bottom text-white rounded-0 mb-4 profile-input-field"
-                placeholder="/"
-              />
+              <p class="fw-bold mb-3">Година на раѓање</p>
 
-              <p class="fw-bold mb-2">Пол</p>
-              <input
-                id="profile-gender"
-                type="text"
-                class="form-control bg-transparent border-0 border-bottom text-white rounded-0 mb-4 profile-input-field"
-                placeholder="/"
-                disabled
-              />
+              <div class="input-group mb-5">
+                <input
+                  id="profile-year"
+                  type="text"
+                  class="form-control bg-transparent text-white border-0 input-group-text"
+                  placeholder="/"
+                  aria-label="/"
+                  aria-describedby="change-year-btn"
+                  autocomplete="off"
+                />
+                <button
+                  class="btn input-button-text text-white d-none"
+                  id="change-year-btn"
+                >
+                  Промени
+                </button>
+              </div>
+
+              <p class="fw-bold mb-3">Пол</p>
+
+              <div class="input-group mb-5">
+                <input
+                  id="profile-gender"
+                  type="text"
+                  class="form-control bg-transparent text-white border-0 input-group-text"
+                  placeholder="/"
+                  aria-label="/"
+                  aria-describedby="change-gender-btn"
+                  disabled
+                  autocomplete="off"
+                />
+                <button
+                  class="btn input-button-text text-white d-none"
+                  id="change-gender-btn"
+                >
+                  Промени
+                </button>
+              </div>
             </div>
           </div>
+
+          <button
+            class="btn input-button-text-small text-white d-block d-md-none w-50 align-self-center py-2 px-4"
+            id="change-all-btn-small"
+          >
+            Промени
+          </button>
         </div>
 
         <div
@@ -834,7 +905,9 @@
                 Придружи ни се
               </h1>
 
-              <button class="p-2 px-3 p-md-3 log-in-input mb-4 text-start bg-white">
+              <button
+                class="p-2 px-3 p-md-3 log-in-input mb-4 text-start bg-white"
+              >
                 <img
                   src="images/logos_google-icon.png"
                   alt="Google Logo"
@@ -843,7 +916,9 @@
                 <span class="fw-bold ms-4">Продолжи со Google</span>
               </button>
 
-              <button class="p-2 px-3 p-md-3 log-in-input mb-4 text-start bg-white">
+              <button
+                class="p-2 px-3 p-md-3 log-in-input mb-4 text-start bg-white"
+              >
                 <img
                   src="images/logInApple.png"
                   alt="Apple Logo"
@@ -852,7 +927,9 @@
                 <span class="fw-bold ms-4">Продолжи со Аpple</span>
               </button>
 
-              <button class="p-2 px-3 p-md-3 log-in-input mb-4 text-start bg-white">
+              <button
+                class="p-2 px-3 p-md-3 log-in-input mb-4 text-start bg-white"
+              >
                 <img
                   src="images/logInTikTok.png"
                   alt="TikTok Logo"
