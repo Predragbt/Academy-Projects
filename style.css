@@ -488,24 +488,26 @@ header nav.transparent {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 35%; /* Ensures the content takes up 35% of the card height */
+  height: 33%; /* Ensures the content takes up 35% of the card height */
   background: rgba(255, 255, 255, 0.7); /* White background with opacity */
   border-radius: 0 0 15px 15px; /* Match the card border radius */
   overflow: hidden;
 }
 
 .custom-card-title {
-  color: #463a6d; /* Adjust color based on your design */
+  color: #463a6d;
+}
+
+.custom-card-text-description {
+  margin-bottom: 30px;
 }
 
 .custom-card-text {
-  color: #463a6d; /* Adjust color based on your design */
-
-  max-height: 60%; /* Ensures the text container uses the available space */
+  color: #463a6d;
 }
 
 .custom-card-text small {
-  color: #463a6d; /* Adjust color based on your design */
+  color: #463a6d;
 }
 
 .custom-card-text-date {
