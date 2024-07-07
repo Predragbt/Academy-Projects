@@ -624,6 +624,68 @@ header nav.transparent {
   padding-bottom: 60px; /* Adjust based on the height of your button to prevent overlap */
 }
 
+/* Modal styles */
+.confirm-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 12; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.2); /* Black w/ opacity */
+}
+
+.confirm-modal-content {
+  background: linear-gradient(to bottom, #9946f3, #42356b);
+  opacity: 0.8;
+  margin: 15% auto; /* 15% from the top and centered */
+  width: 100%; /* Could be more or less, depending on screen size */
+  max-width: 900px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.confirm-modal-content h4 {
+  font-weight: 900;
+  color: #fff;
+}
+
+.confirm-modal-content p {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.confirm-modal-content button {
+  color: #42356b; /* Solid text color */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(to bottom, #e9e3fc, #e9e3fc),
+    linear-gradient(to bottom, white, #e9e3fc 30%);
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.confirm-modal-content button:hover {
+  color: #42356b; /* Solid text color */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(to bottom, #cbbbff, #cbbbff),
+    linear-gradient(to bottom, white, #cbbbff 30%);
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.confirm-modal-content button:active {
+  color: #42356b !important; /* Solid text color */
+  background-origin: border-box !important;
+  background-clip: padding-box, border-box !important;
+  background-image: linear-gradient(to bottom, #e9e3fc, #e9e3fc),
+    linear-gradient(to bottom, white, #e9e3fc 30%) !important;
+  border: 3px solid transparent !important;
+  cursor: pointer !important;
+}
+
 /* media queries */
 @media screen and (max-width: 768px) {
   .input-button-text {

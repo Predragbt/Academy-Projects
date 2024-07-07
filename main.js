@@ -242,20 +242,22 @@ document.addEventListener("DOMContentLoaded", () => {
   showButtonOnFocus("profile-gender", "change-gender-btn");
 
   // Add event listener for change-all button
-  document.getElementById("change-all-btn-small").addEventListener("click", () => {
-    const username = sessionStorage.getItem("username");
-    if (username) {
-      saveProfileInputs(username);
-      alert("All profile details updated successfully!");
+  document
+    .getElementById("change-all-btn-small")
+    .addEventListener("click", () => {
+      const username = sessionStorage.getItem("username");
+      if (username) {
+        saveProfileInputs(username);
+        alert("All profile details updated successfully!");
 
-      // Hide all individual buttons
-      document.querySelectorAll(".input-button-text").forEach(button => {
-        button.classList.add("d-none");
-      });
-    } else {
-      console.error("User data not found in sessionStorage");
-    }
-  });
+        // Hide all individual buttons
+        document.querySelectorAll(".input-button-text").forEach((button) => {
+          button.classList.add("d-none");
+        });
+      } else {
+        console.error("User data not found in sessionStorage");
+      }
+    });
 
   initializeUserSession();
   setupVideoHandler();
@@ -273,9 +275,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Handle form submission (login)
-document.getElementById("form-login-button").addEventListener("click", (event) => {
-  event.preventDefault();
+document
+  .getElementById("form-login-button")
+  .addEventListener("click", (event) => {
+    event.preventDefault();
+    document.getElementById("login-confirm-modal").style.display = "block";
+  });
 
+// Handle the confirmation button click
+document
+  .getElementById("form-login-button")
+  .addEventListener("click", (event) => {
+    event.preventDefault();
+    document.getElementById("login-confirm-modal").style.display = "block";
+  });
+
+document.getElementById("confirm-login-btn").addEventListener("click", () => {
+  // Get username and password values
   const username = document.getElementById("form-login-username").value;
   const password = document.getElementById("form-login-password").value;
 
@@ -302,13 +318,35 @@ document.getElementById("form-login-button").addEventListener("click", (event) =
         clearForm();
         // Load user filters
         loadUserFilters(username);
+        // Hide the modal
+        document.getElementById("login-confirm-modal").style.display = "none";
       })
       .catch((error) => {
         console.error("Error:", error);
         alert("Login failed. Please check your credentials.");
+        // Hide the modal
+        document.getElementById("login-confirm-modal").style.display = "none";
       });
   } else {
     alert("Please fill in both username and password fields.");
+    // Hide the modal
+    document.getElementById("login-confirm-modal").style.display = "none";
+  }
+});
+
+// Close the modal if the user clicks outside of it
+window.addEventListener("click", (event) => {
+  const modal = document.getElementById("login-confirm-modal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+// Close the modal if the user clicks outside of it
+window.addEventListener("click", (event) => {
+  const modal = document.getElementById("login-confirm-modal");
+  if (event.target === modal) {
+    modal.style.display = "none";
   }
 });
 
