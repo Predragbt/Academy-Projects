@@ -460,8 +460,24 @@ header nav.transparent {
 .custom-card {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   border-radius: 15px; /* Adjust based on your design */
   height: 100%; /* Ensures the card takes up the available space */
+}
+
+.custom-card-img-overlay-play {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 64px;
+  max-height: 64px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.custom-card:hover .custom-card-img-overlay-play {
+  opacity: 1;
 }
 
 .custom-card-img {
@@ -484,12 +500,8 @@ header nav.transparent {
 
 .custom-card-text {
   color: #463a6d; /* Adjust color based on your design */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  flex: 1;
-  max-height: 70%; /* Ensures the text container uses the available space */
+
+  max-height: 60%; /* Ensures the text container uses the available space */
 }
 
 .custom-card-text small {
@@ -688,6 +700,10 @@ header nav.transparent {
 
 /* media queries */
 @media screen and (max-width: 768px) {
+  .contact-link-button {
+    width: 100%;
+  }
+
   .input-button-text {
     display: none;
   }

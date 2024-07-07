@@ -111,10 +111,11 @@ export function renderInformationCards(cards = informationCardsInfo) {
 
     informationCardsContainer.innerHTML += `
       <div class="custom-card text-bg-dark mb-5" data-card-id="${card.id}">
-        <img src="${card.image}" class="custom-card-img h-100 w-100" alt="Card image" />
+        <img src="${card.image}" class="h-100 w-100" alt="Card image" />
+        <img src="images/play icon.png" class="custom-card-img-overlay-play" alt="Play icon" />
         <div class="custom-card-img-overlay custom-overlay-content py-3 px-4">
           <h5 class="custom-card-title fw-bold mb-3">${card.title}</h5>
-          <p class="custom-card-text mb-1 fs-6">${card.content}</p>
+          <p class="custom-card-text mb-2 fs-6">${card.content}</p>
           <p class="custom-card-text custom-card-text-date opacity-50"><small>${card.date}</small></p>
         </div>
       </div>
