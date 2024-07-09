@@ -52,7 +52,7 @@ export function renderDiscussionCards() {
         </div>
         <input
           type="text"
-          class="form-control mb-1 mt-4 rounded-0 bg-transparent border-0 border-bottom opacity-75"
+          class="form-control mb-1 mt-4 rounded-0 bg-transparent border-0 border-bottom border-dark opacity-75"
           placeholder="Пиши коментар..."
           disabled
         />

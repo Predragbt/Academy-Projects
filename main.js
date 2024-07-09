@@ -10,81 +10,63 @@ import {
   renderInformationCards,
   loadUserFilters,
   clearFilters,
-  updateBadgeVisibility, // Import the function
+  updateBadgeVisibility,
 } from "./informationCards.js";
 
 const showSection = (sectionClass) => {
-  // Store the current section in sessionStorage
   sessionStorage.setItem("currentSection", sectionClass);
 
   const video = document.querySelector(".bg-video");
   const bgImage = document.querySelector(".bg-image");
 
-  // Hide all sections
   document.querySelectorAll(".page-section").forEach((section) => {
     section.style.display = "none";
   });
 
-  // Show the target section
   const targetSection = document.querySelector(
     `.page-section[data-section="${sectionClass}"]`
   );
   if (targetSection) {
     targetSection.style.display = "block";
   } else {
-    document.querySelector('.page-section[data-section="home"]').style.display =
-      "block";
+    document.querySelector('.page-section[data-section="home"]').style.display = "block";
   }
 
-  // Handle video logic based on the section
   if (sectionClass !== "home" && video) {
-    // Pause and hide the video if it's playing
     if (!video.paused) {
       video.pause();
     }
     video.style.display = "none";
-
-    // Restore the background image
-    bgImage.style.backgroundImage =
-      'url("/images/maximalfocus-VT4rx775FT4-unsplash 1.jpg")';
+    bgImage.style.backgroundImage = 'url("/images/maximalfocus-VT4rx775FT4-unsplash 1.jpg")';
   }
 };
 
 function clearForm() {
   const form = document.getElementById("form-login");
   if (form) {
-    form.reset(); // This will reset the form to its initial state
+    form.reset();
   }
 }
 
-// Handle link clicks to navigate between sections
 document.querySelectorAll("[data-section]").forEach((link) => {
   link.addEventListener("click", () => {
     const sectionClass = link.getAttribute("data-section");
     showSection(sectionClass);
-
-    // Update URL without reloading the page
     history.pushState(null, null, `#${sectionClass}`);
   });
 });
 
-// Handle browser back and forward buttons
 window.addEventListener("popstate", () => {
   const sectionClass = location.hash ? location.hash.substring(1) : "home";
   showSection(sectionClass);
 });
 
-// Disable automatic scroll restoration for modern browsers
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
-const discussionCardsAddContainer = document.getElementById(
-  "discussions-add-card-input-container"
-);
-const discussionsUsername = document.getElementById(
-  "discussions-add-card-input-user"
-);
+const discussionCardsAddContainer = document.getElementById("discussions-add-card-input-container");
+const discussionsUsername = document.getElementById("discussions-add-card-input-user");
 const discussionsAddCard = document.getElementById("discussions-add-card");
 const navbarProfileLink = document.getElementById("navbar-profile-link");
 const profileName = document.getElementById("profile-username");
@@ -97,7 +79,6 @@ const logedOutDiv = document.getElementById("loged-out-div");
 const logOutBtn = document.getElementById("log-out-btn");
 const commentAddedBadge = document.getElementById("comment-added");
 
-// Function to update profile inputs based on username
 function updateProfileInputs(username) {
   const users = JSON.parse(sessionStorage.getItem("users")) || [];
   const user = users.find((user) => user.username === username);
@@ -116,7 +97,6 @@ function updateProfileInputs(username) {
   }
 }
 
-// Function to save updated profile inputs to sessionStorage
 function saveProfileInputs(username) {
   let users = JSON.parse(sessionStorage.getItem("users")) || [];
   const userIndex = users.findIndex((user) => user.username === username);
@@ -130,22 +110,17 @@ function saveProfileInputs(username) {
   }
 }
 
-const formProfileNavigationBtn = document.getElementById(
-  "form-profile-navigation-btn"
-);
+const formProfileNavigationBtn = document.getElementById("form-profile-navigation-btn");
 
 function updateProfileNavigationLink() {
   const loggedIn = sessionStorage.getItem("logedIn") === "true";
-  loggedIn
-    ? (formProfileNavigationBtn.href = "#profile")
-    : (formProfileNavigationBtn.href = "#log-in");
+  loggedIn ? (formProfileNavigationBtn.href = "#profile") : (formProfileNavigationBtn.href = "#log-in");
 }
 
 function initializeUI() {
   const logedIn = sessionStorage.getItem("logedIn");
 
   if (logedIn === "true") {
-    // User is logged in
     logedInDiv.classList.remove("d-none");
     logOutBtn.classList.remove("d-none");
     logedOutDiv.classList.add("d-none");
@@ -156,16 +131,10 @@ function initializeUI() {
     const username = sessionStorage.getItem("username");
     discussionsUsername.innerText = username;
 
-    // Update profile inputs based on stored session data
     updateProfileInputs(username);
-
-    // Update badge visibility based on video click count
     updateBadgeVisibility();
-
-    // Update comment badge visibility
     updateCommentBadgeVisibility();
   } else {
-    // User is logged out
     logedInDiv.classList.add("d-none");
     logOutBtn.classList.add("d-none");
     logedOutDiv.classList.remove("d-none");
@@ -178,35 +147,40 @@ function initializeUI() {
     profileGender.value = "";
     profileYear.value = "";
 
-    // Clear filters and show all cards
     clearFilters();
-    renderInformationCards(); // Render all cards in default view
+    renderInformationCards();
   }
 
-  // Reset displayed cards and re-render them
   resetDisplayedCards();
   renderDiscussionCards();
-
-  // Retrieve and show the last viewed section
   const currentSection = sessionStorage.getItem("currentSection") || "home";
   showSection(currentSection);
 
   updateProfileNavigationLink();
 }
 
-// Function to show button when input is focused and handle hiding it after interaction
-function showButtonOnFocus(inputId, buttonId) {
+function showButtonOnHover(inputId, buttonId) {
   const input = document.getElementById(inputId);
   const button = document.getElementById(buttonId);
 
   if (input && button) {
-    input.addEventListener("focus", () => {
+    input.addEventListener("mouseenter", () => {
       button.classList.remove("d-none");
     });
 
-    // Instead of blur, use a click event on the button to hide it
+    input.addEventListener("mouseleave", () => {
+      button.classList.add("d-none");
+    });
+
+    button.addEventListener("mouseenter", () => {
+      button.classList.remove("d-none");
+    });
+
+    button.addEventListener("mouseleave", () => {
+      button.classList.add("d-none");
+    });
+
     button.addEventListener("click", () => {
-      // Perform your save action here
       const username = sessionStorage.getItem("username");
       if (username) {
         saveProfileInputs(username);
@@ -214,50 +188,29 @@ function showButtonOnFocus(inputId, buttonId) {
       } else {
         console.error("User data not found in sessionStorage");
       }
-
-      // Hide the button after a short delay to allow the click action
-      setTimeout(() => {
-        button.classList.add("d-none");
-      }, 100);
-    });
-
-    // Optionally, you can hide the button when the user presses Enter in the input field
-    input.addEventListener("keypress", (event) => {
-      if (event.key === "Enter") {
-        button.click();
-      }
+      button.classList.add("d-none");
     });
   }
 }
 
-// Initialize UI on page load
 initializeUI();
 
-// Call the function for each input and button pair
 document.addEventListener("DOMContentLoaded", () => {
-  showButtonOnFocus("profile-username", "change-username-btn");
-  showButtonOnFocus("profile-email", "change-email-btn");
-  showButtonOnFocus("profile-password", "change-password-btn");
-  showButtonOnFocus("profile-year", "change-year-btn");
-  showButtonOnFocus("profile-gender", "change-gender-btn");
+  showButtonOnHover("profile-email", "change-email-btn");
+  showButtonOnHover("profile-year", "change-year-btn");
 
-  // Add event listener for change-all button
-  document
-    .getElementById("change-all-btn-small")
-    .addEventListener("click", () => {
-      const username = sessionStorage.getItem("username");
-      if (username) {
-        saveProfileInputs(username);
-        alert("All profile details updated successfully!");
-
-        // Hide all individual buttons
-        document.querySelectorAll(".input-button-text").forEach((button) => {
-          button.classList.add("d-none");
-        });
-      } else {
-        console.error("User data not found in sessionStorage");
-      }
-    });
+  document.getElementById("change-all-btn-small").addEventListener("click", () => {
+    const username = sessionStorage.getItem("username");
+    if (username) {
+      saveProfileInputs(username);
+      alert("All profile details updated successfully!");
+      document.querySelectorAll(".input-button-text").forEach((button) => {
+        button.classList.add("d-none");
+      });
+    } else {
+      console.error("User data not found in sessionStorage");
+    }
+  });
 
   initializeUserSession();
   setupVideoHandler();
@@ -268,30 +221,18 @@ document.addEventListener("DOMContentLoaded", () => {
   if (logedIn === "true" && username) {
     loadUserFilters(username);
   } else {
-    renderInformationCards(); // Render without filters for not logged in user
+    renderInformationCards();
   }
 
-  initializeDiscussions(); // Initialize the discussions functionality
+  initializeDiscussions();
 });
 
-// Handle form submission (login)
-document
-  .getElementById("form-login-button")
-  .addEventListener("click", (event) => {
-    event.preventDefault();
-    document.getElementById("login-confirm-modal").style.display = "block";
-  });
-
-// Handle the confirmation button click
-document
-  .getElementById("form-login-button")
-  .addEventListener("click", (event) => {
-    event.preventDefault();
-    document.getElementById("login-confirm-modal").style.display = "block";
-  });
+document.getElementById("form-login-button").addEventListener("click", (event) => {
+  event.preventDefault();
+  document.getElementById("login-confirm-modal").style.display = "block";
+});
 
 document.getElementById("confirm-login-btn").addEventListener("click", () => {
-  // Get username and password values
   const username = document.getElementById("form-login-username").value;
   const password = document.getElementById("form-login-password").value;
 
@@ -314,27 +255,22 @@ document.getElementById("confirm-login-btn").addEventListener("click", () => {
         sessionStorage.setItem("username", username);
 
         showSection("home");
-        initializeUI(); // Update UI after login
+        initializeUI();
         clearForm();
-        // Load user filters
         loadUserFilters(username);
-        // Hide the modal
         document.getElementById("login-confirm-modal").style.display = "none";
       })
       .catch((error) => {
         console.error("Error:", error);
         alert("Login failed. Please check your credentials.");
-        // Hide the modal
         document.getElementById("login-confirm-modal").style.display = "none";
       });
   } else {
     alert("Please fill in both username and password fields.");
-    // Hide the modal
     document.getElementById("login-confirm-modal").style.display = "none";
   }
 });
 
-// Close the modal if the user clicks outside of it
 window.addEventListener("click", (event) => {
   const modal = document.getElementById("login-confirm-modal");
   if (event.target === modal) {
@@ -342,20 +278,11 @@ window.addEventListener("click", (event) => {
   }
 });
 
-// Close the modal if the user clicks outside of it
-window.addEventListener("click", (event) => {
-  const modal = document.getElementById("login-confirm-modal");
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-});
-
-// Handle logout
 logOutBtn.addEventListener("click", () => {
   sessionStorage.setItem("logedIn", "false");
   sessionStorage.removeItem("username");
   showSection("home");
-  initializeUI(); // Update UI after logout
+  initializeUI();
 });
 
 window.addEventListener("scroll", function () {
