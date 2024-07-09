@@ -83,7 +83,6 @@ function filterCards() {
     const filteredCards = informationCardsInfo.filter((card) =>
       activeFilters.includes(card.category)
     );
-
     renderInformationCards(filteredCards);
   }
 }
@@ -246,7 +245,16 @@ function addCommentsOnModal(idForComments) {
       const comment = {
         text: newInputForComments.value,
         username: sessionStorage.getItem("username"),
-        timestamp: new Date().toLocaleString(),
+        timestamp: new Date()
+          .toLocaleString("mk-MK", {
+            day: "2-digit",
+            month: "2-digit",
+            year: "2-digit",
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: false,
+          })
+          .replace(",", ""),
       };
 
       const comments =

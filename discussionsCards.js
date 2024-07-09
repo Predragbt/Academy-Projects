@@ -78,7 +78,18 @@ export function initializeDiscussions() {
     event.preventDefault();
 
     const username = sessionStorage.getItem("username") || "Anonymous";
-    const date = new Date().toLocaleString();
+
+    // Define the date format options for Macedonian locale
+    const options = {
+      day: "2-digit",
+      month: "2-digit",
+      year: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false, // Use 24-hour time format
+    };
+    const date = new Date().toLocaleString("mk-MK", options).replace(",", "");
+
     const content = discussionsAddCardInput.value;
     const color = colors[colorIndex % colors.length];
     colorIndex++;
@@ -117,7 +128,6 @@ export function initializeDiscussions() {
     updateCommentBadgeVisibility();
   });
 }
-
 export function resetDisplayedCards() {
   cardsDisplayed = 0; // Reset the displayed count
   discussionCardsContainerCards.innerHTML = ""; // Clear the existing cards
@@ -126,7 +136,9 @@ export function resetDisplayedCards() {
 
 export function updateCommentBadgeVisibility() {
   const username = sessionStorage.getItem("username");
-  const userDiscussionCards = discussionCards.filter(card => card.username === username);
+  const userDiscussionCards = discussionCards.filter(
+    (card) => card.username === username
+  );
   const hasUserCards = userDiscussionCards.length > 0;
   const commentAddedBadge = document.getElementById("comment-added");
 
