@@ -393,7 +393,7 @@ header nav.transparent {
   border: 3px solid transparent;
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  background-image: linear-gradient(to bottom, #cfe6f7, #b5d2ef),
+  background-image: linear-gradient(to bottom, #a0caeb, #bfd3e9 60%),
     linear-gradient(to bottom, white, grey);
 }
 
