@@ -13,6 +13,10 @@ import {
   updateBadgeVisibility,
 } from "./informationCards.js";
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 const showSection = (sectionClass) => {
   sessionStorage.setItem("currentSection", sectionClass);
 
@@ -41,6 +45,8 @@ const showSection = (sectionClass) => {
     bgImage.style.backgroundImage =
       'url("/images/maximalfocus-VT4rx775FT4-unsplash 1.jpg")';
   }
+
+  scrollToTop();
 };
 
 function clearForm() {
@@ -50,22 +56,35 @@ function clearForm() {
   }
 }
 
-document.querySelectorAll("[data-section]").forEach((link) => {
-  link.addEventListener("click", () => {
+document.querySelectorAll("a[data-section]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
     const sectionClass = link.getAttribute("data-section");
-    showSection(sectionClass);
-    history.pushState(null, null, `#${sectionClass}`);
+
+    if (sectionClass !== sessionStorage.getItem("currentSection")) {
+      showSection(sectionClass);
+      history.pushState(null, null, `#${sectionClass}`);
+    }
   });
 });
 
+// Commented out the popstate event listener
+/*
 window.addEventListener("popstate", () => {
   const sectionClass = location.hash ? location.hash.substring(1) : "home";
   showSection(sectionClass);
 });
 
+// Commented out the scroll restoration setting
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
+*/
+
+window.addEventListener("hashchange", () => {
+  const sectionClass = location.hash ? location.hash.substring(1) : "home";
+  showSection(sectionClass);
+});
 
 const discussionCardsAddContainer = document.getElementById(
   "discussions-add-card-input-container"
@@ -213,20 +232,18 @@ document.addEventListener("DOMContentLoaded", () => {
   showButtonOnHover("profile-email", "change-email-btn");
   showButtonOnHover("profile-year", "change-year-btn");
 
-  document
-    .getElementById("change-all-btn-small")
-    .addEventListener("click", () => {
-      const username = sessionStorage.getItem("username");
-      if (username) {
-        saveProfileInputs(username);
-        alert("All profile details updated successfully!");
-        document.querySelectorAll(".input-button-text").forEach((button) => {
-          button.classList.add("d-none");
-        });
-      } else {
-        console.error("User data not found in sessionStorage");
-      }
-    });
+  document.getElementById("change-all-btn-small").addEventListener("click", () => {
+    const username = sessionStorage.getItem("username");
+    if (username) {
+      saveProfileInputs(username);
+      alert("All profile details updated successfully!");
+      document.querySelectorAll(".input-button-text").forEach((button) => {
+        button.classList.add("d-none");
+      });
+    } else {
+      console.error("User data not found in sessionStorage");
+    }
+  });
 
   initializeUserSession();
   setupVideoHandler();
@@ -243,12 +260,10 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeDiscussions();
 });
 
-document
-  .getElementById("form-login-button")
-  .addEventListener("click", (event) => {
-    event.preventDefault();
-    document.getElementById("login-confirm-modal").style.display = "block";
-  });
+document.getElementById("form-login-button").addEventListener("click", (event) => {
+  event.preventDefault();
+  document.getElementById("login-confirm-modal").style.display = "block";
+});
 
 document.getElementById("confirm-login-btn").addEventListener("click", () => {
   const username = document.getElementById("form-login-username").value;
