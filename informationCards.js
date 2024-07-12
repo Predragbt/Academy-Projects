@@ -254,7 +254,7 @@ function addCommentsOnModal(idForComments) {
             minute: "2-digit",
             hour12: false,
           })
-          .replace(",", ""),
+          .replace(",", ","),
       };
 
       const comments =

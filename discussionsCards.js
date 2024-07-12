@@ -96,7 +96,7 @@ export function initializeDiscussions() {
       minute: "2-digit",
       hour12: false, // Use 24-hour time format
     };
-    const date = new Date().toLocaleString("mk-MK", options).replace(",", "");
+    const date = new Date().toLocaleString("mk-MK", options).replace(",", ",");
 
     const content = discussionsAddCardInput.value;
     const color = colors[colorIndex % colors.length];
@@ -124,7 +124,6 @@ export function initializeDiscussions() {
 
     // Update the badge visibility
     updateCommentBadgeVisibility();
-    scrollToBottom();
   });
 
   // Add click event listener to the "load more" button
