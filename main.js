@@ -29,7 +29,8 @@ const showSection = (sectionClass) => {
   if (targetSection) {
     targetSection.style.display = "block";
   } else {
-    document.querySelector('.page-section[data-section="home"]').style.display = "block";
+    document.querySelector('.page-section[data-section="home"]').style.display =
+      "block";
   }
 
   if (sectionClass !== "home" && video) {
@@ -37,7 +38,8 @@ const showSection = (sectionClass) => {
       video.pause();
     }
     video.style.display = "none";
-    bgImage.style.backgroundImage = 'url("/images/maximalfocus-VT4rx775FT4-unsplash 1.jpg")';
+    bgImage.style.backgroundImage =
+      'url("/images/maximalfocus-VT4rx775FT4-unsplash 1.jpg")';
   }
 };
 
@@ -65,8 +67,12 @@ if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
-const discussionCardsAddContainer = document.getElementById("discussions-add-card-input-container");
-const discussionsUsername = document.getElementById("discussions-add-card-input-user");
+const discussionCardsAddContainer = document.getElementById(
+  "discussions-add-card-input-container"
+);
+const discussionsUsername = document.getElementById(
+  "discussions-add-card-input-user"
+);
 const discussionsAddCard = document.getElementById("discussions-add-card");
 const navbarProfileLink = document.getElementById("navbar-profile-link");
 const profileName = document.getElementById("profile-username");
@@ -110,11 +116,19 @@ function saveProfileInputs(username) {
   }
 }
 
-const formProfileNavigationBtn = document.getElementById("form-profile-navigation-btn");
+const formProfileNavigationBtn = document.getElementById(
+  "form-profile-navigation-btn"
+);
 
 function updateProfileNavigationLink() {
   const loggedIn = sessionStorage.getItem("logedIn") === "true";
-  loggedIn ? (formProfileNavigationBtn.href = "#profile") : (formProfileNavigationBtn.href = "#log-in");
+  if (loggedIn) {
+    formProfileNavigationBtn.href = "#profile";
+    formProfileNavigationBtn.setAttribute("data-section", "profile");
+  } else {
+    formProfileNavigationBtn.href = "#log-in";
+    formProfileNavigationBtn.setAttribute("data-section", "log-in");
+  }
 }
 
 function initializeUI() {
@@ -199,18 +213,20 @@ document.addEventListener("DOMContentLoaded", () => {
   showButtonOnHover("profile-email", "change-email-btn");
   showButtonOnHover("profile-year", "change-year-btn");
 
-  document.getElementById("change-all-btn-small").addEventListener("click", () => {
-    const username = sessionStorage.getItem("username");
-    if (username) {
-      saveProfileInputs(username);
-      alert("All profile details updated successfully!");
-      document.querySelectorAll(".input-button-text").forEach((button) => {
-        button.classList.add("d-none");
-      });
-    } else {
-      console.error("User data not found in sessionStorage");
-    }
-  });
+  document
+    .getElementById("change-all-btn-small")
+    .addEventListener("click", () => {
+      const username = sessionStorage.getItem("username");
+      if (username) {
+        saveProfileInputs(username);
+        alert("All profile details updated successfully!");
+        document.querySelectorAll(".input-button-text").forEach((button) => {
+          button.classList.add("d-none");
+        });
+      } else {
+        console.error("User data not found in sessionStorage");
+      }
+    });
 
   initializeUserSession();
   setupVideoHandler();
@@ -227,10 +243,12 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeDiscussions();
 });
 
-document.getElementById("form-login-button").addEventListener("click", (event) => {
-  event.preventDefault();
-  document.getElementById("login-confirm-modal").style.display = "block";
-});
+document
+  .getElementById("form-login-button")
+  .addEventListener("click", (event) => {
+    event.preventDefault();
+    document.getElementById("login-confirm-modal").style.display = "block";
+  });
 
 document.getElementById("confirm-login-btn").addEventListener("click", () => {
   const username = document.getElementById("form-login-username").value;

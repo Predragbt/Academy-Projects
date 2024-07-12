@@ -46,7 +46,7 @@ export function renderDiscussionCards() {
         <div class="d-flex align-items-center justify-content-between mt-4">
           <div class="d-flex align-items-center">
             <img src="images/Ellipse 31.png" class="me-4 discussions-card-profile-img" alt="Profile image" />
-            <p>${card.username}</p>
+            <p class="fw-bold">${card.username}</p>
           </div>
           <div><p class="text-end opacity-75">${card.date}</p></div>
         </div>
