@@ -29,6 +29,14 @@ let mergedCards = [...discussionCards, ...staticCards];
 let cardsDisplayed = 0;
 const cardsPerLoad = 8;
 
+const scrollToBottom = () => {
+  const offset = 310; // Adjust this value as needed
+  window.scrollTo({
+    top: document.documentElement.scrollHeight - window.innerHeight - offset,
+    behavior: "smooth",
+  });
+};
+
 export function renderDiscussionCards() {
   const username = sessionStorage.getItem("username");
 
@@ -116,11 +124,13 @@ export function initializeDiscussions() {
 
     // Update the badge visibility
     updateCommentBadgeVisibility();
+    scrollToBottom();
   });
 
   // Add click event listener to the "load more" button
   discussionsAddBtn.addEventListener("click", () => {
     renderDiscussionCards();
+    scrollToBottom();
   });
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -128,6 +138,7 @@ export function initializeDiscussions() {
     updateCommentBadgeVisibility();
   });
 }
+
 export function resetDisplayedCards() {
   cardsDisplayed = 0; // Reset the displayed count
   discussionCardsContainerCards.innerHTML = ""; // Clear the existing cards
