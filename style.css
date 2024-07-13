@@ -554,6 +554,7 @@ header nav.transparent {
 
 .custom-card-text-date {
   position: absolute;
+  font-size: 16px;
   bottom: 10px; /* Adjust based on your padding */
   width: 100%;
   text-align: left; /* Aligns text to the right */
