@@ -92,10 +92,10 @@ header nav.transparent {
 }
 
 .bg-image {
-  background-image: url("/images/maximalfocus-VT4rx775FT4-unsplash\ 1.jpg"); /* Path to your image */
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents repeating the image */
+  background-image: url("/images/maximalfocus-VT4rx775FT4-unsplash\ 1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 80vh;
   position: relative;
 }
@@ -111,8 +111,8 @@ header nav.transparent {
 }
 
 .btn-video img {
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Adjust size as needed */
+  width: 100px;
+  height: 100px;
 }
 
 .bg-video {
@@ -121,9 +121,9 @@ header nav.transparent {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire div */
-  display: none; /* Hide the video by default */
-  z-index: 0; /* Ensure the video is behind the button */
+  object-fit: cover;
+  display: none;
+  z-index: 0;
 }
 
 .combined-images {
@@ -416,7 +416,7 @@ header nav.transparent {
   background-image: linear-gradient(to bottom, #cfe6f7, #b5d2ef),
     linear-gradient(to bottom, white, #b5d2ef);
   border: 2px solid transparent;
-  z-index: 0; /* Ensure it is below the pseudo-element content */
+  z-index: 0;
   transition: opacity 0.5s ease;
 }
 
@@ -429,14 +429,14 @@ header nav.transparent {
   bottom: 0;
   border-radius: 20px;
   background: inherit;
-  opacity: 1; /* Set opacity for inner content */
-  z-index: 1; /* Ensure it is above the background */
-  transition: opacity 0.3s; /* Smooth transition */
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 0.3s;
 }
 
 .information-filter-buttons a {
   position: relative;
-  z-index: 2; /* Ensure it is above the pseudo-element */
+  z-index: 2;
   color: #463a6d;
   text-decoration: none;
 }
@@ -483,7 +483,7 @@ header nav.transparent {
   left: 0;
   right: 0;
   height: 20%;
-  background-color: rgba(128, 0, 128, 0.7); /* Purple with some transparency */
+  background-color: rgba(128, 0, 128, 0.7);
   opacity: 0;
   transition: opacity 0.3s ease;
   cursor: pointer;
@@ -503,8 +503,8 @@ header nav.transparent {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 15px; /* Adjust based on your design */
-  height: 100%; /* Ensures the card takes up the available space */
+  border-radius: 15px;
+  height: 100%;
 }
 
 .custom-card-img-overlay-play {
@@ -523,17 +523,18 @@ header nav.transparent {
 }
 
 .custom-card-img {
-  object-fit: cover; /* Ensures the image covers the card */
+  object-fit: cover;
 }
 
 .custom-overlay-content {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 33%; /* Ensures the content takes up 35% of the card height */
-  background: rgba(255, 255, 255, 0.7); /* White background with opacity */
-  border-radius: 0 0 15px 15px; /* Match the card border radius */
+  height: 33%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 0 0 15px 15px;
   overflow: hidden;
+  border-top: 2px solid white;
 }
 
 .custom-card-title {
@@ -541,7 +542,9 @@ header nav.transparent {
 }
 
 .custom-card-text-description {
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 16px;
 }
 
 .custom-card-text {
@@ -554,10 +557,10 @@ header nav.transparent {
 
 .custom-card-text-date {
   position: absolute;
-  font-size: 16px;
-  bottom: 10px; /* Adjust based on your padding */
+  font-size: 16px !important;
+  bottom: 10px;
   width: 100%;
-  text-align: left; /* Aligns text to the right */
+  text-align: left;
 }
 
 /* carousel */
@@ -566,20 +569,20 @@ header nav.transparent {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 50px; /* Adjust size as needed */
-  height: 50px; /* Adjust size as needed */
+  width: 50px;
+  height: 50px;
 }
 
 .carousel-control-prev-icon {
-  background-image: url("images/ArrowLeft.png"); /* Path to your previous arrow image */
+  background-image: url("images/ArrowLeft.png");
 }
 
 .carousel-control-next-icon {
-  background-image: url("images/ArrowRight.png"); /* Path to your next arrow image */
+  background-image: url("images/ArrowRight.png");
 }
 
 .carousel-inner {
-  height: 100%; /* Ensure the carousel inner takes the full height of the container */
+  height: 100%;
 }
 
 .carousel-item {
@@ -590,8 +593,9 @@ header nav.transparent {
   width: 100%;
 }
 
-.information-buttons {
-  margin: auto;
+.information-buttons-two {
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 /* modal */
@@ -642,7 +646,7 @@ header nav.transparent {
 /* discussions */
 .discussions-card-profile-img {
   height: 50px;
-  width: 50px; /* Ensure consistent width */
+  width: 50px;
 }
 .discussions-card-container {
   column-count: 3;
@@ -674,31 +678,31 @@ header nav.transparent {
 
 #discussions-add-btn p {
   margin: 0;
-  padding: 10px 20px; /* Add padding inside the button */
+  padding: 10px 20px;
 }
 
 .discussions-card-container {
-  padding-bottom: 60px; /* Adjust based on the height of your button to prevent overlap */
+  padding-bottom: 60px;
 }
 
 /* Modal styles */
 .confirm-modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 12; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 12;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.2); /* Black w/ opacity */
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .confirm-modal-content {
   background: linear-gradient(to bottom, #9946f3, #42356b);
   opacity: 0.8;
-  margin: 15% auto; /* 15% from the top and centered */
-  width: 100%; /* Could be more or less, depending on screen size */
+  margin: 15% auto;
+  width: 100%;
   max-width: 900px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -714,7 +718,7 @@ header nav.transparent {
 }
 
 .confirm-modal-content button {
-  color: #42356b; /* Solid text color */
+  color: #42356b;
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-image: linear-gradient(to bottom, #e9e3fc, #e9e3fc),
@@ -724,7 +728,7 @@ header nav.transparent {
 }
 
 .confirm-modal-content button:hover {
-  color: #42356b; /* Solid text color */
+  color: #42356b;
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-image: linear-gradient(to bottom, #cbbbff, #cbbbff),
@@ -734,7 +738,7 @@ header nav.transparent {
 }
 
 .confirm-modal-content button:active {
-  color: #42356b !important; /* Solid text color */
+  color: #42356b !important;
   background-origin: border-box !important;
   background-clip: padding-box, border-box !important;
   background-image: linear-gradient(to bottom, #e9e3fc, #e9e3fc),
@@ -781,7 +785,7 @@ header nav.transparent {
   }
 
   .badge-container {
-    width: calc(50% - 20px); /* Two badges per row on smaller screens */
+    width: calc(50% - 20px);
   }
 
   .badge-text {

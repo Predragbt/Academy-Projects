@@ -109,13 +109,15 @@ export function renderInformationCards(cards = informationCardsInfo) {
     }
 
     informationCardsContainer.innerHTML += `
-      <div class="custom-card text-bg-dark mb-5" data-card-id="${card.id}">
-        <img src="${card.image}" class="h-100 w-100" alt="Card image" />
-        <img src="images/play icon.png" class="custom-card-img-overlay-play" alt="Play icon" />
-        <div class="custom-overlay-content d-flex flex-column py-3 px-4">
-          <h5 class="custom-card-title fw-bold mb-3">${card.title}</h5>
-          <p class="custom-card-text custom-card-text-description overflow-y-scroll fs-6">${card.content}</p>
-          <p class="custom-card-text custom-card-text-date opacity-50"><small>${card.date}</small></p>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="custom-card text-bg-dark mb-4" data-card-id="${card.id}">
+          <img src="${card.image}" class="h-100 w-100" alt="Card image" />
+          <img src="images/play icon.png" class="custom-card-img-overlay-play" alt="Play icon" />
+          <div class="custom-overlay-content d-flex flex-column py-3 px-4">
+            <h5 class="custom-card-title fw-bold">${card.title}</h5>
+            <p class="custom-card-text custom-card-text-description overflow-y-scroll">${card.content}</p>
+            <p class="custom-card-text custom-card-text-date opacity-50">${card.date}</p>
+          </div>
         </div>
       </div>
     `;
@@ -126,7 +128,7 @@ export function renderInformationCards(cards = informationCardsInfo) {
           <div class="overflow-y-scroll overflow-visible me-md-5 mt-4 mt-md-0">
             <div><h1 class="fw-bold mb-4">${card.title}</h1></div>  
             <p class="mb-4">Лорем ипсум е едноставен модел на текст кој се користел во печатарската индустрија. Лорем ипсум бил индустриски стандард кој се користел како модел уште пред 1500 години, кога непознат печатар зел кутија со букви и ги сложил на таков начин за да направи примерок на книга. И не само што овој модел опстанал пет векови туку почнал да се користи и во електронските медиуми, кој се уште не е променет.</p>
-            <p class="opacity-50 mb-4">Објавено на 05/28/23</p>
+            <p class="opacity-50 mb-4">${card.date}</p>
 
             <div class="d-flex flex-column p-3 border rounded-4 mb-3 d-none modal-input-container">
               <input type="text" class="form-control border-0" placeholder="Внеси коментар" id="modal-comment-input-${
