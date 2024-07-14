@@ -837,7 +837,7 @@ header nav.transparent {
   }
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1920px) {
   .input-group {
     width: 25em;
   }
