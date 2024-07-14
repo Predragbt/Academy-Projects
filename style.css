@@ -839,16 +839,16 @@ header nav.transparent {
 
 @media (max-width: 2000px) {
   .input-group {
-    width: 20em;
+    width: 25em;
   }
 
   .custom-card-text-description {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   .custom-card-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .custom-card-text-date {
