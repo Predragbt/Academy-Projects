@@ -131,7 +131,7 @@ export function renderInformationCards(cards = informationCardsInfo) {
             <p class="opacity-50 mb-4">${card.date}</p>
 
             <div class="d-flex flex-column p-3 border rounded-4 mb-3 d-none modal-input-container">
-              <input type="text" class="form-control border-0" placeholder="Внеси коментар" id="modal-comment-input-${
+              <input type="text" class="form-control border-0 modal-input-placeholder-text" placeholder="Остави коментар..." id="modal-comment-input-${
                 card.id
               }">
               <label for="modal-comment-input-${

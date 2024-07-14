@@ -87,14 +87,13 @@ export function initializeDiscussions() {
 
     const username = sessionStorage.getItem("username") || "Anonymous";
 
-    // Define the date format options for Macedonian locale
     const options = {
       day: "2-digit",
       month: "2-digit",
       year: "2-digit",
       hour: "2-digit",
       minute: "2-digit",
-      hour12: false, // Use 24-hour time format
+      hour12: false,
     };
     const date = new Date().toLocaleString("mk-MK", options).replace(",", ",");
 
@@ -116,11 +115,11 @@ export function initializeDiscussions() {
 
     mergedCards.unshift(newCard);
     cardsDisplayed = 0; // Reset the displayed count to include the new card
-    discussionsAddBtn.style.display = "flex"; // Ensure the button is visible
-    discussionCardsContainerCards.innerHTML = ""; // Clear the existing cards
+    discussionsAddBtn.style.display = "flex";
+    discussionCardsContainerCards.innerHTML = "";
     renderDiscussionCards();
 
-    discussionsAddCardInput.value = ""; // Clear the input
+    discussionsAddCardInput.value = "";
 
     // Update the badge visibility
     updateCommentBadgeVisibility();
@@ -140,8 +139,8 @@ export function initializeDiscussions() {
 
 export function resetDisplayedCards() {
   cardsDisplayed = 0; // Reset the displayed count
-  discussionCardsContainerCards.innerHTML = ""; // Clear the existing cards
-  mergedCards = [...discussionCards, ...staticCards]; // Reset merged cards
+  discussionCardsContainerCards.innerHTML = "";
+  mergedCards = [...discussionCards, ...staticCards];
 }
 
 export function updateCommentBadgeVisibility() {
