@@ -836,3 +836,26 @@ header nav.transparent {
     width: 15em;
   }
 }
+
+@media (max-width: 2000px) {
+  .input-group {
+    width: 20em;
+  }
+
+  .custom-card-text-description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .custom-card-title {
+    font-size: 16px;
+  }
+
+  .custom-card-text-date {
+    font-size: 14px;
+  }
+
+  .custom-card-text-description {
+    font-size: 14px;
+  }
+}

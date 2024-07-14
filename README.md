@@ -12,10 +12,7 @@ This project is a simple UI application that includes a login page. Users can lo
 
 ### 1. Clone the Repository
 
-First, clone the repository to your local machine:
-
-- git clone <your-repo-url>
-- cd <your-repo-directory>
+Clone the repository to your local machine.
 
 ### 2. Setting Up the Backend
 
@@ -79,7 +76,6 @@ Enter one of the predefined username-password pairs on the login page:
 - storage.js: Handles session storage.
 - discussionsCards.js: Handles discussions card rendering and interactions.
 - videoHandler.js: Handles video interactions.
-- storage.js: Handles session storage.
 - informationCards.js: Handles information cards rendering and interactions.
 - images/: Directory for images.
 - video/: Directory for videos.
