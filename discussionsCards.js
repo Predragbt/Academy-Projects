@@ -10,6 +10,7 @@ const discussionCardsContainerCards = document.getElementById(
 const discussionsAddBtn = document.getElementById("discussions-add-btn");
 const commentAddedBadge = document.getElementById("comment-added");
 
+// Prepare static discussion cards with dummy data
 const staticCards = discussionCardsInfo.map((card) => ({
   ...card,
   username: "Име Презиме",
@@ -18,9 +19,11 @@ const staticCards = discussionCardsInfo.map((card) => ({
   reactions: 84,
 }));
 
+// Get dynamic discussion cards from sessionStorage or initialize an empty array
 let discussionCards =
   JSON.parse(sessionStorage.getItem("discussionCards")) || [];
 
+// Define card colors and set initial color index
 const colors = ["#764FF0", "#4B7CF3", "#8F39EC", "#83EAB1"];
 let colorIndex = discussionCards.length % colors.length;
 
@@ -29,6 +32,7 @@ let mergedCards = [...discussionCards, ...staticCards];
 let cardsDisplayed = 0;
 const cardsPerLoad = 8;
 
+// Scroll to the bottom of the page
 const scrollToBottom = () => {
   const offset = 310; // Adjust this value as needed
   window.scrollTo({
@@ -37,9 +41,11 @@ const scrollToBottom = () => {
   });
 };
 
+// Render discussion cards on the page
 export function renderDiscussionCards() {
   const username = sessionStorage.getItem("username");
 
+  // Get the next batch of cards to show
   const cardsToShow = mergedCards.slice(
     cardsDisplayed,
     cardsDisplayed + cardsPerLoad
@@ -47,7 +53,7 @@ export function renderDiscussionCards() {
   cardsToShow.forEach((card) => {
     discussionCardsContainerCards.innerHTML += `
       <div
-        class="card p-3 h-100 overflow-hidden mb-4 mx-3 px-4 mb-3 rounded-4 border-0 discussions-card-shadow" 
+        class="card p-3 h-100 overflow-hidden mb-4 mx-2 px-4 rounded-4 border-0 discussions-card-shadow" 
         style="background-color: ${card.color};"
       >
         <p>${card.content}</p>
@@ -73,7 +79,7 @@ export function renderDiscussionCards() {
 
   cardsDisplayed += cardsPerLoad;
 
-  // Hide the button if there are no more cards to show
+  // Hide the "load more" button if there are no more cards to show
   if (cardsDisplayed >= mergedCards.length) {
     discussionsAddBtn.classList.add("d-none");
   } else {
@@ -81,6 +87,7 @@ export function renderDiscussionCards() {
   }
 }
 
+// Initialize discussions, including event listeners and initial rendering
 export function initializeDiscussions() {
   discussionsAddCardForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -110,15 +117,18 @@ export function initializeDiscussions() {
       reactions: 0,
     };
 
+    // Add the new card to the beginning of the discussion cards array
     discussionCards.unshift(newCard);
     sessionStorage.setItem("discussionCards", JSON.stringify(discussionCards));
 
+    // Add the new card to the merged cards array and reset the displayed count
     mergedCards.unshift(newCard);
-    cardsDisplayed = 0; // Reset the displayed count to include the new card
+    cardsDisplayed = 0;
     discussionsAddBtn.style.display = "flex";
     discussionCardsContainerCards.innerHTML = "";
     renderDiscussionCards();
 
+    // Clear the input field
     discussionsAddCardInput.value = "";
 
     // Update the badge visibility
@@ -131,18 +141,21 @@ export function initializeDiscussions() {
     scrollToBottom();
   });
 
+  // Initial rendering and comment badge visibility update on page load
   document.addEventListener("DOMContentLoaded", () => {
     renderDiscussionCards();
     updateCommentBadgeVisibility();
   });
 }
 
+// Reset the displayed cards
 export function resetDisplayedCards() {
-  cardsDisplayed = 0; // Reset the displayed count
+  cardsDisplayed = 0;
   discussionCardsContainerCards.innerHTML = "";
   mergedCards = [...discussionCards, ...staticCards];
 }
 
+// Update the visibility of the comment added badge
 export function updateCommentBadgeVisibility() {
   const username = sessionStorage.getItem("username");
   const userDiscussionCards = discussionCards.filter(

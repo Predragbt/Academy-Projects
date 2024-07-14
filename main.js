@@ -13,20 +13,25 @@ import {
   updateBadgeVisibility,
 } from "./informationCards.js";
 
+// Scroll the window to the top
 const scrollToTop = () => {
   window.scrollTo(0, 0);
 };
 
+// Show a specific section based on the provided class
 const showSection = (sectionClass) => {
+  // Save the current section in sessionStorage
   sessionStorage.setItem("currentSection", sectionClass);
 
   const video = document.querySelector(".bg-video");
   const bgImage = document.querySelector(".bg-image");
 
+  // Hide all sections
   document.querySelectorAll(".page-section").forEach((section) => {
     section.style.display = "none";
   });
 
+  // Show the target section
   const targetSection = document.querySelector(
     `.page-section[data-section="${sectionClass}"]`
   );
@@ -37,6 +42,7 @@ const showSection = (sectionClass) => {
       "block";
   }
 
+  // Pause the background video and change the background image if not on home section
   if (sectionClass !== "home" && video) {
     if (!video.paused) {
       video.pause();
@@ -49,6 +55,7 @@ const showSection = (sectionClass) => {
   scrollToTop();
 };
 
+// Function to clear the login form
 function clearForm() {
   const form = document.getElementById("form-login");
   if (form) {
@@ -56,6 +63,7 @@ function clearForm() {
   }
 }
 
+// Add click event listeners to navigation links
 document.querySelectorAll("a[data-section]").forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
@@ -100,6 +108,7 @@ const logedOutDiv = document.getElementById("loged-out-div");
 const logOutBtn = document.getElementById("log-out-btn");
 const commentAddedBadge = document.getElementById("comment-added");
 
+// Update profile input fields with user data from sessionStorage
 function updateProfileInputs(username) {
   const users = JSON.parse(sessionStorage.getItem("users")) || [];
   const user = users.find((user) => user.username === username);
@@ -118,6 +127,7 @@ function updateProfileInputs(username) {
   }
 }
 
+// Save profile input changes to sessionStorage
 function saveProfileInputs(username) {
   let users = JSON.parse(sessionStorage.getItem("users")) || [];
   const userIndex = users.findIndex((user) => user.username === username);
@@ -135,6 +145,7 @@ const formProfileNavigationBtn = document.getElementById(
   "form-profile-navigation-btn"
 );
 
+// Update the profile navigation link based on login status
 function updateProfileNavigationLink() {
   const loggedIn = sessionStorage.getItem("logedIn") === "true";
   if (loggedIn) {
@@ -146,6 +157,7 @@ function updateProfileNavigationLink() {
   }
 }
 
+// Initialize the UI based on login status and sessionStorage data
 function initializeUI() {
   const logedIn = sessionStorage.getItem("logedIn");
 
@@ -188,6 +200,7 @@ function initializeUI() {
   updateProfileNavigationLink();
 }
 
+// Show a button when hovering over an input field
 function showButtonOnHover(inputId, buttonId) {
   const input = document.getElementById(inputId);
   const button = document.getElementById(buttonId);
@@ -222,8 +235,10 @@ function showButtonOnHover(inputId, buttonId) {
   }
 }
 
+// Initialize UI on page load
 initializeUI();
 
+// Initialize other elements and event listeners after the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
   showButtonOnHover("profile-email", "change-email-btn");
   showButtonOnHover("profile-year", "change-year-btn");
@@ -258,14 +273,18 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeDiscussions();
 });
 
-document
-  .getElementById("form-login-button")
-  .addEventListener("click", (event) => {
-    event.preventDefault();
-    document.getElementById("login-confirm-modal").style.display = "block";
-  });
+// Store form login button and confirm login button in constants
+const formLoginButton = document.getElementById("form-login-button");
+const confirmLoginBtn = document.getElementById("confirm-login-btn");
 
-document.getElementById("confirm-login-btn").addEventListener("click", () => {
+// Handle login button click event
+formLoginButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  document.getElementById("login-confirm-modal").style.display = "block";
+});
+
+// Handle confirm login button click event
+confirmLoginBtn.addEventListener("click", () => {
   const username = document.getElementById("form-login-username").value;
   const password = document.getElementById("form-login-password").value;
 
@@ -304,6 +323,7 @@ document.getElementById("confirm-login-btn").addEventListener("click", () => {
   }
 });
 
+// Handle modal click to close it
 window.addEventListener("click", (event) => {
   const modal = document.getElementById("login-confirm-modal");
   if (event.target === modal) {
@@ -311,6 +331,7 @@ window.addEventListener("click", (event) => {
   }
 });
 
+// Handle logout button click event
 logOutBtn.addEventListener("click", () => {
   sessionStorage.setItem("logedIn", "false");
   sessionStorage.removeItem("username");
@@ -318,6 +339,7 @@ logOutBtn.addEventListener("click", () => {
   initializeUI();
 });
 
+// Change header transparency on scroll
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header nav");
   if (window.scrollY > 0) {

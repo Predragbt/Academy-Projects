@@ -1,13 +1,15 @@
 import { informationCardsInfo } from "./storage.js";
 
 const logOutBtn = document.getElementById("log-out-btn");
+
 const logedIn = sessionStorage.getItem("logedIn");
 const username = sessionStorage.getItem("username");
 
+// Retrieve users from sessionStorage and find the current user
 const users = JSON.parse(sessionStorage.getItem("users")) || [];
 const currentUser = users.find((user) => user.username === username);
 
-// Define static filler comments
+// Static filler comments
 const staticComments = [
   {
     text: "Лорем ипсум е едноставен модел на текст кој се користел во печатарската индустрија. Лорем ипсум бил индустриски стандард кој се користел како модел уште пред 1500 години, кога непознат печатар зел кутија со букви и ги сложил на таков начин за да направи примерок на книга.",
@@ -30,6 +32,7 @@ const filterButtons = document.querySelectorAll(
   ".information-filter-buttons-active"
 );
 
+// Add click event listeners to filter buttons to toggle opacity and apply filters
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     button.classList.toggle("opacity-50");
@@ -38,6 +41,7 @@ filterButtons.forEach((button) => {
   });
 });
 
+// Save active user filters to sessionStorage
 function saveUserFilters() {
   const activeFilters = Array.from(filterButtons)
     .filter((button) => !button.classList.contains("opacity-50"))
@@ -53,6 +57,7 @@ function saveUserFilters() {
   }
 }
 
+// Load user filters from sessionStorage and apply them
 export function loadUserFilters(username) {
   const savedFilters =
     JSON.parse(sessionStorage.getItem(`filters-${username}`)) || [];
@@ -72,6 +77,7 @@ export function clearFilters() {
   });
 }
 
+// Filter information cards based on active filters
 function filterCards() {
   const activeFilters = Array.from(filterButtons)
     .filter((button) => !button.classList.contains("opacity-50"))
@@ -87,6 +93,7 @@ function filterCards() {
   }
 }
 
+// Render information cards on the page
 export function renderInformationCards(cards = informationCardsInfo) {
   const informationCardsContainer = document.querySelector(
     "#information-cards-container"
@@ -208,6 +215,7 @@ export function renderInformationCards(cards = informationCardsInfo) {
   });
 }
 
+// Play the video and hide the image
 function playVideo(container) {
   const img = container.querySelector("img");
   const videoContainer = container.querySelector(".video-element-container");
@@ -218,6 +226,7 @@ function playVideo(container) {
   video.play();
 }
 
+// Show the image and hide the video
 function showImage(container) {
   const img = container.querySelector("img");
   const videoContainer = container.querySelector(".video-element-container");
@@ -228,6 +237,7 @@ function showImage(container) {
   video.pause();
 }
 
+// Add comments to the modal for a specific card
 function addCommentsOnModal(idForComments) {
   const commentsContainer = document.querySelector(
     `#modal-comments-container-${idForComments}`
@@ -290,6 +300,7 @@ function createCommentHTML(comment) {
   `;
 }
 
+// Load comments for a specific card
 function loadComments(idForComments) {
   const commentsContainer = document.querySelector(
     `#modal-comments-container-${idForComments}`
@@ -307,6 +318,7 @@ function loadComments(idForComments) {
   });
 }
 
+// Update the visibility of the comment input based on login status
 function updateCommentInputVisibility() {
   const logedIn = sessionStorage.getItem("logedIn");
   const currentUsername = sessionStorage.getItem("username");
@@ -324,6 +336,7 @@ function updateCommentInputVisibility() {
   });
 }
 
+// Increment the video click count for the current user
 function incrementVideoClickCount() {
   const username = sessionStorage.getItem("username");
   const videoCountKey = `videosClicked-${username}`;
@@ -333,11 +346,13 @@ function incrementVideoClickCount() {
   updateBadgeVisibility(); // Update badge visibility after incrementing count
 }
 
+// Get the video click count for a user
 function getVideoClickCount(username) {
   const videoCountKey = `videosClicked-${username}`;
   return JSON.parse(sessionStorage.getItem(videoCountKey)) || 0;
 }
 
+// Update badge visibility based on video click count
 function updateBadgeVisibility() {
   const username = sessionStorage.getItem("username");
   const videosClicked = getVideoClickCount(username);

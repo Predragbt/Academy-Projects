@@ -506,7 +506,8 @@ header nav.transparent {
   overflow: hidden;
   cursor: pointer;
   border-radius: 15px;
-  height: 100%;
+  height: 96%;
+  width: 95%;
 }
 
 .custom-card-img-overlay-play {
@@ -756,6 +757,15 @@ header nav.transparent {
 
 /* media queries */
 @media screen and (max-width: 768px) {
+  .video-container {
+    height: 65% !important;
+  }
+
+  .custom-card {
+    height: 100%;
+    width: 100%;
+  }
+
   .profile-image-container {
     width: 100%;
     height: 100%;
