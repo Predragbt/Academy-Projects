@@ -1,0 +1,96 @@
+{
+    "header": {
+        "eng": {
+            "topLinks": [
+                {
+                    "name": "Emergency Response Plan",
+                    "link": "/emergency"
+                },
+                {
+                    "name": "Support",
+                    "link": "/support"
+                }
+            ],
+            "navigation": [
+                {
+                    "name": "Home",
+                    "link": "/"
+                },
+                {
+                    "name": "About Us",
+                    "link": "/about"
+                },
+                {
+                    "name": "Services",
+                    "link": "/services"
+                },
+                {
+                    "name": "Industries",
+                    "link": "/industries"
+                },
+                {
+                    "name": "Partnership",
+                    "link": "/partnership"
+                },
+                {
+                    "name": "Contact",
+                    "link": "/contact"
+                },
+                {
+                    "name": "Jobs",
+                    "link": "/jobs"
+                },
+                {
+                    "name": "Newsletter",
+                    "link": "/newsletter"
+                }
+            ]
+        },
+        "mk": {
+            "topLinks": [
+                {
+                    "name": "План за итен одговор",
+                    "link": "/emergency"
+                },
+                {
+                    "name": "Поддршка",
+                    "link": "/support"
+                }
+            ],
+            "navigation": [
+                {
+                    "name": "Дома",
+                    "link": "/"
+                },
+                {
+                    "name": "За Нас",
+                    "link": "/about"
+                },
+                {
+                    "name": "Услуги",
+                    "link": "/services"
+                },
+                {
+                    "name": "Индустрии",
+                    "link": "/industries"
+                },
+                {
+                    "name": "Партнерство",
+                    "link": "/partnership"
+                },
+                {
+                    "name": "Контакт",
+                    "link": "/contact"
+                },
+                {
+                    "name": "Работни места",
+                    "link": "/jobs"
+                },
+                {
+                    "name": "Билтен",
+                    "link": "/newsletter"
+                }
+            ]
+        }
+    }
+}
