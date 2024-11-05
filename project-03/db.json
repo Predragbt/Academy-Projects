@@ -1,96 +1,254 @@
 {
+  "layoutData": {
     "header": {
-        "eng": {
-            "topLinks": [
-                {
-                    "name": "Emergency Response Plan",
-                    "link": "/emergency"
-                },
-                {
-                    "name": "Support",
-                    "link": "/support"
-                }
-            ],
-            "navigation": [
-                {
-                    "name": "Home",
-                    "link": "/"
-                },
-                {
-                    "name": "About Us",
-                    "link": "/about"
-                },
-                {
-                    "name": "Services",
-                    "link": "/services"
-                },
-                {
-                    "name": "Industries",
-                    "link": "/industries"
-                },
-                {
-                    "name": "Partnership",
-                    "link": "/partnership"
-                },
-                {
-                    "name": "Contact",
-                    "link": "/contact"
-                },
-                {
-                    "name": "Jobs",
-                    "link": "/jobs"
-                },
-                {
-                    "name": "Newsletter",
-                    "link": "/newsletter"
-                }
-            ]
-        },
-        "mk": {
-            "topLinks": [
-                {
-                    "name": "План за итен одговор",
-                    "link": "/emergency"
-                },
-                {
-                    "name": "Поддршка",
-                    "link": "/support"
-                }
-            ],
-            "navigation": [
-                {
-                    "name": "Дома",
-                    "link": "/"
-                },
-                {
-                    "name": "За Нас",
-                    "link": "/about"
-                },
-                {
-                    "name": "Услуги",
-                    "link": "/services"
-                },
-                {
-                    "name": "Индустрии",
-                    "link": "/industries"
-                },
-                {
-                    "name": "Партнерство",
-                    "link": "/partnership"
-                },
-                {
-                    "name": "Контакт",
-                    "link": "/contact"
-                },
-                {
-                    "name": "Работни места",
-                    "link": "/jobs"
-                },
-                {
-                    "name": "Билтен",
-                    "link": "/newsletter"
-                }
-            ]
+      "eng": {
+        "topLinks": [
+          {
+            "name": "Emergency Response Plan",
+            "link": "/emergency"
+          },
+          {
+            "name": "Support",
+            "link": "/support"
+          }
+        ],
+        "navigation": {
+          "primary": [
+            {
+              "name": "Home",
+              "link": "/"
+            },
+            {
+              "name": "About Us",
+              "link": "/about"
+            },
+            {
+              "name": "Services",
+              "link": "/services"
+            },
+            {
+              "name": "Industries",
+              "link": "/industries"
+            },
+            {
+              "name": "Partnership",
+              "link": "/partnership"
+            }
+          ],
+          "secondary": [
+            {
+              "name": "Contact",
+              "link": "/contact"
+            },
+            {
+              "name": "Jobs",
+              "link": "/jobs"
+            },
+            {
+              "name": "Newsletter",
+              "link": "/newsletter"
+            }
+          ]
         }
+      },
+      "mk": {
+        "topLinks": [
+          {
+            "name": "План за итен одговор",
+            "link": "/emergency"
+          },
+          {
+            "name": "Поддршка",
+            "link": "/support"
+          }
+        ],
+        "navigation": {
+          "primary": [
+            {
+              "name": "Дома",
+              "link": "/"
+            },
+            {
+              "name": "За Нас",
+              "link": "/about"
+            },
+            {
+              "name": "Услуги",
+              "link": "/services"
+            },
+            {
+              "name": "Индустрии",
+              "link": "/industries"
+            },
+            {
+              "name": "Партнерство",
+              "link": "/partnership"
+            }
+          ],
+          "secondary": [
+            {
+              "name": "Контакт",
+              "link": "/contact"
+            },
+            {
+              "name": "Работни места",
+              "link": "/jobs"
+            },
+            {
+              "name": "Билтен",
+              "link": "/newsletter"
+            }
+          ]
+        }
+      }
+    },
+    "footer": {
+      "eng": {
+        "topFooter": [
+          {
+            "title": "Services",
+            "items": [
+              "SIEM Threat Detection & Response",
+              "Penetration Testing",
+              "Incident Response",
+              "Network Security",
+              "Security Awareness Training"
+            ]
+          },
+          {
+            "title": "About Us",
+            "items": [
+              "Mission Statement",
+              "Our Story",
+              "Our Expertise",
+              "Partnerships"
+            ]
+          },
+          {
+            "title": "Our Values",
+            "items": [
+              "Innovation",
+              "Trust",
+              "Excellence",
+              "Collaboration"
+            ]
+          },
+          {
+            "title": "Team",
+            "items": [
+              "Co-Founder & CXX",
+              "Cybersecurity Specialists",
+              "Security Awareness Advisors"
+            ]
+          },
+          {
+            "title": "Industries We Serve",
+            "items": [
+              "Finance",
+              "Healthcare",
+              "Government",
+              "Retail",
+              "eGame",
+              "Education"
+            ]
+          },
+          {
+            "title": "Contact us",
+            "items": [
+              "Name",
+              "E mail",
+              "Message"
+            ]
+          }
+        ],
+        "bottomFooter": [
+          {
+            "name": "Legal Notice",
+            "link": "/legal-notice"
+          },
+          {
+            "name": "Data Protection",
+            "link": "/data-protection"
+          },
+          {
+            "name": "Terms of Use",
+            "link": "/terms-of-use"
+          }
+        ]
+      },
+      "mk": {
+        "topFooter": [
+          {
+            "title": "Услуги",
+            "items": [
+              "Откривање и реакција на закани",
+              "Тестирање на пенетрација",
+              "Реакција на инциденти",
+              "Мрежна безбедност",
+              "Обука за безбедност"
+            ]
+          },
+          {
+            "title": "За Нас",
+            "items": [
+              "Мисија",
+              "Нашата приказна",
+              "Нашата експертиза",
+              "Партнерства"
+            ]
+          },
+          {
+            "title": "Наши Вредности",
+            "items": [
+              "Иновација",
+              "Доверба",
+              "Извонредност",
+              "Соработка"
+            ]
+          },
+          {
+            "title": "Тим",
+            "items": [
+              "Ко-основач & CXX",
+              "Специјалисти за сајбер безбедност",
+              "Советници за безбедносна свест"
+            ]
+          },
+          {
+            "title": "Индустрии кои ги служиме",
+            "items": [
+              "Финансии",
+              "Здравство",
+              "Влада",
+              "Трговија на мало",
+              "еИгри",
+              "Образование"
+            ]
+          },
+          {
+            "title": "Контакт",
+            "items": [
+              "Име",
+              "E-mail",
+              "Порака"
+            ]
+          }
+        ],
+        "bottomFooter": [
+          {
+            "name": "Правно известување",
+            "link": "/legal-notice"
+          },
+          {
+            "name": "Заштита на податоци",
+            "link": "/data-protection"
+          },
+          {
+            "name": "Услови на користење",
+            "link": "/terms-of-use"
+          }
+        ]
+      }
     }
+  }
 }
