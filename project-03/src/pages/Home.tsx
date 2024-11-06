@@ -1,7 +1,9 @@
+import { HeroSection } from "../components/layout/heroSection/HeroSection";
+
 export const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <HeroSection />
     </div>
   );
 };

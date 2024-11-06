@@ -1,6 +1,3 @@
-// TopHeader.tsx
-import logo from "../../../assets/images/logo.png";
-import languageIcon from "../../../assets/icons/LanguageIcon.png";
 import { useAppContext } from "../../../context/AppContext";
 import { Link } from "react-router-dom";
 
@@ -13,9 +10,13 @@ export const TopHeader = () => {
   if (!layoutData) return <div>No header data</div>;
 
   return (
-    <div className="h-[64px] flex justify-between items-center px-[160px]">
+    <div className="h-[64px] flex justify-between items-center px-[120px]">
       <div>
-        <img src={logo} alt="Company logo" className="h-[40px]" />
+        <img
+          src="/assets/images/Logo.png"
+          alt="Company logo"
+          className="h-[40px]"
+        />
       </div>
 
       <div className="flex items-center space-x-12">
@@ -33,7 +34,7 @@ export const TopHeader = () => {
 
         <div className="flex items-center border border-gray-400 rounded w-[120px] h-[33px] pl-2 hover:cursor-pointer">
           <img
-            src={languageIcon}
+            src="/assets/icons/LanguageIcon.png"
             alt="Language icon"
             className="w-[20px] h-[20px] mr-2"
           />

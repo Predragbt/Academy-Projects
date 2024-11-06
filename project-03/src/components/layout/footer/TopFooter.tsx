@@ -1,8 +1,4 @@
 import { useAppContext } from "../../../context/AppContext";
-import BigLogo from "../../../assets/images/BigLogo.png";
-import partnerLogo1 from "../../../assets/images/partnerLogo1.png";
-import partnerLogo2 from "../../../assets/images/partnerLogo2.png";
-import partnerLogo3 from "../../../assets/images/partnerLogo3.png";
 import { FooterForm } from "./FooterForm";
 
 export const TopFooter = () => {
@@ -13,15 +9,18 @@ export const TopFooter = () => {
   if (!layoutData) return <div>No footer data</div>;
 
   return (
-    <div className="h-[512px] bg-[#000] px-[160px] flex">
+    <div className="h-[512px] bg-[#000] px-[120px] flex">
       <div className="border-r border-white pr-12 mr-20 my-12">
-        <img src={BigLogo} alt="Logo" />
+        <img src="/assets/images/BigLogo.png" alt="Logo" />
         <div className="flex space-x-4 mt-12">
-          <img src={partnerLogo1} alt="Logo" />
-          <img src={partnerLogo2} alt="Logo" />
+          <img src="/assets/images/partnerLogo1.png" alt="Partner Logo 1" />
+          <img src="/assets/images/partnerLogo2.png" alt="Partner Logo 2" />
         </div>
-
-        <img src={partnerLogo3} alt="Logo" className="mt-12" />
+        <img
+          src="/assets/images/partnerLogo3.png"
+          alt="Partner Logo 3"
+          className="mt-12"
+        />
       </div>
       <div className="flex mx-12 my-16">
         <div className="mr-12">
@@ -96,7 +95,6 @@ export const TopFooter = () => {
         </h2>
         <div>
           <FooterForm />
-          <div></div>
         </div>
       </div>
     </div>

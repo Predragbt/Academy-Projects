@@ -8,7 +8,7 @@ export const BottomFooter = () => {
   if (error) return <div>Error: {error}</div>;
   if (!layoutData) return <div>No footer data</div>;
   return (
-    <div className="h-[64px] flex justify-between items-center px-[160px]">
+    <div className="h-[64px] flex justify-between items-center px-[120px]">
       <div>
         {layoutData.footer.bottomFooter.map((link, index) => (
           <Link to="#" key={index} className="text-base mr-12">

@@ -11,8 +11,8 @@ export const BottomHeader = () => {
   if (!layoutData) return <div>No header data</div>;
 
   return (
-    <div className="h-[104px] flex justify-between items-center px-[190px] bg-[#323232] text-white">
-      <div className="flex space-x-12">
+    <div className="h-[104px] flex justify-between items-center px-[150px] bg-[#323232] text-white">
+      <div className="flex items-center space-x-12">
         {layoutData.header.navigation.primary.map((link) => (
           <Link
             key={link.link}
@@ -27,7 +27,7 @@ export const BottomHeader = () => {
       </div>
 
       {/* Secondary Navigation Links */}
-      <div className="flex space-x-8">
+      <div className="flex items-center space-x-8">
         {layoutData.header.navigation.secondary.map((link, index) => (
           <Link
             key={link.link}

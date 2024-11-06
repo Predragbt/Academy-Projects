@@ -254,5 +254,49 @@
         "submitButton": "Поднеси"
       }
     }
+  },
+  "homeHeroSection": {
+    "eng": {
+      "subtitle1": "Your Cybersecurity Experts",
+      "subtitle2": "Securing the Future Today",
+      "title": {
+        "part1": "Tailored,",
+        "highlight": "AI-driven",
+        "part2": "solutions to protect",
+        "part3": "your business"
+      },
+      "btn1": "Free Consultations",
+      "btn2": "Get Started Today",
+      "content": "Protecting the digital future through innovative cybersecurity solutions, we empower businesses to safeguard their assets, ensure compliance, and maintain trust in an increasingly connected world.",
+      "industries": [
+        "Finance",
+        "Healthcare",
+        "Government",
+        "Retail",
+        "eGame",
+        "Education"
+      ]
+    },
+    "mk": {
+      "subtitle1": "Вашите експерти за сајбер безбедност",
+      "subtitle2": "Обезбедување на иднината денес",
+      "title": {
+        "part1": "Приспособени,",
+        "highlight": "AI-управувани",
+        "part2": "решенија за заштита на",
+        "part3": "вашиот бизнис"
+      },
+      "btn1": "Бесплатни консултации",
+      "btn2": "Започнете денес",
+      "content": "Заштитувајќи ја дигиталната иднина преку иновативни решенија за сајбер безбедност, ние ги овластуваме бизнисите да ги заштитат своите ресурси, да обезбедат усогласеност и да го одржуваат доверливоста во сè поповрзан свет.",
+      "industries": [
+        "Финансии",
+        "Здравство",
+        "Влада",
+        "Трговија на мало",
+        "еИгри",
+        "Образование"
+      ]
+    }
   }
 }
