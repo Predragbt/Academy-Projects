@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-// Interfaces for header data
+// Interfaces for layout data
 interface HeaderLink {
   name: string;
   link: string;
@@ -16,15 +16,16 @@ interface HeaderData {
   navigation: NavigationGroup;
 }
 
-// Interface for structured footer data
 interface TopFooterSection {
   title: string;
   items: string[];
 }
 
 interface FooterData {
-  topFooter: TopFooterSection[]; // Updated to reflect new structure
+  topFooter: TopFooterSection[];
   bottomFooter: HeaderLink[];
+  newsletterCheckbox: string;
+  submitButton: string;
 }
 
 interface LayoutData {
@@ -52,49 +53,50 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
     setLanguage(lang);
   };
 
-  useEffect(() => {
-    const fetchLayoutData = async () => {
-      setLoading(true);
-      setError(null);
-      try {
-        const response = await fetch(`http://localhost:5000/layoutData`);
-        if (!response.ok) {
-          throw new Error("Failed to fetch layout data");
-        }
-
-        const data = await response.json();
-        console.log("Fetched layout data:", data);
-
-        const languageHeader = data.header?.[language];
-        const languageFooter = data.footer?.[language];
-
-        if (!languageHeader || !languageFooter) {
-          throw new Error(`Missing data for language '${language}'`);
-        }
-
-        // Set layout data with updated structure for footer
-        setLayoutData({
-          header: {
-            topLinks: languageHeader.topLinks || [],
-            navigation: {
-              primary: languageHeader.navigation.primary || [],
-              secondary: languageHeader.navigation.secondary || [],
-            },
-          },
-          footer: {
-            topFooter: languageFooter.topFooter || [],
-            bottomFooter: languageFooter.bottomFooter || [],
-          },
-        });
-      } catch (error) {
-        console.error("Error fetching layout data:", error);
-        setError("Error fetching layout data");
-      } finally {
-        setLoading(false);
+  const fetchLayoutData = async (lang: string) => {
+    setLoading(true);
+    setError(null);
+    try {
+      const response = await fetch(`http://localhost:5000/layoutData`);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch layout data: ${response.statusText}`);
       }
-    };
 
-    fetchLayoutData();
+      const data: { header: any; footer: any } = await response.json();
+      console.log("Fetched layout data:", data);
+
+      const languageHeader = data.header?.[lang];
+      const languageFooter = data.footer?.[lang];
+
+      if (!languageHeader || !languageFooter) {
+        throw new Error(`Missing data for language '${lang}'`);
+      }
+
+      setLayoutData({
+        header: {
+          topLinks: languageHeader.topLinks || [],
+          navigation: {
+            primary: languageHeader.navigation.primary || [],
+            secondary: languageHeader.navigation.secondary || [],
+          },
+        },
+        footer: {
+          topFooter: languageFooter.topFooter || [],
+          bottomFooter: languageFooter.bottomFooter || [],
+          newsletterCheckbox: languageFooter.newsletterCheckbox,
+          submitButton: languageFooter.submitButton,
+        },
+      });
+    } catch (error) {
+      console.error("Error fetching layout data:", error);
+      setError("Error fetching layout data. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchLayoutData(language);
   }, [language]);
 
   return (

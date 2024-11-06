@@ -174,7 +174,9 @@
             "name": "Terms of Use",
             "link": "/terms-of-use"
           }
-        ]
+        ],
+        "newsletterCheckbox": "I would like to receive the newsletter",
+        "submitButton": "Submit"
       },
       "mk": {
         "topFooter": [
@@ -247,7 +249,9 @@
             "name": "Услови на користење",
             "link": "/terms-of-use"
           }
-        ]
+        ],
+        "newsletterCheckbox": "Би сакал да го добивам билтенот",
+        "submitButton": "Поднеси"
       }
     }
   }
