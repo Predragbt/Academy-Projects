@@ -18,7 +18,10 @@ export const BottomHeader = () => {
             key={link.link}
             to={link.link}
             className={`text-base font-semibold text-[16px] ${
-              link.link === location.pathname ? "text-[#FF6F0F]" : "text-white"
+              (link.link === "/" && location.pathname === "/") ||
+              (location.pathname.startsWith(link.link) && link.link !== "/")
+                ? "text-[#FF6F0F]"
+                : "text-white"
             } hover:text-[#FF6F0F]`}
           >
             {link.name}

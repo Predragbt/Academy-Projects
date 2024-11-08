@@ -302,7 +302,7 @@
   "services": {
     "eng": {
       "card1": {
-        "id": "eng-card1",
+        "id": "card1",
         "title": "SIEM Threat Detection & Response",
         "titleContent": "Our 24/7 monitoring services use AI-powered tools to detect and neutralize threats before they can harm your business",
         "cardBtnText": "See More",
@@ -355,7 +355,7 @@
         ]
       },
       "card2": {
-        "id": "eng-card2",
+        "id": "card2",
         "title": "Penetration Testing",
         "titleContent": "Identify and eliminate vulnerabilities in your network with our comprehensive penetration testing services",
         "cardBtnText": "See More",
@@ -408,7 +408,7 @@
         ]
       },
       "card3": {
-        "id": "eng-card3",
+        "id": "card3",
         "title": "Incident Response",
         "titleContent": "In the event of a breach, our expert team reacts swiftly to minimize damage and restore your systems quickly.",
         "cardBtnText": "See More",
@@ -461,7 +461,7 @@
         ]
       },
       "card4": {
-        "id": "eng-card4",
+        "id": "card4",
         "title": "Network Security",
         "titleContent": "We offer end-to-end network security solutions, optimizing your infrastructure while securing it against unauthorized access.",
         "cardBtnText": "See More",
@@ -514,10 +514,10 @@
         ]
       },
       "card5": {
-        "id": "eng-card5",
+        "id": "card5",
         "title": "Security Awareness Training",
         "titleContent": "Empower your employees to recognize and respond to potential cyber threats. Our comprehensive security awareness programs equip your workforce with the knowledge they need to prevent attacks.",
-        "cardBtnText": "Get a Demo",
+        "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
         "subtitle": "Key Features of Security Awareness Training",
         "img": "/assets/images/ServicesImage1.png",
@@ -569,7 +569,7 @@
     },
     "mk": {
       "card1": {
-        "id": "mk-card1",
+        "id": "card1",
         "title": "SIEM Откривање и Одговор на Закани",
         "titleContent": "Нашите 24/7 мониторинг услуги користат алатки со вештачка интелигенција за откривање и неутрализирање на закани пред тие да му наштетат на вашето бизнис работење",
         "cardBtnText": "Види Повеќе",
@@ -622,7 +622,7 @@
         ]
       },
       "card2": {
-        "id": "mk-card2",
+        "id": "card2",
         "title": "Пенетрационо Тестирање",
         "titleContent": "Идентификувајте и елиминирајте слабости во вашата мрежа со нашите сеопфатни пенетрациони тестирања",
         "cardBtnText": "Види Повеќе",
@@ -675,7 +675,7 @@
         ]
       },
       "card3": {
-        "id": "mk-card3",
+        "id": "card3",
         "title": "Одговор на Инциденти",
         "titleContent": "Во случај на пробив, нашиот експертски тим реагира брзо за да го минимизира штетата и да ги обнови вашите системи.",
         "cardBtnText": "Види Повеќе",
@@ -728,7 +728,7 @@
         ]
       },
       "card4": {
-        "id": "mk-card4",
+        "id": "card4",
         "title": "Мрежна Безбедност",
         "titleContent": "Ние нудиме сеопфатни решенија за мрежна безбедност, оптимизирајќи ја вашата инфраструктура додека ја обезбедуваме од неовластен пристап.",
         "cardBtnText": "Види Повеќе",
@@ -781,10 +781,10 @@
         ]
       },
       "card5": {
-        "id": "mk-card5",
+        "id": "card5",
         "title": "Тренинг за Безбедносна Свесност",
         "titleContent": "Овозможете им на вашите вработени да ги препознаат и одговорат на потенцијалните сајбер закани. Нашите сеопфатни програми за безбедносна свесност го опремуваат вашиот тим со знаење потребно за да спречи напади.",
-        "cardBtnText": "Добиј Демонстрација",
+        "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
         "subtitle": "Клучни Карактеристики на Тренинг за Безбедносна Свесност",
         "img": "/assets/images/ServicesImage1.png",
@@ -833,6 +833,57 @@
           }
         ]
       }
+    }
+  },
+  "homeAboutSection": {
+    "id": "about-section",
+    "eng": {
+      "title": "Who We Are",
+      "description": "At Cyberware Global Defense (CGD), we are committed to protecting the digital future through innovative solutions that safeguard businesses from evolving cyber threats. Our expert team combines cutting-edge technology with a proactive approach to cybersecurity, ensuring that your organization remains secure, compliant, and resilient in the face of emerging challenges.",
+      "highlights": [
+        {
+          "id": "highlight-1",
+          "icon": "/assets/icons/handshakeHomeIcon.svg",
+          "text": "Trusted by over",
+          "highlightedText": "100+ Organizations"
+        },
+        {
+          "id": "highlight-2",
+          "icon": "/assets/icons/globeHomeIcon.svg",
+          "text": "Across",
+          "highlightedText": "50+ countries"
+        },
+        {
+          "id": "highlight-3",
+          "icon": "/assets/icons/memoryHomeIcon.svg",
+          "text": "Use 100%",
+          "highlightedText": "Innovative Technology"
+        }
+      ]
+    },
+    "mk": {
+      "title": "Кои Сме Ние",
+      "description": "Во Cyberware Global Defense (CGD), посветени сме на заштита на дигиталната иднина преку иновативни решенија кои ги штитат бизнисите од еволуирачки сајбер закани. Нашиот експертски тим комбинира напредна технологија со проактивен пристап кон сајбер безбедност, обезбедувајќи ја сигурноста, усогласеноста и отпорноста на вашата организација пред новите предизвици.",
+      "highlights": [
+        {
+          "id": "highlight-1",
+          "icon": "/assets/icons/handshakeHomeIcon.svg",
+          "text": "Доверено од над",
+          "highlightedText": "100+ Организации"
+        },
+        {
+          "id": "highlight-2",
+          "icon": "/assets/icons/globeHomeIcon.svg",
+          "text": "Присутни во",
+          "highlightedText": "50+ земји"
+        },
+        {
+          "id": "highlight-3",
+          "icon": "/assets/icons/memoryHomeIcon.svg",
+          "text": "Користиме 100%",
+          "highlightedText": "Иновативна Технологија"
+        }
+      ]
     }
   }
 }

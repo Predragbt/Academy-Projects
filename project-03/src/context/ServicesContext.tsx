@@ -16,10 +16,12 @@ export interface ServiceCard {
   subtitle: string;
   img: string;
   features: {
+    id: string;
     title: string;
     description: string;
   }[];
   sections: {
+    id: string;
     title: string;
     content: string;
   }[];

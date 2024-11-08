@@ -14,16 +14,20 @@ export const ServicesSection = () => {
   const services = fetchedData[language as keyof HomeServicesSection];
 
   return (
-    <div>
-      {Object.values(services).map((service, index) => (
-        <ServicesCard
-          key={service.id}
-          img={service.img}
-          title={service.title}
-          titleDescription={service.titleContent}
-          buttonText={service.cardBtnText}
-        />
-      ))}
+    <div className="py-16 bg-[#323232] border-b-8 border-[#FF6F0F]">
+      <h2 className="text-center text-[48px] text-[#FF6F0F] font-[700] mb-10">{language === "eng" ? "Services" : "Сервиси"}</h2>
+      <div className="flex flex-wrap justify-center gap-20">
+        {Object.values(services).map((service) => (
+          <ServicesCard
+            key={service.id}
+            img={service.img}
+            title={service.title}
+            titleDescription={service.titleContent}
+            buttonText={service.cardBtnText}
+            id={service.id}
+          />
+        ))}
+      </div>
     </div>
   );
 };

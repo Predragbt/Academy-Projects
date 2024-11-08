@@ -44,12 +44,12 @@ export const HeroSection = () => {
 
   return (
     <div
-      className="h-[728px] px-[120px] bg-cover bg-center flex items-center border-b-8 border-[#FF6F0F]"
+      className="py-[100px] px-[120px] bg-cover bg-center flex items-center border-b-8 border-[#FF6F0F]"
       style={{
         backgroundImage: `url("/assets/images/HomeHeroSection.png")`,
       }}
     >
-      <div className="flex flex-col items-start justify-center text-white">
+      <div className="flex flex-col justify-center text-white">
         <p className="text-3xl font-semibold text-[#FF6F0F]">
           {heroSectionData?.subtitle1}
         </p>
