@@ -298,5 +298,541 @@
         "Образование"
       ]
     }
+  },
+  "services": {
+    "eng": {
+      "card1": {
+        "id": "eng-card1",
+        "title": "SIEM Threat Detection & Response",
+        "titleContent": "Our 24/7 monitoring services use AI-powered tools to detect and neutralize threats before they can harm your business",
+        "cardBtnText": "See More",
+        "pageBtnText": "Get Demo",
+        "subtitle": "Key Features of SIEM",
+        "img": "/assets/images/ServicesImage1.png",
+        "features": [
+          {
+            "id": "eng-card1-feature1",
+            "title": "Data Aggregation",
+            "description": "SIEM solutions collect event data from diverse sources, including user activities, endpoints, applications, and security hardware like firewalls and antivirus software."
+          },
+          {
+            "id": "eng-card1-feature2",
+            "title": "Event Correlation",
+            "description": "By correlating related events, SIEM systems can identify patterns that may indicate potential threats."
+          },
+          {
+            "id": "eng-card1-feature3",
+            "title": "Real-Time Monitoring",
+            "description": "SIEM tools provide near-real-time analysis of security alerts, enabling security teams to respond swiftly to incidents."
+          },
+          {
+            "id": "eng-card1-feature4",
+            "title": "Automated Response",
+            "description": "Many SIEM solutions incorporate automation features that can respond to certain types of threats automatically."
+          }
+        ],
+        "sections": [
+          {
+            "id": "eng-card1-section1",
+            "title": "Overview of SIEM in Threat Detection and Response",
+            "content": "Security Information and Event Management (SIEM) systems play a crucial role in modern cybersecurity strategies by aggregating and analyzing log data from various sources within an organization’s IT infrastructure. These systems are designed to detect, investigate, and respond to security threats in real-time, enhancing overall security posture."
+          },
+          {
+            "id": "eng-card1-section2",
+            "title": "Threat Detection and Response (TDR)",
+            "content": "Threat Detection and Response encompasses a broader strategy that includes not only SIEM but also other technologies such as Endpoint Detection and Response (EDR) and Threat Intelligence Platforms (TIPs). The TDR process typically involves:\n\n- Proactive Threat Hunting: Actively searching for potential threats before they can cause damage, which requires a deep understanding of normal network behavior.\n\n- Incident Response: Implementing structured steps to address detected threats, including identification, containment, eradication, recovery, and post-incident analysis."
+          },
+          {
+            "id": "eng-card1-section3",
+            "title": "Best Practices for Effective SIEM Implementation",
+            "content": "Continuous Monitoring: Organizations should implement ongoing monitoring of their networks and systems to detect threats early.\n\nRegular Updates: Keeping threat intelligence updated enhances detection capabilities against evolving cyber threats.\n\nMulti-Layered Security Approach: Combining SIEM with other security measures such as EDR and TIPs creates a more robust defense against cyber attacks.\n\nIncident Response Planning: Developing a detailed incident response plan ensures that organizations can react efficiently to security incidents when they occur.\n\nLeverage Automation: Utilizing automated tools enhances the speed and effectiveness of both threat detection and response efforts."
+          },
+          {
+            "id": "eng-card1-section4",
+            "title": "Conclusion",
+            "content": "SIEM solutions are integral to effective threat detection and response strategies in cybersecurity. By leveraging advanced analytics, real-time monitoring, and automation capabilities, organizations can significantly improve their ability to detect and respond to cyber threats swiftly and efficiently. Implementing best practices in conjunction with SIEM technologies further strengthens an organization’s overall security framework against increasingly sophisticated cyber threats."
+          }
+        ]
+      },
+      "card2": {
+        "id": "eng-card2",
+        "title": "Penetration Testing",
+        "titleContent": "Identify and eliminate vulnerabilities in your network with our comprehensive penetration testing services",
+        "cardBtnText": "See More",
+        "pageBtnText": "Get Demo",
+        "subtitle": "Key Features of Penetration Testing",
+        "img": "/assets/images/ServicesImage1.png",
+        "features": [
+          {
+            "id": "eng-card2-feature1",
+            "title": "Reconnaissance",
+            "description": "Gathering information about the target system, which may include identifying network services and potential entry points."
+          },
+          {
+            "id": "eng-card2-feature2",
+            "title": "Scanning",
+            "description": "Using tools to discover live hosts, open ports, and services running on those ports. This phase helps in mapping the attack surface."
+          },
+          {
+            "id": "eng-card2-feature3",
+            "title": "Gaining Access",
+            "description": "Exploiting identified vulnerabilities using various tools and techniques to gain unauthorized access to the system."
+          },
+          {
+            "id": "eng-card2-feature4",
+            "title": "Maintaining Access",
+            "description": "Establishing a persistent presence within the target environment to gather further data and assess the extent of control that can be achieved."
+          }
+        ],
+        "sections": [
+          {
+            "id": "eng-card2-section1",
+            "title": "Overview of Penetration Testing",
+            "content": "Penetration testing, often referred to as 'pentesting,' is an authorized simulated cyberattack on a computer system, designed to evaluate its security. Unlike vulnerability assessments, which merely identify potential weaknesses, penetration tests actively exploit vulnerabilities to demonstrate their impact and assess the overall security posture of the system."
+          },
+          {
+            "id": "eng-card2-section2",
+            "title": "Purpose and Importance",
+            "content": "The primary goal of penetration testing is to identify and address security vulnerabilities before they can be exploited by malicious actors. By simulating real-world attacks, organizations can understand their weaknesses and implement necessary defenses. Regular penetration testing is crucial for maintaining robust cybersecurity measures, especially in light of increasing cyber threats."
+          },
+          {
+            "id": "eng-card2-section3",
+            "title": "Types of Penetration Testing",
+            "content": "Different types of penetration tests focus on various aspects of an organization's security:\n\n1. Web Application Testing: Evaluates web applications for vulnerabilities such as SQL injection and cross-site scripting (XSS).\n2. Internal Network Testing: Assesses vulnerabilities from within the network, simulating an insider threat.\n3. External Network Testing: Identifies vulnerabilities that could be exploited from outside the organization.\n4. Social Engineering Testing: Tests employees' susceptibility to phishing and other social engineering tactics.\n5. Wireless Network Testing: Examines the security of wireless networks against unauthorized access."
+          },
+          {
+            "id": "eng-card2-section4",
+            "title": "Conclusion",
+            "content": "Penetration testing is an essential component of a comprehensive cybersecurity strategy. By simulating attacks and identifying vulnerabilities, organizations can take proactive measures to strengthen their defenses against real-world threats. Regularly scheduled penetration tests not only enhance security but also ensure compliance with industry regulations, ultimately protecting sensitive data and maintaining trust with stakeholders."
+          }
+        ]
+      },
+      "card3": {
+        "id": "eng-card3",
+        "title": "Incident Response",
+        "titleContent": "In the event of a breach, our expert team reacts swiftly to minimize damage and restore your systems quickly.",
+        "cardBtnText": "See More",
+        "pageBtnText": "Get Demo",
+        "subtitle": "Key Features of Incident Response",
+        "img": "/assets/images/ServicesImage1.png",
+        "features": [
+          {
+            "id": "eng-card3-feature1",
+            "title": "Reduce Response Time",
+            "description": "A clear plan enables quicker identification and remediation of threats, minimizing potential damage."
+          },
+          {
+            "id": "eng-card3-feature2",
+            "title": "Enhance Coordination",
+            "description": "Clearly defined roles and responsibilities facilitate teamwork during high-stress situations."
+          },
+          {
+            "id": "eng-card3-feature3",
+            "title": "Ensure Compliance",
+            "description": "Many regulations require documented incident response procedures, helping organizations avoid legal repercussions."
+          },
+          {
+            "id": "eng-card3-feature4",
+            "title": "Improve Security Posture",
+            "description": "Post-incident analysis allows organizations to learn from incidents and strengthen defenses against future threats."
+          }
+        ],
+        "sections": [
+          {
+            "id": "eng-card3-section1",
+            "title": "Incident Response: Overview and Best Practices",
+            "content": "Incident response refers to the structured approach organizations use to prepare for, detect, manage, and recover from cybersecurity incidents. A well-defined incident response plan (IRP) is crucial for minimizing damage and ensuring a swift recovery."
+          },
+          {
+            "id": "eng-card3-section2",
+            "title": "Best Practices for Effective Incident Response",
+            "content": "Develop a Comprehensive IRP: Ensure your IRP includes detailed procedures for various types of incidents, communication plans, and escalation paths for different threat levels.\n\nImplement Continuous Monitoring: Utilize tools like SIEM (Security Information and Event Management) to monitor for suspicious activities 24/7.\n\nConduct Regular Training: Regularly educate employees about potential threats and proper reporting procedures to foster a culture of security awareness within the organization."
+          },
+          {
+            "id": "eng-card3-section3",
+            "title": "Phases of Incident Response",
+            "content": "The incident response process typically involves several key phases:\n\n1. Preparation: Organizations should conduct risk assessments, define security policies, and establish an incident response team with clearly defined roles. This phase may also include employee training to promote security awareness.\n\n2. Detection and Analysis: Continuous monitoring of systems helps in the early detection of anomalies. Once detected, incidents must be prioritized based on their potential impact. Analyzing the nature and scope of the threat is crucial for an effective response strategy.\n\n3. Containment: Immediate actions are taken to limit the spread of the incident. This may involve isolating affected systems or disabling compromised accounts."
+          },
+          {
+            "id": "eng-card3-section4",
+            "title": "Conclusion",
+            "content": "A robust incident response strategy is essential for any organization aiming to protect its assets from cyber threats. By preparing adequately, responding effectively, and learning from past incidents, organizations can significantly enhance their resilience against future attacks. Implementing best practices in incident response not only mitigates risks but also fosters a proactive security culture within the organization."
+          }
+        ]
+      },
+      "card4": {
+        "id": "eng-card4",
+        "title": "Network Security",
+        "titleContent": "We offer end-to-end network security solutions, optimizing your infrastructure while securing it against unauthorized access.",
+        "cardBtnText": "See More",
+        "pageBtnText": "Get Demo",
+        "subtitle": "Key Features of Network Security",
+        "img": "/assets/images/ServicesImage1.png",
+        "features": [
+          {
+            "id": "eng-card4-feature1",
+            "title": "Perform Regular Audits",
+            "description": "Conduct thorough network audits to identify vulnerabilities and assess the overall security posture."
+          },
+          {
+            "id": "eng-card4-feature2",
+            "title": "Implement Data Loss Prevention (DLP)",
+            "description": "DLP strategies help monitor and control data transfers across the network to prevent unauthorized access or data breaches."
+          },
+          {
+            "id": "eng-card4-feature3",
+            "title": "Educate Employees",
+            "description": "Regular training on security awareness helps employees recognize phishing attempts and social engineering tactics, reducing the risk of human error."
+          },
+          {
+            "id": "eng-card4-feature4",
+            "title": "Secure Routers",
+            "description": "Change default passwords on routers, relocate them to secure areas, and implement additional security measures such as video surveillance to prevent unauthorized access."
+          }
+        ],
+        "sections": [
+          {
+            "id": "eng-card4-section1",
+            "title": "Network Security: Best Practices and Strategies",
+            "content": "Network security encompasses a range of measures designed to protect the integrity, confidentiality, and availability of computer networks and data. As cyber threats evolve, organizations must adopt robust strategies to safeguard their networks against unauthorized access, misuse, or damage."
+          },
+          {
+            "id": "eng-card4-section2",
+            "title": "Key Components of Network Security",
+            "content": "Physical Security: Protects physical assets such as servers, routers, and switches from unauthorized access. This includes using locks, surveillance cameras, and controlled access to facilities.\n\nTechnical Security: Involves the use of hardware and software technologies to protect data in transit and at rest. This includes firewalls, intrusion detection systems (IDS), and encryption protocols.\n\nAdministrative Security: Focuses on policies and procedures that govern user behavior and access controls. This includes user authentication processes and compliance with security policies."
+          },
+          {
+            "id": "eng-card4-section3",
+            "title": "Best Practices for Network Security",
+            "content": "Secure Routers: Change default passwords on routers, relocate them to secure areas, and implement additional security measures such as video surveillance to prevent unauthorized access.\n\nUse SIEM Solutions: Aggregate network data in a Security Information and Event Management (SIEM) system to analyze real-time alerts and historical data for potential threats.\n\nEstablish Access Controls: Implement strict access management policies to regulate who can access sensitive information based on their roles within the organization.\n\nNetwork Segmentation: Divide the network into segments based on trust levels to contain potential breaches and limit the spread of threats across the network."
+          },
+          {
+            "id": "eng-card4-section4",
+            "title": "Conclusion",
+            "content": "Implementing these best practices is essential for maintaining a secure network environment. Organizations must remain vigilant against emerging threats by continuously updating their security measures, educating employees, and leveraging advanced technologies like SIEM systems. By fostering a culture of security awareness and proactive defense, organizations can significantly reduce their risk exposure in an increasingly complex cyber landscape."
+          }
+        ]
+      },
+      "card5": {
+        "id": "eng-card5",
+        "title": "Security Awareness Training",
+        "titleContent": "Empower your employees to recognize and respond to potential cyber threats. Our comprehensive security awareness programs equip your workforce with the knowledge they need to prevent attacks.",
+        "cardBtnText": "Get a Demo",
+        "pageBtnText": "Get Demo",
+        "subtitle": "Key Features of Security Awareness Training",
+        "img": "/assets/images/ServicesImage1.png",
+        "features": [
+          {
+            "id": "eng-card5-feature1",
+            "title": "Customized Content",
+            "description": "Tailor training materials to different roles within the organization to ensure relevance and engagement."
+          },
+          {
+            "id": "eng-card5-feature2",
+            "title": "Regular Training Sessions",
+            "description": "Conduct training sessions every four to six months, as retention of knowledge tends to decline after this period."
+          },
+          {
+            "id": "eng-card5-feature3",
+            "title": "Diverse Learning Methods",
+            "description": "Utilize various formats such as videos, quizzes, and simulations to cater to different learning styles and keep content engaging."
+          },
+          {
+            "id": "eng-card5-feature4",
+            "title": "Phishing Simulations",
+            "description": "Regularly test employees with simulated phishing attacks to reinforce learning and gauge awareness levels."
+          }
+        ],
+        "sections": [
+          {
+            "id": "eng-card5-section1",
+            "title": "Security Awareness Training: Importance and Best Practices",
+            "content": "Security awareness training is a strategic initiative aimed at educating employees about cybersecurity risks and best practices. By enhancing awareness, organizations can significantly reduce the likelihood of security breaches caused by human error."
+          },
+          {
+            "id": "eng-card5-section2",
+            "title": "Objectives of Security Awareness Training",
+            "content": "Educate Employees: Teach staff about the importance of cybersecurity and their role in protecting organizational assets.\n\nReduce Human Error: Equip employees with the knowledge to recognize and respond to potential threats, thus minimizing incidents caused by negligence.\n\nCultivate a Cybersecurity Mindset: Foster a culture of security where employees feel responsible for safeguarding sensitive information."
+          },
+          {
+            "id": "eng-card5-section3",
+            "title": "Best Practices for Implementation",
+            "content": "Onboarding Training: Integrate security awareness training into the onboarding process for new employees to establish a security-first culture from the start.\n\nContinuous Learning: Provide ongoing education through newsletters, updates on emerging threats, and refresher courses throughout the year.\n\nPositive Reinforcement: Use humor and engaging content rather than fear-based tactics to improve retention and participation in training programs.\n\nMeasure Effectiveness: Implement metrics to assess the impact of training, such as tracking phishing susceptibility rates before and after training sessions."
+          },
+          {
+            "id": "eng-card5-section4",
+            "title": "Conclusion",
+            "content": "Security awareness training is essential for building a resilient organizational culture against cyber threats. By educating employees on best practices and fostering a proactive approach to cybersecurity, organizations can significantly mitigate risks associated with human error. Regularly updated training programs that engage employees will help maintain high levels of awareness and readiness against potential threats."
+          }
+        ]
+      }
+    },
+    "mk": {
+      "card1": {
+        "id": "mk-card1",
+        "title": "SIEM Откривање и Одговор на Закани",
+        "titleContent": "Нашите 24/7 мониторинг услуги користат алатки со вештачка интелигенција за откривање и неутрализирање на закани пред тие да му наштетат на вашето бизнис работење",
+        "cardBtnText": "Види Повеќе",
+        "pageBtnText": "Добиј Демонстрација",
+        "subtitle": "Клучни Карактеристики на SIEM",
+        "img": "/assets/images/ServicesImage1.png",
+        "features": [
+          {
+            "id": "mk-card1-feature1",
+            "title": "Агрегација на Податоци",
+            "description": "SIEM решенијата собираат податоци од различни извори, вклучувајќи активности на корисници, крајни точки, апликации и безбедносен хардвер како firewall-и и антивирусен софтвер."
+          },
+          {
+            "id": "mk-card1-feature2",
+            "title": "Корелација на Настани",
+            "description": "Со корелација на поврзани настани, SIEM системите можат да идентификуваат обрасци кои може да укажат на потенцијални закани."
+          },
+          {
+            "id": "mk-card1-feature3",
+            "title": "Следење во Реално Време",
+            "description": "SIEM алатките обезбедуваат анализа на безбедносни аларми во реално време, овозможувајќи му на безбедносниот тим брзо да реагира на инциденти."
+          },
+          {
+            "id": "mk-card1-feature4",
+            "title": "Автоматизиран Одговор",
+            "description": "Многу SIEM решенија вклучуваат автоматизирани функции кои можат да реагираат на одредени видови закани автоматски."
+          }
+        ],
+        "sections": [
+          {
+            "id": "mk-card1-section1",
+            "title": "Преглед на SIEM за Откривање и Одговор на Закани",
+            "content": "Системите за управување со информации и настани во безбедноста (SIEM) играат клучна улога во модерните стратегии за сајбер безбедност со агрегирање и анализа на лог податоци од различни извори во ИТ инфраструктурата на организацијата. Овие системи се дизајнирани за откривање, истражување и реагирање на безбедносни закани во реално време, што го подобрува целокупниот безбедносен капацитет."
+          },
+          {
+            "id": "mk-card1-section2",
+            "title": "Откривање и Одговор на Закани (TDR)",
+            "content": "Откривањето и одговорот на закани опфаќа поширока стратегија која вклучува не само SIEM, туку и други технологии како Endpoint Detection and Response (EDR) и платформи за разузнавање на закани (TIPs). Процесот на TDR обично вклучува:\n\n- Превентивно Лов на Закани: Активно пребарување на потенцијални закани пред тие да предизвикаат штета, што бара длабоко разбирање на нормалното однесување на мрежата.\n\n- Одговор на Инциденти: Имплементирање на структуриран пристап за справување со детектирани закани, вклучувајќи идентификација, содржување, елиминација, закрепнување и анализа по инцидентот."
+          },
+          {
+            "id": "mk-card1-section3",
+            "title": "Најдобри Практики за Ефективна Имплементација на SIEM",
+            "content": "Континуирано Следење: Организациите треба да имплементираат континуирано следење на нивните мрежи и системи за рано откривање на закани.\n\nРедовни Ажурирања: Одржувањето на разузнавањето на закани ажурирано ги подобрува способностите за откривање против еволуирачките сајбер закани.\n\nПристап со Повеќе Слоеви: Комбинирањето на SIEM со други безбедносни мерки како EDR и TIPs создава поцврста одбрана против сајбер напади.\n\nПланирање на Одговор на Инциденти: Развивање на детален план за одговор на инциденти овозможува организациите ефикасно да реагираат кога се случуваат безбедносни инциденти.\n\nИскористување на Автоматизацијата: Користењето на автоматизирани алатки го зголемува брзината и ефикасноста на откривањето и одговорот на заканите."
+          },
+          {
+            "id": "mk-card1-section4",
+            "title": "Заклучок",
+            "content": "SIEM решенијата се интегрален дел од ефективните стратегии за откривање и одговор на закани во сајбер безбедноста. Со користење на напредна анализа, следење во реално време и автоматизирани функции, организациите можат значително да ја подобрат својата способност за откривање и брзо реагирање на сајбер закани. Имплементацијата на најдобрите практики заедно со SIEM технологиите дополнително го зајакнува целокупниот безбедносен капацитет на организацијата против сè поразвиени сајбер закани."
+          }
+        ]
+      },
+      "card2": {
+        "id": "mk-card2",
+        "title": "Пенетрационо Тестирање",
+        "titleContent": "Идентификувајте и елиминирајте слабости во вашата мрежа со нашите сеопфатни пенетрациони тестирања",
+        "cardBtnText": "Види Повеќе",
+        "pageBtnText": "Добиј Демонстрација",
+        "subtitle": "Клучни Карактеристики на Пенетрационо Тестирање",
+        "img": "/assets/images/ServicesImage1.png",
+        "features": [
+          {
+            "id": "mk-card2-feature1",
+            "title": "Извидување",
+            "description": "Собирање информации за целниот систем, вклучувајќи идентификација на мрежни сервиси и потенцијални точки на влез."
+          },
+          {
+            "id": "mk-card2-feature2",
+            "title": "Скенирање",
+            "description": "Користење алатки за откривање на активни хостови, отворени порти и сервиси кои работат на тие порти. Оваа фаза помага во мапирање на нападната површина."
+          },
+          {
+            "id": "mk-card2-feature3",
+            "title": "Достигнување Пристап",
+            "description": "Експлоатирање на идентификуваните слабости со различни алатки и техники за неовластен пристап до системот."
+          },
+          {
+            "id": "mk-card2-feature4",
+            "title": "Одржување Пристап",
+            "description": "Успоставување на постојано присуство во целната околина за понатамошно собирање податоци и проценка на степенот на контрола кој може да се постигне."
+          }
+        ],
+        "sections": [
+          {
+            "id": "mk-card2-section1",
+            "title": "Преглед на Пенетрационо Тестирање",
+            "content": "Пенетрационото тестирање, познато и како 'пентестирање,' е овластен симулиран сајбер напад на компјутерски систем, дизајниран за да се процени неговата безбедност. За разлика од проценката на ранливостите, која само ги идентификува потенцијалните слабости, пенетрационите тестови активно ги експлоатираат слабостите за да го демонстрираат нивното влијание и да го проценат целокупниот безбедносен капацитет на системот."
+          },
+          {
+            "id": "mk-card2-section2",
+            "title": "Цел и Важност",
+            "content": "Примарната цел на пенетрационите тестови е да се идентификуваат и адресираат слабости во безбедноста пред тие да можат да бидат експлоатирани од малициозни актери. Со симулирање на реални напади, организациите можат да ги разберат своите слабости и да имплементираат потребни одбрани. Редовното пенетрационо тестирање е клучно за одржување на робусни мерки за сајбер безбедност, особено со оглед на зголемените закани."
+          },
+          {
+            "id": "mk-card2-section3",
+            "title": "Видови на Пенетрационо Тестирање",
+            "content": "Различни видови на пенетрациони тестови се фокусираат на различни аспекти на безбедноста на организацијата:\n\n1. Тестирање на Веб Апликации: Проценува веб апликации за ранливости како SQL инјекции и cross-site scripting (XSS).\n2. Тестирање на Внатрешна Мрежа: Проценува ранливости во рамките на мрежата, симулирајќи внатрешна закана.\n3. Тестирање на Надворешна Мрежа: Идентификува ранливости кои може да се експлоатираат од надвор.\n4. Тестирање на Социјален Инженеринг: Тестира подложност на вработените на phishing и други социјални инженеринг тактики.\n5. Тестирање на Безжична Мрежа: Проценува безбедност на безжичните мрежи против неовластен пристап."
+          },
+          {
+            "id": "mk-card2-section4",
+            "title": "Заклучок",
+            "content": "Пенетрационото тестирање е суштински дел од сеопфатната стратегија за сајбер безбедност. Со симулирање на напади и идентификација на слабости, организациите можат да преземат проактивни мерки за зајакнување на одбраната против реалните закани. Редовното пенетрационо тестирање не само што ја подобрува безбедноста, туку и обезбедува усогласеност со регулаторните стандарди, заштитувајќи ги чувствителните податоци и градејќи доверба со засегнатите страни."
+          }
+        ]
+      },
+      "card3": {
+        "id": "mk-card3",
+        "title": "Одговор на Инциденти",
+        "titleContent": "Во случај на пробив, нашиот експертски тим реагира брзо за да го минимизира штетата и да ги обнови вашите системи.",
+        "cardBtnText": "Види Повеќе",
+        "pageBtnText": "Добиј Демонстрација",
+        "subtitle": "Клучни Карактеристики на Одговор на Инциденти",
+        "img": "/assets/images/ServicesImage1.png",
+        "features": [
+          {
+            "id": "mk-card3-feature1",
+            "title": "Намалување на Времето за Реакција",
+            "description": "Јасен план овозможува побрза идентификација и корекција на заканите, со што се минимизира потенцијалната штета."
+          },
+          {
+            "id": "mk-card3-feature2",
+            "title": "Зголемена Координација",
+            "description": "Јасно дефинирани улоги и одговорности го олеснуваат тимскиот работен процес во ситуации со висок стрес."
+          },
+          {
+            "id": "mk-card3-feature3",
+            "title": "Осигурување на Ускладеност",
+            "description": "Многу регулативи бараат документирани процедури за одговор на инциденти, што им помага на организациите да избегнат правни последици."
+          },
+          {
+            "id": "mk-card3-feature4",
+            "title": "Подобрување на Безбедносниот Капацитет",
+            "description": "Анализата по инцидентот им овозможува на организациите да учат од инцидентите и да ги зајакнат одбранбените мерки против идните закани."
+          }
+        ],
+        "sections": [
+          {
+            "id": "mk-card3-section1",
+            "title": "Одговор на Инциденти: Преглед и Најдобри Практики",
+            "content": "Одговорот на инциденти се однесува на структуриран пристап кој го користат организациите за да се подготват за, откријат, менаџираат и закрепнат од сајбер инциденти. Добро дефинираниот план за одговор на инциденти (IRP) е клучен за минимизирање на штетата и осигурување брзо закрепнување."
+          },
+          {
+            "id": "mk-card3-section2",
+            "title": "Најдобри Практики за Ефективен Одговор на Инциденти",
+            "content": "Развијте Комплетен IRP: Осигурајте дека вашиот IRP вклучува детални процедури за различни типови на инциденти, планови за комуникација и патишта за ескалација за различни нивоа на закана.\n\nКонтинуирано Следење: Користете алатки како SIEM (Security Information and Event Management) за 24/7 мониторинг на сомнителни активности.\n\nРедовна Обука: Редовно едуцирајте ги вработените за потенцијални закани и правилни процедури за известување со цел да се поттикне култура на безбедносна свест во организацијата."
+          },
+          {
+            "id": "mk-card3-section3",
+            "title": "Фази на Одговор на Инциденти",
+            "content": "Процесот за одговор на инциденти обично вклучува неколку клучни фази:\n\n1. Подготовка: Организациите треба да вршат проценки на ризици, дефинираат безбедносни политики и воспостават тим за одговор на инциденти со јасно дефинирани улоги. Оваа фаза може да вклучува и обука на вработените за промовирање на безбедносна свест.\n\n2. Откривање и Анализа: Континуираното следење на системите помага во раното откривање на аномалии. Откако ќе се детектираат, инцидентите треба да се приоретизираат врз основа на нивното потенцијално влијание. Анализирањето на природата и обемот на заканата е клучно за ефективна стратегија за одговор.\n\n3. Содржување: Се преземаат веднашни мерки за ограничување на ширењето на инцидентот, што може да вклучи изолирање на погодените системи или онеспособување на компромитирани сметки."
+          },
+          {
+            "id": "mk-card3-section4",
+            "title": "Заклучок",
+            "content": "Робустна стратегија за одговор на инциденти е неопходна за секоја организација која сака да ги заштити своите средства од сајбер закани. Со адекватна подготовка, ефективна реакција и учење од претходните инциденти, организациите значително можат да ја зајакнат својата отпорност против идни напади. Имплементирањето на најдобрите практики во одговорот на инциденти не само што ги намалува ризиците, туку и поттикнува проактивна безбедносна култура во рамките на организацијата."
+          }
+        ]
+      },
+      "card4": {
+        "id": "mk-card4",
+        "title": "Мрежна Безбедност",
+        "titleContent": "Ние нудиме сеопфатни решенија за мрежна безбедност, оптимизирајќи ја вашата инфраструктура додека ја обезбедуваме од неовластен пристап.",
+        "cardBtnText": "Види Повеќе",
+        "pageBtnText": "Добиј Демонстрација",
+        "subtitle": "Клучни Карактеристики на Мрежна Безбедност",
+        "img": "/assets/images/ServicesImage1.png",
+        "features": [
+          {
+            "id": "mk-card4-feature1",
+            "title": "Редовни Аудити",
+            "description": "Извршете детални аудити на мрежата за да ги идентификувате слабостите и да ја процените целокупната безбедност."
+          },
+          {
+            "id": "mk-card4-feature2",
+            "title": "Превенција на Загуба на Податоци (DLP)",
+            "description": "DLP стратегиите помагаат во мониторинг и контрола на преносот на податоци преку мрежата за да се спречи неовластен пристап или загуба на податоци."
+          },
+          {
+            "id": "mk-card4-feature3",
+            "title": "Едукација на Вработените",
+            "description": "Редовна обука за безбедноста помага на вработените да ги препознаат phishing нападите и тактиките на социјален инженеринг, со што се намалува ризикот од човечки грешки."
+          },
+          {
+            "id": "mk-card4-feature4",
+            "title": "Осигурување на Рутери",
+            "description": "Променете ги стандардните лозинки на рутерите, преместете ги во сигурни области и имплементирајте дополнителни безбедносни мерки како видео надзор за спречување на неовластен пристап."
+          }
+        ],
+        "sections": [
+          {
+            "id": "mk-card4-section1",
+            "title": "Мрежна Безбедност: Најдобри Практики и Стратегии",
+            "content": "Мрежната безбедност опфаќа различни мерки за заштита на интегритетот, доверливоста и достапноста на компјутерските мрежи и податоци. Како што се развиваат сајбер заканите, организациите мораат да усвојат робусни стратегии за заштита на нивните мрежи од неовластен пристап, злоупотреба или штета."
+          },
+          {
+            "id": "mk-card4-section2",
+            "title": "Клучни Компоненти на Мрежната Безбедност",
+            "content": "Физичка Безбедност: Ги штити физичките средства како сервери, рутери и прекинувачи од неовластен пристап. Ова вклучува користење на заклучувачи, надзорни камери и контролиран пристап до објектите.\n\nТехничка Безбедност: Опфаќа користење на хардверски и софтверски технологии за заштита на податоците при пренос и на одмор. Ова вклучува firewall-и, системи за откривање на пробиви (IDS) и протоколи за енкрипција.\n\nАдминистративна Безбедност: Се фокусира на политики и процедури кои го регулираат однесувањето на корисниците и контролите за пристап. Ова вклучува процеси за автентикација на корисниците и усогласеност со безбедносните политики."
+          },
+          {
+            "id": "mk-card4-section3",
+            "title": "Најдобри Практики за Мрежна Безбедност",
+            "content": "Осигурување на Рутери: Променете ги стандардните лозинки на рутерите, преместете ги во сигурни области и имплементирајте дополнителни безбедносни мерки како видео надзор за спречување на неовластен пристап.\n\nКористење на SIEM Решенија: Агрегирајте мрежни податоци во систем за управување со безбедноста (SIEM) за анализа на алармите во реално време и историски податоци за потенцијални закани.\n\nВоспоставување на Контроли за Пристап: Имплементирајте строги контроли за управување со пристапот за да се регулира кој може да пристапи до чувствителни информации врз основа на нивната улога во организацијата.\n\nСегментација на Мрежата: Поделете ја мрежата во сегменти врз основа на нивоата на доверба за да ги ограничите можните пробиви и да го ограничите ширењето на заканите низ мрежата."
+          },
+          {
+            "id": "mk-card4-section4",
+            "title": "Заклучок",
+            "content": "Имплементацијата на овие најдобри практики е од суштинско значење за одржување на безбедна мрежна средина. Организациите мора да бидат будни против новите закани преку континуирано ажурирање на безбедносните мерки, едукација на вработените и искористување на напредни технологии како SIEM системи. Со форсирање на култура на свесност за безбедност и проактивна одбрана, организациите можат значително да го намалат нивниот ризик во сложен сајбер пејзаж."
+          }
+        ]
+      },
+      "card5": {
+        "id": "mk-card5",
+        "title": "Тренинг за Безбедносна Свесност",
+        "titleContent": "Овозможете им на вашите вработени да ги препознаат и одговорат на потенцијалните сајбер закани. Нашите сеопфатни програми за безбедносна свесност го опремуваат вашиот тим со знаење потребно за да спречи напади.",
+        "cardBtnText": "Добиј Демонстрација",
+        "pageBtnText": "Добиј Демонстрација",
+        "subtitle": "Клучни Карактеристики на Тренинг за Безбедносна Свесност",
+        "img": "/assets/images/ServicesImage1.png",
+        "features": [
+          {
+            "id": "mk-card5-feature1",
+            "title": "Прилагодена Содржина",
+            "description": "Приспособете ги материјалите за обука на различни улоги во организацијата за да обезбедите релевантност и ангажираност."
+          },
+          {
+            "id": "mk-card5-feature2",
+            "title": "Редовни Сесии за Тренинг",
+            "description": "Спроведете сесии за обука на секои четири до шест месеци, бидејќи задржувањето на знаење има тенденција да се намали по овој период."
+          },
+          {
+            "id": "mk-card5-feature3",
+            "title": "Разновидни Методи на Учење",
+            "description": "Користете различни формати како видеа, квизови и симулации за да ги задоволите различните стилови на учење и да го одржите интересот."
+          },
+          {
+            "id": "mk-card5-feature4",
+            "title": "Симулации на Фишинг",
+            "description": "Редовно тестирајте ги вработените со симулирани фишинг напади за да ја зајакнете обуката и да го измерите нивото на свесност."
+          }
+        ],
+        "sections": [
+          {
+            "id": "mk-card5-section1",
+            "title": "Тренинг за Безбедносна Свесност: Важност и Најдобри Практики",
+            "content": "Тренингот за безбедносна свесност е стратешка иницијатива која има за цел да ги едуцира вработените за ризиците во сајбер безбедноста и најдобрите практики. Со зајакнување на свесноста, организациите можат значително да го намалат ризикот од безбедносни инциденти предизвикани од човечка грешка."
+          },
+          {
+            "id": "mk-card5-section2",
+            "title": "Цели на Тренингот за Безбедносна Свесност",
+            "content": "Едуцирајте ги Вработените: Научете ги вработените за важноста на сајбер безбедноста и нивната улога во заштитата на организациските средства.\n\nНамалување на Човечка Грешка: Опремете ги вработените со знаење за препознавање и реагирање на потенцијалните закани, со што ќе се намали бројот на инциденти предизвикани од невнимание.\n\nСоздадете Кибернетичка Свесност: Поттикнете култура на безбедност каде вработените се чувствуваат одговорни за заштита на чувствителни информации."
+          },
+          {
+            "id": "mk-card5-section3",
+            "title": "Најдобри Практики за Имплементација",
+            "content": "Тренинг за Нови Вработени: Интегрирајте го тренингот за безбедносна свесност во процесот на индукција на новите вработени за да се воспостави култура на безбедност од самиот почеток.\n\nКонтинуирано Учење: Обезбедете континуирана едукација преку билтени, ажурирања за нови закани и освежувања во текот на годината.\n\nПозитивно Засилување: Користете хумор и ангажирана содржина наместо тактики базирани на страв за да го подобрите задржувањето и учеството во програмите за обука.\n\nМерење на Ефикасноста: Воведете мерки за оценка на влијанието на обуката, како што е следење на стапките на подложност на фишинг пред и по обуките."
+          },
+          {
+            "id": "mk-card5-section4",
+            "title": "Заклучок",
+            "content": "Тренингот за безбедносна свесност е суштински за градење на резистентна организациска култура против сајбер заканите. Со едуцирање на вработените за најдобрите практики и поттикнување проактивен пристап кон сајбер безбедноста, организациите можат значително да ги намалат ризиците поврзани со човечка грешка. Редовно ажурираните програми за обука кои ги ангажираат вработените ќе помогнат во одржување на високо ниво на свесност и подготвеност против потенцијалните закани."
+          }
+        ]
+      }
+    }
   }
 }

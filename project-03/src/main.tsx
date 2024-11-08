@@ -5,11 +5,14 @@ import { RouterProvider } from "react-router-dom";
 import router from "./routes/router";
 import "./index.css";
 import { AppProvider } from "./context/AppContext";
+import { ServicesProvider } from "./context/ServicesContext";
 
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <AppProvider>
-      <RouterProvider router={router} />
+      <ServicesProvider>
+        <RouterProvider router={router} />
+      </ServicesProvider>
     </AppProvider>
   </React.StrictMode>
 );

@@ -44,7 +44,7 @@ export const HeroSection = () => {
 
   return (
     <div
-      className="h-[728px] px-[120px] bg-cover bg-center flex items-center"
+      className="h-[728px] px-[120px] bg-cover bg-center flex items-center border-b-8 border-[#FF6F0F]"
       style={{
         backgroundImage: `url("/assets/images/HomeHeroSection.png")`,
       }}
@@ -57,7 +57,7 @@ export const HeroSection = () => {
 
         {/* Title and Content Section */}
         <div className="flex items-start mt-4">
-          <p className="text-[90px] leading-[90px]">
+          <p className="text-[80px] leading-[80px]">
             {heroSectionData?.title.part1}{" "}
             <span className="text-[#FF6F0F]">
               {heroSectionData?.title.highlight}{" "}

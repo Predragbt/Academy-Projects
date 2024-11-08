@@ -6,7 +6,7 @@ import { About } from "../pages/About";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />, // App serves as the layout with Header and Footer
+    element: <App />,
     children: [
       {
         path: "",
@@ -15,6 +15,16 @@ export const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "services",
+        element: <div>Services</div>,
+        children: [
+          {
+            path: ":title",
+            element: <div>Service Details</div>,
+          },
+        ],
       },
     ],
   },
