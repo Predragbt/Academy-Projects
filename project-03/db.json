@@ -885,5 +885,18 @@
         }
       ]
     }
+  },
+  "topVideoSection": {
+    "id": "video-section",
+    "eng": {
+      "quote": "Always On Guard: Your 24/7 Online Security Solution for Unmatched Protection",
+      "btn1": "Explore our Services",
+      "btn2": "Book a Demo"
+    },
+    "mk": {
+      "quote": "Секогаш на Стража: Вашето 24/7 решение за онлајн безбедност за беспрекорна заштита",
+      "btn1": "Изглед на нашите услуги",
+      "btn2": "Забелешка на демо"
+    }
   }
 }

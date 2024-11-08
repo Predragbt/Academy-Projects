@@ -1,13 +1,15 @@
 import { HeroSection } from "../components/layout/heroSection/HeroSection";
-import { AboutSection } from "../components/layout/home/AboutSection";
+import { HomeAboutSection } from "../components/layout/home/HomeAboutSection";
 import { ServicesSection } from "../components/layout/home/ServicesSection";
+import { VideoSection } from "../components/layout/home/videoSection/VideoSection";
 
 export const Home = () => {
   return (
     <div>
       <HeroSection />
       <ServicesSection />
-      <AboutSection />
+      <HomeAboutSection />
+      <VideoSection />
     </div>
   );
 };

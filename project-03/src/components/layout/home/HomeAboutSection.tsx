@@ -20,7 +20,7 @@ interface HomeAboutSection {
   mk: LanguageContent;
 }
 
-export const AboutSection = () => {
+export const HomeAboutSection = () => {
   const [aboutSectionData, setAboutSectionData] =
     useState<HomeAboutSection | null>(null);
   const [loading, setLoading] = useState(true);
@@ -62,26 +62,26 @@ export const AboutSection = () => {
   }
 
   return (
-    <div id={aboutSectionData.id} className="bg-[#333333] text-white p-8">
-      <h2 className="text-center text-[#FF6F0F] text-[32px] font-bold mb-4">
+    <div id={aboutSectionData.id} className="bg-[#333333] text-white py-16">
+      <p className="text-center text-[#FF6F0F] text-[48px] font-[700] mb-6">
         {content.title}
-      </h2>
-      <p className="text-center text-lg mb-8 max-w-3xl mx-auto">
+      </p>
+      <p className="text-center text-[24px] mb-10 w-[60%] mx-auto">
         {content.description}
       </p>
       <div className="flex justify-center gap-8">
         {content.highlights.map((highlight) => (
           <div
             key={highlight.id}
-            className="flex flex-col items-center border p-4"
+            className="flex flex-row w-[280px] items-center border border-[#FF6F0F] p-4"
           >
-            <img src={highlight.icon} alt={highlight.text} />
-            <p className="text-center text-base">
-              {highlight.text}{" "}
-              <span className="text-[#FF6F0F] font-semibold">
+            <img src={highlight.icon} alt={highlight.text} className="mr-5" />
+            <div className="flex flex-col">
+              <p className="text-start text-base">{highlight.text}</p>
+              <p className="text-[#FF6F0F] font-semibold">
                 {highlight.highlightedText}
-              </span>
-            </p>
+              </p>
+            </div>
           </div>
         ))}
       </div>
