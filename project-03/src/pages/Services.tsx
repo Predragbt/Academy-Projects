@@ -9,7 +9,7 @@ import {
 export const Services = () => {
   const { language } = useAppContext();
   const fetchedData = useServicesContext();
-  const { id } = useParams(); // Get `id` from URL params
+  const { id } = useParams();
 
   if (!fetchedData) return <p>Loading services...</p>;
 
@@ -52,11 +52,16 @@ export const Services = () => {
 
           <div className="px-[120px] bg-[#323232] py-12 text-center">
             {filterData.sections.map((section) => (
-              <div key={section.id} className=" py-12 text-center flex flex-col items-center justify-center">
+              <div
+                key={section.id}
+                className=" py-12 text-center flex flex-col items-center justify-center"
+              >
                 <p className="text-[24px] text-[#FF6F0F] font-[700] mb-8">
                   {section.title}
                 </p>
-                <p className="text-white w-[1000px] text-start">{section.content}</p>
+                <p className="text-white w-[1000px] text-start">
+                  {section.content}
+                </p>
               </div>
             ))}
           </div>

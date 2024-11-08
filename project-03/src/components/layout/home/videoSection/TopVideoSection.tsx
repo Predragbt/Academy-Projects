@@ -53,9 +53,11 @@ export const TopVideoSection = () => {
   if (!content) return <div>No content for {language}</div>;
 
   return (
-    <div className="flex justify-between items-center px-[120px] py-12">
+    <div className="flex justify-between items-center">
       <div className="w-1/2">
-        <p className="text-[52px] leading-[64px] font-[700] text-[#FF6F0F] mb-20">"{content.quote}"</p>
+        <p className="text-[52px] leading-[64px] font-[700] text-[#FF6F0F] mb-20">
+          "{content.quote}"
+        </p>
         <button className="bg-transparent h-[52px] w-[250px] border-2 border-[#FF6F0F] mr-6 text-[#FF6F0F] hover:bg-[#FFBD91] text-base font-medium transition duration-300">
           {content.btn1}
         </button>

@@ -6,12 +6,15 @@ import router from "./routes/router";
 import "./index.css";
 import { AppProvider } from "./context/AppContext";
 import { ServicesProvider } from "./context/ServicesContext";
+import { IndustriesProvider } from "./context/IndustriesContext";
 
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <AppProvider>
       <ServicesProvider>
-        <RouterProvider router={router} />
+        <IndustriesProvider>
+          <RouterProvider router={router} />
+        </IndustriesProvider>
       </ServicesProvider>
     </AppProvider>
   </React.StrictMode>

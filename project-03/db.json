@@ -898,5 +898,108 @@
       "btn1": "Изглед на нашите услуги",
       "btn2": "Забелешка на демо"
     }
+  },
+  "industriesSection": {
+    "id": "industries-section",
+    "eng": {
+      "industriesTitle": "Industries We Protect",
+      "homeTitle": "Industries We Serve",
+      "homeDescription": "Protecting Critical Industries with Cutting-Edge Cybersecurity Solutions",
+      "industriesDescription": "We continuously enhance our services to adapt to the ever-changing cyber landscape. Our commitment is to provide top-tier solutions to protect your data and operations, regardless of your industry.",
+      "industries": [
+        {
+          "id": "industry-healthcare",
+          "name": "Healthcare",
+          "icon": "healthcare-icon",
+          "description": "Cyber services in the health sector are crucial for protecting sensitive patient data and ensuring the integrity of healthcare systems. The healthcare industry faces significant cybersecurity challenges, including outdated software, inadequate network protections, and a lack of employee training, making it a prime target for cybercriminals. Common threats include ransomware attacks, phishing schemes, and vulnerabilities in Internet of Medical Things (IoMT) devices. Effective cybersecurity measures must include robust data protection protocols, regular security audits, and comprehensive employee training to foster awareness. Additionally, implementing advanced technologies like threat intelligence can help healthcare organizations anticipate and mitigate risks. As the sector continues to evolve, prioritizing cybersecurity is essential to safeguard patient safety and maintain trust in healthcare services.",
+          "buttonText": "See More"
+        },
+        {
+          "id": "industry-egame",
+          "name": "eGame",
+          "icon": "egame-icon",
+          "description": "Cyber services for the eGaming industry are increasingly vital due to a surge in cyber threats, including Distributed Denial-of-Service (DDoS) attacks, data breaches, and account fraud. Recent reports indicate a staggering increase in bot activity and web attacks, with a 94% rise in web attacks from Q1 2023 to Q1 2024, particularly during major gaming events. The industry also faces challenges from social engineering tactics and malware, which can compromise player data and disrupt gameplay. Effective cybersecurity measures must include robust encryption protocols, real-time threat intelligence, and regular security audits to protect sensitive information and maintain player trust. Additionally, fostering a culture of security awareness among developers and gamers is essential to mitigate risks and ensure a safe gaming environment. As the landscape evolves, prioritizing cybersecurity will be crucial for safeguarding both players and the integrity of gaming platforms.",
+          "buttonText": "See More"
+        },
+        {
+          "id": "industry-education",
+          "name": "Education",
+          "icon": "education-icon",
+          "description": "Cyber services for the education sector are increasingly vital as institutions face a growing array of cyber threats, including ransomware, phishing, and data breaches. Educational organizations are attractive targets due to their vast amounts of sensitive data, limited budgets, and often outdated security systems. Recent statistics indicate a staggering increase in cyberattacks, with a 300% rise reported in the past year alone. Effective cybersecurity measures must include comprehensive policies, regular training for staff and students, and the implementation of advanced technologies like multi-factor authentication (MFA) and Security Information and Event Management (SIEM) systems. Additionally, fostering a culture of cybersecurity awareness is essential to mitigate risks and protect both educational integrity and student safety in an increasingly digital learning environment.",
+          "buttonText": "See More"
+        },
+        {
+          "id": "industry-retail",
+          "name": "Retail",
+          "icon": "retail-icon",
+          "description": "Cyber services in the retail sector are essential for protecting sensitive customer data and maintaining trust in an increasingly digital marketplace. Retailers face significant cybersecurity challenges, including data breaches, phishing attacks, and point-of-sale (POS) intrusions, driven by the vast amounts of personal and financial information they handle. Effective measures include adhering to the Payment Card Industry Data Security Standard (PCI DSS), implementing strong encryption protocols, and conducting regular security audits to identify vulnerabilities. Additionally, retailers should invest in advanced technologies like artificial intelligence for threat detection and foster a culture of security awareness among employees. As cyber threats continue to evolve, prioritizing cybersecurity is critical for safeguarding customer information and ensuring business continuity in the retail industry.",
+          "buttonText": "See More"
+        },
+        {
+          "id": "industry-finance",
+          "name": "Finance",
+          "icon": "finance-icon",
+          "description": "Cyber services for the finance sector are crucial for protecting sensitive data, ensuring regulatory compliance, and mitigating evolving cyber threats. Financial institutions face significant challenges, including safeguarding vast amounts of personal information, adhering to strict regulations like GDPR and PCI DSS, and defending against sophisticated attacks such as ransomware and phishing. Essential cybersecurity solutions include Web Application Firewalls (WAF) to protect web applications, DDoS protection to maintain service availability, anti-fraud measures to detect online fraud, Identity and Access Management (IAM) to control user access, and Security Information and Event Management (SIEM) systems for real-time security analysis. Best practices such as regular security audits, employee training on cybersecurity awareness, incident response planning, leveraging advanced technologies like AI for threat detection, and ensuring third-party vendors meet stringent security standards are vital for maintaining a robust security posture in the finance sector.",
+          "buttonText": "See More"
+        },
+        {
+          "id": "industry-government",
+          "name": "Government",
+          "icon": "government-icon",
+          "description": "Cyber services for the government sector are essential for safeguarding sensitive data and maintaining public trust amid rising cyber threats. Governments manage vast amounts of critical information, making them prime targets for cyberattacks, including ransomware, phishing, and advanced persistent threats. Effective cybersecurity strategies involve a multi-faceted approach that includes ensuring whole-of-government readiness, enabling rapid operational responses, and fostering collaboration with the cybersecurity community. Key measures include implementing robust security policies, conducting regular audits, and utilizing technologies like multi-factor authentication and Security Information and Event Management (SIEM) systems. Additionally, training employees on cybersecurity awareness and developing incident response plans are crucial for minimizing risks. As the digital landscape evolves, governments must prioritize cybersecurity to protect national security, public safety, and citizen privacy.",
+          "buttonText": "See More"
+        }
+      ]
+    },
+    "mk": {
+      "industriesTitle": "Индустрии кои ги Заштитуваме",
+      "homeTitle": "Индустрии кои ги Служиме",
+      "homeDescription": "Заштита на критични индустрии со напредни решенија за сајбер безбедност",
+      "industriesDescription": "Постојано ги подобруваме нашите услуги за да одговориме на постојано менувачкиот сајбер пејзаж. Нашата посветеност е да обезбедиме врвни решенија за заштита на вашите податоци и операции, без разлика на индустријата.",
+      "industries": [
+        {
+          "id": "industry-healthcare",
+          "name": "Здравство",
+          "icon": "healthcare-icon",
+          "description": "Сајбер услугите во здравствениот сектор се клучни за заштита на чувствителните податоци на пациентите и за обезбедување на интегритетот на здравствените системи. Здравствената индустрија се соочува со значителни предизвици во сајбер безбедноста, вклучувајќи застарен софтвер, неадекватна заштита на мрежата и недостаток на обука за вработените, што ја прави примарна цел за сајбер криминалците.",
+          "buttonText": "Дознај Повеќе"
+        },
+        {
+          "id": "industry-egame",
+          "name": "еИгри",
+          "icon": "egame-icon",
+          "description": "Сајбер услугите за индустријата за игри се сè поважни поради порастот на сајбер заканите, вклучувајќи DDoS напади, пробиви на податоци и измами со сметки.",
+          "buttonText": "Дознај Повеќе"
+        },
+        {
+          "id": "industry-education",
+          "name": "Образование",
+          "icon": "education-icon",
+          "description": "Сајбер услугите за секторот за образование се сè поважни бидејќи институциите се соочуваат со растечки спектар на сајбер закани, вклучувајќи ransomware, фишинг и пробиви на податоци.",
+          "buttonText": "Дознај Повеќе"
+        },
+        {
+          "id": "industry-retail",
+          "name": "Трговија на Мало",
+          "icon": "retail-icon",
+          "description": "Сајбер услугите во секторот за трговија на мало се од суштинско значење за заштита на чувствителните податоци на клиентите и за одржување на довербата.",
+          "buttonText": "Дознај Повеќе"
+        },
+        {
+          "id": "industry-finance",
+          "name": "Финансии",
+          "icon": "finance-icon",
+          "description": "Сајбер услугите за финансискиот сектор се од суштинско значење за заштита на чувствителните податоци, осигурување на усогласеност со регулативите.",
+          "buttonText": "Дознај Повеќе"
+        },
+        {
+          "id": "industry-government",
+          "name": "Влада",
+          "icon": "government-icon",
+          "description": "Сајбер услугите за владините сектори се од суштинско значење за заштита на чувствителните податоци и за одржување на јавната доверба.",
+          "buttonText": "Дознај Повеќе"
+        }
+      ]
+    }
   }
 }
