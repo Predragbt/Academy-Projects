@@ -20,7 +20,7 @@ export const ServicesHero = ({
         }}
       >
         <div className="flex flex-col justify-center items-center text-white w-full">
-          <h1 className="text-[48px] font-bold mb-14">{title}</h1>
+          <h1 className="text-[75px] font-bold mb-14">{title}</h1>
           <p className="text-[24px] font-[500] mb-14 border-l-4 border-[#FF6F0F] pl-6 w-[815px] text-center">{subtitle}</p>
           <ButtonComponent text={btnText} onClick={() => {}} />
         </div>

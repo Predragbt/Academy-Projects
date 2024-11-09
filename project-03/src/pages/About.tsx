@@ -1,7 +1,9 @@
+import { AboutHero } from "../components/layout/about/AboutHero";
+
 export const About = () => {
   return (
     <div>
-      <h1>About</h1>
+      <AboutHero />
     </div>
   );
 };

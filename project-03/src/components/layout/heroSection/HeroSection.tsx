@@ -57,7 +57,7 @@ export const HeroSection = () => {
 
         {/* Title and Content Section */}
         <div className="flex items-start mt-4">
-          <p className="text-[80px] leading-[80px]">
+          <p className="text-[75px] leading-[75px]">
             {heroSectionData?.title.part1}{" "}
             <span className="text-[#FF6F0F]">
               {heroSectionData?.title.highlight}{" "}
