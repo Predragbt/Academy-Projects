@@ -53,7 +53,7 @@ export const TopVideoSection = () => {
   if (!content) return <div>No content for {language}</div>;
 
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center px-[120px]">
       <div className="w-1/2">
         <p className="text-[52px] leading-[64px] font-[700] text-[#FF6F0F] mb-20">
           "{content.quote}"

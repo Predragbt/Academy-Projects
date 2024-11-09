@@ -16,11 +16,16 @@ interface Industry {
 }
 
 export interface LanguageContent {
-  homeTitle: string;
   industriesTitle: string;
+  industriesHeroImg: string;
+  homeTitle: string;
+  formDescription: string;
+  formTitle: string;
+  formBtn: string;
+  formPlaceholder: string;
   homeDescription: string;
+  buttonContent: string;
   industriesDescription: string;
-
   industries: Industry[];
 }
 
