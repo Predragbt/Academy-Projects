@@ -10,3 +10,19 @@ body {
 html {
   font-size: 16px;
 }
+
+.scrollbar-custom::-webkit-scrollbar {
+  height: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #ff6f0f;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: #ff8f3f;
+}

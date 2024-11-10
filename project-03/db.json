@@ -1356,6 +1356,17 @@
           {
             "img": "/assets/images/SuccessIcon.png",
             "companyTitle": "Company",
+            "company": "A small rural hospital",
+            "challengeTitle": "Challenge",
+            "challenge": "Difficulty in managing patient records and scheduling appointments due to outdated systems",
+            "solutionTitle": "Solution",
+            "solution": "Implemented an Electronic Health Record (EHR) system integrated with telemedicine capabilities",
+            "outcomeTitle": "Outcome",
+            "outcome": "Improved patient care, reduced medical errors, increased patient satisfaction, and expanded access to healthcare services in remote areas"
+          },
+          {
+            "img": "/assets/images/SuccessIcon.png",
+            "companyTitle": "Company",
             "company": "A traditional automotive manufacturer",
             "challengeTitle": "Challenge",
             "challenge": "Aging production lines and increasing competition from electric vehicle manufacturers",
