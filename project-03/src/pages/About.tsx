@@ -3,6 +3,8 @@ import { AboutHero } from "../components/layout/about/AboutHero";
 import { useAppContext } from "../context/AppContext";
 import { AboutContent } from "../components/layout/about/AboutContent";
 import { OurLocations } from "../components/layout/about/OurLocations";
+import { AboutCertifications } from "../components/layout/about/AboutCertifications";
+import { AboutSuccsessStories } from "../components/layout/about/AboutSuccsessStories";
 
 // TypeScript interfaces
 interface AboutPageData {
@@ -14,8 +16,8 @@ interface LanguageData {
   bannerTitle: string;
   aboutContent: aboutSectionContent[];
   locations: LocationProps;
-  certifications: Certification[];
-  successStories: SuccessStory[];
+  certifications: CertificationProps;
+  successStories: SuccessStoryProps;
 }
 
 export interface aboutSectionContent {
@@ -37,17 +39,25 @@ export interface LocationProps {
   }>;
 }
 
-interface Certification {
+export interface CertificationProps {
   title: string;
-  description: string;
-  actionLabel: string;
+  data: Array<{
+    title: string;
+    subtitle: string;
+    description: string;
+    actionLabel: string;
+    img: string;
+  }>;
 }
 
-interface SuccessStory {
-  company: string;
-  challenge: string;
-  solution: string;
-  outcome: string;
+interface SuccessStoryProps {
+  title: string;
+  data: Array<{
+    company: string;
+    challenge: string;
+    solution: string;
+    outcome: string;
+  }>;
 }
 
 export const About = () => {
@@ -94,9 +104,12 @@ export const About = () => {
       <div className="flex flex-row justify-center w-full px-[120px] mt-[-150px] gap-8 flex-wrap mb-24">
         <AboutContent aboutContent={languageData.aboutContent} />
       </div>
-      <div>
-        <OurLocations locations={languageData.locations} />
-      </div>
+
+      <OurLocations locations={languageData.locations} />
+
+      <AboutCertifications certifications={languageData.certifications} />
+
+      <AboutSuccsessStories />
     </>
   );
 };

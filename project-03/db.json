@@ -1292,33 +1292,88 @@
           }
         ]
       },
-      "certifications": [
-        {
-          "title": "Quality Management (DIN EN ISO 9001)",
-          "description": "Ensures consistent quality in our processes, enhancing customer satisfaction.",
-          "actionLabel": "See More"
-        }
-      ],
-      "successStories": [
-        {
-          "company": "A small rural hospital",
-          "challenge": "Difficulty in managing patient records and scheduling appointments due to outdated systems",
-          "solution": "Implemented an Electronic Health Record (EHR) system integrated with telemedicine capabilities",
-          "outcome": "Improved patient care, reduced medical errors, increased patient satisfaction, and expanded access to healthcare services in remote areas"
-        },
-        {
-          "company": "A traditional automotive manufacturer",
-          "challenge": "Aging production lines and increasing competition from electric vehicle manufacturers",
-          "solution": "Adopted a smart factory approach using IoT sensors, robotics, and AI for predictive maintenance and quality control",
-          "outcome": "Increased production efficiency, reduced downtime, improved product quality, and faster time-to-market for new models"
-        },
-        {
-          "company": "A large urban school district",
-          "challenge": "Inequitable access to technology and limited personalized learning opportunities for students",
-          "solution": "Provided every student with a personal device and implemented a cloud-based learning platform with adaptive learning features",
-          "outcome": "Improved student engagement, increased standardized test scores, and reduced the achievement gap"
-        }
-      ]
+      "certifications": {
+        "title": "Our certifications",
+        "data": [
+          {
+            "title": "Quality Management",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Ensures consistent quality in our processes, enhancing customer satisfaction.",
+            "actionLabel": "See More",
+            "img": "/assets/images/CertificationsLogo.png"
+          },
+          {
+            "title": "Quality Management",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Ensures consistent quality in our processes, enhancing customer satisfaction.",
+            "actionLabel": "See More",
+            "img": "/assets/images/CertificationsLogo.png"
+          },
+          {
+            "title": "Quality Management",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Ensures consistent quality in our processes, enhancing customer satisfaction.",
+            "actionLabel": "See More",
+            "img": "/assets/images/CertificationsLogo.png"
+          },
+          {
+            "title": "Quality Management",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Ensures consistent quality in our processes, enhancing customer satisfaction.",
+            "actionLabel": "See More",
+            "img": "/assets/images/CertificationsLogo.png"
+          },
+          {
+            "title": "Quality Management",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Ensures consistent quality in our processes, enhancing customer satisfaction.",
+            "actionLabel": "See More",
+            "img": "/assets/images/CertificationsLogo.png"
+          },
+          {
+            "title": "Quality Management",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Ensures consistent quality in our processes, enhancing customer satisfaction.",
+            "actionLabel": "See More",
+            "img": "/assets/images/CertificationsLogo.png"
+          }
+        ]
+      },
+      "successStories": {
+        "title": "Discover why our clients continue to choose us",
+        "data": [
+          {
+            "companyTitle": "Company",
+            "company": "A small rural hospital",
+            "challengeTitle": "Challenge",
+            "challenge": "Difficulty in managing patient records and scheduling appointments due to outdated systems",
+            "solutionTitle": "Solution",
+            "solution": "Implemented an Electronic Health Record (EHR) system integrated with telemedicine capabilities",
+            "outcomeTitle": "Outcome",
+            "outcome": "Improved patient care, reduced medical errors, increased patient satisfaction, and expanded access to healthcare services in remote areas"
+          },
+          {
+            "companyTitle": "Company",
+            "company": "A traditional automotive manufacturer",
+            "challengeTitle": "Challenge",
+            "challenge": "Aging production lines and increasing competition from electric vehicle manufacturers",
+            "solutionTitle": "Solution",
+            "solution": "Adopted a smart factory approach using IoT sensors, robotics, and AI for predictive maintenance and quality control",
+            "outcomeTitle": "Outcome",
+            "outcome": "Increased production efficiency, reduced downtime, improved product quality, and faster time-to-market for new models"
+          },
+          {
+            "companyTitle": "Company",
+            "company": "A large urban school district",
+            "challengeTitle": "Challenge",
+            "challenge": "Inequitable access to technology and limited personalized learning opportunities for students",
+            "solutionTitle": "Solution",
+            "solution": "Provided every student with a personal device and implemented a cloud-based learning platform with adaptive learning features",
+            "outcomeTitle": "Outcome",
+            "outcome": "Improved student engagement, increased standardized test scores, and reduced the achievement gap"
+          }
+        ]
+      }
     },
     "mk": {
       "bannerTitle": "Заштита на дигиталната иднина преку иновативни решенија за сајбер безбедност",
@@ -1379,33 +1434,88 @@
           }
         ]
       },
-      "certifications": [
-        {
-          "title": "Управување со квалитет (DIN EN ISO 9001)",
-          "description": "Осигурува постојан квалитет во нашите процеси, подобрувајќи го задоволството на клиентите.",
-          "actionLabel": "Повеќе"
-        }
-      ],
-      "successStories": [
-        {
-          "company": "Мала рурална болница",
-          "challenge": "Тешкотии при управувањето со податоците на пациентите и закажувањето поради застарени системи",
-          "solution": "Имплементиран систем за електронски здравствени евиденции интегриран со можности за телеконсултации",
-          "outcome": "Подобра грижа за пациентите, намалени медицински грешки, зголемено задоволство на пациентите и проширен пристап до здравствени услуги во оддалечени области"
-        },
-        {
-          "company": "Традиционален производител на автомобили",
-          "challenge": "Стареење на производните линии и зголемена конкуренција од производителите на електрични возила",
-          "solution": "Применет е паметен пристап во фабриката со IoT сензори, роботика и вештачка интелигенција за предиктивно одржување и контрола на квалитет",
-          "outcome": "Зголемена ефикасност во производството, намалено е времето на застој, подобрен квалитет на производот и побрзо лансирање на нови модели"
-        },
-        {
-          "company": "Голем градски училишен округ",
-          "challenge": "Нееднаков пристап до технологија и ограничени можности за персонализирано учење за учениците",
-          "solution": "Обезбеден е уред за секој ученик и е имплементирана платформа за учење базирана на облак со адаптивни карактеристики за учење",
-          "outcome": "Подобрено ангажирање на учениците, зголемени резултати на стандардизираните тестови и намалена е разликата во постигнувањата"
-        }
-      ]
+      "certifications": {
+        "title": "Сертификати",
+        "data": [
+          {
+            "title": "Управување со квалитет",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Осигурува постојан квалитет во нашите процеси, подобрувајќи го задоволството на клиентите.",
+            "actionLabel": "Повеќе",
+            "img": "/assets/images/CertificationsLogo.png"
+          },
+          {
+            "title": "Управување со квалитет",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Осигурува постојан квалитет во нашите процеси, подобрувајќи го задоволството на клиентите.",
+            "actionLabel": "Повеќе",
+            "img": "/assets/images/CertificationsLogo.png"
+          },
+          {
+            "title": "Управување со квалитет",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Осигурува постојан квалитет во нашите процеси, подобрувајќи го задоволството на клиентите.",
+            "actionLabel": "Повеќе",
+            "img": "/assets/images/CertificationsLogo.png"
+          },
+          {
+            "title": "Управување со квалитет",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Осигурува постојан квалитет во нашите процеси, подобрувајќи го задоволството на клиентите.",
+            "actionLabel": "Повеќе",
+            "img": "/assets/images/CertificationsLogo.png"
+          },
+          {
+            "title": "Управување со квалитет",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Осигурува постојан квалитет во нашите процеси, подобрувајќи го задоволството на клиентите.",
+            "actionLabel": "Повеќе",
+            "img": "/assets/images/CertificationsLogo.png"
+          },
+          {
+            "title": "Управување со квалитет",
+            "subtitle": " (DIN EN ISO 9001)",
+            "description": "Осигурува постојан квалитет во нашите процеси, подобрувајќи го задоволството на клиентите.",
+            "actionLabel": "Повеќе",
+            "img": "/assets/images/CertificationsLogo.png"
+          }
+        ]
+      },
+      "successStories": {
+        "title": "Откријте зошто нашите клиенти продолжуваат да не избираат нас.",
+        "data": [
+          {
+            "companyTitle": "Компанија",
+            "company": "Мала рурална болница",
+            "challengeTitle": "Задача",
+            "challenge": "Тешкотии при управувањето со податоците на пациентите и закажувањето поради застарени системи",
+            "solutionTitle": "Решение",
+            "solution": "Имплементиран систем за електронски здравствени евиденции интегриран со можности за телеконсултации",
+            "outcomeTitle": "Изход",
+            "outcome": "Подобра грижа за пациентите, намалени медицински грешки, зголемено задоволство на пациентите и проширен пристап до здравствени услуги во оддалечени области"
+          },
+          {
+            "companyTitle": "Компанија",
+            "company": "Традиционален производител на автомобили",
+            "challengeTitle": "Задача",
+            "challenge": "Стареење на производните линии и зголемена конкуренција од производителите на електрични возила",
+            "solutionTitle": "Решение",
+            "solution": "Применет е паметен пристап во фабриката со IoT сензори, роботика и вештачка интелигенција за предиктивно одржување и контрола на квалитет",
+            "outcomeTitle": "Изход",
+            "outcome": "Зголемена ефикасност во производството, намалено е времето на застој, подобрен квалитет на производот и побрзо лансирање на нови модели"
+          },
+          {
+            "companyTitle": "Компанија",
+            "company": "Голем градски училишен округ",
+            "challengeTitle": "Задача",
+            "challenge": "Нееднаков пристап до технологија и ограничени можности за персонализирано учење за учениците",
+            "solutionTitle": "Решение",
+            "solution": "Обезбеден е уред за секој ученик и е имплементирана платформа за учење базирана на облак со адаптивни карактеристики за учење",
+            "outcomeTitle": "Изход",
+            "outcome": "Подобрено ангажирање на учениците, зголемени резултати на стандардизираните тестови и намалена е разликата во постигнувањата"
+          }
+        ]
+      }
     }
   }
 }
