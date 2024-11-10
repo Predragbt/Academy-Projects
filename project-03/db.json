@@ -1055,14 +1055,14 @@
             "name": "Furkan Bajrami",
             "position": "CEO",
             "description": "Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id.",
-            "image": "path/to/furkan_image.jpg"
+            "image": "assets/images/Leadership1.png"
           },
           {
             "id": "petar_ninovski_partner",
             "name": "Petar Ninovski",
             "position": "Co-Founder & CXX",
             "description": "Petar has over 10 years of experience in cybersecurity and IT consulting.",
-            "image": "path/to/petar_image.jpg"
+            "image": "assets/images/Leadership2.png"
           }
         ]
       },
@@ -1076,21 +1076,21 @@
             "name": "Lukas Schmidt",
             "position": "Cybersecurity Specialist",
             "description": "Lukas excels in threat detection and network security, identifying vulnerabilities to protect systems from cyber risks.",
-            "image": "path/to/lukas_image.jpg"
+            "image": "/assets/images/CybersecuritySpecialist1.png"
           },
           {
             "id": "emma_brown",
             "name": "Emma Brown",
             "position": "Training Specialist",
             "description": "Emma designs training programs to boost employee cybersecurity awareness and help organizations stay secure.",
-            "image": "path/to/emma_image.jpg"
+            "image": "/assets/images/CybersecuritySpecialist2.png"
           },
           {
             "id": "karl_muller",
             "name": "Karl Müller",
             "position": "Penetration Tester",
             "description": "Karl specializes in penetration testing and incident response, helping businesses safeguard against evolving threats.",
-            "image": "path/to/karl_image.jpg"
+            "image": "/assets/images/CybersecuritySpecialist3.png"
           }
         ]
       },
@@ -1104,21 +1104,21 @@
             "name": "Emily Johnson",
             "position": "Security Awareness Advisor",
             "description": "Emily simplifies cybersecurity for employees through workshops, teaching best practices for staying safe online.",
-            "image": "path/to/emily_image.jpg"
+            "image": "/assets/images/SecurityAwarenessTeam1.png"
           },
           {
             "id": "hannah_weber",
             "name": "Hannah Weber",
             "position": "Security Campaign Specialist",
             "description": "Hannah creates engaging security campaigns, making cybersecurity easy to understand and apply across teams.",
-            "image": "path/to/hannah_image.jpg"
+            "image": "/assets/images/SecurityAwarenessTeam2.png"
           },
           {
             "id": "james_fischer",
             "name": "James Fischer",
             "position": "Incident Monitoring Expert",
             "description": "James focuses on incident monitoring and response, using data analytics to keep systems secure from potential attacks.",
-            "image": "path/to/james_image.jpg"
+            "image": "/assets/images/SecurityAwarenessTeam3.png"
           }
         ]
       }
@@ -1163,14 +1163,14 @@
             "name": "Фуркан Бајрами",
             "position": "Генерален Директор",
             "description": "Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id.",
-            "image": "path/to/furkan_image.jpg"
+            "image": "assets/images/Leadership1.png"
           },
           {
             "id": "petar_ninovski_partner_mk",
             "name": "Петар Ниновски",
             "position": "Ко-основач & CXX",
             "description": "Петар има повеќе од 10 години искуство во сајбер безбедност и ИТ консалтинг.",
-            "image": "path/to/petar_image.jpg"
+            "image": "assets/images/Leadership2.png"
           }
         ]
       },
@@ -1184,21 +1184,21 @@
             "name": "Лукас Шмит",
             "position": "Специјалист за Сајбер Безбедност",
             "description": "Лукас се истакнува во детекција на закани и мрежна безбедност, идентификувајќи ранливости за заштита на системите од сајбер закани.",
-            "image": "path/to/lukas_image.jpg"
+            "image": "/assets/images/CybersecuritySpecialist1.png"
           },
           {
             "id": "emma_brown_mk",
             "name": "Ема Браун",
             "position": "Специјалист за Обука",
             "description": "Ема дизајнира програми за обука за зголемување на свеста за сајбер безбедност кај вработените и помага организациите да останат безбедни.",
-            "image": "path/to/emma_image.jpg"
+            "image": "/assets/images/CybersecuritySpecialist2.png"
           },
           {
             "id": "karl_muller_mk",
             "name": "Карл Милер",
             "position": "Пенетрационен Тестер",
             "description": "Карл се специјализира во пенетрационо тестирање и одговор на инциденти, помагајќи на бизнисите да се заштитат од еволуирачки закани.",
-            "image": "path/to/karl_image.jpg"
+            "image": "/assets/images/CybersecuritySpecialist3.png"
           }
         ]
       },
@@ -1212,21 +1212,21 @@
             "name": "Емили Џонсон",
             "position": "Советник за Свесност за Безбедност",
             "description": "Емили ја поедноставува сајбер безбедноста за вработените преку работилници, обучувајќи ги за најдобрите практики за безбедност на интернет.",
-            "image": "path/to/emily_image.jpg"
+            "image": "/assets/images/SecurityAwarenessTeam1.png"
           },
           {
             "id": "hannah_weber_mk",
             "name": "Хана Вебер",
             "position": "Специјалист за Безбедносни Кампањи",
             "description": "Хана креира ангажирачки безбедносни кампањи, правејќи сајбер безбедноста лесна за разбирање и примена низ тимовите.",
-            "image": "path/to/hannah_image.jpg"
+            "image": "/assets/images/SecurityAwarenessTeam2.png"
           },
           {
             "id": "james_fischer_mk",
             "name": "Џејмс Фишер",
             "position": "Експерт за Мониторинг на Инциденти",
             "description": "Џејмс се фокусира на мониторинг и одговор на инциденти, користејќи анализа на податоци за да ги заштити системите од потенцијални напади.",
-            "image": "path/to/james_image.jpg"
+            "image": "/assets/images/SecurityAwarenessTeam3.png"
           }
         ]
       }
@@ -1340,9 +1340,10 @@
         ]
       },
       "successStories": {
-        "title": "Discover why our clients continue to choose us",
+        "title": "Discover why our clients continue to choose us.",
         "data": [
           {
+            "img": "/assets/images/SuccessIcon.png",
             "companyTitle": "Company",
             "company": "A small rural hospital",
             "challengeTitle": "Challenge",
@@ -1353,6 +1354,7 @@
             "outcome": "Improved patient care, reduced medical errors, increased patient satisfaction, and expanded access to healthcare services in remote areas"
           },
           {
+            "img": "/assets/images/SuccessIcon.png",
             "companyTitle": "Company",
             "company": "A traditional automotive manufacturer",
             "challengeTitle": "Challenge",
@@ -1363,6 +1365,7 @@
             "outcome": "Increased production efficiency, reduced downtime, improved product quality, and faster time-to-market for new models"
           },
           {
+            "img": "/assets/images/SuccessIcon.png",
             "companyTitle": "Company",
             "company": "A large urban school district",
             "challengeTitle": "Challenge",
@@ -1485,6 +1488,7 @@
         "title": "Откријте зошто нашите клиенти продолжуваат да не избираат нас.",
         "data": [
           {
+            "img": "/assets/images/SuccessIcon.png",
             "companyTitle": "Компанија",
             "company": "Мала рурална болница",
             "challengeTitle": "Задача",
@@ -1495,6 +1499,7 @@
             "outcome": "Подобра грижа за пациентите, намалени медицински грешки, зголемено задоволство на пациентите и проширен пристап до здравствени услуги во оддалечени области"
           },
           {
+            "img": "/assets/images/SuccessIcon.png",
             "companyTitle": "Компанија",
             "company": "Традиционален производител на автомобили",
             "challengeTitle": "Задача",
@@ -1505,6 +1510,7 @@
             "outcome": "Зголемена ефикасност во производството, намалено е времето на застој, подобрен квалитет на производот и побрзо лансирање на нови модели"
           },
           {
+            "img": "/assets/images/SuccessIcon.png",
             "companyTitle": "Компанија",
             "company": "Голем градски училишен округ",
             "challengeTitle": "Задача",

@@ -5,6 +5,14 @@ import { AboutContent } from "../components/layout/about/AboutContent";
 import { OurLocations } from "../components/layout/about/OurLocations";
 import { AboutCertifications } from "../components/layout/about/AboutCertifications";
 import { AboutSuccsessStories } from "../components/layout/about/AboutSuccsessStories";
+import {
+  TeamData,
+  TeamDataLanguage,
+  useTeamMembersContext,
+} from "../context/TeamMembersContext";
+import { AboutOurPartners } from "../components/layout/about/АboutOurPartners";
+import { AboutOurCybersecuritySpecialists } from "../components/layout/about/AboutOurCybersecuritySpecialists";
+import { AboutSecurityAwareness } from "../components/layout/about/AboutSecurityAwareness";
 
 // TypeScript interfaces
 interface AboutPageData {
@@ -50,12 +58,17 @@ export interface CertificationProps {
   }>;
 }
 
-interface SuccessStoryProps {
+export interface SuccessStoryProps {
   title: string;
   data: Array<{
+    img: string;
+    companyTitle: string;
     company: string;
+    challengeTitle: string;
     challenge: string;
+    solutionTitle: string;
     solution: string;
+    outcomeTitle: string;
     outcome: string;
   }>;
 }
@@ -64,8 +77,11 @@ export const About = () => {
   const [aboutPageData, setAboutPageData] = useState<AboutPageData | null>(
     null
   );
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [aboutLoading, setAboutLoading] = useState(true);
+  const [aboutError, setAboutError] = useState<string | null>(null);
+
+  const { teamMembersData, loading, error } = useTeamMembersContext();
+
   const { language } = useAppContext();
 
   useEffect(() => {
@@ -81,22 +97,34 @@ export const About = () => {
         console.log("Fetched about page data:", data);
         setAboutPageData(data);
       } catch (err) {
-        setError("Error fetching about page data");
+        setAboutError("Error fetching about page data");
         console.error("Error fetching about page data:", err);
       } finally {
-        setLoading(false);
+        setAboutLoading(false);
       }
     };
     fetchAboutPageData();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+  // About
+  if (aboutLoading || loading) return <div>Loading...</div>;
+  if (aboutError || error) return <div>Error: {aboutError}</div>;
   if (!aboutPageData) return <div>No about page data</div>;
 
   const languageData = aboutPageData[
     language as keyof AboutPageData
   ] as LanguageData;
+
+  // Team Members
+  if (!teamMembersData) return <div>No team members data</div>;
+
+  const teamMembersLanguageContent = teamMembersData[
+    language as keyof TeamData
+  ] as TeamDataLanguage;
+
+  if (!teamMembersLanguageContent || !languageData) {
+    return <div>Content for this language is not available.</div>;
+  }
 
   return (
     <>
@@ -107,9 +135,17 @@ export const About = () => {
 
       <OurLocations locations={languageData.locations} />
 
+      <AboutOurPartners teamMembers={teamMembersLanguageContent.partnersTeam} />
+      <AboutOurCybersecuritySpecialists
+        teamMembers={teamMembersLanguageContent.cybersecuritySpecialistsTeam}
+      />
+      <AboutSecurityAwareness
+        teamMembers={teamMembersLanguageContent.securityAwarenessAdvisorsTeam}
+      />
+
       <AboutCertifications certifications={languageData.certifications} />
 
-      <AboutSuccsessStories />
+      <AboutSuccsessStories successStories={languageData.successStories} />
     </>
   );
 };

@@ -17,8 +17,8 @@ export const OurLocations = ({ locations }: Props) => {
         {locations.title}
       </p>
       <div className="text-white flex w-full justify-between gap-10">
-        {locations.data.map((location) => (
-          <div className="border-b-2 border-[#FF6F0F] py-4 w-full">
+        {locations.data.map((location, index) => (
+          <div key={index} className="border-b-2 border-[#FF6F0F] py-4 w-full">
             <p className="text-[32px] font-[600] mb-6">{location.country}</p>
             <img src="/assets/images/LocationPin.png" alt={location.country} className="mb-6"/>
             <p>{location.address}</p>

@@ -48,10 +48,11 @@ export interface HomeServicesSection {
 export const ServicesContext = createContext<HomeServicesSection | null>(null);
 
 export const ServicesProvider = ({ children }: { children: ReactNode }) => {
-  const [fetchedData, setFetchedData] = useState<HomeServicesSection | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);  // New loading state
+  const [fetchedData, setFetchedData] = useState<HomeServicesSection | null>(
+    null
+  );
+  const [loading, setLoading] = useState<boolean>(true);
 
-  // Fetch function
   const fetchLayoutData = async () => {
     try {
       const response = await fetch(`http://localhost:5000/services`);
@@ -63,7 +64,7 @@ export const ServicesProvider = ({ children }: { children: ReactNode }) => {
     } catch (error) {
       console.error("Error fetching layout data:", error);
     } finally {
-      setLoading(false);  
+      setLoading(false);
     }
   };
 

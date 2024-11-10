@@ -7,7 +7,7 @@ export const TeamMemberCard = ({ member }: Props) => {
   return (
     <div className="w-[400px] bg-[#2A2A2A] h-full flex flex-col">
       <div>
-        <img src={member.image} alt={member.name} className="w-full  " />
+        <img src={member.image} alt={member.name} className="w-full" />
       </div>
       <div className="text-white p-4 h-full flex flex-col justify-between">
         <div>
