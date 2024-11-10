@@ -63,7 +63,7 @@ export const ServicesProvider = ({ children }: { children: ReactNode }) => {
     } catch (error) {
       console.error("Error fetching layout data:", error);
     } finally {
-      setLoading(false);  // Ensure loading is set to false after fetch attempt
+      setLoading(false);  
     }
   };
 

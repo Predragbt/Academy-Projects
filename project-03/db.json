@@ -1231,5 +1231,181 @@
         ]
       }
     }
+  },
+  "aboutPage": {
+    "eng": {
+      "bannerTitle": "Protecting the digital future through innovative cybersecurity solutions",
+      "aboutContent": [
+        {
+          "img": "/assets/images/AboutImage1.png",
+          "ourStory": "Our",
+          "title": "Mission Statement",
+          "description": "At Cyberware Global Defense (CGD), our mission is to safeguard businesses by delivering cutting-edge cybersecurity solutions. By combining advanced AI technologies with industry-leading expertise, we ensure that our clients are protected from the evolving landscape of cyber threats. Our goal is to keep your business secure and resilient."
+        },
+        {
+          "img": "/assets/images/AboutImage2.png",
+          "ourStory": "Our",
+          "title": "Story",
+          "description": "At Cyberware Global Defense (CGD), our mission is to safeguard businesses by delivering cutting-edge cybersecurity solutions. By combining advanced AI technologies with industry-leading expertise, we ensure that our clients are protected from the evolving landscape of cyber threats. Our goal is to keep your business secure and resilient."
+        },
+        {
+          "img": "/assets/images/AboutImage3.png",
+          "ourStory": "Our",
+          "title": "Expertise",
+          "description": "At Cyberware Global Defense (CGD), our mission is to safeguard businesses by delivering cutting-edge cybersecurity solutions. By combining advanced AI technologies with industry-leading expertise, we ensure that our clients are protected from the evolving landscape of cyber threats. Our goal is to keep your business secure and resilient."
+        },
+        {
+          "img": "/assets/images/AboutImage4.png",
+          "ourStory": "Our",
+          "title": "Values",
+          "description": "At Cyberware Global Defense (CGD), our mission is to safeguard businesses by delivering cutting-edge cybersecurity solutions. By combining advanced AI technologies with industry-leading expertise, we ensure that our clients are protected from the evolving landscape of cyber threats. Our goal is to keep your business secure and resilient."
+        }
+      ],
+      "locations": {
+        "ourStory": "Our",
+        "title": "Locations",
+        "img": "/assets/images/OurLocationsImg.png",
+        "data": [
+          {
+            "country": "Germany",
+            "address": "Hohenzollernring No. 72",
+            "city": "Köln",
+            "postalCode": "50672"
+          },
+          {
+            "country": "North Macedonia",
+            "address": "11th October No. 25",
+            "city": "Skopje",
+            "postalCode": "1000"
+          },
+          {
+            "country": "Albania",
+            "address": "Rruga Myslym Shyri No. 37",
+            "city": "Tirana",
+            "postalCode": "1001"
+          },
+          {
+            "country": "Turkey",
+            "address": "Istiklal Caddesi No. 45",
+            "city": "Istanbul",
+            "postalCode": "34430"
+          }
+        ]
+      },
+      "certifications": [
+        {
+          "title": "Quality Management (DIN EN ISO 9001)",
+          "description": "Ensures consistent quality in our processes, enhancing customer satisfaction.",
+          "actionLabel": "See More"
+        }
+      ],
+      "successStories": [
+        {
+          "company": "A small rural hospital",
+          "challenge": "Difficulty in managing patient records and scheduling appointments due to outdated systems",
+          "solution": "Implemented an Electronic Health Record (EHR) system integrated with telemedicine capabilities",
+          "outcome": "Improved patient care, reduced medical errors, increased patient satisfaction, and expanded access to healthcare services in remote areas"
+        },
+        {
+          "company": "A traditional automotive manufacturer",
+          "challenge": "Aging production lines and increasing competition from electric vehicle manufacturers",
+          "solution": "Adopted a smart factory approach using IoT sensors, robotics, and AI for predictive maintenance and quality control",
+          "outcome": "Increased production efficiency, reduced downtime, improved product quality, and faster time-to-market for new models"
+        },
+        {
+          "company": "A large urban school district",
+          "challenge": "Inequitable access to technology and limited personalized learning opportunities for students",
+          "solution": "Provided every student with a personal device and implemented a cloud-based learning platform with adaptive learning features",
+          "outcome": "Improved student engagement, increased standardized test scores, and reduced the achievement gap"
+        }
+      ]
+    },
+    "mk": {
+      "bannerTitle": "Заштита на дигиталната иднина преку иновативни решенија за сајбер безбедност",
+      "aboutContent": [
+        {
+          "img": "/assets/images/AboutImage1.png",
+          "ourStory": "Нашата",
+          "title": "Мисија",
+          "description": "Во Cyberware Global Defense (CGD), нашата мисија е да ги заштитиме бизнисите преку обезбедување врвни решенија за сајбер безбедност. Со комбинирање на напредни технологии за вештачка интелигенција и експертиза од водечката индустрија, обезбедуваме нашите клиенти да бидат заштитени од променливиот пејзаж на сајбер закани. Нашата цел е да го задржиме вашиот бизнис безбеден и издржлив."
+        },
+        {
+          "img": "/assets/images/AboutImage2.png",
+          "ourStory": "Нашата",
+          "title": "Приказна",
+          "description": "Во Cyberware Global Defense (CGD), нашата мисија е да ги заштитиме бизнисите преку обезбедување врвни решенија за сајбер безбедност. Со комбинирање на напредни технологии за вештачка интелигенција и експертиза од водечката индустрија, обезбедуваме нашите клиенти да бидат заштитени од променливиот пејзаж на сајбер закани. Нашата цел е да го задржиме вашиот бизнис безбеден и издржлив."
+        },
+        {
+          "img": "/assets/images/AboutImage3.png",
+          "ourStory": "Нашата",
+          "title": "Експертиза",
+          "description": "Во Cyberware Global Defense (CGD), нашата мисија е да ги заштитиме бизнисите преку обезбедување врвни решенија за сајбер безбедност. Со комбинирање на напредни технологии за вештачка интелигенција и експертиза од водечката индустрија, обезбедуваме нашите клиенти да бидат заштитени од променливиот пејзаж на сајбер закани. Нашата цел е да го задржиме вашиот бизнис безбеден и издржлив."
+        },
+        {
+          "img": "/assets/images/AboutImage4.png",
+          "ourStory": "Нашите",
+          "title": "Вредности",
+          "description": "Во Cyberware Global Defense (CGD), нашата мисија е да ги заштитиме бизнисите преку обезбедување врвни решенија за сајбер безбедност. Со комбинирање на напредни технологии за вештачка интелигенција и експертиза од водечката индустрија, обезбедуваме нашите клиенти да бидат заштитени од променливиот пејзаж на сајбер закани. Нашата цел е да го задржиме вашиот бизнис безбеден и издржлив."
+        }
+      ],
+      "locations": {
+        "ourStory": "Нашите",
+        "title": "Локации",
+        "img": "/assets/images/OurLocationsImg.png",
+        "data": [
+          {
+            "country": "Германија",
+            "address": "Hohenzollernring No. 72",
+            "city": "Келн",
+            "postalCode": "50672"
+          },
+          {
+            "country": "Северна Македонија",
+            "address": "11 Октомври бр. 25",
+            "city": "Скопје",
+            "postalCode": "1000"
+          },
+          {
+            "country": "Албанија",
+            "address": "Руга Мислим Шири бр. 37",
+            "city": "Тирана",
+            "postalCode": "1001"
+          },
+          {
+            "country": "Турција",
+            "address": "Истанбул Caddesi бр. 45",
+            "city": "Истанбул",
+            "postalCode": "34430"
+          }
+        ]
+      },
+      "certifications": [
+        {
+          "title": "Управување со квалитет (DIN EN ISO 9001)",
+          "description": "Осигурува постојан квалитет во нашите процеси, подобрувајќи го задоволството на клиентите.",
+          "actionLabel": "Повеќе"
+        }
+      ],
+      "successStories": [
+        {
+          "company": "Мала рурална болница",
+          "challenge": "Тешкотии при управувањето со податоците на пациентите и закажувањето поради застарени системи",
+          "solution": "Имплементиран систем за електронски здравствени евиденции интегриран со можности за телеконсултации",
+          "outcome": "Подобра грижа за пациентите, намалени медицински грешки, зголемено задоволство на пациентите и проширен пристап до здравствени услуги во оддалечени области"
+        },
+        {
+          "company": "Традиционален производител на автомобили",
+          "challenge": "Стареење на производните линии и зголемена конкуренција од производителите на електрични возила",
+          "solution": "Применет е паметен пристап во фабриката со IoT сензори, роботика и вештачка интелигенција за предиктивно одржување и контрола на квалитет",
+          "outcome": "Зголемена ефикасност во производството, намалено е времето на застој, подобрен квалитет на производот и побрзо лансирање на нови модели"
+        },
+        {
+          "company": "Голем градски училишен округ",
+          "challenge": "Нееднаков пристап до технологија и ограничени можности за персонализирано учење за учениците",
+          "solution": "Обезбеден е уред за секој ученик и е имплементирана платформа за учење базирана на облак со адаптивни карактеристики за учење",
+          "outcome": "Подобрено ангажирање на учениците, зголемени резултати на стандардизираните тестови и намалена е разликата во постигнувањата"
+        }
+      ]
+    }
   }
 }
