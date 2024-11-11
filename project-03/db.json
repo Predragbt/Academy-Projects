@@ -1539,16 +1539,34 @@
     "eng": {
       "title": "Join Our Team of Cybersecurity Innovators",
       "subtitle": "Protecting the Digital World, One Threat at a Time",
+      "sortOptions": {
+        "latest": "Latest to Oldest",
+        "oldest": "Oldest to Latest"
+      },
       "filters": [
         {
           "key": "jobTitle",
           "label": "Job Title",
-          "options": []
+          "options": [
+            "Cybersecurity Analyst",
+            "Security Engineer",
+            "Penetration Tester",
+            "Incident Response Specialist",
+            "Threat Intelligence Analyst",
+            "Information Security Officer"
+          ]
         },
         {
           "key": "salaryRange",
           "label": "Salary Range",
-          "options": []
+          "options": [
+            "$70,000 - $90,000",
+            "$90,000 - $110,000",
+            "$80,000 - $100,000",
+            "$85,000 - $105,000",
+            "$75,000 - $95,000",
+            "$90,000 - $115,000"
+          ]
         },
         {
           "key": "postedDate",
@@ -1559,6 +1577,7 @@
       "jobs": [
         {
           "date": "April, 2024",
+          "dateKey": "2024-04-01",
           "title": "Cybersecurity Analyst",
           "salaryRange": "$70,000 - $90,000",
           "description": "Join our team as a Cybersecurity Analyst, where you will monitor and analyze security systems to identify vulnerabilities and respond to incidents, ensuring our organization's data remains secure.",
@@ -1571,6 +1590,7 @@
         },
         {
           "date": "April, 2024",
+          "dateKey": "2024-04-05",
           "title": "Security Engineer",
           "salaryRange": "$90,000 - $110,000",
           "description": "We are seeking a Security Engineer to design and implement robust security solutions that protect our infrastructure and data from cyber threats. Your expertise will be crucial in developing innovative security architectures and staying ahead of evolving risks.",
@@ -1582,7 +1602,8 @@
           "applyText": "Apply"
         },
         {
-          "date": "5 May, 2024",
+          "date": "May 5, 2024",
+          "dateKey": "2024-05-05",
           "title": "Penetration Tester",
           "salaryRange": "$80,000 - $100,000",
           "description": "As a Penetration Tester, you will simulate attacks to identify and exploit vulnerabilities, providing critical insights to enhance our security posture.",
@@ -1594,7 +1615,8 @@
           "applyText": "Apply"
         },
         {
-          "date": "10 May, 2024",
+          "date": "May 10, 2024",
+          "dateKey": "2024-05-10",
           "title": "Incident Response Specialist",
           "salaryRange": "$85,000 - $105,000",
           "description": "Join us as an Incident Response Specialist, where you will manage and respond to security incidents, conducting investigations and implementing strategies to mitigate future threats.",
@@ -1606,7 +1628,8 @@
           "applyText": "Apply"
         },
         {
-          "date": "1 June, 2024",
+          "date": "June 1, 2024",
+          "dateKey": "2024-06-01",
           "title": "Threat Intelligence Analyst",
           "salaryRange": "$75,000 - $95,000",
           "description": "We are looking for a Threat Intelligence Analyst to gather and analyze threat data, helping us stay ahead of emerging cyber threats and strengthen our defense strategies.",
@@ -1618,7 +1641,8 @@
           "applyText": "Apply"
         },
         {
-          "date": "10 June, 2024",
+          "date": "June 10, 2024",
+          "dateKey": "2024-06-10",
           "title": "Information Security Officer",
           "salaryRange": "$90,000 - $115,000",
           "description": "We are seeking an Information Security Officer to lead our security initiatives, develop policies, and ensure compliance with regulations while safeguarding our organization’s sensitive data and infrastructure.",
@@ -1634,16 +1658,34 @@
     "mk": {
       "title": "Придружете Се На Нашиот Тим На Иноватори За Сајбер Безбедност",
       "subtitle": "Заштита на Дигиталниот Свет, Една Закана Во Еден Момент",
+      "sortOptions": {
+        "latest": "Најново до најстаро",
+        "oldest": "Најстаро до најново"
+      },
       "filters": [
         {
           "key": "jobTitle",
           "label": "Работно Место",
-          "options": []
+          "options": [
+            "Аналитичар за Сајбер Безбедност",
+            "Инженер за Безбедност",
+            "Тестер за Пенетрација",
+            "Специјалист за Одговор на Инциденти",
+            "Аналитичар за Разузнавање на Закани",
+            "Офицер за Информациска Безбедност"
+          ]
         },
         {
           "key": "salaryRange",
           "label": "Опсег На Плата",
-          "options": []
+          "options": [
+            "$70,000 - $90,000",
+            "$90,000 - $110,000",
+            "$80,000 - $100,000",
+            "$85,000 - $105,000",
+            "$75,000 - $95,000",
+            "$90,000 - $115,000"
+          ]
         },
         {
           "key": "postedDate",
@@ -1654,6 +1696,7 @@
       "jobs": [
         {
           "date": "Април, 2024",
+          "dateKey": "2024-04-01",
           "title": "Аналитичар за Сајбер Безбедност",
           "salaryRange": "$70,000 - $90,000",
           "description": "Придружете се на нашиот тим како Аналитичар за Сајбер Безбедност, каде што ќе ги следите и анализирате системите за безбедност за да идентификувате ранливости и да одговорите на инциденти, осигурувајќи дека податоците на нашата организација остануваат безбедни.",
@@ -1666,6 +1709,7 @@
         },
         {
           "date": "Април, 2024",
+          "dateKey": "2024-04-05",
           "title": "Инженер за Безбедност",
           "salaryRange": "$90,000 - $110,000",
           "description": "Бараме Инженер за Безбедност кој ќе дизајнира и имплементира робусни решенија за безбедност кои ја штитат нашата инфраструктура и податоци од сајбер закани. Вашата експертиза ќе биде клучна за развивање на иновативни архитектури за безбедност и следење на еволутивните ризици.",
@@ -1678,6 +1722,7 @@
         },
         {
           "date": "5 Мај, 2024",
+          "dateKey": "2024-05-05",
           "title": "Тестер за Пенетрација",
           "salaryRange": "$80,000 - $100,000",
           "description": "Како Тестер за Пенетрација, ќе симулирате напади за да идентификувате и експлоатирате ранливости, обезбедувајќи критички увид за подобрување на нашиот безбедносен став.",
@@ -1690,6 +1735,7 @@
         },
         {
           "date": "10 Мај, 2024",
+          "dateKey": "2024-05-10",
           "title": "Специјалист за Одговор на Инциденти",
           "salaryRange": "$85,000 - $105,000",
           "description": "Придружете се како Специјалист за Одговор на Инциденти, каде што ќе управувате и одговарате на безбедносни инциденти, спроведувајќи истраги и имплементирајќи стратегии за ублажување на идни закани.",
@@ -1702,6 +1748,7 @@
         },
         {
           "date": "1 Јуни, 2024",
+          "dateKey": "2024-06-01",
           "title": "Аналитичар за Разузнавање на Закани",
           "salaryRange": "$75,000 - $95,000",
           "description": "Бараме Аналитичар за Разузнавање на Закани за да собере и анализира податоци за закани, помагајќи ни да останеме пред новите сајбер закани и зајакнување на нашите стратегии за одбрана.",
@@ -1714,6 +1761,7 @@
         },
         {
           "date": "10 Јуни, 2024",
+          "dateKey": "2024-06-10",
           "title": "Офицер за Информациска Безбедност",
           "salaryRange": "$90,000 - $115,000",
           "description": "Бараме Офицер за Информациска Безбедност кој ќе ги води нашите безбедносни иницијативи, развива политики и обезбедува усогласеност со регулативите додека ја штити чувствителната информација и инфраструктура на нашата организација.",

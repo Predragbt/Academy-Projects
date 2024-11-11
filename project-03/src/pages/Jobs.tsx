@@ -14,6 +14,7 @@ export interface JobsLanguageSectionProps {
   subtitle: string;
   filters: JobsFilterProps[];
   jobs: JobsJobProps[];
+  sortOptions: SortOptionsProps;
 }
 
 export interface JobsFilterProps {
@@ -24,11 +25,17 @@ export interface JobsFilterProps {
 
 export interface JobsJobProps {
   date: string;
+  dateKey: string; // Use dateKey for consistent sorting
   title: string;
   salaryRange: string;
   description: string;
   employmentType: string[];
   applyText: string;
+}
+
+export interface SortOptionsProps {
+  latest: string;
+  oldest: string;
 }
 
 export const Jobs = () => {
@@ -44,7 +51,7 @@ export const Jobs = () => {
   const [selectedSalaryRange, setSelectedSalaryRange] = useState<string | null>(
     null
   );
-  const [sortOrder, setSortOrder] = useState<"latest" | "oldest">("latest");
+  const [sortOrder, setSortOrder] = useState<string>("latest");
 
   useEffect(() => {
     const fetchJobsData = async () => {
@@ -82,8 +89,8 @@ export const Jobs = () => {
       );
     })
     .sort((a, b) => {
-      const dateA = new Date(a.date).getTime();
-      const dateB = new Date(b.date).getTime();
+      const dateA = new Date(a.dateKey).getTime();
+      const dateB = new Date(b.dateKey).getTime();
       return sortOrder === "latest" ? dateB - dateA : dateA - dateB;
     });
 
@@ -102,6 +109,7 @@ export const Jobs = () => {
         setSelectedSalaryRange={setSelectedSalaryRange}
         sortOrder={sortOrder}
         setSortOrder={setSortOrder}
+        sortOptions={jobsData[langKey].sortOptions}
       />
       <JobsCards jobs={filteredJobs} />
     </div>

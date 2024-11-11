@@ -1,5 +1,9 @@
-import { JobsFilterProps, JobsJobProps } from "../../../pages/Jobs";
-import React, { Dispatch, SetStateAction, useState } from "react";
+import {
+  JobsFilterProps,
+  JobsJobProps,
+  SortOptionsProps,
+} from "../../../pages/Jobs";
+import { Dispatch, SetStateAction, useState } from "react";
 
 interface Props {
   filters: JobsFilterProps[];
@@ -8,8 +12,9 @@ interface Props {
   setSelectedJobTitle: Dispatch<SetStateAction<string | null>>;
   selectedSalaryRange: string | null;
   setSelectedSalaryRange: Dispatch<SetStateAction<string | null>>;
-  sortOrder: "latest" | "oldest";
-  setSortOrder: Dispatch<SetStateAction<"latest" | "oldest">>;
+  sortOrder: string;
+  setSortOrder: Dispatch<SetStateAction<string>>;
+  sortOptions: SortOptionsProps;
 }
 
 export const JobsFilters = ({
@@ -21,6 +26,7 @@ export const JobsFilters = ({
   setSelectedSalaryRange,
   sortOrder,
   setSortOrder,
+  sortOptions,
 }: Props) => {
   const jobTitles = [...new Set(jobs.map((job) => job.title))];
   const salaryRanges = [...new Set(jobs.map((job) => job.salaryRange))];
@@ -37,10 +43,17 @@ export const JobsFilters = ({
     dropdownSetter((prevState) => !prevState);
   };
 
+  // Sort jobs by dateKey based on sortOrder
+  const sortedJobs = [...jobs].sort((a, b) => {
+    const dateA = new Date(a.dateKey).getTime();
+    const dateB = new Date(b.dateKey).getTime();
+    return sortOrder === "latest" ? dateB - dateA : dateA - dateB;
+  });
+
   return (
     <div className="flex justify-center gap-10 my-20">
       {/* Job Title Dropdown */}
-      <div className="relative border border-[#FF6F0F] w-[18%]  text-center">
+      <div className="relative border border-[#FF6F0F] w-[18%] text-center">
         <div className="flex items-center justify-between">
           <button
             className="w-full px-6 py-2 bg-transparent cursor-pointer text-center"
@@ -69,7 +82,7 @@ export const JobsFilters = ({
                   setJobTitleDropdownOpen(false);
                 }}
                 className={`px-6 py-2 cursor-pointer ${
-                  index < salaryRanges.length - 1 && "border-b border-gray-300"
+                  index < jobTitles.length - 1 ? "border-b border-gray-300" : ""
                 } hover:bg-gray-100`}
               >
                 {title}
@@ -109,7 +122,9 @@ export const JobsFilters = ({
                   setSalaryRangeDropdownOpen(false);
                 }}
                 className={`px-6 py-2 cursor-pointer ${
-                  index < salaryRanges.length - 1 && "border-b border-gray-300"
+                  index < salaryRanges.length - 1
+                    ? "border-b border-gray-300"
+                    : ""
                 } hover:bg-gray-100`}
               >
                 {range}
@@ -125,7 +140,7 @@ export const JobsFilters = ({
           className="w-full px-6 py-2 bg-transparent cursor-pointer text-center"
           onClick={() => toggleDropdown(setSortOrderDropdownOpen)}
         >
-          {sortOrder === "latest" ? "Latest to Oldest" : "Oldest to Latest"}
+          {sortOrder === "latest" ? sortOptions.latest : sortOptions.oldest}
         </button>
         {isSortOrderDropdownOpen && (
           <div className="absolute w-full bg-white border border-gray-300 z-10">
@@ -136,7 +151,7 @@ export const JobsFilters = ({
               }}
               className="px-6 py-2 border-b border-gray-300 cursor-pointer hover:bg-gray-100"
             >
-              Latest to Oldest
+              {sortOptions.latest}
             </div>
 
             <div
@@ -146,7 +161,7 @@ export const JobsFilters = ({
               }}
               className="px-6 py-2 cursor-pointer hover:bg-gray-100"
             >
-              Oldest to Latest
+              {sortOptions.oldest}
             </div>
           </div>
         )}
