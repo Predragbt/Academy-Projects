@@ -43,13 +43,6 @@ export const JobsFilters = ({
     dropdownSetter((prevState) => !prevState);
   };
 
-  // Sort jobs by dateKey based on sortOrder
-  const sortedJobs = [...jobs].sort((a, b) => {
-    const dateA = new Date(a.dateKey).getTime();
-    const dateB = new Date(b.dateKey).getTime();
-    return sortOrder === "latest" ? dateB - dateA : dateA - dateB;
-  });
-
   return (
     <div className="flex justify-center gap-10 my-20">
       {/* Job Title Dropdown */}
