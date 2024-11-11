@@ -38,7 +38,7 @@ export const BottomHeader = () => {
             className={`text-base font-semibold text-[16px] ${
               link.link === location.pathname ? "text-[#FF6F0F]" : "text-white"
             } hover:text-[#FF6F0F] ${
-              index === 0 ? "border border-[#FF6F0F] px-4 py-1 rounded" : ""
+              index === 0 ? "border border-[#FF6F0F] px-6 py-2" : ""
             }`}
           >
             {link.name}
