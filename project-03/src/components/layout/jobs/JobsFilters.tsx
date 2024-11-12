@@ -58,7 +58,10 @@ export const JobsFilters = ({
           </button>
           {selectedJobTitle && (
             <button
-              onClick={() => setSelectedJobTitle(null)}
+              onClick={() => {
+                setSelectedJobTitle(null);
+                setJobTitleDropdownOpen(false);
+              }}
               className="text-gray-500 hover:text-gray-700 font-bold px-4"
             >
               X
@@ -98,7 +101,10 @@ export const JobsFilters = ({
           </button>
           {selectedSalaryRange && (
             <button
-              onClick={() => setSelectedSalaryRange(null)}
+              onClick={() => {
+                setSelectedSalaryRange(null);
+                setSalaryRangeDropdownOpen(false);
+              }}
               className="text-gray-500 hover:text-gray-700 font-bold px-1"
             >
               X

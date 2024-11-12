@@ -25,11 +25,14 @@ export interface JobsFilterProps {
 
 export interface JobsJobProps {
   date: string;
-  dateKey: string; // Use dateKey for consistent sorting
+  dateKey: string;
   title: string;
   salaryRange: string;
   description: string;
-  employmentType: string[];
+  employmentType: {
+    type: string;
+    data: string[];
+  };
   applyText: string;
 }
 

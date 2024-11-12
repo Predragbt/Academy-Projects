@@ -1,4 +1,5 @@
 import { JobsJobProps } from "../../../pages/Jobs";
+import { ButtonComponent } from "../../common/Button";
 
 interface JobsCardsProps {
   jobs: JobsJobProps[];
@@ -11,14 +12,32 @@ export const JobsCards = ({ jobs }: JobsCardsProps) => {
         jobs.map((job) => (
           <div
             key={job.title}
-            className=" basis-[calc(50%-16px)] bg-[#2A2A2A] text-white p-4"
+            className=" basis-[calc(50%-16px)] flex flex-col justify-between bg-[#2A2A2A] text-white p-10"
           >
-            <p>Date Posted: {job.date}</p>
-            <h3>{job.title}</h3>
-            <p>{job.description}</p>
-            <p>Salary: {job.salaryRange}</p>
-            <p>Employment Type: {job.employmentType.join(", ")}</p>
-            <button>{job.applyText}</button>
+            <div className="bg-white text-black w-[144px] h-[52px] flex items-center justify-center font-[700]">
+              {job.date}
+            </div>
+            <p className="text-[48px] leading-[52px] font-[700] my-6">
+              {job.title}
+            </p>
+            <p className="text-[24px]">{job.description}</p>
+            <div className="flex gap-x-4 w-full my-8">
+              {job.employmentType.data.map((type) => (
+                <div
+                  key={type}
+                  className={`text-center border-2 p-2 w-full ${
+                    job.employmentType.type === type
+                      ? "border-[#FF6F0F] text-[#FF6F0F]"
+                      : "border-white text-white"
+                  }`}
+                >
+                  {type}
+                </div>
+              ))}
+            </div>
+            <button className="bg-[#FF6F0F] h-[52px] w-full text-white hover:bg-[#FFBD91] text-base font-medium transition duration-300">
+              {job.applyText}
+            </button>
           </div>
         ))
       ) : (

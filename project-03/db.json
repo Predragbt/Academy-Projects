@@ -1581,11 +1581,14 @@
           "title": "Cybersecurity Analyst",
           "salaryRange": "$70,000 - $90,000",
           "description": "Join our team as a Cybersecurity Analyst, where you will monitor and analyze security systems to identify vulnerabilities and respond to incidents, ensuring our organization's data remains secure.",
-          "employmentType": [
-            "Full-Time",
-            "On-Site",
-            "Hybrid"
-          ],
+          "employmentType": {
+            "type": "Hybrid",
+            "data": [
+              "Full-Time",
+              "On-Site",
+              "Hybrid"
+            ]
+          },
           "applyText": "Apply"
         },
         {
@@ -1594,11 +1597,14 @@
           "title": "Security Engineer",
           "salaryRange": "$90,000 - $110,000",
           "description": "We are seeking a Security Engineer to design and implement robust security solutions that protect our infrastructure and data from cyber threats. Your expertise will be crucial in developing innovative security architectures and staying ahead of evolving risks.",
-          "employmentType": [
-            "Full-Time",
-            "On-Site",
-            "Hybrid"
-          ],
+          "employmentType": {
+            "type": "Full-Time",
+            "data": [
+              "Full-Time",
+              "On-Site",
+              "Hybrid"
+            ]
+          },
           "applyText": "Apply"
         },
         {
@@ -1607,11 +1613,14 @@
           "title": "Penetration Tester",
           "salaryRange": "$80,000 - $100,000",
           "description": "As a Penetration Tester, you will simulate attacks to identify and exploit vulnerabilities, providing critical insights to enhance our security posture.",
-          "employmentType": [
-            "Full-Time",
-            "On-Site",
-            "Hybrid"
-          ],
+          "employmentType": {
+            "type": "On-Site",
+            "data": [
+              "Full-Time",
+              "On-Site",
+              "Hybrid"
+            ]
+          },
           "applyText": "Apply"
         },
         {
@@ -1620,11 +1629,14 @@
           "title": "Incident Response Specialist",
           "salaryRange": "$85,000 - $105,000",
           "description": "Join us as an Incident Response Specialist, where you will manage and respond to security incidents, conducting investigations and implementing strategies to mitigate future threats.",
-          "employmentType": [
-            "Full-Time",
-            "On-Site",
-            "Hybrid"
-          ],
+          "employmentType": {
+            "type": "Hybrid",
+            "data": [
+              "Full-Time",
+              "On-Site",
+              "Hybrid"
+            ]
+          },
           "applyText": "Apply"
         },
         {
@@ -1633,11 +1645,14 @@
           "title": "Threat Intelligence Analyst",
           "salaryRange": "$75,000 - $95,000",
           "description": "We are looking for a Threat Intelligence Analyst to gather and analyze threat data, helping us stay ahead of emerging cyber threats and strengthen our defense strategies.",
-          "employmentType": [
-            "Full-Time",
-            "On-Site",
-            "Hybrid"
-          ],
+          "employmentType": {
+            "type": "On-Site",
+            "data": [
+              "Full-Time",
+              "On-Site",
+              "Hybrid"
+            ]
+          },
           "applyText": "Apply"
         },
         {
@@ -1646,11 +1661,14 @@
           "title": "Information Security Officer",
           "salaryRange": "$90,000 - $115,000",
           "description": "We are seeking an Information Security Officer to lead our security initiatives, develop policies, and ensure compliance with regulations while safeguarding our organization’s sensitive data and infrastructure.",
-          "employmentType": [
-            "Full-Time",
-            "On-Site",
-            "Hybrid"
-          ],
+          "employmentType": {
+            "type": "Full-Time",
+            "data": [
+              "Full-Time",
+              "On-Site",
+              "Hybrid"
+            ]
+          },
           "applyText": "Apply"
         }
       ]
@@ -1700,11 +1718,14 @@
           "title": "Аналитичар за Сајбер Безбедност",
           "salaryRange": "$70,000 - $90,000",
           "description": "Придружете се на нашиот тим како Аналитичар за Сајбер Безбедност, каде што ќе ги следите и анализирате системите за безбедност за да идентификувате ранливости и да одговорите на инциденти, осигурувајќи дека податоците на нашата организација остануваат безбедни.",
-          "employmentType": [
-            "Целосно Работно Време",
-            "На Локација",
-            "Хибридно"
-          ],
+          "employmentType": {
+            "type": "Хибридно",
+            "data": [
+              "Целосно Работно Време",
+              "На Локација",
+              "Хибридно"
+            ]
+          },
           "applyText": "Аплицирај"
         },
         {
@@ -1713,11 +1734,14 @@
           "title": "Инженер за Безбедност",
           "salaryRange": "$90,000 - $110,000",
           "description": "Бараме Инженер за Безбедност кој ќе дизајнира и имплементира робусни решенија за безбедност кои ја штитат нашата инфраструктура и податоци од сајбер закани. Вашата експертиза ќе биде клучна за развивање на иновативни архитектури за безбедност и следење на еволутивните ризици.",
-          "employmentType": [
-            "Целосно Работно Време",
-            "На Локација",
-            "Хибридно"
-          ],
+          "employmentType": {
+            "type": "На Локација",
+            "data": [
+              "Целосно Работно Време",
+              "На Локација",
+              "Хибридно"
+            ]
+          },
           "applyText": "Аплицирај"
         },
         {
@@ -1726,11 +1750,14 @@
           "title": "Тестер за Пенетрација",
           "salaryRange": "$80,000 - $100,000",
           "description": "Како Тестер за Пенетрација, ќе симулирате напади за да идентификувате и експлоатирате ранливости, обезбедувајќи критички увид за подобрување на нашиот безбедносен став.",
-          "employmentType": [
-            "Целосно Работно Време",
-            "На Локација",
-            "Хибридно"
-          ],
+          "employmentType": {
+            "type": "Целосно Работно Време",
+            "data": [
+              "Целосно Работно Време",
+              "На Локација",
+              "Хибридно"
+            ]
+          },
           "applyText": "Аплицирај"
         },
         {
@@ -1739,11 +1766,14 @@
           "title": "Специјалист за Одговор на Инциденти",
           "salaryRange": "$85,000 - $105,000",
           "description": "Придружете се како Специјалист за Одговор на Инциденти, каде што ќе управувате и одговарате на безбедносни инциденти, спроведувајќи истраги и имплементирајќи стратегии за ублажување на идни закани.",
-          "employmentType": [
-            "Целосно Работно Време",
-            "На Локација",
-            "Хибридно"
-          ],
+          "employmentType": {
+            "type": "Хибридно",
+            "data": [
+              "Целосно Работно Време",
+              "На Локација",
+              "Хибридно"
+            ]
+          },
           "applyText": "Аплицирај"
         },
         {
@@ -1752,11 +1782,14 @@
           "title": "Аналитичар за Разузнавање на Закани",
           "salaryRange": "$75,000 - $95,000",
           "description": "Бараме Аналитичар за Разузнавање на Закани за да собере и анализира податоци за закани, помагајќи ни да останеме пред новите сајбер закани и зајакнување на нашите стратегии за одбрана.",
-          "employmentType": [
-            "Целосно Работно Време",
-            "На Локација",
-            "Хибридно"
-          ],
+          "employmentType": {
+            "type": "На Локација",
+            "data": [
+              "Целосно Работно Време",
+              "На Локација",
+              "Хибридно"
+            ]
+          },
           "applyText": "Аплицирај"
         },
         {
@@ -1765,11 +1798,14 @@
           "title": "Офицер за Информациска Безбедност",
           "salaryRange": "$90,000 - $115,000",
           "description": "Бараме Офицер за Информациска Безбедност кој ќе ги води нашите безбедносни иницијативи, развива политики и обезбедува усогласеност со регулативите додека ја штити чувствителната информација и инфраструктура на нашата организација.",
-          "employmentType": [
-            "Целосно Работно Време",
-            "На Локација",
-            "Хибридно"
-          ],
+          "employmentType": {
+            "type": "Целосно Работно Време",
+            "data": [
+              "Целосно Работно Време",
+              "На Локација",
+              "Хибридно"
+            ]
+          },
           "applyText": "Аплицирај"
         }
       ]
