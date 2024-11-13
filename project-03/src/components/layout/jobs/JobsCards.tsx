@@ -1,5 +1,4 @@
 import { JobsJobProps } from "../../../pages/Jobs";
-import { ButtonComponent } from "../../common/Button";
 
 interface JobsCardsProps {
   jobs: JobsJobProps[];

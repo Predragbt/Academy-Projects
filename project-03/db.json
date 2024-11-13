@@ -1810,5 +1810,119 @@
         }
       ]
     }
+  },
+  "contact": {
+    "eng": {
+      "header": "Your Cybersecurity Experts – Securing the Future Today",
+      "contact_section": {
+        "title": "Contact us.",
+        "description": "We are here to help you secure your future",
+        "contact_info": {
+          "email": "Email: info@cyberg.com",
+          "phone": "Phone: +49 123 456 789",
+          "address": "Address: Street, Berlin Germany"
+        }
+      },
+      "what_happens_next": {
+        "title": "What happens next?",
+        "steps": [
+          {
+            "number": 1,
+            "description": "We'll review your cybersecurity needs."
+          },
+          {
+            "number": 2,
+            "description": "You'll receive a customized security proposal"
+          },
+          {
+            "number": 3,
+            "description": "Once approved, we’ll implement the solutions and support you"
+          }
+        ]
+      },
+      "form": {
+        "fields": [
+          {
+            "label": "Full name",
+            "placeholder": "Your Name"
+          },
+          {
+            "label": "Email address",
+            "placeholder": "Your email address"
+          },
+          {
+            "label": "Telephone number",
+            "placeholder": "Your phone number"
+          },
+          {
+            "label": "Select your country",
+            "placeholder": "Your country"
+          },
+          {
+            "label": "Send us a Message",
+            "placeholder": ""
+          }
+        ],
+        "submit_button": {
+          "text": "Submit"
+        }
+      }
+    },
+    "mk": {
+      "header": "Вашите Експерти за Сајбер Безбедност – Осигурување на Иднината Денес",
+      "contact_section": {
+        "title": "Контактирајте не.",
+        "description": "Тука сме да ви помогнеме да ја осигурате вашата иднина",
+        "contact_info": {
+          "email": "Е-пошта: info@cyberg.com",
+          "phone": "Телефон: +49 123 456 789",
+          "address": "Адреса: Улица, Берлин Германија"
+        }
+      },
+      "what_happens_next": {
+        "title": "Што следува понатаму?",
+        "steps": [
+          {
+            "number": 1,
+            "description": "Ќе ги разгледаме вашите потреби за сајбер безбедност."
+          },
+          {
+            "number": 2,
+            "description": "Ќе добиете прилагодено безбедносно предлог решение"
+          },
+          {
+            "number": 3,
+            "description": "Откако ќе биде одобрено, ќе ги имплементираме решенијата и ќе ви обезбедиме поддршка"
+          }
+        ]
+      },
+      "form": {
+        "fields": [
+          {
+            "label": "Име и презиме",
+            "placeholder": "Вашето име"
+          },
+          {
+            "label": "Е-пошта",
+            "placeholder": "Вашата е-пошта"
+          },
+          {
+            "label": "Телефонски број",
+            "placeholder": "Вашиот телефонски број"
+          },
+          {
+            "label": "Изберете ја вашата земја",
+            "placeholder": "Вашата земја"
+          },
+          {
+            "label": "Пратете ни Порака",
+            "placeholder": ""
+          }
+        ],
+        "submit_button": {
+          "text": "Прати"
+        }
+      }
+    }
   }
 }

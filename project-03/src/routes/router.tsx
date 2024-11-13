@@ -5,6 +5,7 @@ import { About } from "../pages/About";
 import { Services } from "../pages/Services";
 import { IndustiresPage } from "../pages/Industries";
 import { Jobs } from "../pages/Jobs";
+import { Contact } from "../pages/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,7 @@ export const router = createBrowserRouter([
         path: "/jobs",
         element: <Jobs />,
       },
+      { path: "/contact", element: <Contact /> },
     ],
   },
 ]);
