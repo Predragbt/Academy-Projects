@@ -1844,23 +1844,34 @@
         "fields": [
           {
             "label": "Full name",
-            "placeholder": "Your Name"
+            "placeholder": "Your Name",
+            "type": "text"
           },
           {
             "label": "Email address",
-            "placeholder": "Your email address"
+            "placeholder": "Your email address",
+            "type": "email"
           },
           {
             "label": "Telephone number",
-            "placeholder": "Your phone number"
+            "placeholder": "Your phone number",
+            "type": "number"
           },
           {
             "label": "Select your country",
-            "placeholder": "Your country"
+            "placeholder": "Your country",
+            "type": "select",
+            "options": [
+              "Macedonia",
+              "England",
+              "Germany",
+              "Albania"
+            ]
           },
           {
             "label": "Send us a Message",
-            "placeholder": ""
+            "placeholder": "",
+            "type": "textarea"
           }
         ],
         "submit_button": {
@@ -1900,23 +1911,34 @@
         "fields": [
           {
             "label": "Име и презиме",
-            "placeholder": "Вашето име"
+            "placeholder": "Вашето име",
+            "type": "text"
           },
           {
             "label": "Е-пошта",
-            "placeholder": "Вашата е-пошта"
+            "placeholder": "Вашата е-пошта",
+            "type": "email"
           },
           {
             "label": "Телефонски број",
-            "placeholder": "Вашиот телефонски број"
+            "placeholder": "Вашиот телефонски број",
+            "type": "number"
           },
           {
             "label": "Изберете ја вашата земја",
-            "placeholder": "Вашата земја"
+            "placeholder": "Вашата земја",
+            "type": "select",
+            "options": [
+              "Македонија",
+              "Англија",
+              "Германија",
+              "Албанија"
+            ]
           },
           {
             "label": "Пратете ни Порака",
-            "placeholder": ""
+            "placeholder": "",
+            "type": "textarea"
           }
         ],
         "submit_button": {

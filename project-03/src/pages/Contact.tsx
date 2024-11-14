@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAppContext } from "../context/AppContext";
+import { ContactLeft } from "../components/layout/contact/ContactLeft";
+import { ContactForm } from "../components/layout/contact/ContactForm";
 
 export interface ContactInfoProps {
   email: string;
@@ -15,6 +17,8 @@ export interface ContactStepProps {
 export interface ContactFieldProps {
   label: string;
   placeholder: string;
+  type: "text" | "email" | "number" | "select" | "textarea";
+  options?: string[];
 }
 
 export interface ContactFormProps {
@@ -79,10 +83,18 @@ export const Contact = () => {
   if (!contactData) return <div>No contact data</div>;
 
   return (
-    <div>
-      <h1>{contactData.header}</h1>
-      <p>{contactData.contact_section.title}</p>
-      <p>{contactData.contact_section.description}</p>
+    <div className="bg-[#323232] pb-20 pt-24 px-[120px]">
+      <p className="text-[32px] font-[600] text-center text-white mb-20">
+        {contactData.header}
+      </p>
+      <div className="flex flex-row gap-20">
+        <div className="w-1/2">
+          <ContactLeft data={contactData} />
+        </div>
+        <div className="w-1/2">
+          <ContactForm data={contactData} />
+        </div>
+      </div>
     </div>
   );
 };
