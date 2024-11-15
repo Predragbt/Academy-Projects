@@ -1946,5 +1946,89 @@
         }
       }
     }
+  },
+  "partnershipPage": {
+    "eng": {
+      "header": {
+        "title": "Meet Our Partners & Collaborations",
+        "subtitle": "At Cyberware Global Defense, we are proud to collaborate with the following industry leaders and organizations to provide the best cybersecurity solutions to our clients.",
+        "buttonText": "View All Partners"
+      },
+      "partners": [
+        {
+          "id": 1,
+          "name": "Brainster",
+          "title": "Partnership with Brainster",
+          "description": "Our partnership with Brainster enables us to recruit and train the next generation of cybersecurity professionals. Together, we bring fresh ideas and cutting-edge solutions to the forefront of cyber defense. By combining Brainster’s forward-thinking education programs with our industry expertise, we are building a stronger, more resilient cybersecurity workforce. This collaboration ensures that our team stays ahead of emerging threats, equipped with the skills and knowledge to protect businesses and individuals in an ever-evolving digital landscape.",
+          "image1": "assets/images/PartnershipImg1.png",
+          "image2": "assets/images/PartnershipImg2.png"
+        },
+        {
+          "id": 2,
+          "name": "Microsoft",
+          "title": "Partnership with Microsoft",
+          "description": "Lorem ipsum dolor sit amet consectetur. Tristique dignissim dolor nunc sagittis pretium quam amet. Feugiat nisi eget ut convallis ac neque tristique faucibus integer. Amet donec maecenas vitae sollicitudin neque mauris etiam.",
+          "image1": "assets/images/PartnershipImg3.png",
+          "image2": "path/to/microsoft-image2.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Salesforce IQ",
+          "title": "Partnership with Salesforce IQ",
+          "description": "Lorem ipsum dolor sit amet consectetur. Tristique dignissim dolor nunc sagittis pretium quam amet. Feugiat nisi eget ut convallis ac neque tristique faucibus integer. Amet donec maecenas vitae sollicitudin neque mauris etiam. Nibh dictum id ut vestibulum mattis neque cursus. Tortor eleifend egestas et lorem. Emini nisi non parturient malesuada sed.",
+          "image1": "assets/images/PartnershipImg4.png",
+          "image2": "path/to/salesforce-image2.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Azure",
+          "title": "Partnership with Azure",
+          "description": "Lorem ipsum dolor sit amet consectetur. Tristique dignissim dolor nunc sagittis pretium quam amet. Feugiat nisi eget ut convallis ac neque tristique faucibus integer. Amet donec maecenas vitae sollicitudin neque mauris etiam. Nibh dictum id ut vestibulum mattis neque cursus. Tortor eleifend egestas et lorem. Emini nisi non parturient malesuada sed.",
+          "image1": "/assets/images/PartnershipImg1.png",
+          "image2": "assets/images/PartnershipImg5.png"
+        }
+      ]
+    },
+    "mk": {
+      "header": {
+        "title": "Запознајте Ги Нашите Партнери и Соработки",
+        "subtitle": "Во Cyberware Global Defense, горди сме што соработуваме со следниве лидери и организации во индустријата за да ги обезбедиме најдобрите решенија за сајбер-безбедност за нашите клиенти.",
+        "buttonText": "Погледнете Ги Сите Партнери"
+      },
+      "partners": [
+        {
+          "id": 1,
+          "name": "Brainster",
+          "title": "Партнерство со Brainster",
+          "description": "Нашето партнерство со Brainster ни овозможува да регрутираме и обучуваме нова генерација на професионалци во сајбер-безбедноста. Заедно носиме свежи идеи и напредни решенија во првите редови на сајбер-одбраната. Со комбинирање на програмите на Brainster за напредно образование со нашата индустриска експертиза, градиме посилна, поотпорна работна сила во сајбер-безбедноста. Оваа соработка обезбедува дека нашиот тим е секогаш чекор пред новите закани, опремен со вештини и знаења за да ги заштити бизнисите и поединците во секогаш променливиот дигитален свет.",
+          "image1": "path/to/brainster-image1.jpg",
+          "image2": "path/to/brainster-image2.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Microsoft",
+          "title": "Партнерство со Microsoft",
+          "description": "Lorem ipsum dolor sit amet consectetur. Tristique dignissim dolor nunc sagittis pretium quam amet. Feugiat nisi eget ut convallis ac neque tristique faucibus integer. Amet donec maecenas vitae sollicitudin neque mauris etiam.",
+          "image1": "path/to/microsoft-image1.jpg",
+          "image2": "path/to/microsoft-image2.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Salesforce IQ",
+          "title": "Партнерство со Salesforce IQ",
+          "description": "Lorem ipsum dolor sit amet consectetur. Tristique dignissim dolor nunc sagittis pretium quam amet. Feugiat nisi eget ut convallis ac neque tristique faucibus integer. Amet donec maecenas vitae sollicitudin neque mauris etiam. Nibh dictum id ut vestibulum mattis neque cursus. Tortor eleifend egestas et lorem. Emini nisi non parturient malesuada sed.",
+          "image1": "path/to/salesforce-image1.jpg",
+          "image2": "path/to/salesforce-image2.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Azure",
+          "title": "Партнерство со Azure",
+          "description": "Lorem ipsum dolor sit amet consectetur. Tristique dignissim dolor nunc sagittis pretium quam amet. Feugiat nisi eget ut convallis ac neque tristique faucibus integer. Amet donec maecenas vitae sollicitudin neque mauris etiam. Nibh dictum id ut vestibulum mattis neque cursus. Tortor eleifend egestas et lorem. Emini nisi non parturient malesuada sed.",
+          "image1": "path/to/azure-image1.jpg",
+          "image2": "path/to/azure-image2.jpg"
+        }
+      ]
+    }
   }
 }
