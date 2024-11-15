@@ -7,6 +7,7 @@ import { IndustiresPage } from "../pages/Industries";
 import { Jobs } from "../pages/Jobs";
 import { Contact } from "../pages/Contact";
 import { PartnershipPage } from "../pages/Partnership";
+import { Newsletter } from "../pages/Newsletter";
 
 export const router = createBrowserRouter([
   {
@@ -33,7 +34,11 @@ export const router = createBrowserRouter([
       { path: "/contact", element: <Contact /> },
       {
         path: "/partnership",
-        element: <PartnershipPage />, 
+        element: <PartnershipPage />,
+      },
+      {
+        path: "/newsletter",
+        element: <Newsletter />,
       },
     ],
   },
