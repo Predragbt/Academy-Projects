@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useAppContext } from "../context/AppContext";
 import { NewsletterHero } from "../components/layout/newsletter/NewsletterHero";
-
 import { NewsletterMain } from "../components/layout/newsletter/NewsletterMain";
 import { NewsletterSidebar } from "../components/layout/newsletter/NewsletterSiebar";
 
@@ -20,10 +19,15 @@ export interface NewsletterPreventionStrategyProps {
   description: string;
 }
 
-export interface NewsletterContentProps {
+export interface RelatedNewsProps {
   title: string;
-  summary: string;
-  introduction: string;
+  subtitle: string;
+  posted_date: string;
+  posted_label: string;
+  author: string;
+  author_label: string;
+  description: string;
+  btnText: string;
   key_trends: {
     title: string;
     data: NewsletterKeyTrendProps[];
@@ -40,25 +44,6 @@ export interface NewsletterContentProps {
   conclusion: string;
 }
 
-export interface NewsletterContributorProps {
-  id: number;
-  email: string;
-  description: string;
-}
-
-export interface NewsletterSubscriberProps {
-  id: number;
-  email: string;
-}
-
-export interface RelatedNewsProps {
-  title: string;
-  subtitle: string;
-  posted_date: string;
-  description: string;
-  btnText: string;
-}
-
 export interface ContributorFormProps {
   title: string;
   fields: {
@@ -73,30 +58,16 @@ export interface ContributorFormProps {
 }
 
 export interface NewsletterLanguageContentProps {
-  title: string;
-  subtitle: string;
   sidebarTitle: string;
   btnText: string;
-  posted_date: string;
-  posted_label: string;
-  author: string;
-  author_label: string;
   background_image: string;
-  category: string;
-  content: NewsletterContentProps;
-  related_news: RelatedNewsProps[];
   contributor_form: ContributorFormProps;
-  newsletter_subscription: NewsletterSubscriberProps[];
+  related_news: RelatedNewsProps[];
 }
 
 export interface NewsletterDataProps {
   eng: NewsletterLanguageContentProps;
   mk: NewsletterLanguageContentProps;
-}
-
-export interface SelectedCardProps {
-  title: string;
-  subtitle: string;
 }
 
 export const Newsletter = () => {
@@ -137,6 +108,7 @@ export const Newsletter = () => {
 
   const handleCardClick = (card: RelatedNewsProps) => {
     setSelectedCard(card);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   if (loading) return <div>Loading newsletter data...</div>;
@@ -155,7 +127,7 @@ export const Newsletter = () => {
             <NewsletterSidebar
               data={newsletterData}
               onCardClick={handleCardClick}
-              selectedCard={selectedCard} // Pass selectedCard for filtering
+              selectedCard={selectedCard}
             />
           </div>
           {selectedCard && <NewsletterMain data={selectedCard} />}
