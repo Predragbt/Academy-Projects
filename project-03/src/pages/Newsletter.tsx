@@ -3,6 +3,8 @@ import { useAppContext } from "../context/AppContext";
 import { NewsletterHero } from "../components/layout/newsletter/NewsletterHero";
 import { NewsletterMain } from "../components/layout/newsletter/NewsletterMain";
 import { NewsletterSidebar } from "../components/layout/newsletter/NewsletterSiebar";
+import { NewsletterFooterForm } from "../components/layout/newsletter/NewsletterFooterForm";
+import { NewsletterBottomSidebar } from "../components/layout/newsletter/NewsletterBottomSidebar";
 
 export interface NewsletterKeyTrendProps {
   title: string;
@@ -58,11 +60,25 @@ export interface ContributorFormProps {
   };
 }
 
+export interface NewsletterFooterFormProps {
+  title: string;
+  description: string;
+  fields: {
+    id: string;
+    placeholder: string;
+    type: "email";
+  }[];
+  submit_button: {
+    text: string;
+  };
+}
+
 export interface NewsletterLanguageContentProps {
   sidebarTitle: string;
   btnText: string;
   background_image: string;
   contributor_form: ContributorFormProps;
+  newsletterFooterForm: NewsletterFooterFormProps;
   related_news: RelatedNewsProps[];
 }
 
@@ -119,7 +135,7 @@ export const Newsletter = () => {
   return (
     <div>
       <NewsletterHero data={newsletterData} selectedCard={selectedCard} />
-      <div className="px-[120px] py-12">
+      <div className="py-12 px-[120px]">
         <p className="text-[32px] font-[600] text-[#FF6F0F] pb-2 ps-6">
           {newsletterData.sidebarTitle}
         </p>
@@ -134,6 +150,13 @@ export const Newsletter = () => {
           {selectedCard && <NewsletterMain data={selectedCard} />}
         </div>
       </div>
+      <NewsletterBottomSidebar
+        data={newsletterData}
+        onCardClick={handleCardClick}
+        selectedCard={selectedCard}
+      />
+
+      <NewsletterFooterForm data={newsletterData.newsletterFooterForm} />
     </div>
   );
 };

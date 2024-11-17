@@ -2035,6 +2035,20 @@
     "eng": {
       "sidebarTitle": "Related News",
       "btnText": "Read More",
+      "newsletterFooterForm": {
+        "title": "Still haven't subscribed to our Newsletter?",
+        "description": "Sign Up today and stay informed about online security and all the ways you can protect yourself or your business.",
+        "fields": [
+          {
+            "id": "email",
+            "placeholder": "Your Email Address",
+            "type": "email"
+          }
+        ],
+        "submit_button": {
+          "text": "Join for Free"
+        }
+      },
       "background_image": "assets/images/NewsletterHeroSection.png",
       "contributor_form": {
         "title": "Want to become a Contributor",
@@ -2178,6 +2192,128 @@
           "conclusion": "Iranian hackers present a persistent threat, and organizations must prioritize safeguarding critical infrastructure."
         },
         {
+          "title": "Russian Hackers Breaching Critical Infrastructure for Credential Theft",
+          "subtitle": "Russian Hackers Target Critical Infrastructure",
+          "posted_date": "October 20, 2024",
+          "posted_label": "Posted:",
+          "author": "Cybersecurity Insights Team",
+          "author_label": "By:",
+          "summaryTitle": "Summary",
+          "introductionTitle": "Introduction",
+          "description": "Recent reports reveal that Iranian hackers are infiltrating critical infrastructure organizations to collect credentials and network data.",
+          "btnText": "Read More",
+          "key_trends": {
+            "title": "Key Trends in Phishing Attacks",
+            "data": [
+              {
+                "title": "Spear Phishing Campaigns",
+                "description": "Unlike traditional phishing, spear phishing targets specific individuals or organizations. Attackers often gather information from social media or company websites to craft personalized messages that appear legitimate."
+              },
+              {
+                "title": "Use of AI and Automation",
+                "description": "Cybercriminals are increasingly utilizing AI tools to automate phishing campaigns, making them more efficient and harder to detect. These tools can generate convincing emails that mimic trusted sources."
+              },
+              {
+                "title": "Multi-Vector Attacks",
+                "description": "Phishing attacks are no longer limited to email. Attackers are now using SMS (smishing), social media platforms, and even voice calls (vishing) to reach potential victims through multiple channels."
+              }
+            ]
+          },
+          "case_studies": {
+            "title": "Notable Case Studies",
+            "data": [
+              {
+                "title": "Case Study 1: Targeting Financial Institutions",
+                "description": "In early 2024, a major bank fell victim to a sophisticated spear phishing attack that compromised customer data. Attackers impersonated bank representatives and sent emails requesting sensitive information, leading to significant financial losses."
+              },
+              {
+                "title": "Case Study 2: Ransomware via Phishing Links",
+                "description": "A healthcare organization experienced a ransomware attack after employees clicked on a malicious link in an email disguised as a routine update. The attack encrypted critical patient data, causing operational disruptions and reputational damage."
+              }
+            ]
+          },
+          "prevention_strategies": {
+            "title": "Prevention Strategies",
+            "data": [
+              {
+                "title": "Employee Training Programs",
+                "description": "Regular training sessions on recognizing phishing attempts can empower employees to identify suspicious emails and links. Incorporating simulated phishing exercises can reinforce learning."
+              },
+              {
+                "title": "Multi-Factor Authentication (MFA)",
+                "description": "Implementing MFA adds an extra layer of security, making it more difficult for attackers to gain unauthorized access even if credentials are compromised."
+              },
+              {
+                "title": "Email Filtering Solutions",
+                "description": "Investing in advanced email filtering solutions can help detect and block phishing emails before they reach employees' inboxes."
+              }
+            ]
+          },
+          "conclusionTitle": "Conclusion",
+          "conclusion": "Iranian hackers present a persistent threat, and organizations must prioritize safeguarding critical infrastructure."
+        },
+        {
+          "title": "Macedonian Hackers Breaching Critical Infrastructure for Credential Theft",
+          "subtitle": "Macedonian Hackers Target Critical Infrastructure",
+          "posted_date": "October 20, 2024",
+          "posted_label": "Posted:",
+          "author": "Cybersecurity Insights Team",
+          "author_label": "By:",
+          "summaryTitle": "Summary",
+          "introductionTitle": "Introduction",
+          "description": "Recent reports reveal that Iranian hackers are infiltrating critical infrastructure organizations to collect credentials and network data.",
+          "btnText": "Read More",
+          "key_trends": {
+            "title": "Key Trends in Phishing Attacks",
+            "data": [
+              {
+                "title": "Spear Phishing Campaigns",
+                "description": "Unlike traditional phishing, spear phishing targets specific individuals or organizations. Attackers often gather information from social media or company websites to craft personalized messages that appear legitimate."
+              },
+              {
+                "title": "Use of AI and Automation",
+                "description": "Cybercriminals are increasingly utilizing AI tools to automate phishing campaigns, making them more efficient and harder to detect. These tools can generate convincing emails that mimic trusted sources."
+              },
+              {
+                "title": "Multi-Vector Attacks",
+                "description": "Phishing attacks are no longer limited to email. Attackers are now using SMS (smishing), social media platforms, and even voice calls (vishing) to reach potential victims through multiple channels."
+              }
+            ]
+          },
+          "case_studies": {
+            "title": "Notable Case Studies",
+            "data": [
+              {
+                "title": "Case Study 1: Targeting Financial Institutions",
+                "description": "In early 2024, a major bank fell victim to a sophisticated spear phishing attack that compromised customer data. Attackers impersonated bank representatives and sent emails requesting sensitive information, leading to significant financial losses."
+              },
+              {
+                "title": "Case Study 2: Ransomware via Phishing Links",
+                "description": "A healthcare organization experienced a ransomware attack after employees clicked on a malicious link in an email disguised as a routine update. The attack encrypted critical patient data, causing operational disruptions and reputational damage."
+              }
+            ]
+          },
+          "prevention_strategies": {
+            "title": "Prevention Strategies",
+            "data": [
+              {
+                "title": "Employee Training Programs",
+                "description": "Regular training sessions on recognizing phishing attempts can empower employees to identify suspicious emails and links. Incorporating simulated phishing exercises can reinforce learning."
+              },
+              {
+                "title": "Multi-Factor Authentication (MFA)",
+                "description": "Implementing MFA adds an extra layer of security, making it more difficult for attackers to gain unauthorized access even if credentials are compromised."
+              },
+              {
+                "title": "Email Filtering Solutions",
+                "description": "Investing in advanced email filtering solutions can help detect and block phishing emails before they reach employees' inboxes."
+              }
+            ]
+          },
+          "conclusionTitle": "Conclusion",
+          "conclusion": "Iranian hackers present a persistent threat, and organizations must prioritize safeguarding critical infrastructure."
+        },
+        {
           "title": "New Vulnerabilities in Enterprise Software Systems",
           "subtitle": "Critical Exploits in Popular Enterprise Solutions",
           "posted_date": "October 22, 2024",
@@ -2243,25 +2379,37 @@
     "mk": {
       "sidebarTitle": "Поврзани вести",
       "btnText": "Прочитај повеќе",
+      "newsletterFooterForm": {
+        "title": "Сè уште не сте се претплатиле на нашиот Newsletter?",
+        "description": "Пријавете се денес и останете информирани за онлајн безбедноста и сите начини на кои можете да се заштитите себеси или вашиот бизнис.",
+        "fields": [
+          {
+            "id": "email",
+            "placeholder": "Вашата е-пошта",
+            "type": "email"
+          }
+        ],
+        "submit_button": {
+          "text": "Претплатете се бесплатно"
+        }
+      },
       "background_image": "assets/images/NewsletterHeroSection.png",
       "contributor_form": {
         "title": "Сакате да станете придонесувач?",
         "fields": [
           {
             "id": "email",
-            "label": "Вашата е-пошта",
-            "placeholder": "Внесете ја вашата е-пошта",
+            "placeholder": "Вашата е-пошта",
             "type": "email"
           },
           {
             "id": "description",
-            "label": "Кажете ни нешто за вас",
-            "placeholder": "Напишете краток опис за себе",
+            "placeholder": "Кажете ни нешто за вас",
             "type": "textarea"
           }
         ],
         "submit_button": {
-          "text": "Прати"
+          "text": "Испрати"
         }
       },
       "related_news": [
@@ -2327,6 +2475,67 @@
           "conclusion": "Како што фишинг нападите се развиваат, организациите мора да бидат будни и проактивни во нивните стратегии за заштита."
         },
         {
+          "title": "Нови ранливости во системите за софтвер на претпријатија",
+          "subtitle": "Критични експлоатации во популарни софтверски решенија",
+          "posted_date": "22 Октомври, 2024",
+          "posted_label": "Објавено:",
+          "author": "Тим за управување со ризик",
+          "author_label": "Од:",
+          "summaryTitle": "Резиме",
+          "introductionTitle": "Вовед",
+          "description": "Последен бран на напади ја искористи ранливоста во популарните системи за претпријатен софтвер. Извештајот ги истакнува ризиците и превентивните мерки што организациите можат да ги преземат.",
+          "btnText": "Дознај повеќе",
+          "key_trends": {
+            "title": "Клучни трендови во фишинг нападите",
+            "data": [
+              {
+                "title": "Целни фишинг кампањи",
+                "description": "За разлика од традиционалниот фишинг, целните фишинг кампањи насочуваат специфични поединци или организации. Напаѓачите често собираат информации од социјалните мрежи или веб-страници за компании за да изработат персонализирани пораки кои изгледаат легитимни."
+              },
+              {
+                "title": "Користење на вештачка интелигенција",
+                "description": "Кибер-криминалците сè почесто користат алатки за вештачка интелигенција за автоматизација на фишинг кампањите, што ги прави поефикасни и потешки за откривање."
+              },
+              {
+                "title": "Мулти-векторски напади",
+                "description": "Фишинг нападите повеќе не се ограничени само на е-пошта. Напаѓачите сега користат SMS (смисинг), социјални мрежи и дури гласовни повици за да достигнат потенцијални жртви."
+              }
+            ]
+          },
+          "case_studies": {
+            "title": "Значајни студии на случаи",
+            "data": [
+              {
+                "title": "Студија на случај 1: Целни финансиски институции",
+                "description": "Во почетокот на 2024 година, голема банка стана жртва на софистициран целен фишинг напад што компромитираше податоци за клиентите. Напаѓачите се претставуваа како претставници на банката и испраќаа пораки со барања за чувствителни информации."
+              },
+              {
+                "title": "Студија на случај 2: Рансомвер преку фишинг линкови",
+                "description": "Здравствена организација доживеа рансомвер напад откако вработени кликнаа на злонамерен линк во е-пошта, што доведе до енкрипција на критични податоци за пациентите и операциски нарушувања."
+              }
+            ]
+          },
+          "prevention_strategies": {
+            "title": "Стратегии за превенција",
+            "data": [
+              {
+                "title": "Програми за обука",
+                "description": "Редовните сесии за обука за препознавање фишинг напади можат да ги поттикнат вработените да идентификуваат сомнителни пораки и линкови."
+              },
+              {
+                "title": "Мулти-факторска автентикација",
+                "description": "Имплементацијата на MFA додава дополнителен слој на безбедност, правејќи го потешко за напаѓачите да добијат неовластен пристап, дури и ако информациите за пристап се компромитирани."
+              },
+              {
+                "title": "Решенија за филтрирање на е-пошта",
+                "description": "Инвестирањето во напредни решенија за филтрирање на е-пошта може да помогне да се откријат и блокираат фишинг пораки пред да стигнат до поштенските сандачиња на вработените."
+              }
+            ]
+          },
+          "conclusionTitle": "Последни мисли",
+          "conclusion": "Системите на претпријатијата бараат постојан мониторинг и ажурирање за да се обезбеди безбедност пред да бидат експлоатирани."
+        },
+        {
           "title": "Ирански хакери пробиваат критична инфраструктура за кражба на акредитиви",
           "subtitle": "Ирански хакери целат кон критична инфраструктура",
           "posted_date": "20 Октомври, 2024",
@@ -2388,16 +2597,16 @@
           "conclusion": "Иранските хакери претставуваат постојана закана, и организациите мора да ги приоретизираат мерките за заштита на критичната инфраструктура."
         },
         {
-          "title": "Нови ранливости во системите за софтвер на претпријатија",
-          "subtitle": "Критични експлоатации во популарни софтверски решенија",
-          "posted_date": "22 Октомври, 2024",
+          "title": "Руски хакери пробиваат критична инфраструктура за кражба на акредитиви",
+          "subtitle": "Руски хакери целат кон критична инфраструктура",
+          "posted_date": "20 Октомври, 2024",
           "posted_label": "Објавено:",
-          "author": "Тим за управување со ризик",
+          "author": "Тим за сајбер безбедност",
           "author_label": "Од:",
           "summaryTitle": "Резиме",
           "introductionTitle": "Вовед",
-          "description": "Последен бран на напади ја искористи ранливоста во популарните системи за претпријатен софтвер. Извештајот ги истакнува ризиците и превентивните мерки што организациите можат да ги преземат.",
-          "btnText": "Дознај повеќе",
+          "description": "Извештаите откриваат дека ирански хакери инфилтрираат критични инфраструктурни организации за да собираат акредитиви и податоци за мрежи.",
+          "btnText": "Прочитај повеќе",
           "key_trends": {
             "title": "Клучни трендови во фишинг нападите",
             "data": [
@@ -2445,8 +2654,8 @@
               }
             ]
           },
-          "conclusionTitle": "Последни мисли",
-          "conclusion": "Системите на претпријатијата бараат постојан мониторинг и ажурирање за да се обезбеди безбедност пред да бидат експлоатирани."
+          "conclusionTitle": "Заклучок",
+          "conclusion": "Иранските хакери претставуваат постојана закана, и организациите мора да ги приоретизираат мерките за заштита на критичната инфраструктура."
         }
       ]
     }

@@ -25,7 +25,7 @@ export const IndustiresPage = () => {
         subtitle={languageContent.industriesDescription}
         img={languageContent.industriesHeroImg}
       />
-      <div className="px-[100px] py-[50px] border-b-8 border-[#FF6F0F]">
+      <div className="px-[120px] py-[50px] border-b-8 border-[#FF6F0F]">
         {languageContent.industries.map((industry) => (
           <div
             key={industry.id}
@@ -46,14 +46,14 @@ export const IndustiresPage = () => {
           </div>
         ))}
       </div>
-      <div className="px-[100px] py-[50px] flex flex-row gap-4 items-center">
-        <div className="flex-[2] me-[200px]">
+      <div className="px-[120px] py-[80px] flex flex-row gap-4 items-center">
+        <div className="flex-[60%] me-[200px]">
           <p className="text-[48px] font-semibold mb-4">{languageContent.formTitle}</p>
           <p className="text-[24px] text-[#FF6F0F] leading-[30px]">
             {languageContent.formDescription}
           </p>
         </div>
-        <div className="flex-[1] flex flex-col items-end">
+        <div className="flex-[40%] flex flex-col items-end">
           <input
             type="text"
             placeholder={languageContent.formPlaceholder}
