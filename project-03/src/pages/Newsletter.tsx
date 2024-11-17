@@ -26,6 +26,8 @@ export interface RelatedNewsProps {
   posted_label: string;
   author: string;
   author_label: string;
+  summaryTitle: string;
+  introductionTitle: string;
   description: string;
   btnText: string;
   key_trends: {
@@ -48,7 +50,6 @@ export interface ContributorFormProps {
   title: string;
   fields: {
     id: string;
-    label: string;
     placeholder: string;
     type: "email" | "textarea";
   }[];

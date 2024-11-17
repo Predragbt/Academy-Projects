@@ -2041,14 +2041,12 @@
         "fields": [
           {
             "id": "email",
-            "label": "Your Email",
-            "placeholder": "Enter your email address",
+            "placeholder": "Your Email",
             "type": "email"
           },
           {
             "id": "description",
-            "label": "Tell us Something About Yourself",
-            "placeholder": "Write a brief description about yourself",
+            "placeholder": "Tell us Something About Yourself",
             "type": "textarea"
           }
         ],
@@ -2064,6 +2062,8 @@
           "posted_label": "Posted:",
           "author": "Cybersecurity Insights Team",
           "author_label": "By:",
+          "summaryTitle": "Summary",
+          "introductionTitle": "Introduction",
           "description": "Phishing attacks have become increasingly sophisticated, leveraging social engineering tactics and advanced technology to deceive individuals and organizations.",
           "btnText": "Read More",
           "key_trends": {
@@ -2123,6 +2123,8 @@
           "posted_label": "Posted:",
           "author": "Cybersecurity Insights Team",
           "author_label": "By:",
+          "summaryTitle": "Summary",
+          "introductionTitle": "Introduction",
           "description": "Recent reports reveal that Iranian hackers are infiltrating critical infrastructure organizations to collect credentials and network data.",
           "btnText": "Read More",
           "key_trends": {
@@ -2182,6 +2184,8 @@
           "posted_label": "Posted:",
           "author": "Enterprise Risk Team",
           "author_label": "By:",
+          "summaryTitle": "Summary",
+          "introductionTitle": "Introduction",
           "description": "A recent wave of attacks has exploited vulnerabilities in major enterprise software systems. This report highlights the risks and preventive measures organizations can take.",
           "btnText": "Learn More",
           "key_trends": {
@@ -2268,6 +2272,8 @@
           "posted_label": "Објавено:",
           "author": "Тим за сајбер безбедност",
           "author_label": "Од:",
+          "summaryTitle": "Резиме",
+          "introductionTitle": "Вовед",
           "description": "Фишинг нападите стануваат сè пософистицирани, користејќи тактики на социјален инженеринг и напредна технологија за да измамат поединци и организации.",
           "btnText": "Прочитај повеќе",
           "key_trends": {
@@ -2327,6 +2333,8 @@
           "posted_label": "Објавено:",
           "author": "Тим за сајбер безбедност",
           "author_label": "Од:",
+          "summaryTitle": "Резиме",
+          "introductionTitle": "Вовед",
           "description": "Извештаите откриваат дека ирански хакери инфилтрираат критични инфраструктурни организации за да собираат акредитиви и податоци за мрежи.",
           "btnText": "Прочитај повеќе",
           "key_trends": {
@@ -2386,6 +2394,8 @@
           "posted_label": "Објавено:",
           "author": "Тим за управување со ризик",
           "author_label": "Од:",
+          "summaryTitle": "Резиме",
+          "introductionTitle": "Вовед",
           "description": "Последен бран на напади ја искористи ранливоста во популарните системи за претпријатен софтвер. Извештајот ги истакнува ризиците и превентивните мерки што организациите можат да ги преземат.",
           "btnText": "Дознај повеќе",
           "key_trends": {
