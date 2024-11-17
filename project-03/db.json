@@ -2033,154 +2033,253 @@
   },
   "newsletter": {
     "eng": {
-      "title": "The Evolving Landscape of Phishing Attacks: What You Need to Know",
-      "subtitle": "Phishing Attacks and Prevention Strategies",
+      "sidebarTitle": "Related News",
       "btnText": "Read More",
-      "posted_date": "October 20, 2024",
-      "posted_label": "Posted:",
-      "author": "Cybersecurity Insights Team",
-      "author_label": "By:",
-      "background_image": "path/to/background-image.jpg",
-      "category": "Cybersecurity",
-      "content": {
-        "summary": "Phishing attacks have become increasingly sophisticated, leveraging social engineering tactics and advanced technology to deceive individuals and organizations. This report examines the latest trends in phishing, highlights notable case studies, and provides actionable prevention strategies to safeguard your digital assets.",
-        "introduction": "Phishing attacks have become increasingly sophisticated, leveraging social engineering tactics and advanced technology to deceive individuals and organizations. This report examines the latest trends in phishing, highlights notable case studies, and provides actionable prevention strategies to safeguard your digital assets.",
-        "key_trends": [
+      "background_image": "assets/images/NewsletterHeroSection.png",
+      "contributor_form": {
+        "title": "Want to become a Contributor",
+        "fields": [
           {
-            "title": "Spear Phishing Campaigns",
-            "description": "Unlike traditional phishing, spear phishing targets specific individuals or organizations. Attackers often gather information from social media or company websites to craft personalized messages that appear legitimate."
+            "id": "email",
+            "label": "Your Email",
+            "placeholder": "Enter your email address",
+            "type": "email"
           },
           {
-            "title": "Use of AI and Automation",
-            "description": "Cybercriminals are increasingly utilizing AI tools to automate phishing campaigns, making them more efficient and harder to detect. These tools can generate convincing emails that mimic trusted sources."
-          },
-          {
-            "title": "Multi-Vector Attacks",
-            "description": "Phishing attacks are no longer limited to email. Attackers are now using SMS (smishing), social media platforms, and even voice calls (vishing) to reach potential victims through multiple channels."
+            "id": "description",
+            "label": "Tell us Something About Yourself",
+            "placeholder": "Write a brief description about yourself",
+            "type": "textarea"
           }
         ],
-        "case_studies": [
-          {
-            "title": "Case Study 1: Targeting Financial Institutions",
-            "description": "In early 2024, a major bank fell victim to a sophisticated spear phishing attack that compromised customer data. Attackers impersonated bank representatives and sent emails requesting sensitive information, leading to significant financial losses."
-          },
-          {
-            "title": "Case Study 2: Ransomware via Phishing Links",
-            "description": "A healthcare organization experienced a ransomware attack after employees clicked on a malicious link in an email disguised as a routine update. The attack encrypted critical patient data, causing operational disruptions and reputational damage."
-          }
-        ],
-        "prevention_strategies": [
-          {
-            "title": "Employee Training Programs",
-            "description": "Regular training sessions on recognizing phishing attempts can empower employees to identify suspicious emails and links. Incorporating simulated phishing exercises can reinforce learning."
-          },
-          {
-            "title": "Multi-Factor Authentication (MFA)",
-            "description": "Implementing MFA adds an extra layer of security, making it more difficult for attackers to gain unauthorized access even if credentials are compromised."
-          },
-          {
-            "title": "Email Filtering Solutions",
-            "description": "Investing in advanced email filtering solutions can help detect and block phishing emails before they reach employees' inboxes."
-          }
-        ],
-        "conclusion": "As phishing attacks evolve in complexity and frequency, organizations must remain vigilant and proactive in their defense strategies. By understanding the latest trends and implementing robust prevention measures, businesses can significantly reduce their risk of falling victim to these threats."
+        "submit_button": {
+          "text": "Send"
+        }
       },
-      "contributor_form": [
+      "related_news": [
         {
-          "id": 1,
-          "email": "example@example.com",
-          "description": "I am a web developer with experience in React and Node.js."
+          "title": "The Evolving Landscape of Phishing Attacks: What You Need to Know",
+          "subtitle": "Phishing Attacks and Prevention Strategies",
+          "posted_date": "October 20, 2024",
+          "description": "Phishing attacks have become increasingly sophisticated, leveraging social engineering tactics and advanced technology to deceive individuals and organizations. This report examines the latest trends in phishing, highlights notable case studies, and provides actionable prevention strategies to safeguard your digital assets.",
+          "btnText": "Read More",
+          "key_trends": {
+            "title": "Key Trends in Phishing Attacks",
+            "data": [
+              {
+                "title": "Spear Phishing Campaigns",
+                "description": "Unlike traditional phishing, spear phishing targets specific individuals or organizations. Attackers often gather information from social media or company websites to craft personalized messages that appear legitimate."
+              },
+              {
+                "title": "Use of AI and Automation",
+                "description": "Cybercriminals are increasingly utilizing AI tools to automate phishing campaigns, making them more efficient and harder to detect. These tools can generate convincing emails that mimic trusted sources."
+              },
+              {
+                "title": "Multi-Vector Attacks",
+                "description": "Phishing attacks are no longer limited to email. Attackers are now using SMS (smishing), social media platforms, and even voice calls (vishing) to reach potential victims through multiple channels."
+              }
+            ]
+          },
+          "case_studies": {
+            "title": "Notable Case Studies",
+            "data": [
+              {
+                "title": "Case Study 1: Targeting Financial Institutions",
+                "description": "In early 2024, a major bank fell victim to a sophisticated spear phishing attack that compromised customer data. Attackers impersonated bank representatives and sent emails requesting sensitive information, leading to significant financial losses."
+              },
+              {
+                "title": "Case Study 2: Ransomware via Phishing Links",
+                "description": "A healthcare organization experienced a ransomware attack after employees clicked on a malicious link in an email disguised as a routine update. The attack encrypted critical patient data, causing operational disruptions and reputational damage."
+              }
+            ]
+          },
+          "prevention_strategies": {
+            "title": "Prevention Strategies",
+            "data": [
+              {
+                "title": "Employee Training Programs",
+                "description": "Regular training sessions on recognizing phishing attempts can empower employees to identify suspicious emails and links. Incorporating simulated phishing exercises can reinforce learning."
+              },
+              {
+                "title": "Multi-Factor Authentication (MFA)",
+                "description": "Implementing MFA adds an extra layer of security, making it more difficult for attackers to gain unauthorized access even if credentials are compromised."
+              },
+              {
+                "title": "Email Filtering Solutions",
+                "description": "Investing in advanced email filtering solutions can help detect and block phishing emails before they reach employees' inboxes."
+              }
+            ]
+          },
+          "conclusionTitle": "Conclusion",
+          "conclusion": "As phishing attacks evolve in complexity and frequency, organizations must remain vigilant and proactive in their defense strategies. By understanding the latest trends and implementing robust prevention measures, businesses can significantly reduce their risk of falling victim to these threats."
         },
         {
-          "id": 2,
-          "email": "user@domain.com",
-          "description": "I would love to contribute to your project with my cybersecurity expertise."
-        }
-      ],
-      "newsletter_subscription": [
-        {
-          "id": 1,
-          "email": "subscriber1@example.com"
+          "title": "Iranian Hackers Breaching Critical Infrastructure for Credential Theft",
+          "subtitle": "Iranian Hackers Target Critical Infrastructure",
+          "posted_date": "October 20, 2024",
+          "description": "Recent reports reveal that Iranian hackers are infiltrating critical infrastructure organizations to collect credentials and network data. This information is being sold on cybercriminal forums, enabling further cyberattacks by other threat actors.",
+          "btnText": "Read More",
+          "key_trends": {
+            "title": "Key Trends in Phishing Attacks",
+            "data": [
+              {
+                "title": "Spear Phishing Campaigns",
+                "description": "Unlike traditional phishing, spear phishing targets specific individuals or organizations. Attackers often gather information from social media or company websites to craft personalized messages that appear legitimate."
+              },
+              {
+                "title": "Use of AI and Automation",
+                "description": "Cybercriminals are increasingly utilizing AI tools to automate phishing campaigns, making them more efficient and harder to detect. These tools can generate convincing emails that mimic trusted sources."
+              },
+              {
+                "title": "Multi-Vector Attacks",
+                "description": "Phishing attacks are no longer limited to email. Attackers are now using SMS (smishing), social media platforms, and even voice calls (vishing) to reach potential victims through multiple channels."
+              }
+            ]
+          },
+          "case_studies": {
+            "title": "Notable Case Studies",
+            "data": [
+              {
+                "title": "Case Study 1: Targeting Financial Institutions",
+                "description": "In early 2024, a major bank fell victim to a sophisticated spear phishing attack that compromised customer data. Attackers impersonated bank representatives and sent emails requesting sensitive information, leading to significant financial losses."
+              },
+              {
+                "title": "Case Study 2: Ransomware via Phishing Links",
+                "description": "A healthcare organization experienced a ransomware attack after employees clicked on a malicious link in an email disguised as a routine update. The attack encrypted critical patient data, causing operational disruptions and reputational damage."
+              }
+            ]
+          },
+          "prevention_strategies": {
+            "title": "Prevention Strategies",
+            "data": [
+              {
+                "title": "Employee Training Programs",
+                "description": "Regular training sessions on recognizing phishing attempts can empower employees to identify suspicious emails and links. Incorporating simulated phishing exercises can reinforce learning."
+              },
+              {
+                "title": "Multi-Factor Authentication (MFA)",
+                "description": "Implementing MFA adds an extra layer of security, making it more difficult for attackers to gain unauthorized access even if credentials are compromised."
+              },
+              {
+                "title": "Email Filtering Solutions",
+                "description": "Investing in advanced email filtering solutions can help detect and block phishing emails before they reach employees' inboxes."
+              }
+            ]
+          },
+          "conclusionTitle": "Conclusion",
+          "conclusion": "As phishing attacks evolve in complexity and frequency, organizations must remain vigilant and proactive in their defense strategies. By understanding the latest trends and implementing robust prevention measures, businesses can significantly reduce their risk of falling victim to these threats."
         },
         {
-          "id": 2,
-          "email": "subscriber2@example.com"
-        }
-      ]
-    },
-    "mk": {
-      "title": "Еволутивниот Пејзаж на Фишинг Нападите: Што Треба да Знаете",
-      "subtitle": "Фишинг Напади и Стратегии за Превенција",
-      "btnText": "Прочитај Повеќе",
-      "posted_date": "20 Октомври, 2024",
-      "posted_label": "Објавено:",
-      "author": "Тим за Сајбер Безбедност",
-      "author_label": "Од:",
-      "background_image": "path/to/background-image.jpg",
-      "category": "Сајбер Безбедност",
-      "content": {
-        "summary": "Фишинг нападите стануваат сè пософистицирани, користејќи тактики на социјален инженеринг и напредна технологија за да измамат индивидуи и организации. Овој извештај ги анализира најновите трендови во фишингот, истакнува значајни примери и нуди практични стратегии за превенција за заштита на вашите дигитални ресурси.",
-        "introduction": "Фишинг нападите стануваат сè пософистицирани, користејќи тактики на социјален инженеринг и напредна технологија за да измамат индивидуи и организации. Овој извештај ги анализира најновите трендови во фишингот, истакнува значајни примери и нуди практични стратегии за превенција за заштита на вашите дигитални ресурси.",
-        "key_trends": [
-          {
-            "title": "Кампањи за Спир Фишинг",
-            "description": "За разлика од традиционалниот фишинг, спир фишингот ги таргетира специфични индивидуи или организации. Напаѓачите често собираат информации од социјалните мрежи или веб-страниците на компаниите за да креираат персонализирани пораки што изгледаат легитимно."
+          "title": "New Vulnerabilities in Enterprise Software Systems",
+          "subtitle": "Critical Exploits in Popular Enterprise Solutions",
+          "posted_date": "October 22, 2024",
+          "description": "A recent wave of attacks has exploited vulnerabilities in major enterprise software systems. This report highlights the risks and preventive measures organizations can take.",
+          "btnText": "Learn More",
+          "key_trends": {
+            "title": "Key Trends in Phishing Attacks",
+            "data": [
+              {
+                "title": "Spear Phishing Campaigns",
+                "description": "Unlike traditional phishing, spear phishing targets specific individuals or organizations. Attackers often gather information from social media or company websites to craft personalized messages that appear legitimate."
+              },
+              {
+                "title": "Use of AI and Automation",
+                "description": "Cybercriminals are increasingly utilizing AI tools to automate phishing campaigns, making them more efficient and harder to detect. These tools can generate convincing emails that mimic trusted sources."
+              },
+              {
+                "title": "Multi-Vector Attacks",
+                "description": "Phishing attacks are no longer limited to email. Attackers are now using SMS (smishing), social media platforms, and even voice calls (vishing) to reach potential victims through multiple channels."
+              }
+            ]
           },
-          {
-            "title": "Употреба на ВИ и Автоматизација",
-            "description": "Сајбер-криминалците сè почесто користат алатки за вештачка интелигенција за автоматизација на фишинг кампањи, што ги прави поефикасни и потешки за откривање. Овие алатки можат да генерираат убедливи е-пораки што имитираат доверливи извори."
+          "case_studies": {
+            "title": "Notable Case Studies",
+            "data": [
+              {
+                "title": "Case Study 1: Targeting Financial Institutions",
+                "description": "In early 2024, a major bank fell victim to a sophisticated spear phishing attack that compromised customer data. Attackers impersonated bank representatives and sent emails requesting sensitive information, leading to significant financial losses."
+              },
+              {
+                "title": "Case Study 2: Ransomware via Phishing Links",
+                "description": "A healthcare organization experienced a ransomware attack after employees clicked on a malicious link in an email disguised as a routine update. The attack encrypted critical patient data, causing operational disruptions and reputational damage."
+              }
+            ]
           },
-          {
-            "title": "Мулти-Векторски Напади",
-            "description": "Фишинг нападите повеќе не се ограничени само на е-пошта. Напаѓачите сега користат СМС (смшинг), социјални мрежи и дури гласовни повици (вишинг) за да допрат до потенцијални жртви преку повеќе канали."
-          }
-        ],
-        "case_studies": [
-          {
-            "title": "Пример 1: Таргетирање на Финансиски Институции",
-            "description": "На почетокот на 2024 година, една голема банка стана жртва на софистициран спир фишинг напад што компромитираше податоци за клиентите. Напаѓачите се претставија како претставници на банката и испратија е-пораки со барање за чувствителни информации, што доведе до значителни финансиски загуби."
+          "prevention_strategies": {
+            "title": "Prevention Strategies",
+            "data": [
+              {
+                "title": "Employee Training Programs",
+                "description": "Regular training sessions on recognizing phishing attempts can empower employees to identify suspicious emails and links. Incorporating simulated phishing exercises can reinforce learning."
+              },
+              {
+                "title": "Multi-Factor Authentication (MFA)",
+                "description": "Implementing MFA adds an extra layer of security, making it more difficult for attackers to gain unauthorized access even if credentials are compromised."
+              },
+              {
+                "title": "Email Filtering Solutions",
+                "description": "Investing in advanced email filtering solutions can help detect and block phishing emails before they reach employees' inboxes."
+              }
+            ]
           },
-          {
-            "title": "Пример 2: Рансомвер преку Фишинг Линкови",
-            "description": "Здравствена организација доживеа рансомвер напад откако вработени кликнале на злонамерен линк во е-пошта маскирана како рутина за ажурирање. Нападот ги енкриптира критичните податоци за пациентите, предизвикувајќи оперативни прекини и репутациска штета."
-          }
-        ],
-        "prevention_strategies": [
-          {
-            "title": "Програми за Обука на Вработени",
-            "description": "Редовните обуки за препознавање на фишинг обиди можат да ги оспособат вработените да идентификуваат сомнителни е-пораки и линкови. Вклучувањето на симулирани фишинг вежби може да го зајакне учењето."
-          },
-          {
-            "title": "Мултифакторска Автентикација (MFA)",
-            "description": "Имплементацијата на MFA додава дополнителен слој на безбедност, што го отежнува неовластениот пристап дури и ако се компромитираат креденцијалите."
-          },
-          {
-            "title": "Решенија за Филтрирање на Е-Пошта",
-            "description": "Инвестирањето во напредни решенија за филтрирање на е-пошта може да помогне во откривање и блокирање на фишинг е-пораки пред да стигнат до инбоксите на вработените."
-          }
-        ],
-        "conclusion": "Како што фишинг нападите еволуираат во сложеност и фреквенција, организациите мора да останат внимателни и проактивни во нивните одбранбени стратегии. Со разбирање на најновите трендови и имплементација на робусни мерки за превенција, бизнисите можат значително да го намалат ризикот од станување жртва на овие закани."
-      },
-      "contributor_form": [
-        {
-          "id": 1,
-          "email": "primer@example.com",
-          "description": "Јас сум веб-развивач со искуство во React и Node.js."
+          "conclusionTitle": "Final Thoughts",
+          "conclusion": "Organizations must continuously monitor for updates and implement security patches in a timely manner to prevent exploitative attacks."
         },
         {
-          "id": 2,
-          "email": "korisnik@domain.com",
-          "description": "Би сакал да придонесам во вашиот проект со моето знаење за сајбер безбедност."
-        }
-      ],
-      "newsletter_subscription": [
-        {
-          "id": 1,
-          "email": "subscriber_mk1@example.com"
-        },
-        {
-          "id": 2,
-          "email": "subscriber_mk2@example.com"
+          "title": "Ransomware Attacks on Cloud Systems on the Rise",
+          "subtitle": "Threats Targeting Cloud Infrastructure",
+          "posted_date": "October 25, 2024",
+          "description": "Cybersecurity experts report an increase in ransomware attacks specifically targeting cloud-based systems, leading to significant financial and operational impacts.",
+          "btnText": "Learn More",
+          "key_trends": {
+            "title": "Key Trends in Phishing Attacks",
+            "data": [
+              {
+                "title": "Spear Phishing Campaigns",
+                "description": "Unlike traditional phishing, spear phishing targets specific individuals or organizations. Attackers often gather information from social media or company websites to craft personalized messages that appear legitimate."
+              },
+              {
+                "title": "Use of AI and Automation",
+                "description": "Cybercriminals are increasingly utilizing AI tools to automate phishing campaigns, making them more efficient and harder to detect. These tools can generate convincing emails that mimic trusted sources."
+              },
+              {
+                "title": "Multi-Vector Attacks",
+                "description": "Phishing attacks are no longer limited to email. Attackers are now using SMS (smishing), social media platforms, and even voice calls (vishing) to reach potential victims through multiple channels."
+              }
+            ]
+          },
+          "case_studies": {
+            "title": "Notable Case Studies",
+            "data": [
+              {
+                "title": "Case Study 1: Targeting Financial Institutions",
+                "description": "In early 2024, a major bank fell victim to a sophisticated spear phishing attack that compromised customer data. Attackers impersonated bank representatives and sent emails requesting sensitive information, leading to significant financial losses."
+              },
+              {
+                "title": "Case Study 2: Ransomware via Phishing Links",
+                "description": "A healthcare organization experienced a ransomware attack after employees clicked on a malicious link in an email disguised as a routine update. The attack encrypted critical patient data, causing operational disruptions and reputational damage."
+              }
+            ]
+          },
+          "prevention_strategies": {
+            "title": "Prevention Strategies",
+            "data": [
+              {
+                "title": "Employee Training Programs",
+                "description": "Regular training sessions on recognizing phishing attempts can empower employees to identify suspicious emails and links. Incorporating simulated phishing exercises can reinforce learning."
+              },
+              {
+                "title": "Multi-Factor Authentication (MFA)",
+                "description": "Implementing MFA adds an extra layer of security, making it more difficult for attackers to gain unauthorized access even if credentials are compromised."
+              },
+              {
+                "title": "Email Filtering Solutions",
+                "description": "Investing in advanced email filtering solutions can help detect and block phishing emails before they reach employees' inboxes."
+              }
+            ]
+          },
+          "conclusionTitle": "Stay Vigilant",
+          "conclusion": "Cloud infrastructure requires specific security measures to ensure resilience against ransomware attacks."
         }
       ]
     }

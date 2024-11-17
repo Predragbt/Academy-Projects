@@ -18,3 +18,20 @@
 .scrollbar-custom::-webkit-scrollbar-thumb:hover {
   background-color: #ff8f3f;
 }
+
+/* Vertical scrollbar styles */
+.scrollbar-y::-webkit-scrollbar {
+  width: 10px; /* Width of the vertical scrollbar */
+}
+
+.scrollbar-y::-webkit-scrollbar-track {
+  background-color: #000000; /* Background color of the track */
+}
+
+.scrollbar-y::-webkit-scrollbar-thumb {
+  background-color: #ff6f0f; /* Thumb color */
+}
+
+.scrollbar-y::-webkit-scrollbar-thumb:hover {
+  background-color: #ff8f3f; /* Hover color for the thumb */
+}
