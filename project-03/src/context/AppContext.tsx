@@ -63,7 +63,6 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       }
 
       const data: { header: any; footer: any } = await response.json();
-      console.log("Fetched layout data:", data);
 
       const languageHeader = data.header?.[lang];
       const languageFooter = data.footer?.[lang];

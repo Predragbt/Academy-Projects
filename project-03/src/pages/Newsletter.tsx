@@ -112,7 +112,7 @@ export const Newsletter = () => {
         const data: NewsletterDataProps = await response.json();
         const langData = data[language as keyof NewsletterDataProps];
         setNewsletterData(langData);
-        setSelectedCard(langData.related_news[0]); // Default to the first card
+        setSelectedCard(langData.related_news[0]);
       } catch (err) {
         setError("Error fetching newsletter data");
         console.error(err);

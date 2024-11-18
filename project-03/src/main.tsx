@@ -8,6 +8,7 @@ import { AppProvider } from "./context/AppContext";
 import { ServicesProvider } from "./context/ServicesContext";
 import { IndustriesProvider } from "./context/IndustriesContext";
 import { TeamMembersProvider } from "./context/TeamMembersContext";
+import { TestimonialsProvider } from "./context/TestimonialsContext";
 
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -15,7 +16,9 @@ createRoot(document.getElementById("root")!).render(
       <ServicesProvider>
         <IndustriesProvider>
           <TeamMembersProvider>
-            <RouterProvider router={router} />
+            <TestimonialsProvider>
+              <RouterProvider router={router} />
+            </TestimonialsProvider>
           </TeamMembersProvider>
         </IndustriesProvider>
       </ServicesProvider>

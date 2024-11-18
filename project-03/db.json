@@ -2659,5 +2659,73 @@
         }
       ]
     }
+  },
+  "testimonials": {
+    "eng": {
+      "title": "Join our happy customers!",
+      "cards": [
+        {
+          "id": 1,
+          "name": "Emily R.",
+          "avatar": "/assets/images/TestimonialsImage1.png",
+          "testimonial": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorsit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "name": "Linda T.",
+          "avatar": "/assets/images/TestimonialsImage1.png",
+          "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
+          "rating": 5
+        },
+        {
+          "id": 3,
+          "name": "Jessica M.",
+          "avatar": "/assets/images/TestimonialsImage1.png",
+          "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
+          "rating": 5
+        },
+        {
+          "id": 4,
+          "name": "John D.",
+          "avatar": "/assets/images/TestimonialsImage1.png",
+          "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
+          "rating": 5
+        }
+      ]
+    },
+    "mk": {
+      "title": "Придружете се на нашите задоволни клиенти!",
+      "cards": [
+        {
+          "id": 1,
+          "name": "Емили Р.",
+          "avatar": "/assets/images/TestimonialsImage1.png",
+          "testimonial": "Лорем ипсум долор сит амет, концететур адиписцинг елит. Ут ет масса ми. Аликуам ин хендрерит урна. Пеллентескуе сит амет сапиен фрингилла, маттис лигула концететур, утрицес маурис. Маеценас витае маттис теллус.",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "name": "Линда Т.",
+          "avatar": "/assets/images/TestimonialsImage1.png",
+          "testimonial": "Лорем ипсум долор сит амет, концететур адиписцинг елит. Ут ет масса ми. Аликуам ин хендрерит урна. Пеллентескуе сит амет сапиен фрингилла, маттис лигула концететур, утрицес маурис. Маеценас витае маттис теллус.",
+          "rating": 5
+        },
+        {
+          "id": 3,
+          "name": "Џесика М.",
+          "avatar": "/assets/images/TestimonialsImage1.png",
+          "testimonial": "Лорем ипсум долор сит амет, концететур адиписцинг елит. Ут ет масса ми. Аликуам ин хендрерит урна. Пеллентескуе сит амет сапиен фрингилла, маттис лигула концететур, утрицес маурис. Маеценас витае маттис теллус.",
+          "rating": 5
+        },
+        {
+          "id": 4,
+          "name": "Џон Д.",
+          "avatar": "/assets/images/TestimonialsImage1.png",
+          "testimonial": "Лорем ипсум долор сит амет, концететур адиписцинг елит. Ут ет масса ми. Аликуам ин хендрерит урна. Пеллентескуе сит амет сапиен фрингилла, маттис лигула концететур, утрицес маурис. Маеценас витае маттис теллус.",
+          "rating": 5
+        }
+      ]
+    }
   }
 }

@@ -83,7 +83,6 @@ export const IndustriesProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-// Custom hook to use the IndustriesContext
 export const useIndustriesContext = () => {
   const context = useContext(IndustriesContext);
   if (!context) {

@@ -6,7 +6,6 @@ import {
   useContext,
 } from "react";
 
-// Interfaces for the data structure
 export interface ServiceCard {
   id: string;
   title: string;
@@ -44,7 +43,6 @@ export interface HomeServicesSection {
   };
 }
 
-// Context setup
 export const ServicesContext = createContext<HomeServicesSection | null>(null);
 
 export const ServicesProvider = ({ children }: { children: ReactNode }) => {
@@ -72,7 +70,6 @@ export const ServicesProvider = ({ children }: { children: ReactNode }) => {
     fetchLayoutData();
   }, []);
 
-  // Render a fallback UI while loading
   if (loading) {
     return <div>Loading services data...</div>;
   }
@@ -84,7 +81,6 @@ export const ServicesProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-// Hook for easy access to the context
 export const useServicesContext = (): HomeServicesSection | null => {
   const context = useContext(ServicesContext);
   if (context === null) {

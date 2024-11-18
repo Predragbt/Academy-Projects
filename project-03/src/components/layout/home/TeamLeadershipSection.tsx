@@ -22,8 +22,6 @@ export const TeamLeadershipSection = () => {
     return <div>Content for this language is not available.</div>;
   }
 
-  console.log(languageContent);
-
   return (
     <div className="px-[120px] py-20 bg-[#323232]">
       <p className="text-center text-[48px] text-[#FF6F0F] font-[700] mb-6">

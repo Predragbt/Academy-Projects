@@ -35,19 +35,16 @@ export interface TeamData {
   mk: TeamDataLanguage;
 }
 
-// Context type that includes team members data, loading, and error states
 export interface TeamMembersContextType {
   teamMembersData: TeamData | null;
   loading: boolean;
   error: string | null;
 }
 
-// Context creation with type `TeamMembersContextType | null`
 export const TeamMembersContext = createContext<TeamMembersContextType | null>(
   null
 );
 
-// Provider Component
 export const TeamMembersProvider = ({ children }: { children: ReactNode }) => {
   const [teamMembersData, setTeamMembersData] = useState<TeamData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -82,7 +79,6 @@ export const TeamMembersProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-// Custom hook to use the TeamMembersContext
 export const useTeamMembersContext = () => {
   const context = useContext(TeamMembersContext);
   if (!context) {

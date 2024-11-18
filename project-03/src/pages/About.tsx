@@ -106,7 +106,6 @@ export const About = () => {
     fetchAboutPageData();
   }, []);
 
-  // About
   if (aboutLoading || loading) return <div>Loading...</div>;
   if (aboutError || error) return <div>Error: {aboutError}</div>;
   if (!aboutPageData) return <div>No about page data</div>;
@@ -115,7 +114,6 @@ export const About = () => {
     language as keyof AboutPageData
   ] as LanguageData;
 
-  // Team Members
   if (!teamMembersData) return <div>No team members data</div>;
 
   const teamMembersLanguageContent = teamMembersData[

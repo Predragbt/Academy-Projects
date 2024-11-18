@@ -49,7 +49,6 @@ export const Jobs = () => {
   const { language } = useAppContext();
   const langKey = language as keyof JobsPageProps;
 
-  // Filter states
   const [selectedJobTitle, setSelectedJobTitle] = useState<string | null>(null);
   const [selectedSalaryRange, setSelectedSalaryRange] = useState<string | null>(
     null
@@ -83,7 +82,6 @@ export const Jobs = () => {
   if (error) return <div>{error}</div>;
   if (!jobsData) return <div>No jobs data</div>;
 
-  // Filter and sort jobs based on selected criteria
   const filteredJobs = jobsData[langKey].jobs
     .filter((job) => {
       return (
