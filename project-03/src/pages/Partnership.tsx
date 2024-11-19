@@ -3,6 +3,7 @@ import { useAppContext } from "../context/AppContext";
 
 import { PartnershipContainers } from "../components/layout/partnership/PartnershipContainers";
 import { PartnershipHeader } from "../components/layout/partnership/partnershipHeader";
+import { PartnershipTestimonials } from "../components/layout/partnership/PartnershipTestimonials";
 
 export interface PartnershipHeaderProps {
   title: string;
@@ -66,14 +67,17 @@ export const PartnershipPage = () => {
   if (!partnershipData) return <div>No partnership data</div>;
 
   return (
-    <div className="px-[120px] py-20 bg-[#323232] border-b-8 border-[#FF6F0F]">
-      <PartnershipHeader data={partnershipData.header} />
-      <PartnershipContainers data={partnershipData} />
-      <div className="flex justify-center mt-20">
-        <button className="h-[52px] w-[250px] text-[#FF6F0F] border-b border-[#FF6F0F] hover:text-[#FFBD91] hover:border-[#FFBD91]">
-          {partnershipData.header.buttonText}
-        </button>
+    <div className="bg-[#323232]">
+      <div className="px-[120px] py-20  border-b-8 border-[#FF6F0F]">
+        <PartnershipHeader data={partnershipData.header} />
+        <PartnershipContainers data={partnershipData} />
+        <div className="flex justify-center mt-20">
+          <button className="h-[52px] w-[250px] text-[#FF6F0F] border-b border-[#FF6F0F] hover:text-[#FFBD91] hover:border-[#FFBD91]">
+            {partnershipData.header.buttonText}
+          </button>
+        </div>
       </div>
+      <PartnershipTestimonials />
     </div>
   );
 };

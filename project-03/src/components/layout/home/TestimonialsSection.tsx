@@ -29,7 +29,7 @@ export const TestimonialsSection = () => {
             className="mb-8 flex flex-shrink-0 w-[calc(33%-45px)]"
           >
             <div className="pr-6 w-[20%]">
-              <img src={testimonial.avatar} alt={testimonial.name} />
+              <img src={testimonial.avatar} alt={testimonial.name} className="w-full" />
             </div>
             <div className="border-l-2 border-[#FF6F0F] pl-6 flex flex-col justify-between w-[80%]">
               <p className="text-[24px] mb-6">{testimonial.testimonial}</p>

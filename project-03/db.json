@@ -2668,27 +2668,27 @@
           "id": 1,
           "name": "Emily R.",
           "avatar": "/assets/images/TestimonialsImage1.png",
-          "testimonial": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorsit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
+          "testimonial": "Lorem ipsum dolorsit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
           "rating": 5
         },
         {
           "id": 2,
           "name": "Linda T.",
-          "avatar": "/assets/images/TestimonialsImage1.png",
+          "avatar": "/assets/images/TestimonialsImage2.png",
           "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
           "rating": 5
         },
         {
           "id": 3,
           "name": "Jessica M.",
-          "avatar": "/assets/images/TestimonialsImage1.png",
+          "avatar": "/assets/images/TestimonialsImage3.png",
           "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
           "rating": 5
         },
         {
           "id": 4,
           "name": "John D.",
-          "avatar": "/assets/images/TestimonialsImage1.png",
+          "avatar": "/assets/images/HeroSectionProfile.png",
           "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
           "rating": 5
         }
