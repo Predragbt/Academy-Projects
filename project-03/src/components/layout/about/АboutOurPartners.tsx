@@ -1,8 +1,8 @@
-import { TeamSection } from "../../../context/TeamMembersContext";
+import { TeamSectionProps } from "../../../context/TeamMembersContext";
 import { TeamMemberCard } from "../../common/TeamMemberCard";
 
 interface Props {
-  teamMembers: TeamSection;
+  teamMembers: TeamSectionProps;
 }
 export const AboutOurPartners = ({ teamMembers }: Props) => {
   return (

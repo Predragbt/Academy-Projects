@@ -6,7 +6,6 @@ import {
   useContext,
 } from "react";
 
-// Interfaces for Team data
 export interface TeamMemberProps {
   id: string;
   name: string;
@@ -15,7 +14,7 @@ export interface TeamMemberProps {
   image: string;
 }
 
-export interface TeamSection {
+export interface TeamSectionProps {
   id: string;
   title: string;
   buttonText?: string;
@@ -23,20 +22,20 @@ export interface TeamSection {
   members: TeamMemberProps[];
 }
 
-export interface TeamDataLanguage {
-  leadershipTeam: TeamSection;
-  partnersTeam: TeamSection;
-  cybersecuritySpecialistsTeam: TeamSection;
-  securityAwarenessAdvisorsTeam: TeamSection;
+export interface TeamDataLanguageProps {
+  leadershipTeam: TeamSectionProps;
+  partnersTeam: TeamSectionProps;
+  cybersecuritySpecialistsTeam: TeamSectionProps;
+  securityAwarenessAdvisorsTeam: TeamSectionProps;
 }
 
-export interface TeamData {
-  eng: TeamDataLanguage;
-  mk: TeamDataLanguage;
+export interface TeamDataProps {
+  eng: TeamDataLanguageProps;
+  mk: TeamDataLanguageProps;
 }
 
 export interface TeamMembersContextType {
-  teamMembersData: TeamData | null;
+  teamMembersData: TeamDataProps | null;
   loading: boolean;
   error: string | null;
 }
@@ -46,7 +45,7 @@ export const TeamMembersContext = createContext<TeamMembersContextType | null>(
 );
 
 export const TeamMembersProvider = ({ children }: { children: ReactNode }) => {
-  const [teamMembersData, setTeamMembersData] = useState<TeamData | null>(null);
+  const [teamMembersData, setTeamMembersData] = useState<TeamDataProps | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -59,7 +58,7 @@ export const TeamMembersProvider = ({ children }: { children: ReactNode }) => {
             `Failed to fetch team members data: ${response.statusText}`
           );
         }
-        const data: TeamData = await response.json();
+        const data: TeamDataProps = await response.json();
         setTeamMembersData(data);
       } catch (err) {
         setError("Error fetching team members data");

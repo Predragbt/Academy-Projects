@@ -2,17 +2,17 @@ import { useEffect, useState } from "react";
 import { ButtonComponent } from "../../common/Button";
 import { useAppContext } from "../../../context/AppContext";
 
-interface HeroSectionTitle {
+interface HeroSectionTitleProps {
   part1: string;
   highlight: string;
   part2: string;
   part3: string;
 }
 
-interface HeroSectionData {
+interface HeroSectionDataProps {
   subtitle1: string;
   subtitle2: string;
-  title: HeroSectionTitle;
+  title: HeroSectionTitleProps;
   btn1: string;
   btn2: string;
   content: string;
@@ -21,7 +21,7 @@ interface HeroSectionData {
 
 export const HeroSection = () => {
   const { language } = useAppContext();
-  const [heroSectionData, setHeroSectionData] = useState<HeroSectionData>();
+  const [heroSectionData, setHeroSectionData] = useState<HeroSectionDataProps>();
 
   useEffect(() => {
     const fetchHeroSectionData = async () => {

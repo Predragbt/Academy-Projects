@@ -1,28 +1,28 @@
 import { useEffect, useState } from "react";
 import { useAppContext } from "../../../context/AppContext";
 
-interface Highlight {
+interface HighlightProps {
   id: string;
   icon: string;
   text: string;
   highlightedText: string;
 }
 
-interface LanguageContent {
+interface LanguageContentProps {
   title: string;
   description: string;
-  highlights: Highlight[];
+  highlights: HighlightProps[];
 }
 
-interface HomeAboutSection {
+interface HomeAboutSectionProps {
   id: string;
-  eng: LanguageContent;
-  mk: LanguageContent;
+  eng: LanguageContentProps;
+  mk: LanguageContentProps;
 }
 
 export const HomeAboutSection = () => {
   const [aboutSectionData, setAboutSectionData] =
-    useState<HomeAboutSection | null>(null);
+    useState<HomeAboutSectionProps | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const { language } = useAppContext();
@@ -52,10 +52,9 @@ export const HomeAboutSection = () => {
   if (error) return <div>Error: {error}</div>;
   if (!aboutSectionData) return <div>No about section data</div>;
 
-  // Ensure content is typed correctly by casting
   const content = aboutSectionData[
-    language as keyof HomeAboutSection
-  ] as LanguageContent;
+    language as keyof HomeAboutSectionProps
+  ] as LanguageContentProps;
 
   if (!content) {
     return <div>No content for the selected language</div>;

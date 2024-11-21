@@ -361,7 +361,7 @@
         "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
         "subtitle": "Key Features of Penetration Testing",
-        "img": "/assets/images/ServicesImage1.png",
+        "img": "/assets/images/ServicesImage2.png",
         "features": [
           {
             "id": "eng-card2-feature1",
@@ -414,7 +414,7 @@
         "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
         "subtitle": "Key Features of Incident Response",
-        "img": "/assets/images/ServicesImage1.png",
+        "img": "/assets/images/ServicesImage3.png",
         "features": [
           {
             "id": "eng-card3-feature1",
@@ -467,7 +467,7 @@
         "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
         "subtitle": "Key Features of Network Security",
-        "img": "/assets/images/ServicesImage1.png",
+        "img": "/assets/images/ServicesImage4.png",
         "features": [
           {
             "id": "eng-card4-feature1",
@@ -520,7 +520,60 @@
         "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
         "subtitle": "Key Features of Security Awareness Training",
-        "img": "/assets/images/ServicesImage1.png",
+        "img": "/assets/images/ServicesImage5.png",
+        "features": [
+          {
+            "id": "eng-card5-feature1",
+            "title": "Customized Content",
+            "description": "Tailor training materials to different roles within the organization to ensure relevance and engagement."
+          },
+          {
+            "id": "eng-card5-feature2",
+            "title": "Regular Training Sessions",
+            "description": "Conduct training sessions every four to six months, as retention of knowledge tends to decline after this period."
+          },
+          {
+            "id": "eng-card5-feature3",
+            "title": "Diverse Learning Methods",
+            "description": "Utilize various formats such as videos, quizzes, and simulations to cater to different learning styles and keep content engaging."
+          },
+          {
+            "id": "eng-card5-feature4",
+            "title": "Phishing Simulations",
+            "description": "Regularly test employees with simulated phishing attacks to reinforce learning and gauge awareness levels."
+          }
+        ],
+        "sections": [
+          {
+            "id": "eng-card5-section1",
+            "title": "Security Awareness Training: Importance and Best Practices",
+            "content": "Security awareness training is a strategic initiative aimed at educating employees about cybersecurity risks and best practices. By enhancing awareness, organizations can significantly reduce the likelihood of security breaches caused by human error."
+          },
+          {
+            "id": "eng-card5-section2",
+            "title": "Objectives of Security Awareness Training",
+            "content": "Educate Employees: Teach staff about the importance of cybersecurity and their role in protecting organizational assets.\n\nReduce Human Error: Equip employees with the knowledge to recognize and respond to potential threats, thus minimizing incidents caused by negligence.\n\nCultivate a Cybersecurity Mindset: Foster a culture of security where employees feel responsible for safeguarding sensitive information."
+          },
+          {
+            "id": "eng-card5-section3",
+            "title": "Best Practices for Implementation",
+            "content": "Onboarding Training: Integrate security awareness training into the onboarding process for new employees to establish a security-first culture from the start.\n\nContinuous Learning: Provide ongoing education through newsletters, updates on emerging threats, and refresher courses throughout the year.\n\nPositive Reinforcement: Use humor and engaging content rather than fear-based tactics to improve retention and participation in training programs.\n\nMeasure Effectiveness: Implement metrics to assess the impact of training, such as tracking phishing susceptibility rates before and after training sessions."
+          },
+          {
+            "id": "eng-card5-section4",
+            "title": "Conclusion",
+            "content": "Security awareness training is essential for building a resilient organizational culture against cyber threats. By educating employees on best practices and fostering a proactive approach to cybersecurity, organizations can significantly mitigate risks associated with human error. Regularly updated training programs that engage employees will help maintain high levels of awareness and readiness against potential threats."
+          }
+        ]
+      },
+      "card6": {
+        "id": "card6",
+        "title": "Vulnerability Management",
+        "titleContent": "Empower your employees to recognize and respond to potential cyber threats. Our comprehensive security awareness programs equip your workforce with the knowledge they need to prevent attacks.",
+        "cardBtnText": "See More",
+        "pageBtnText": "Get Demo",
+        "subtitle": "Key Features of Security Vulnerability Management",
+        "img": "/assets/images/ServicesImage6.png",
         "features": [
           {
             "id": "eng-card5-feature1",
@@ -628,7 +681,7 @@
         "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
         "subtitle": "Клучни Карактеристики на Пенетрационо Тестирање",
-        "img": "/assets/images/ServicesImage1.png",
+        "img": "/assets/images/ServicesImage2.png",
         "features": [
           {
             "id": "mk-card2-feature1",
@@ -681,7 +734,7 @@
         "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
         "subtitle": "Клучни Карактеристики на Одговор на Инциденти",
-        "img": "/assets/images/ServicesImage1.png",
+        "img": "/assets/images/ServicesImage3.png",
         "features": [
           {
             "id": "mk-card3-feature1",
@@ -734,7 +787,7 @@
         "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
         "subtitle": "Клучни Карактеристики на Мрежна Безбедност",
-        "img": "/assets/images/ServicesImage1.png",
+        "img": "/assets/images/ServicesImage4.png",
         "features": [
           {
             "id": "mk-card4-feature1",
@@ -787,7 +840,60 @@
         "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
         "subtitle": "Клучни Карактеристики на Тренинг за Безбедносна Свесност",
-        "img": "/assets/images/ServicesImage1.png",
+        "img": "/assets/images/ServicesImage5.png",
+        "features": [
+          {
+            "id": "mk-card5-feature1",
+            "title": "Прилагодена Содржина",
+            "description": "Приспособете ги материјалите за обука на различни улоги во организацијата за да обезбедите релевантност и ангажираност."
+          },
+          {
+            "id": "mk-card5-feature2",
+            "title": "Редовни Сесии за Тренинг",
+            "description": "Спроведете сесии за обука на секои четири до шест месеци, бидејќи задржувањето на знаење има тенденција да се намали по овој период."
+          },
+          {
+            "id": "mk-card5-feature3",
+            "title": "Разновидни Методи на Учење",
+            "description": "Користете различни формати како видеа, квизови и симулации за да ги задоволите различните стилови на учење и да го одржите интересот."
+          },
+          {
+            "id": "mk-card5-feature4",
+            "title": "Симулации на Фишинг",
+            "description": "Редовно тестирајте ги вработените со симулирани фишинг напади за да ја зајакнете обуката и да го измерите нивото на свесност."
+          }
+        ],
+        "sections": [
+          {
+            "id": "mk-card5-section1",
+            "title": "Тренинг за Безбедносна Свесност: Важност и Најдобри Практики",
+            "content": "Тренингот за безбедносна свесност е стратешка иницијатива која има за цел да ги едуцира вработените за ризиците во сајбер безбедноста и најдобрите практики. Со зајакнување на свесноста, организациите можат значително да го намалат ризикот од безбедносни инциденти предизвикани од човечка грешка."
+          },
+          {
+            "id": "mk-card5-section2",
+            "title": "Цели на Тренингот за Безбедносна Свесност",
+            "content": "Едуцирајте ги Вработените: Научете ги вработените за важноста на сајбер безбедноста и нивната улога во заштитата на организациските средства.\n\nНамалување на Човечка Грешка: Опремете ги вработените со знаење за препознавање и реагирање на потенцијалните закани, со што ќе се намали бројот на инциденти предизвикани од невнимание.\n\nСоздадете Кибернетичка Свесност: Поттикнете култура на безбедност каде вработените се чувствуваат одговорни за заштита на чувствителни информации."
+          },
+          {
+            "id": "mk-card5-section3",
+            "title": "Најдобри Практики за Имплементација",
+            "content": "Тренинг за Нови Вработени: Интегрирајте го тренингот за безбедносна свесност во процесот на индукција на новите вработени за да се воспостави култура на безбедност од самиот почеток.\n\nКонтинуирано Учење: Обезбедете континуирана едукација преку билтени, ажурирања за нови закани и освежувања во текот на годината.\n\nПозитивно Засилување: Користете хумор и ангажирана содржина наместо тактики базирани на страв за да го подобрите задржувањето и учеството во програмите за обука.\n\nМерење на Ефикасноста: Воведете мерки за оценка на влијанието на обуката, како што е следење на стапките на подложност на фишинг пред и по обуките."
+          },
+          {
+            "id": "mk-card5-section4",
+            "title": "Заклучок",
+            "content": "Тренингот за безбедносна свесност е суштински за градење на резистентна организациска култура против сајбер заканите. Со едуцирање на вработените за најдобрите практики и поттикнување проактивен пристап кон сајбер безбедноста, организациите можат значително да ги намалат ризиците поврзани со човечка грешка. Редовно ажурираните програми за обука кои ги ангажираат вработените ќе помогнат во одржување на високо ниво на свесност и подготвеност против потенцијалните закани."
+          }
+        ]
+      },
+      "card6": {
+        "id": "card6",
+        "title": "Тренинг за Управување со ранливост",
+        "titleContent": "Овозможете им на вашите вработени да ги препознаат и одговорат на потенцијалните сајбер закани. Нашите сеопфатни програми за безбедносна свесност го опремуваат вашиот тим со знаење потребно за да спречи напади.",
+        "cardBtnText": "Види Повеќе",
+        "pageBtnText": "Добиј Демонстрација",
+        "subtitle": "Клучни Карактеристики на Тренинг за Управување со ранливост",
+        "img": "/assets/images/ServicesImage6.png",
         "features": [
           {
             "id": "mk-card5-feature1",
@@ -2001,15 +2107,15 @@
           "name": "Brainster",
           "title": "Партнерство со Brainster",
           "description": "Нашето партнерство со Brainster ни овозможува да регрутираме и обучуваме нова генерација на професионалци во сајбер-безбедноста. Заедно носиме свежи идеи и напредни решенија во првите редови на сајбер-одбраната. Со комбинирање на програмите на Brainster за напредно образование со нашата индустриска експертиза, градиме посилна, поотпорна работна сила во сајбер-безбедноста. Оваа соработка обезбедува дека нашиот тим е секогаш чекор пред новите закани, опремен со вештини и знаења за да ги заштити бизнисите и поединците во секогаш променливиот дигитален свет.",
-          "image1": "path/to/brainster-image1.jpg",
-          "image2": "path/to/brainster-image2.jpg"
+          "image1": "assets/images/PartnershipImg1.png",
+          "image2": "assets/images/PartnershipImg2.png"
         },
         {
           "id": 2,
           "name": "Microsoft",
           "title": "Партнерство со Microsoft",
           "description": "Lorem ipsum dolor sit amet consectetur. Tristique dignissim dolor nunc sagittis pretium quam amet. Feugiat nisi eget ut convallis ac neque tristique faucibus integer. Amet donec maecenas vitae sollicitudin neque mauris etiam.",
-          "image1": "path/to/microsoft-image1.jpg",
+          "image1": "assets/images/PartnershipImg3.png",
           "image2": "path/to/microsoft-image2.jpg"
         },
         {
@@ -2017,7 +2123,7 @@
           "name": "Salesforce IQ",
           "title": "Партнерство со Salesforce IQ",
           "description": "Lorem ipsum dolor sit amet consectetur. Tristique dignissim dolor nunc sagittis pretium quam amet. Feugiat nisi eget ut convallis ac neque tristique faucibus integer. Amet donec maecenas vitae sollicitudin neque mauris etiam. Nibh dictum id ut vestibulum mattis neque cursus. Tortor eleifend egestas et lorem. Emini nisi non parturient malesuada sed.",
-          "image1": "path/to/salesforce-image1.jpg",
+          "image1": "assets/images/PartnershipImg4.png",
           "image2": "path/to/salesforce-image2.jpg"
         },
         {
@@ -2025,8 +2131,8 @@
           "name": "Azure",
           "title": "Партнерство со Azure",
           "description": "Lorem ipsum dolor sit amet consectetur. Tristique dignissim dolor nunc sagittis pretium quam amet. Feugiat nisi eget ut convallis ac neque tristique faucibus integer. Amet donec maecenas vitae sollicitudin neque mauris etiam. Nibh dictum id ut vestibulum mattis neque cursus. Tortor eleifend egestas et lorem. Emini nisi non parturient malesuada sed.",
-          "image1": "path/to/azure-image1.jpg",
-          "image2": "path/to/azure-image2.jpg"
+          "image1": "/assets/images/PartnershipImg1.png",
+          "image2": "assets/images/PartnershipImg5.png"
         }
       ]
     }

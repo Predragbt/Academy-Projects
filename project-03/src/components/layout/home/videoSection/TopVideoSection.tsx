@@ -65,7 +65,7 @@ export const TopVideoSection = () => {
       </div>
       <div>
         <img
-          src="https://s3-alpha-sig.figma.com/img/46a0/260b/64c4ed89072bdf5aa45ef094533bce2b?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LVO4v33E6UeOOorv7sxitnwkKZphIP8IBPDvQ9sumfGOIn~pXjt15J6r6cAR0J~fwf2HlldojchbtadvNzE3sU5IhvO4SK-Sd6FqY~tiQM~FuY41ivXAlLKAu6MkEoUiswW-nK2Z4viQo-QB1uvq1DkEJ~JCXt62AeSbnOc66XafftLMd4gPdEhuZn18AGlztB1FyiNbRS0rcAXv5EwXq-E7SIjFe9Xj8IbPfAnsEecqEjA9aB9sNpULkUui1lKk5AY4lKRkffAju2ebFK-kPHjY8pXC2wfjwK5zW7rppVvkv3UvQqvSx98s0P7hynSG-6XBSP9v1DTvmTf~rUJcGg__"
+          src="https://s3-alpha-sig.figma.com/img/46a0/260b/64c4ed89072bdf5aa45ef094533bce2b?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qAWrAQ-6crBwNawyERRYvSLBQqScVtShmoEedbBz~sZGcFU2h7~4iE3FTHv~krSrbxEwi8ibsbarvVqlQkrxKKEC4LBT1iONmdU4O6RC4lV~3NxnDmQPvFO1E1-D1aGpLzpyPUAJCwsa7vvMX1RU9dkXyLXhZRoYChxVw2~r78akpgOErt7S7nkfMAd03ZPYgenuWxuHFDVD9qFAliLL6rEDkx~hZEjKR3-F8u~tVMMxMtf41ZrEO8zXCNLEvuXbBpUYAqoWDpU~8-V~enzcaduLkKvhpPTp408oKRACvlMrQV-6dmgQi8FuMrEmR2eKmMCM4VoqQiEQIEexs3cVvQ__"
           alt="Top Video Section"
           className="border-b-8 border-[#FF6F0F]"
         />

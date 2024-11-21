@@ -1,7 +1,7 @@
 import { useAppContext } from "../../../context/AppContext";
 import {
-  TeamData,
-  TeamDataLanguage,
+  TeamDataProps,
+  TeamDataLanguageProps,
   useTeamMembersContext,
 } from "../../../context/TeamMembersContext";
 import { TeamMemberCard } from "../../common/TeamMemberCard";
@@ -15,8 +15,8 @@ export const TeamLeadershipSection = () => {
   if (!teamMembersData) return <div>No team members data</div>;
 
   const languageContent = teamMembersData[
-    language as keyof TeamData
-  ] as TeamDataLanguage;
+    language as keyof TeamDataProps
+  ] as TeamDataLanguageProps;
 
   if (!languageContent) {
     return <div>Content for this language is not available.</div>;

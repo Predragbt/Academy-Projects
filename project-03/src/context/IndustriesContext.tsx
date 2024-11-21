@@ -6,8 +6,7 @@ import {
   useContext,
 } from "react";
 
-// Interfaces for Industry data
-interface Industry {
+interface IndustryProps {
   id: string;
   name: string;
   icon: string;
@@ -15,7 +14,7 @@ interface Industry {
   buttonText: string;
 }
 
-export interface LanguageContent {
+export interface LanguageContentProps {
   industriesTitle: string;
   industriesHeroImg: string;
   homeTitle: string;
@@ -26,31 +25,28 @@ export interface LanguageContent {
   homeDescription: string;
   buttonContent: string;
   industriesDescription: string;
-  industries: Industry[];
+  industries: IndustryProps[];
 }
 
-interface IndustriesSectionData {
+interface IndustriesSectionDataProps {
   id: string;
-  eng: LanguageContent;
-  mk: LanguageContent;
+  eng: LanguageContentProps;
+  mk: LanguageContentProps;
 }
 
-// Context type that includes industries data, loading, and error states
 export interface IndustriesContextType {
-  industriesData: IndustriesSectionData | null;
+  industriesData: IndustriesSectionDataProps | null;
   loading: boolean;
   error: string | null;
 }
 
-// Context creation with type `IndustriesContextType | null`
 export const IndustriesContext = createContext<IndustriesContextType | null>(
   null
 );
 
-// Provider Component
 export const IndustriesProvider = ({ children }: { children: ReactNode }) => {
   const [industriesData, setIndustriesData] =
-    useState<IndustriesSectionData | null>(null);
+    useState<IndustriesSectionDataProps | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -63,7 +59,7 @@ export const IndustriesProvider = ({ children }: { children: ReactNode }) => {
             `Failed to fetch industries data: ${response.statusText}`
           );
         }
-        const data: IndustriesSectionData = await response.json();
+        const data: IndustriesSectionDataProps = await response.json();
         setIndustriesData(data);
       } catch (err) {
         setError("Error fetching industries data");

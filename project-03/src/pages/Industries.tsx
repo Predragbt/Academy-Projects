@@ -2,7 +2,7 @@ import { ButtonComponent } from "../components/common/Button";
 import { IndustriesHero } from "../components/layout/industries/IndustriesHero";
 import { useAppContext } from "../context/AppContext";
 import {
-  LanguageContent,
+  LanguageContentProps,
   useIndustriesContext,
 } from "../context/IndustriesContext";
 
@@ -16,7 +16,7 @@ export const IndustiresPage = () => {
 
   const languageContent = industriesData[
     language as keyof typeof industriesData
-  ] as LanguageContent;
+  ] as LanguageContentProps;
 
   return (
     <div>

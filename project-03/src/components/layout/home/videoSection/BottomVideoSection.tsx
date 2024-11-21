@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useAppContext } from "../../../../context/AppContext";
 import {
-  LanguageContent,
+  LanguageContentProps,
   useIndustriesContext,
 } from "../../../../context/IndustriesContext";
 import { ButtonComponent } from "../../../common/Button";
@@ -17,7 +17,7 @@ export const BottomVideoSection = () => {
 
   const languageContent = industriesData[
     language as keyof typeof industriesData
-  ] as LanguageContent;
+  ] as LanguageContentProps;
 
   return (
     <div className="text-center pt-24">

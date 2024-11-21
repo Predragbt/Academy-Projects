@@ -31,7 +31,6 @@ export const JobsFilters = ({
   const jobTitles = [...new Set(jobs.map((job) => job.title))];
   const salaryRanges = [...new Set(jobs.map((job) => job.salaryRange))];
 
-  // State to toggle dropdown visibility
   const [isJobTitleDropdownOpen, setJobTitleDropdownOpen] = useState(false);
   const [isSalaryRangeDropdownOpen, setSalaryRangeDropdownOpen] =
     useState(false);

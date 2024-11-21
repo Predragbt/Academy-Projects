@@ -6,8 +6,8 @@ import { OurLocations } from "../components/layout/about/OurLocations";
 import { AboutCertifications } from "../components/layout/about/AboutCertifications";
 import { AboutSuccsessStories } from "../components/layout/about/AboutSuccsessStories";
 import {
-  TeamData,
-  TeamDataLanguage,
+  TeamDataProps,
+  TeamDataLanguageProps,
   useTeamMembersContext,
 } from "../context/TeamMembersContext";
 import { AboutOurPartners } from "../components/layout/about/АboutOurPartners";
@@ -117,8 +117,8 @@ export const About = () => {
   if (!teamMembersData) return <div>No team members data</div>;
 
   const teamMembersLanguageContent = teamMembersData[
-    language as keyof TeamData
-  ] as TeamDataLanguage;
+    language as keyof TeamDataProps
+  ] as TeamDataLanguageProps;
 
   if (!teamMembersLanguageContent || !languageData) {
     return <div>Content for this language is not available.</div>;
