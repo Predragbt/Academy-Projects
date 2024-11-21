@@ -2833,5 +2833,79 @@
         }
       ]
     }
+  },
+  "homeFormISOSection": {
+    "eng": {
+      "isoCertification": {
+        "title": "ISO Certification",
+        "description": "At CYBERWARE Global Defense, we are proud to be ISO certified, demonstrating our commitment to the highest standards of cybersecurity. Our certification reflects our dedication to protecting your data and ensuring robust security practices across all operations. Trust us to safeguard your digital assets with proven excellence."
+      },
+      "certifications": [
+        {
+          "id": 1,
+          "name": "ISO/IEC 27000",
+          "description": "Information security management systems",
+          "link": "#"
+        },
+        {
+          "id": 2,
+          "name": "ISO/IEC 27001",
+          "description": "Information technology – Security Techniques – Information security management",
+          "link": "#"
+        },
+        {
+          "id": 3,
+          "name": "ISO/IEC 27002",
+          "description": "Code of practice for information security controls",
+          "link": "#"
+        }
+      ],
+      "cta": {
+        "buttonText": "See All Certificates",
+        "buttonLink": "#"
+      },
+      "newsletter": {
+        "title": "Stay informed with the latest threat insights delivered directly to your inbox through our Newsletter.",
+        "emailPlaceholder": "Your Email Address",
+        "buttonText": "Join for Free",
+        "buttonLink": "#"
+      }
+    },
+    "mk": {
+      "isoCertification": {
+        "title": "ISO Сертификација",
+        "description": "Во CYBERWARE Global Defense, горди сме што сме ISO сертифицирани, демонстрирајќи ја нашата посветеност на највисоките стандарди на сајбер безбедност. Нашата сертификација го одразува нашето залагање за заштита на вашите податоци и обезбедување силни безбедносни практики низ сите операции. Доверете ни ги вашите дигитални средства со докажана извонредност."
+      },
+      "certifications": [
+        {
+          "id": 1,
+          "name": "ISO/IEC 27000",
+          "description": "Системи за управување со безбедност на информации",
+          "link": "#"
+        },
+        {
+          "id": 2,
+          "name": "ISO/IEC 27001",
+          "description": "Информациски технологии – Техники за безбедност – Управување со безбедност на информации",
+          "link": "#"
+        },
+        {
+          "id": 3,
+          "name": "ISO/IEC 27002",
+          "description": "Кодекс на практики за контрола на безбедноста на информации",
+          "link": "#"
+        }
+      ],
+      "cta": {
+        "buttonText": "Види ги сите Сертификати",
+        "buttonLink": "#"
+      },
+      "newsletter": {
+        "title": "Останете информирани со најновите увиди за закани доставени директно до вашето сандаче преку нашиот Билтен.",
+        "emailPlaceholder": "Вашата Е-маил Адреса",
+        "buttonText": "Придружете се бесплатно",
+        "buttonLink": "#"
+      }
+    }
   }
 }
