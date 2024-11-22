@@ -84,7 +84,7 @@ export const ContactForm = ({ data }: Props) => {
               />
             ) : (
               <input
-                type={field.type} // Use the `type` directly from JSON
+                type={field.type} 
                 placeholder={field.placeholder}
                 className="w-full h-[65px] bg-[#232323] text-white pl-4 outline-none"
                 value={

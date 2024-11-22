@@ -14,17 +14,17 @@ export const FooterForm = () => {
         <input
           type="text"
           placeholder={layoutData.footer.topFooter[5].items[0]}
-          className="w-[392px] h-[44px] border-b border-gray-300 bg-[#323232] text-white pl-2 hover:cursor-pointer outline-none"
+          className="h-[44px] border-b border-gray-300 bg-[#323232] text-white pl-2 hover:cursor-pointer outline-none"
         />
         <input
           type="text"
           placeholder={layoutData.footer.topFooter[5].items[1]}
-          className="w-[392px] h-[44px] border-b border-gray-300 bg-[#323232] text-white pl-2 hover:cursor-pointer outline-none"
+          className="h-[44px] border-b border-gray-300 bg-[#323232] text-white pl-2 hover:cursor-pointer outline-none"
         />
         <textarea
           placeholder={layoutData.footer.topFooter[5].items[2]}
           rows={2}
-          className="w-[392px] border-b border-gray-300 bg-[#323232] text-white pl-2 py-2 hover:cursor-pointer outline-none"
+          className="border-b border-gray-300 bg-[#323232] text-white pl-2 py-2 hover:cursor-pointer outline-none"
         />
         <div>
           <input

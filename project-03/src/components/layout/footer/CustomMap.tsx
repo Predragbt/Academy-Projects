@@ -119,7 +119,7 @@ export const CustomMap = () => {
 
   return (
     <div className="ms-8 flex flex-col w-[240px]">
-      <div ref={mapRef} className=" h-[180px] "></div>;
+      <div ref={mapRef} className="h-[180px]"></div>;
       <div>
         <p className="text-white mb-4 text-[12px]">
           <img

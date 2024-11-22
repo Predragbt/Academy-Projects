@@ -2838,6 +2838,7 @@
     "eng": {
       "isoCertification": {
         "title": "ISO Certification",
+        "img": "/assets/images/ISOCertificationImg.png",
         "description": "At CYBERWARE Global Defense, we are proud to be ISO certified, demonstrating our commitment to the highest standards of cybersecurity. Our certification reflects our dedication to protecting your data and ensuring robust security practices across all operations. Trust us to safeguard your digital assets with proven excellence."
       },
       "certifications": [
@@ -2874,6 +2875,7 @@
     "mk": {
       "isoCertification": {
         "title": "ISO Сертификација",
+        "img": "/assets/images/ISOCertificationImg.png",
         "description": "Во CYBERWARE Global Defense, горди сме што сме ISO сертифицирани, демонстрирајќи ја нашата посветеност на највисоките стандарди на сајбер безбедност. Нашата сертификација го одразува нашето залагање за заштита на вашите податоци и обезбедување силни безбедносни практики низ сите операции. Доверете ни ги вашите дигитални средства со докажана извонредност."
       },
       "certifications": [
