@@ -1,4 +1,5 @@
 import { useAppContext } from "../../../context/AppContext";
+import { CustomMap } from "./CustomMap";
 import { FooterForm } from "./FooterForm";
 
 export const TopFooter = () => {
@@ -93,10 +94,12 @@ export const TopFooter = () => {
             {layoutData.footer.topFooter[5].title.slice(8)}
           </span>
         </h2>
-        <div>
+        <div className="flex">
           <FooterForm />
+          <CustomMap />
         </div>
       </div>
+   
     </div>
   );
 };
