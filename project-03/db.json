@@ -1535,7 +1535,7 @@
             "postalCode": "50672"
           },
           {
-            "country": "Северна Македонија",
+            "country": "Македонија",
             "address": "11 Октомври бр. 25",
             "city": "Скопје",
             "postalCode": "1000"
@@ -2905,6 +2905,32 @@
         "emailPlaceholder": "Вашата Е-маил Адреса",
         "buttonText": "Придружете се бесплатно",
         "buttonLink": "#"
+      }
+    }
+  },
+  "footerMapLocations": {
+    "eng": {
+      "name": "Hohenzollernring No. 72",
+      "city": "Köln",
+      "country": "Germany",
+      "postalCode": "50672",
+      "phoneNumber": "000111222333",
+      "email": "Email: info@cyberg.com",
+      "coordinates": {
+        "latitude": 50.939563,
+        "longitude": 6.939098
+      }
+    },
+    "mk": {
+      "name": "11 Октомври бр. 25",
+      "city": "Скопје",
+      "country": "Македонија",
+      "postalCode": "1000",
+      "phoneNumber": "000111222333",
+      "email": "Email: info@cyberg.com",
+      "coordinates": {
+        "latitude": 41.998129,
+        "longitude": 21.425435
       }
     }
   }
