@@ -50,7 +50,7 @@ export const TopFooter = () => {
           </ul>
 
           {/* Section 2 */}
-          <p className="text-white font-[700] text-[23px] mb-4 mt-5">
+          <p className="text-white w-[120px] font-[700] text-[23px] mb-4 mt-5">
             {layoutData.footer.topFooter[2].title}
           </p>
           <ul className="space-y-2 text-white">
@@ -63,7 +63,7 @@ export const TopFooter = () => {
         </div>
         <div>
           {/* Section 3 */}
-          <p className="text-white font-[700] text-[23px] mb-4">
+          <p className="text-white w-[120px] font-[700] text-[23px] mb-4">
             {layoutData.footer.topFooter[3].title}
           </p>
           <ul className="space-y-2 text-white">
