@@ -17,6 +17,7 @@ export const ServicesCard = ({
   id,
 }: ServicesCardProps) => {
   const navigate = useNavigate();
+
   return (
     <div className="w-[480px] bg-[#2A2A2A] text-white flex flex-col justify-between p-5">
       <img src={img} alt="service" className="self-start mb-8" />
@@ -25,7 +26,7 @@ export const ServicesCard = ({
       <ButtonComponent
         text={buttonText}
         onClick={() => {
-          navigate({ pathname: `/services/${id}` });
+          navigate(`/services/${id}`);
         }}
       />
     </div>

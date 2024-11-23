@@ -308,6 +308,7 @@
         "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
         "subtitle": "Key Features of SIEM",
+        "imgPopUp": "/assets/images/HeaderPopUpImg1.png",
         "img": "/assets/images/ServicesImage1.png",
         "features": [
           {
@@ -361,6 +362,7 @@
         "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
         "subtitle": "Key Features of Penetration Testing",
+        "imgPopUp": "/assets/images/HeaderPopUpImg2.png",
         "img": "/assets/images/ServicesImage2.png",
         "features": [
           {
@@ -414,6 +416,7 @@
         "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
         "subtitle": "Key Features of Incident Response",
+        "imgPopUp": "/assets/images/HeaderPopUpImg3.png",
         "img": "/assets/images/ServicesImage3.png",
         "features": [
           {
@@ -467,6 +470,7 @@
         "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
         "subtitle": "Key Features of Network Security",
+        "imgPopUp": "/assets/images/HeaderPopUpImg4.png",
         "img": "/assets/images/ServicesImage4.png",
         "features": [
           {
@@ -520,6 +524,7 @@
         "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
         "subtitle": "Key Features of Security Awareness Training",
+        "imgPopUp": "/assets/images/HeaderPopUpImg5.png",
         "img": "/assets/images/ServicesImage5.png",
         "features": [
           {
@@ -573,6 +578,7 @@
         "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
         "subtitle": "Key Features of Security Vulnerability Management",
+        "imgPopUp": "/assets/images/HeaderPopUpImg6.png",
         "img": "/assets/images/ServicesImage6.png",
         "features": [
           {
@@ -628,6 +634,7 @@
         "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
         "subtitle": "Клучни Карактеристики на SIEM",
+        "imgPopUp": "/assets/images/HeaderPopUpImg1.png",
         "img": "/assets/images/ServicesImage1.png",
         "features": [
           {
@@ -681,6 +688,7 @@
         "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
         "subtitle": "Клучни Карактеристики на Пенетрационо Тестирање",
+        "imgPopUp": "/assets/images/HeaderPopUpImg2.png",
         "img": "/assets/images/ServicesImage2.png",
         "features": [
           {
@@ -734,6 +742,7 @@
         "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
         "subtitle": "Клучни Карактеристики на Одговор на Инциденти",
+        "imgPopUp": "/assets/images/HeaderPopUpImg3.png",
         "img": "/assets/images/ServicesImage3.png",
         "features": [
           {
@@ -787,6 +796,7 @@
         "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
         "subtitle": "Клучни Карактеристики на Мрежна Безбедност",
+        "imgPopUp": "/assets/images/HeaderPopUpImg4.png",
         "img": "/assets/images/ServicesImage4.png",
         "features": [
           {
@@ -840,6 +850,7 @@
         "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
         "subtitle": "Клучни Карактеристики на Тренинг за Безбедносна Свесност",
+        "imgPopUp": "/assets/images/HeaderPopUpImg5.png",
         "img": "/assets/images/ServicesImage5.png",
         "features": [
           {
@@ -893,6 +904,7 @@
         "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
         "subtitle": "Клучни Карактеристики на Тренинг за Управување со ранливост",
+        "imgPopUp": "/assets/images/HeaderPopUpImg6.png",
         "img": "/assets/images/ServicesImage6.png",
         "features": [
           {

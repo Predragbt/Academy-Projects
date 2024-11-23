@@ -13,6 +13,7 @@ export interface ServiceCard {
   cardBtnText: string;
   pageBtnText: string;
   subtitle: string;
+  imgPopUp: string;
   img: string;
   features: {
     id: string;
@@ -33,6 +34,7 @@ export interface HomeServicesSection {
     card3: ServiceCard;
     card4: ServiceCard;
     card5: ServiceCard;
+    card6: ServiceCard;
   };
   mk: {
     card1: ServiceCard;
@@ -40,27 +42,44 @@ export interface HomeServicesSection {
     card3: ServiceCard;
     card4: ServiceCard;
     card5: ServiceCard;
+    card6: ServiceCard;
   };
 }
 
-export const ServicesContext = createContext<HomeServicesSection | null>(null);
+export interface ServicesContextType {
+  data: HomeServicesSection | null;
+  loading: boolean;
+  error: string | null;
+}
 
+const defaultContext: ServicesContextType = {
+  data: null,
+  loading: true,
+  error: null,
+};
+
+export const ServicesContext =
+  createContext<ServicesContextType>(defaultContext);
+
+// Provider Component
 export const ServicesProvider = ({ children }: { children: ReactNode }) => {
-  const [fetchedData, setFetchedData] = useState<HomeServicesSection | null>(
-    null
-  );
+  const [data, setData] = useState<HomeServicesSection | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
   const fetchLayoutData = async () => {
+    setLoading(true);
+    setError(null);
     try {
       const response = await fetch(`http://localhost:5000/services`);
       if (!response.ok) {
         throw new Error(`Failed to fetch layout data: ${response.statusText}`);
       }
-      const data: HomeServicesSection = await response.json();
-      setFetchedData(data);
-    } catch (error) {
-      console.error("Error fetching layout data:", error);
+      const fetchedData: HomeServicesSection = await response.json();
+      setData(fetchedData);
+    } catch (err) {
+      console.error("Error fetching layout data:", err);
+      setError(err instanceof Error ? err.message : "Unknown error");
     } finally {
       setLoading(false);
     }
@@ -70,21 +89,20 @@ export const ServicesProvider = ({ children }: { children: ReactNode }) => {
     fetchLayoutData();
   }, []);
 
-  if (loading) {
-    return <div>Loading services data...</div>;
-  }
-
   return (
-    <ServicesContext.Provider value={fetchedData}>
+    <ServicesContext.Provider value={{ data, loading, error }}>
       {children}
     </ServicesContext.Provider>
   );
 };
 
-export const useServicesContext = (): HomeServicesSection | null => {
+// Hook to Consume Context
+export const useServicesContext = (): ServicesContextType => {
   const context = useContext(ServicesContext);
-  if (context === null) {
-    console.warn("Services data is still loading or failed to load.");
+  if (!context) {
+    throw new Error(
+      "useServicesContext must be used within a ServicesProvider"
+    );
   }
   return context;
 };
