@@ -1,6 +1,7 @@
 // BottomHeader.tsx
 import { Link, useLocation } from "react-router-dom";
 import { useAppContext } from "../../../context/AppContext";
+import { useEffect } from "react";
 
 export const BottomHeader = () => {
   const { layoutData, loading, error } = useAppContext();
@@ -9,6 +10,10 @@ export const BottomHeader = () => {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
   if (!layoutData) return <div>No header data</div>;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <div className="h-[104px] flex justify-between items-center px-[150px] bg-[#323232] text-white">
