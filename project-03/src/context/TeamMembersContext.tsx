@@ -12,6 +12,8 @@ export interface TeamMemberProps {
   position: string;
   description: string;
   image: string;
+  bioTitle: string;
+  bio: string;
 }
 
 export interface TeamSectionProps {
@@ -45,7 +47,9 @@ export const TeamMembersContext = createContext<TeamMembersContextType | null>(
 );
 
 export const TeamMembersProvider = ({ children }: { children: ReactNode }) => {
-  const [teamMembersData, setTeamMembersData] = useState<TeamDataProps | null>(null);
+  const [teamMembersData, setTeamMembersData] = useState<TeamDataProps | null>(
+    null
+  );
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 

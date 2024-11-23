@@ -1133,21 +1133,27 @@
             "name": "Furkan Bajrami",
             "position": "CEO",
             "description": "Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id.",
-            "image": "assets/images/Leadership1.png"
+            "image": "assets/images/Leadership1.png",
+            "bioTitle": "Bio",
+            "bio": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."
           },
           {
             "id": "petar_ninovski",
             "name": "Petar Ninovski",
             "position": "Co-Founder & CXX",
             "description": "Petar has over 10 years of experience in cybersecurity and IT consulting.",
-            "image": "assets/images/Leadership2.png"
+            "image": "assets/images/Leadership2.png",
+            "bioTitle": "Bio",
+            "bio": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."
           },
           {
             "id": "lena_muller",
             "name": "Lena Müller",
             "position": "Chief Technology Officer (CTO)",
             "description": "With over 12 years of experience in cybersecurity and technology development, Lena leads CGD’s technical initiatives and solutions.",
-            "image": "assets/images/Leadership3.png"
+            "image": "assets/images/Leadership3.png",
+            "bioTitle": "Bio",
+            "bio": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."
           }
         ]
       },
@@ -1161,14 +1167,18 @@
             "name": "Furkan Bajrami",
             "position": "CEO",
             "description": "Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id.",
-            "image": "assets/images/Leadership1.png"
+            "image": "assets/images/Leadership1.png",
+            "bioTitle": "Bio",
+            "bio": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."
           },
           {
             "id": "petar_ninovski_partner",
             "name": "Petar Ninovski",
             "position": "Co-Founder & CXX",
             "description": "Petar has over 10 years of experience in cybersecurity and IT consulting.",
-            "image": "assets/images/Leadership2.png"
+            "image": "assets/images/Leadership2.png",
+            "bioTitle": "Bio",
+            "bio": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."
           }
         ]
       },
@@ -1182,21 +1192,27 @@
             "name": "Lukas Schmidt",
             "position": "Cybersecurity Specialist",
             "description": "Lukas excels in threat detection and network security, identifying vulnerabilities to protect systems from cyber risks.",
-            "image": "/assets/images/CybersecuritySpecialist1.png"
+            "image": "/assets/images/CybersecuritySpecialist1.png",
+            "bioTitle": "Bio",
+            "bio": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."
           },
           {
             "id": "emma_brown",
             "name": "Emma Brown",
             "position": "Training Specialist",
             "description": "Emma designs training programs to boost employee cybersecurity awareness and help organizations stay secure.",
-            "image": "/assets/images/CybersecuritySpecialist2.png"
+            "image": "/assets/images/CybersecuritySpecialist2.png",
+            "bioTitle": "Bio",
+            "bio": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."
           },
           {
             "id": "karl_muller",
             "name": "Karl Müller",
             "position": "Penetration Tester",
             "description": "Karl specializes in penetration testing and incident response, helping businesses safeguard against evolving threats.",
-            "image": "/assets/images/CybersecuritySpecialist3.png"
+            "image": "/assets/images/CybersecuritySpecialist3.png",
+            "bioTitle": "Bio",
+            "bio": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."
           }
         ]
       },
@@ -1210,21 +1226,27 @@
             "name": "Emily Johnson",
             "position": "Security Awareness Advisor",
             "description": "Emily simplifies cybersecurity for employees through workshops, teaching best practices for staying safe online.",
-            "image": "/assets/images/SecurityAwarenessTeam1.png"
+            "image": "/assets/images/SecurityAwarenessTeam1.png",
+            "bioTitle": "Bio",
+            "bio": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."
           },
           {
             "id": "hannah_weber",
             "name": "Hannah Weber",
             "position": "Security Campaign Specialist",
             "description": "Hannah creates engaging security campaigns, making cybersecurity easy to understand and apply across teams.",
-            "image": "/assets/images/SecurityAwarenessTeam2.png"
+            "image": "/assets/images/SecurityAwarenessTeam2.png",
+            "bioTitle": "Bio",
+            "bio": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."
           },
           {
             "id": "james_fischer",
             "name": "James Fischer",
             "position": "Incident Monitoring Expert",
             "description": "James focuses on incident monitoring and response, using data analytics to keep systems secure from potential attacks.",
-            "image": "/assets/images/SecurityAwarenessTeam3.png"
+            "image": "/assets/images/SecurityAwarenessTeam3.png",
+            "bioTitle": "Bio",
+            "bio": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id. Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."
           }
         ]
       }
@@ -1241,21 +1263,27 @@
             "name": "Фуркан Бајрами",
             "position": "Генерален Директор",
             "description": "Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id.",
-            "image": "assets/images/Leadership1.png"
+            "image": "assets/images/Leadership1.png",
+            "bioTitle": "Биографија",
+            "bio": "Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид."
           },
           {
             "id": "petar_ninovski_mk",
             "name": "Петар Ниновски",
             "position": "Ко-основач & CXX",
             "description": "Петар има повеќе од 10 години искуство во сајбер безбедност и ИТ консалтинг.",
-            "image": "assets/images/Leadership2.png"
+            "image": "assets/images/Leadership2.png",
+            "bioTitle": "Биографија",
+            "bio": "Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид."
           },
           {
             "id": "lena_muller_mk",
             "name": "Лена Милер",
             "position": "Главен Технолошки Директор (CTO)",
             "description": "Со повеќе од 12 години искуство во сајбер безбедност и развој на технологии, Лена ги води техничките иницијативи и решенија на CGD.",
-            "image": "assets/images/Leadership3.png"
+            "image": "assets/images/Leadership3.png",
+            "bioTitle": "Биографија",
+            "bio": "Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид."
           }
         ]
       },
@@ -1269,14 +1297,18 @@
             "name": "Фуркан Бајрами",
             "position": "Генерален Директор",
             "description": "Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id.",
-            "image": "assets/images/Leadership1.png"
+            "image": "assets/images/Leadership1.png",
+            "bioTitle": "Биографија",
+            "bio": "Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид."
           },
           {
             "id": "petar_ninovski_partner_mk",
             "name": "Петар Ниновски",
             "position": "Ко-основач & CXX",
             "description": "Петар има повеќе од 10 години искуство во сајбер безбедност и ИТ консалтинг.",
-            "image": "assets/images/Leadership2.png"
+            "image": "assets/images/Leadership2.png",
+            "bioTitle": "Биографија",
+            "bio": "Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид."
           }
         ]
       },
@@ -1290,21 +1322,27 @@
             "name": "Лукас Шмит",
             "position": "Специјалист за Сајбер Безбедност",
             "description": "Лукас се истакнува во детекција на закани и мрежна безбедност, идентификувајќи ранливости за заштита на системите од сајбер закани.",
-            "image": "/assets/images/CybersecuritySpecialist1.png"
+            "image": "/assets/images/CybersecuritySpecialist1.png",
+            "bioTitle": "Биографија",
+            "bio": "Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид."
           },
           {
             "id": "emma_brown_mk",
             "name": "Ема Браун",
             "position": "Специјалист за Обука",
             "description": "Ема дизајнира програми за обука за зголемување на свеста за сајбер безбедност кај вработените и помага организациите да останат безбедни.",
-            "image": "/assets/images/CybersecuritySpecialist2.png"
+            "image": "/assets/images/CybersecuritySpecialist2.png",
+            "bioTitle": "Биографија",
+            "bio": "Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид."
           },
           {
             "id": "karl_muller_mk",
             "name": "Карл Милер",
             "position": "Пенетрационен Тестер",
             "description": "Карл се специјализира во пенетрационо тестирање и одговор на инциденти, помагајќи на бизнисите да се заштитат од еволуирачки закани.",
-            "image": "/assets/images/CybersecuritySpecialist3.png"
+            "image": "/assets/images/CybersecuritySpecialist3.png",
+            "bioTitle": "Биографија",
+            "bio": "Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид."
           }
         ]
       },
@@ -1318,21 +1356,27 @@
             "name": "Емили Џонсон",
             "position": "Советник за Свесност за Безбедност",
             "description": "Емили ја поедноставува сајбер безбедноста за вработените преку работилници, обучувајќи ги за најдобрите практики за безбедност на интернет.",
-            "image": "/assets/images/SecurityAwarenessTeam1.png"
+            "image": "/assets/images/SecurityAwarenessTeam1.png",
+            "bioTitle": "Биографија",
+            "bio": "Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид."
           },
           {
             "id": "hannah_weber_mk",
             "name": "Хана Вебер",
             "position": "Специјалист за Безбедносни Кампањи",
             "description": "Хана креира ангажирачки безбедносни кампањи, правејќи сајбер безбедноста лесна за разбирање и примена низ тимовите.",
-            "image": "/assets/images/SecurityAwarenessTeam2.png"
+            "image": "/assets/images/SecurityAwarenessTeam2.png",
+            "bioTitle": "Биографија",
+            "bio": "Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид."
           },
           {
             "id": "james_fischer_mk",
             "name": "Џејмс Фишер",
             "position": "Експерт за Мониторинг на Инциденти",
             "description": "Џејмс се фокусира на мониторинг и одговор на инциденти, користејќи анализа на податоци за да ги заштити системите од потенцијални напади.",
-            "image": "/assets/images/SecurityAwarenessTeam3.png"
+            "image": "/assets/images/SecurityAwarenessTeam3.png",
+            "bioTitle": "Биографија",
+            "bio": "Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид. Лорем ипсум долор сит амет концектетур. Арку нула хабитасе тортор ид."
           }
         ]
       }
