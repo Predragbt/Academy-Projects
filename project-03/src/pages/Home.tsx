@@ -1,6 +1,7 @@
 import { HeroSection } from "../components/layout/heroSection/HeroSection";
 import { HomeAboutSection } from "../components/layout/home/HomeAboutSection";
 import { HomeISOFormSection } from "../components/layout/home/HomeISOFormSection";
+import { HomePartnersSection } from "../components/layout/home/parnersSection/HomePartnersSection";
 import { ServicesSection } from "../components/layout/home/ServicesSection";
 import { TeamLeadershipSection } from "../components/layout/home/TeamLeadershipSection";
 import { TestimonialsSection } from "../components/layout/home/TestimonialsSection";
@@ -14,6 +15,7 @@ export const Home = () => {
       <HomeAboutSection />
       <VideoSection />
       <TeamLeadershipSection />
+      <HomePartnersSection />
       <HomeISOFormSection />
       <TestimonialsSection />
     </div>

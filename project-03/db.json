@@ -2991,5 +2991,87 @@
         "longitude": 21.425435
       }
     }
+  },
+  "partnersHomeSection": {
+    "eng": {
+      "form": {
+        "title": "Reach out to our team at CGD, and we'll help you protect your digital future.",
+        "placeholder": "Email Address",
+        "buttonText": "Submit"
+      },
+      "partners": [
+        {
+          "id": 1,
+          "name": "Partner 1",
+          "image": "/assets/images/PartnersImage1.png"
+        },
+        {
+          "id": 2,
+          "name": "Microsoft",
+          "image": "/assets/images/PartnersImage2.png"
+        },
+        {
+          "id": 3,
+          "name": "Netflix",
+          "image": "/assets/images/PartnersImage3.png"
+        },
+        {
+          "id": 4,
+          "name": "DB",
+          "image": "/assets/images/PartnersImage4.png"
+        },
+        {
+          "id": 5,
+          "name": "Amazon",
+          "image": "/assets/images/PartnersImage5.png"
+        },
+        {
+          "id": 6,
+          "name": "Google",
+          "image": "/assets/images/PartnersImage6.png"
+        }
+      ],
+      "sectionTitle": "Our Partners"
+    },
+    "mk": {
+      "form": {
+        "title": "Контактирајте го нашиот тим во CGD, и ќе ви помогнеме да ја заштитите вашата дигитална иднина.",
+        "placeholder": "Емаил Адреса",
+        "buttonText": "Поднеси"
+      },
+      "partners": [
+        {
+          "id": 1,
+          "name": "Партнер 1",
+          "image": "/assets/images/PartnersImage1.png"
+        },
+        {
+          "id": 2,
+          "name": "Мајкрософт",
+          "image": "/assets/images/PartnersImage2.png"
+        },
+        {
+          "id": 3,
+          "name": "Нетфликс",
+          "image": "/assets/images/PartnersImage3.png"
+        },
+        {
+          "id": 4,
+          "name": "ДБ",
+          "image": "/assets/images/PartnersImage4.png"
+        },
+        {
+          "id": 5,
+          "name": "Амазон",
+          "image": "/assets/images/PartnersImage5.png"
+        },
+        {
+          "id": 6,
+          "name": "Гугл",
+          "image": "/assets/images/PartnersImage6.png"
+        }
+      ],
+      "sectionTitle": "Нашите Партнери"
+    }
   }
 }
