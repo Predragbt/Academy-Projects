@@ -58,10 +58,14 @@ export const TopVideoSection = () => {
         <p className="text-[52px] leading-[64px] font-[700] text-[#FF6F0F] mb-20">
           "{content.quote}"
         </p>
-        <button className="bg-transparent h-[52px] w-[250px] border-2 border-[#FF6F0F] mr-6 text-[#FF6F0F] hover:bg-[#FFBD91] text-base font-medium transition duration-300">
-          {content.btn1}
-        </button>
-        <ButtonComponent text={content.btn2} onClick={() => {}} />
+        <div className="flex gap-6">
+          <ButtonComponent
+            text={content.btn1}
+            background="bg-transparent text-[#FF6F0F] hover:bg-[#FFBD91] hover:text-white hover:border-[#FFBD91]"
+            border="border-2 border-[#FF6F0F] "
+          />
+          <ButtonComponent text={content.btn2} />
+        </div>
       </div>
       <div>
         <img

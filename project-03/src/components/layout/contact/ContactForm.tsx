@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ContactLanguageContentProps } from "../../../pages/Contact";
+import { ButtonComponent } from "../../common/Button";
 
 interface Props {
   data: ContactLanguageContentProps;
@@ -33,7 +34,7 @@ export const ContactForm = ({ data }: Props) => {
       } else {
         setFormStatus("error");
       }
-    }, 1000);
+    }, 500);
   };
 
   useEffect(() => {
@@ -84,7 +85,7 @@ export const ContactForm = ({ data }: Props) => {
               />
             ) : (
               <input
-                type={field.type} 
+                type={field.type}
                 placeholder={field.placeholder}
                 className="w-full h-[65px] bg-[#232323] text-white pl-4 outline-none"
                 value={
@@ -122,12 +123,11 @@ export const ContactForm = ({ data }: Props) => {
             : "Please fill in all fields correctly."}
         </p>
       )}
-      <button
+      <ButtonComponent
+        text={data.form.submit_button.text}
         type="submit"
-        className="bg-[#FF6F0F] text-white py-2 px-4 w-full"
-      >
-        {data.form.submit_button.text}
-      </button>
+        width="w-full"
+      />
     </form>
   );
 };
