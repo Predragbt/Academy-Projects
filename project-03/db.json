@@ -1137,7 +1137,7 @@
       "leadershipTeam": {
         "id": "leadershipTeam",
         "title": "Our Leadership Team",
-        "buttonText": "Meet the Rest of our Team",
+        "buttonText": "Meet the Rest of the Team",
         "content": "Meet the leaders behind CGD’s mission to protect businesses from evolving cyber threats. With deep expertise in cybersecurity and IT consulting, our leadership team drives innovation and ensures the highest standards of security for our clients. Scroll down to see the faces behind our success.",
         "members": [
           {
@@ -1196,6 +1196,7 @@
       },
       "cybersecuritySpecialistsTeam": {
         "id": "cybersecuritySpecialistsTeam",
+        "buttonText": "Meet the Rest of the Team",
         "title": "Cybersecurity Specialists",
         "content": "Our cybersecurity specialists bring extensive expertise in protecting systems from cyber threats.",
         "members": [
@@ -1230,6 +1231,7 @@
       },
       "securityAwarenessAdvisorsTeam": {
         "id": "securityAwarenessAdvisorsTeam",
+        "buttonText": "Meet the Rest of the Team",
         "title": "Security Awareness Advisors",
         "content": "Our advisors focus on equipping teams with the knowledge and skills to stay safe online.",
         "members": [
@@ -1326,6 +1328,7 @@
       },
       "cybersecuritySpecialistsTeam": {
         "id": "cybersecuritySpecialistsTeam_mk",
+        "buttonText": "Погледајте останатата екипа",
         "title": "Сајбер Безбедносни Специјалисти",
         "content": "Нашите специјалисти за сајбер безбедност имаат богато искуство во заштита на системите од сајбер закани.",
         "members": [
@@ -1360,6 +1363,7 @@
       },
       "securityAwarenessAdvisorsTeam": {
         "id": "securityAwarenessAdvisorsTeam_mk",
+        "buttonText": "Погледајте останатата екипа",
         "title": "Советници за Свесност за Безбедност",
         "content": "Нашите советници се фокусираат на опремување на тимовите со знаење и вештини за да останат безбедни на интернет.",
         "members": [

@@ -19,7 +19,7 @@ export interface TeamMemberProps {
 export interface TeamSectionProps {
   id: string;
   title: string;
-  buttonText?: string;
+  buttonText: string;
   content: string;
   members: TeamMemberProps[];
 }

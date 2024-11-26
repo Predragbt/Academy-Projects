@@ -1,8 +1,9 @@
-import { TeamSection } from "../../../context/TeamMembersContext";
+import { TeamSectionProps } from "../../../context/TeamMembersContext";
 import { TeamMemberCard } from "../../common/TeamMemberCard";
+import { TeamMembersBtn } from "../../common/TeamMembersBtn";
 
 interface Props {
-  teamMembers: TeamSection;
+  teamMembers: TeamSectionProps;
 }
 export const AboutOurCybersecuritySpecialists = ({ teamMembers }: Props) => {
   return (
@@ -17,6 +18,11 @@ export const AboutOurCybersecuritySpecialists = ({ teamMembers }: Props) => {
           <TeamMemberCard key={member.id} member={member} />
         ))}
       </div>
+      <TeamMembersBtn
+        buttonText={teamMembers.buttonText}
+        justify="justify-end"
+        marginTop="mt-12"
+      />
     </div>
   );
 };

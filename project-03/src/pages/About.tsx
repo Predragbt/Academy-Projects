@@ -94,7 +94,6 @@ export const About = () => {
           );
         }
         const data = await response.json();
-        console.log("Fetched about page data:", data);
         setAboutPageData(data);
       } catch (err) {
         setAboutError("Error fetching about page data");

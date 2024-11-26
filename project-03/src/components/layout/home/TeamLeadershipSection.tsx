@@ -5,6 +5,7 @@ import {
   useTeamMembersContext,
 } from "../../../context/TeamMembersContext";
 import { TeamMemberCard } from "../../common/TeamMemberCard";
+import { TeamMembersBtn } from "../../common/TeamMembersBtn";
 
 export const TeamLeadershipSection = () => {
   const { teamMembersData, loading, error } = useTeamMembersContext();
@@ -37,11 +38,10 @@ export const TeamLeadershipSection = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-24">
-        <button className="text-[#FF6F0F] text-[24px] font-[700] border-b-2 border-[#FF6F0F] hover:text-[#FFBD91] hover:border-[#FFBD91]">
-          {languageContent.leadershipTeam.buttonText}
-        </button>
-      </div>
+      <TeamMembersBtn
+        buttonText={languageContent.leadershipTeam.buttonText}
+        
+      />
     </div>
   );
 };

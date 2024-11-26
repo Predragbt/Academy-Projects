@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { useAppContext } from "../context/AppContext";
 
 import { PartnershipContainers } from "../components/layout/partnership/PartnershipContainers";
-import { PartnershipHeader } from "../components/layout/partnership/partnershipHeader";
+
 import { PartnershipTestimonials } from "../components/layout/partnership/PartnershipTestimonials";
+import { PartnershipHeader } from "../components/layout/partnership/PartnershipHeader";
 
 export interface PartnershipHeaderProps {
   title: string;
