@@ -61,7 +61,7 @@ export const HomePartnersSection = () => {
   if (!partnersData) return <div>No partners data available.</div>;
 
   return (
-    <div className="py-24 border-b-8 border-[#FF6F0F] px-[120px]">
+    <div className="py-24">
       <LogoPartnersSection data={partnersData} />
       <FormPartnersSection data={partnersData} />
     </div>

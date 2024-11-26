@@ -14,8 +14,8 @@ export const LogoPartnersSection = ({ data }: Props) => {
   ).flat();
 
   return (
-    <div className="overflow-hidden mb-24">
-      <p className="text-[48px] font-[700] text-center text-[#FF6F0F] mb-14">
+    <div className="overflow-hidden mb-[180px] px-[120px]">
+      <p className="text-[48px] font-[700] text-center text-[#FF6F0F] mb-16">
         {data.sectionTitle}
       </p>
       <div className="overflow-hidden relative w-[100%]">
