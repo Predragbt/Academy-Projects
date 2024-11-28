@@ -44,7 +44,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "*",
-        element: <ErrorPage />,
+        element: <ErrorPage statusCode={404} />,
+      },
+      {
+        path: "/server-error",
+        element: <ErrorPage statusCode={500} />,
       },
     ],
   },

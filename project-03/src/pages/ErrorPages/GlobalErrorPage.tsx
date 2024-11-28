@@ -1,11 +1,13 @@
+import { AiOutlineWarning } from "react-icons/ai";
+
 export const GlobalErrorPage = () => {
-    return (
-      <div style={{ textAlign: "center", padding: "50px" }}>
-        <h1>404</h1>
-        <p>Sorry, the page you're looking for doesn't exist.</p>
-        <a href="/" style={{ textDecoration: "none", color: "blue" }}>
-          Return to Home
-        </a>
-      </div>
-    );
-  };
+  return (
+    <div className="text-center py-24">
+      <AiOutlineWarning className="text-red-500 text-[64px] mb-6 mx-auto" />
+      <h1 className="text-[36px] font-bold mb-4">Page Not Found</h1>
+      <p className="text-[24px] font-[600] mb-6">
+        Sorry, the page you're looking for doesn't exist.
+      </p>
+    </div>
+  );
+};
