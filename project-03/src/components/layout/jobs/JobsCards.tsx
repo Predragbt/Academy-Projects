@@ -1,4 +1,4 @@
-import { JobsJobProps } from "../../../pages/Jobs";
+import { JobsJobProps } from "../../../types/JobsTypes";
 
 interface JobsCardsProps {
   jobs: JobsJobProps[];

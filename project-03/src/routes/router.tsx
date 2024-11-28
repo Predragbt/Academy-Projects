@@ -8,6 +8,8 @@ import { Jobs } from "../pages/Jobs";
 import { Contact } from "../pages/Contact";
 import { PartnershipPage } from "../pages/Partnership";
 import { Newsletter } from "../pages/Newsletter";
+import { ErrorPage } from "../pages/ErrorPages/ErrorPage";
+import { GlobalErrorPage } from "../pages/ErrorPages/GlobalErrorPage";
 
 export const router = createBrowserRouter([
   {
@@ -40,7 +42,15 @@ export const router = createBrowserRouter([
         path: "/newsletter",
         element: <Newsletter />,
       },
+      {
+        path: "*",
+        element: <ErrorPage />,
+      },
     ],
+  },
+  {
+    path: "*",
+    element: <GlobalErrorPage  />,
   },
 ]);
 

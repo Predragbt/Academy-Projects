@@ -1,4 +1,4 @@
-import { ContactLanguageContentProps } from "../../../pages/Contact";
+import { ContactLanguageContentProps } from "../../../types/ContactTypes";
 
 interface Props {
   data: ContactLanguageContentProps;

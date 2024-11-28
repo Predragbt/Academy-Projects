@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ContactLanguageContentProps } from "../../../pages/Contact";
 import { ButtonComponent } from "../../common/Button";
+import { ContactLanguageContentProps } from "../../../types/ContactTypes";
 
 interface Props {
   data: ContactLanguageContentProps;

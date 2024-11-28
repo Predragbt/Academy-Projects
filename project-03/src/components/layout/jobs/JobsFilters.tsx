@@ -1,9 +1,9 @@
+import { Dispatch, SetStateAction, useState } from "react";
 import {
   JobsFilterProps,
   JobsJobProps,
   SortOptionsProps,
-} from "../../../pages/Jobs";
-import { Dispatch, SetStateAction, useState } from "react";
+} from "../../../types/JobsTypes";
 
 interface Props {
   filters: JobsFilterProps[];
