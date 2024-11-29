@@ -303,7 +303,7 @@
     "eng": {
       "card1": {
         "id": "card1",
-        "title": "SIEM Threat Detection & Response",
+        "title": "SIEM |Threat Detection & Response|",
         "titleContent": "Our 24/7 monitoring services use AI-powered tools to detect and neutralize threats before they can harm your business",
         "cardBtnText": "See More",
         "pageBtnText": "Get Demo",
@@ -629,7 +629,7 @@
     "mk": {
       "card1": {
         "id": "card1",
-        "title": "SIEM Откривање и Одговор на Закани",
+        "title": "SIEM |Откривање и Одговор на Закани|",
         "titleContent": "Нашите 24/7 мониторинг услуги користат алатки со вештачка интелигенција за откривање и неутрализирање на закани пред тие да му наштетат на вашето бизнис работење",
         "cardBtnText": "Види Повеќе",
         "pageBtnText": "Добиј Демонстрација",
@@ -1400,7 +1400,7 @@
   },
   "aboutPage": {
     "eng": {
-      "bannerTitle": "Protecting the digital future through innovative cybersecurity solutions",
+      "bannerTitle": "|Protecting| the digital future through innovative cybersecurity |solutions|",
       "aboutContent": [
         {
           "img": "/assets/images/AboutImage1.png",
@@ -1556,7 +1556,7 @@
       }
     },
     "mk": {
-      "bannerTitle": "Заштита на дигиталната иднина преку иновативни решенија за сајбер безбедност",
+      "bannerTitle": "|Заштита| на дигиталната иднина преку иновативни решенија за сајбер |безбедност|",
       "aboutContent": [
         {
           "img": "/assets/images/AboutImage1.png",

@@ -81,7 +81,6 @@ export const About = () => {
   const [aboutError, setAboutError] = useState<string | null>(null);
 
   const { teamMembersData, loading, error } = useTeamMembersContext();
-
   const { language } = useAppContext();
 
   useEffect(() => {
@@ -125,13 +124,13 @@ export const About = () => {
 
   return (
     <>
-      <AboutHero />
+      <AboutHero bannerTitle={languageData.bannerTitle} />
+
       <div className="flex flex-row justify-center w-full px-[120px] mt-[-150px] gap-8 flex-wrap mb-24">
         <AboutContent aboutContent={languageData.aboutContent} />
       </div>
 
       <OurLocations locations={languageData.locations} />
-
       <AboutOurPartners teamMembers={teamMembersLanguageContent.partnersTeam} />
       <AboutOurCybersecuritySpecialists
         teamMembers={teamMembersLanguageContent.cybersecuritySpecialistsTeam}
@@ -139,9 +138,7 @@ export const About = () => {
       <AboutSecurityAwareness
         teamMembers={teamMembersLanguageContent.securityAwarenessAdvisorsTeam}
       />
-
       <AboutCertifications certifications={languageData.certifications} />
-
       <AboutSuccsessStories successStories={languageData.successStories} />
     </>
   );
