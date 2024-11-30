@@ -1,7 +1,7 @@
 import {
   NewsletterLanguageContentProps,
   RelatedNewsProps,
-} from "../../../pages/Newsletter";
+} from "../../../types/NewsLetterTypes";
 import { ButtonComponent } from "../../common/Button";
 import { NewsletterCard } from "./NewsletterCard";
 

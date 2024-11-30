@@ -1,4 +1,4 @@
-import { NewsletterFooterFormProps } from "../../../pages/Newsletter";
+import { NewsletterFooterFormProps } from "../../../types/NewsLetterTypes";
 import { ButtonComponent } from "../../common/Button";
 
 interface Props {

@@ -1020,7 +1020,7 @@
   "industriesSection": {
     "id": "industries-section",
     "eng": {
-      "industriesTitle": "Industries We Protect",
+      "industriesTitle": "Industries We |Protect|",
       "industriesHeroImg": "/assets/images/IndustriesHeroSection.png",
       "homeTitle": "Industries We Serve",
       "formDescription": "Cyber threats are constantly evolving, and every industry faces unique challenges. If you don’t see your sector listed or want to learn more about how we can tailor our solutions to your specific needs, we’re here to help. Contact us today, and let’s discuss how we can protect your business.",
@@ -1076,7 +1076,7 @@
       ]
     },
     "mk": {
-      "industriesTitle": "Индустрии кои ги Заштитуваме",
+      "industriesTitle": "Индустрии кои ги |Заштитуваме|",
       "industriesHeroImg": "/assets/images/IndustriesHeroSection.png",
       "homeTitle": "Индустрии кои ги Служиме",
       "formDescription": "Сајбер заканите постојано се развиваат и секоја индустрија се соочува со уникатни предизвици. Ако не го гледате вашиот сектор на списокот или сакате да дознаете повеќе за тоа како можеме да ги прилагодиме нашите решенија на вашите специфични потреби, тука сме за да ви помогнеме. Контактирајте не денес и да разговараме за тоа како можеме да го заштитиме вашиот бизнис.",
@@ -1703,7 +1703,7 @@
   },
   "jobPage": {
     "eng": {
-      "title": "Join Our Team of Cybersecurity Innovators",
+      "title": "|Join Our Team| of Cybersecurity Innovators",
       "subtitle": "Protecting the Digital World, One Threat at a Time",
       "sortOptions": {
         "latest": "Latest to Oldest",
@@ -1840,7 +1840,7 @@
       ]
     },
     "mk": {
-      "title": "Придружете Се На Нашиот Тим На Иноватори За Сајбер Безбедност",
+      "title": "|Придружете Се На Нашиот Тим| На Иноватори За Сајбер Безбедност",
       "subtitle": "Заштита на Дигиталниот Свет, Една Закана Во Еден Момент",
       "sortOptions": {
         "latest": "Најново до најстаро",
@@ -2116,7 +2116,7 @@
   "partnershipPage": {
     "eng": {
       "header": {
-        "title": "Meet Our Partners & Collaborations",
+        "title": "Meet Our |Partners| & |Collaborations|",
         "subtitle": "At Cyberware Global Defense, we are proud to collaborate with the following industry leaders and organizations to provide the best cybersecurity solutions to our clients.",
         "buttonText": "View All Partners"
       },
@@ -2157,7 +2157,7 @@
     },
     "mk": {
       "header": {
-        "title": "Запознајте Ги Нашите Партнери и Соработки",
+        "title": "Запознајте ги Нашите |Партнери| и |Соработки|",
         "subtitle": "Во Cyberware Global Defense, горди сме што соработуваме со следниве лидери и организации во индустријата за да ги обезбедиме најдобрите решенија за сајбер-безбедност за нашите клиенти.",
         "buttonText": "Погледнете Ги Сите Партнери"
       },

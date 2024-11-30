@@ -1,4 +1,4 @@
-import { RelatedNewsProps } from "../../../pages/Newsletter";
+import { RelatedNewsProps } from "../../../types/NewsLetterTypes";
 import { ButtonComponent } from "../../common/Button";
 
 interface Props {

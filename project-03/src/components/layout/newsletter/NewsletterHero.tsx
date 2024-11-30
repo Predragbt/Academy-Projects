@@ -1,7 +1,7 @@
 import {
   NewsletterLanguageContentProps,
   RelatedNewsProps,
-} from "../../../pages/Newsletter";
+} from "../../../types/NewsLetterTypes";
 
 interface Props {
   data: NewsletterLanguageContentProps;

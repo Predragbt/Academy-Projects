@@ -3,7 +3,6 @@ interface AboutHeroProps {
 }
 
 export const AboutHero = ({ bannerTitle }: AboutHeroProps) => {
-  // Split the banner title into parts based on "|"
   const splitBannerTitle = bannerTitle.split("|");
 
   return (
