@@ -14,7 +14,10 @@ export const HeaderPopUp = ({ onClose }: { onClose: () => void }) => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
+      if (
+        popupRef.current &&
+        !popupRef.current.contains(event.target as Node)
+      ) {
         onClose();
       }
     };
@@ -43,10 +46,13 @@ export const HeaderPopUp = ({ onClose }: { onClose: () => void }) => {
       >
         <div className="flex gap-4">
           {Object.values(services).map((service) => (
-            <div key={service.id} className="flex flex-col justify-between w-1/6">
+            <div
+              key={service.id}
+              className="flex flex-col justify-between w-1/6"
+            >
               <img src={service.imgPopUp} className="w-fit mb-6" alt="" />
               <p className="text-[16px] font-[900] mb-4 border-b border-b-black">
-                {service.title}
+                {service.title.split("|").join(" ")}
               </p>
               <p className="text-[14px] font-[700] mb-4 text-overflow">
                 {service.titleContent}
@@ -69,7 +75,7 @@ export const HeaderPopUp = ({ onClose }: { onClose: () => void }) => {
                     onClose();
                   }}
                 >
-                  {service.title}
+                  {service.title.split("|").join(" ")}
                   <img src="/assets/icons/PopUpIconRight.png" alt="arrow" />
                 </button>
               </div>

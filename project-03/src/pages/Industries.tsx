@@ -1,10 +1,8 @@
 import { ButtonComponent } from "../components/common/Button";
 import { IndustriesHero } from "../components/layout/industries/IndustriesHero";
 import { useAppContext } from "../context/AppContext";
-import {
-  LanguageContentProps,
-  useIndustriesContext,
-} from "../context/IndustriesContext";
+import { useIndustriesContext } from "../context/IndustriesContext";
+import { LanguageContentProps } from "../types/IndustriesTypes";
 
 export const IndustiresPage = () => {
   const { language } = useAppContext();
@@ -48,7 +46,9 @@ export const IndustiresPage = () => {
       </div>
       <div className="px-[120px] py-[80px] flex flex-row gap-4 items-center">
         <div className="flex-[60%] me-[200px]">
-          <p className="text-[48px] font-semibold mb-4">{languageContent.formTitle}</p>
+          <p className="text-[48px] font-semibold mb-4">
+            {languageContent.formTitle}
+          </p>
           <p className="text-[24px] text-[#FF6F0F] leading-[30px]">
             {languageContent.formDescription}
           </p>

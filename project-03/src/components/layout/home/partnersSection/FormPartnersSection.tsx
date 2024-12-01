@@ -1,5 +1,5 @@
+import { PartnersHomeSectionLocaleProps } from "../../../../types/HomePartnersTypes";
 import { ButtonComponent } from "../../../common/Button";
-import { PartnersHomeSectionLocaleProps } from "./HomePartnersSection";
 
 interface Props {
   data: PartnersHomeSectionLocaleProps;

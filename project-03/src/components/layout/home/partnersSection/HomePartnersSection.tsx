@@ -1,30 +1,8 @@
 import { useAppContext } from "../../../../context/AppContext";
+import { PartnersHomeSectionLocaleProps, PartnersHomeSectionProps } from "../../../../types/HomePartnersTypes";
 import { FormPartnersSection } from "./FormPartnersSection";
 import { LogoPartnersSection } from "./LogoPartnersSection";
 import { useEffect, useState } from "react";
-
-interface PartnerProps {
-  id: number;
-  name: string;
-  image: string;
-}
-
-interface PartnersFormProps {
-  title: string;
-  placeholder: string;
-  buttonText: string;
-}
-
-export interface PartnersHomeSectionLocaleProps {
-  form: PartnersFormProps;
-  partners: PartnerProps[];
-  sectionTitle: string;
-}
-
-interface PartnersHomeSectionProps {
-  eng: PartnersHomeSectionLocaleProps;
-  mk: PartnersHomeSectionLocaleProps;
-}
 
 export const HomePartnersSection = () => {
   const { language } = useAppContext();

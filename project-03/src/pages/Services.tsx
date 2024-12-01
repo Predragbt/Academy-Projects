@@ -35,7 +35,7 @@ export const Services = () => {
 
           {/* Features Section */}
           <div className="px-[120px] bg-[#323232] py-12 text-center">
-            <p className="text-[48px] text-white font-bold mb-8">
+            <p className="text-[48px] text-white font-bold mb-8 underline">
               {filterData.subtitle}
             </p>
             <img src={filterData.img} alt="service" className="mx-auto mb-14" />

@@ -12,26 +12,7 @@ import Style from "ol/style/Style";
 import Icon from "ol/style/Icon";
 import { fromLonLat } from "ol/proj";
 import { useAppContext } from "../../../context/AppContext";
-
-interface Coordinates {
-  latitude: number;
-  longitude: number;
-}
-
-interface Location {
-  name: string;
-  city: string;
-  country: string;
-  postalCode: string;
-  phoneNumber: string;
-  email: string;
-  coordinates: Coordinates;
-}
-
-interface FooterMapLocations {
-  eng: Location;
-  mk: Location;
-}
+import { FooterMapLocations } from "../../../types/CustomMapTypes";
 
 export const CustomMap = () => {
   const [locations, setLocations] = useState<FooterMapLocations | null>(null);

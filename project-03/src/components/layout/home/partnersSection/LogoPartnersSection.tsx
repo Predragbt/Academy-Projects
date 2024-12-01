@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PartnersHomeSectionLocaleProps } from "./HomePartnersSection";
+import { PartnersHomeSectionLocaleProps } from "../../../../types/HomePartnersTypes";
 
 interface Props {
   data: PartnersHomeSectionLocaleProps;
