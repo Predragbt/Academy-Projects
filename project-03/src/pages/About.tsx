@@ -13,65 +13,7 @@ import {
 import { AboutOurPartners } from "../components/layout/about/АboutOurPartners";
 import { AboutOurCybersecuritySpecialists } from "../components/layout/about/AboutOurCybersecuritySpecialists";
 import { AboutSecurityAwareness } from "../components/layout/about/AboutSecurityAwareness";
-
-// TypeScript interfaces
-interface AboutPageData {
-  en: LanguageData;
-  mk: LanguageData;
-}
-
-interface LanguageData {
-  bannerTitle: string;
-  aboutContent: aboutSectionContent[];
-  locations: LocationProps;
-  certifications: CertificationProps;
-  successStories: SuccessStoryProps;
-}
-
-export interface aboutSectionContent {
-  img: string;
-  ourStory: string;
-  title: string;
-  description: string;
-}
-
-export interface LocationProps {
-  ourStory: string;
-  title: string;
-  img: string;
-  data: Array<{
-    country: string;
-    address: string;
-    city: string;
-    postalCode: string;
-  }>;
-}
-
-export interface CertificationProps {
-  title: string;
-  data: Array<{
-    title: string;
-    subtitle: string;
-    description: string;
-    actionLabel: string;
-    img: string;
-  }>;
-}
-
-export interface SuccessStoryProps {
-  title: string;
-  data: Array<{
-    img: string;
-    companyTitle: string;
-    company: string;
-    challengeTitle: string;
-    challenge: string;
-    solutionTitle: string;
-    solution: string;
-    outcomeTitle: string;
-    outcome: string;
-  }>;
-}
+import { AboutPageData, LanguageData } from "../types/AboutPageTypes";
 
 export const About = () => {
   const [aboutPageData, setAboutPageData] = useState<AboutPageData | null>(

@@ -1,4 +1,4 @@
-import { aboutSectionContent } from "../../../pages/About";
+import { aboutSectionContent } from "../../../types/AboutPageTypes";
 
 interface Props {
   aboutContent: aboutSectionContent[];

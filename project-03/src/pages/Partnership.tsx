@@ -5,31 +5,10 @@ import { PartnershipContainers } from "../components/layout/partnership/Partners
 
 import { PartnershipTestimonials } from "../components/layout/partnership/PartnershipTestimonials";
 import { PartnershipHeader } from "../components/layout/partnership/PartnershipHeader";
-
-export interface PartnershipHeaderProps {
-  title: string;
-  subtitle: string;
-  buttonText: string;
-}
-
-export interface PartnerProps {
-  id: number;
-  name: string;
-  title: string;
-  description: string;
-  image1: string;
-  image2: string;
-}
-
-export interface PartnershipLanguageContentProps {
-  header: PartnershipHeaderProps;
-  partners: PartnerProps[];
-}
-
-export interface PartnershipDataProps {
-  eng: PartnershipLanguageContentProps;
-  mk: PartnershipLanguageContentProps;
-}
+import {
+  PartnershipDataProps,
+  PartnershipLanguageContentProps,
+} from "../types/PartnershipTypes";
 
 export const PartnershipPage = () => {
   const [partnershipData, setPartnershipData] =

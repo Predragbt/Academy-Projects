@@ -1,4 +1,4 @@
-import { LocationProps } from "../../../pages/About";
+import { LocationProps } from "../../../types/AboutPageTypes";
 
 interface Props {
   locations: LocationProps;
@@ -13,7 +13,7 @@ export const OurLocations = ({ locations }: Props) => {
       }}
     >
       <p className="text-[75px] leading-[75px] font-[800] mb-14 text-white">
-        <span className="">{locations.ourStory}{" "}</span>
+        <span className="">{locations.ourStory} </span>
         <span className="text-[#FF6F0F]">{locations.title}</span>
       </p>
       <div className="text-white flex w-full justify-between gap-10">

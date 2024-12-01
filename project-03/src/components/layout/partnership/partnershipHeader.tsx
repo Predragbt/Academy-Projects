@@ -1,4 +1,4 @@
-import { PartnershipHeaderProps } from "../../../pages/Partnership";
+import { PartnershipHeaderProps } from "../../../types/PartnershipTypes";
 
 interface Props {
   data: PartnershipHeaderProps;

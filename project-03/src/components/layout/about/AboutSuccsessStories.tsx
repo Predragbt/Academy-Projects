@@ -1,4 +1,4 @@
-import { SuccessStoryProps } from "../../../pages/About";
+import { SuccessStoryProps } from "../../../types/AboutPageTypes";
 
 interface Props {
   successStories: SuccessStoryProps;

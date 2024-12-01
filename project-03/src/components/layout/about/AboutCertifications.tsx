@@ -1,4 +1,4 @@
-import { CertificationProps } from "../../../pages/About";
+import { CertificationProps } from "../../../types/AboutPageTypes";
 import { ButtonComponent } from "../../common/Button";
 
 interface Props {
@@ -13,7 +13,10 @@ export const AboutCertifications = ({ certifications }: Props) => {
       </p>
       <div className="flex flex-wrap justify-center gap-12 mt-8 text-center">
         {certifications.data.map((certification, index) => (
-          <div key={index} className="flex flex-col justify-between bg-[#2A2A2A] border-b-2 gap-6 py-16 px-6 items-center md:basis-[calc(33%-30px)]">
+          <div
+            key={index}
+            className="flex flex-col justify-between bg-[#2A2A2A] border-b-2 gap-6 py-16 px-6 items-center md:basis-[calc(33%-30px)]"
+          >
             <img src={certification.img} alt={certification.title} />
             <div>
               <p className="text-[32px] font-[600]">{certification.title}</p>

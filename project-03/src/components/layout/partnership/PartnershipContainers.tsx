@@ -1,4 +1,4 @@
-import { PartnershipLanguageContentProps } from "../../../pages/Partnership";
+import { PartnershipLanguageContentProps } from "../../../types/PartnershipTypes";
 
 interface Props {
   data: PartnershipLanguageContentProps;
