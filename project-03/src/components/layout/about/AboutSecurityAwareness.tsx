@@ -1,4 +1,4 @@
-import { TeamSectionProps } from "../../../context/TeamMembersContext";
+import { TeamSectionProps } from "../../../types/TeamMembersTypes";
 import { TeamMemberCard } from "../../common/TeamMemberCard";
 import { TeamMembersBtn } from "../../common/TeamMembersBtn";
 

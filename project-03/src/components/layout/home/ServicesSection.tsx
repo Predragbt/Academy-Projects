@@ -1,6 +1,7 @@
-import { HomeServicesSection, useServicesContext } from "../../../context/ServicesContext";
+import { useServicesContext } from "../../../context/ServicesContext";
 import { useAppContext } from "../../../context/AppContext";
 import { ServicesCard } from "../../common/ServicesCard";
+import { HomeServicesSection } from "../../../types/ServicesTypes";
 
 export const ServicesSection = () => {
   const { language } = useAppContext();

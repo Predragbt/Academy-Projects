@@ -1,10 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useAppContext } from "../../../../context/AppContext";
-import {
-  LanguageContentProps,
-  useIndustriesContext,
-} from "../../../../context/IndustriesContext";
 import { ButtonComponent } from "../../../common/Button";
+import { useIndustriesContext } from "../../../../context/IndustriesContext";
+import { LanguageContentProps } from "../../../../types/IndustriesTypes";
 
 export const BottomVideoSection = () => {
   const { language } = useAppContext();

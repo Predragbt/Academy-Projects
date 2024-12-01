@@ -5,15 +5,15 @@ import { AboutContent } from "../components/layout/about/AboutContent";
 import { OurLocations } from "../components/layout/about/OurLocations";
 import { AboutCertifications } from "../components/layout/about/AboutCertifications";
 import { AboutSuccsessStories } from "../components/layout/about/AboutSuccsessStories";
-import {
-  TeamDataProps,
-  TeamDataLanguageProps,
-  useTeamMembersContext,
-} from "../context/TeamMembersContext";
+import { useTeamMembersContext } from "../context/TeamMembersContext";
 import { AboutOurPartners } from "../components/layout/about/АboutOurPartners";
 import { AboutOurCybersecuritySpecialists } from "../components/layout/about/AboutOurCybersecuritySpecialists";
 import { AboutSecurityAwareness } from "../components/layout/about/AboutSecurityAwareness";
 import { AboutPageData, LanguageData } from "../types/AboutPageTypes";
+import {
+  TeamDataLanguageProps,
+  TeamDataProps,
+} from "../types/TeamMembersTypes";
 
 export const About = () => {
   const [aboutPageData, setAboutPageData] = useState<AboutPageData | null>(

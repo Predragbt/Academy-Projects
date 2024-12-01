@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { TeamMemberProps } from "../../context/TeamMembersContext";
 import { PopUp } from "./PopUp";
+import { TeamMemberProps } from "../../types/TeamMembersTypes";
 
 interface TeamMemberCardProps {
   member: TeamMemberProps;

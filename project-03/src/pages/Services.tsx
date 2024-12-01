@@ -1,10 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
 import { ServicesHero } from "../components/layout/services/ServicesHero";
-import {
-  HomeServicesSection,
-  useServicesContext,
-} from "../context/ServicesContext";
+import { useServicesContext } from "../context/ServicesContext";
+import { HomeServicesSection } from "../types/ServicesTypes";
 
 export const Services = () => {
   const { language } = useAppContext();

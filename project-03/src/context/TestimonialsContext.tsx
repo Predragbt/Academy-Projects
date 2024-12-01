@@ -6,24 +6,10 @@ import {
   useState,
 } from "react";
 import { useAppContext } from "./AppContext";
-
-interface TestimonialCardProps {
-  id: number;
-  name: string;
-  avatar: string;
-  testimonial: string;
-  rating: number;
-}
-
-interface TestimonialsProps {
-  title: string;
-  cards: TestimonialCardProps[];
-}
-
-interface TestimonialsDataProps {
-  eng: TestimonialsProps;
-  mk: TestimonialsProps;
-}
+import {
+  TestimonialsDataProps,
+  TestimonialsProps,
+} from "../types/TestimonialsTypes";
 
 export const TestimonialsContext = createContext<{
   testimonialsData: TestimonialsProps | null;

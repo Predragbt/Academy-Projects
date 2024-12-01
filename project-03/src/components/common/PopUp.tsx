@@ -1,4 +1,4 @@
-import { TeamMemberProps } from "../../context/TeamMembersContext";
+import { TeamMemberProps } from "../../types/TeamMembersTypes";
 import { TeamMemberCard } from "./TeamMemberCard";
 
 interface PopUpProps {

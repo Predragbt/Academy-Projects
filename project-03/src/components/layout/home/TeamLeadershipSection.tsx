@@ -1,9 +1,9 @@
 import { useAppContext } from "../../../context/AppContext";
+import { useTeamMembersContext } from "../../../context/TeamMembersContext";
 import {
-  TeamDataProps,
   TeamDataLanguageProps,
-  useTeamMembersContext,
-} from "../../../context/TeamMembersContext";
+  TeamDataProps,
+} from "../../../types/TeamMembersTypes";
 import { TeamMemberCard } from "../../common/TeamMemberCard";
 import { TeamMembersBtn } from "../../common/TeamMembersBtn";
 
@@ -38,10 +38,7 @@ export const TeamLeadershipSection = () => {
           </div>
         ))}
       </div>
-      <TeamMembersBtn
-        buttonText={languageContent.leadershipTeam.buttonText}
-        
-      />
+      <TeamMembersBtn buttonText={languageContent.leadershipTeam.buttonText} />
     </div>
   );
 };

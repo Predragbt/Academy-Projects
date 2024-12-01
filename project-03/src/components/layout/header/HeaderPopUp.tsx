@@ -1,10 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useRef, useEffect } from "react";
 import { useAppContext } from "../../../context/AppContext";
-import {
-  HomeServicesSection,
-  useServicesContext,
-} from "../../../context/ServicesContext";
+import { useServicesContext } from "../../../context/ServicesContext";
+import { HomeServicesSection } from "../../../types/ServicesTypes";
 
 export const HeaderPopUp = ({ onClose }: { onClose: () => void }) => {
   const { language } = useAppContext();
