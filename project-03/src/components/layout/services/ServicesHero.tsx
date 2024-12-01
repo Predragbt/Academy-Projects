@@ -21,7 +21,7 @@ export const ServicesHero = ({
       }}
     >
       <div className="flex flex-col justify-center items-center text-white w-full">
-        <h1 className="text-[75px] font-bold mb-14">
+        <h1 className="text-[75px] font-bold mb-14 text-center">
           {splitTitle.map((text, index) => (
             <span
               key={index}

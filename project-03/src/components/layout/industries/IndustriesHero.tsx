@@ -15,7 +15,7 @@ export const IndustriesHero = ({ title, subtitle, img }: Props) => {
     >
       {" "}
       <div className="flex flex-col justify-center items-center text-white w-full">
-        <h1 className="text-[48px] font-bold mb-14">
+        <h1 className="text-[48px] font-bold mb-14 text-center">
           {splitTitle.map((text, index) => (
             <span
               className={`${
